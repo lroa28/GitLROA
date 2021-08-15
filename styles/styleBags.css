@@ -1,0 +1,191 @@
+*{
+  margin: 0;
+  padding: 0;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  /*HEADER*/
+  .header {
+  background-image: url("../img/watercolor.png");
+  font-size: 15pt;
+  padding: 0% ;
+  margin: 0%;
+  top:0%;
+  position: sticky;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  gap: 5px;
+  
+ }
+  
+  .header--logo {
+    width: 80px;
+    height: 60px;
+    margin-right: 0%;
+    padding-right: 0%;
+    border:rgb(236, 11, 97);
+    border-style: double;
+  }
+
+  .header--titulo1{
+    font-style: "italic"; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif, cursive; 
+    text-align: left;
+    margin-right: 0%;
+    padding-right: 0%;
+    text-decoration: underline;
+    font-style: "italic"; 
+    font-family: 'Dancing Script', cursive; 
+    color: rgb(236, 11, 97);
+    justify-self: start;
+    align-self: center;
+    animation-duration: 4s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+ 
+  .header--titulo2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif, cursive; 
+    font-size: 22px;
+    margin-left: 0%;  
+  }
+
+  .header--titulo3{
+    font-style: "italic"; 
+    font-family: 'Dancing Script', cursive; 
+    font-weight: bold;
+    color: grey;
+    
+  }
+
+  .header--titulo4__ul{
+    list-style-type: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif, cursive; 
+    text-align: center;
+    color: black;
+  }
+
+  /*BODY*/
+  .body {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+   }
+  
+  /*PÁRRAFOS*/
+  p {
+    font-size: 15pt;
+    color: rgb(7, 7, 7);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+  }
+
+  /*MAIN*/
+  .main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border: solid pink;
+  background-image: url("../img/bags.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: norepeat;
+} 
+
+/*FOOTER*/
+.footer {
+  background-image: url("../img/pinkdust.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-style: dotted;
+  border-color: blank;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: space-between;
+  flex-wrap: nowrap;
+  overflow: auto;
+  padding: 0% 0% 1% 0%; 
+  top:0%;
+  width: 100%;
+}
+
+ .footer__titulo1--modifier{
+   font-family: 'Dancing Script', cursive; 
+   font-style: normal;
+   font-size: 17px;
+   font-weight: bold;
+   text-align: center;
+   letter-spacing: 5remb;
+   word-spacing: 10px;
+   padding: 0%;
+   margin: 0%;
+   display: flex;
+   justify-content: space-evenly;
+   align-content: space-between;
+   flex-wrap: nowrap;
+   }
+
+   .footer__titulo1--modifier:hover{
+    transition: 3s;
+    font-size: 3rem;
+   }
+
+
+   .footer__titulo2--modifier {
+    font-style: normal;
+    font-size: 13pt;
+    color: rgba(15, 14, 14, 0.959);
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 5remb;
+    word-spacing: 10px;
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    
+   }
+
+   .footer__p--modifier{
+    font-style: normal;
+    font-size: 10pt;
+    font-weight: bold;
+    color: black;
+    text-align: center; 
+    padding: 0%;
+    margin: 0%;
+   }
+   
+   .footer_imgArg{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    flex-direction: row;
+    border-radius: 5px;
+   }

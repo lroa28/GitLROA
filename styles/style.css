@@ -148,7 +148,7 @@ body {
    width: 20px;
    height: 20px; 
  }
-
+/* falta agregar */
  .header--navigation__listaulcroatia {
   width: 20px;
   height: 20px; 
@@ -283,14 +283,17 @@ body {
   background-position-x: center;
   background-position-y: center;
   border-style: dotted;
+  /* transition:  filter 2s, transform 1s ; no funciona*/
+  /* transform: skewY(15deg); */
   
 }
 .section2__caja--buttonmod1 hover{
   height: 300px; width: 300px;
   color: chartreuse ;
   padding: 0,5rem 1rem;
-  transition: all 0,4s linear ;
-  transform: skewY(25deg);
+  /* cursor: pointer; no funciona */
+  /* filter: grayscale(1); no funciona */
+  transform: scale(1,1);
 
 }
 
@@ -307,12 +310,14 @@ body {
   background-position-y: center;
   border-style: dotted;
   
+  
 }
 .section2__caja--buttonmod2 hover{
   height: 200px; width: 200px;
   padding: 0,5rem 1rem;
   transition: all 0,4s linear ;
   transform: skewY(25deg);
+  cursor: pointer;
 }
 
 .section2__caja--buttonmod3 {
@@ -333,6 +338,7 @@ body {
   padding: 0,5rem 1rem;
   transition: all 0,4s linear ;
   transform: skewY(25deg);
+  cursor: pointer;
 }
 
 .section2__caja--buttonmod4 {
@@ -355,6 +361,7 @@ body {
   padding: 0,5rem 1rem;
   transition: all 0,4s linear ;
   transform: skewY(25deg);
+  cursor: pointer;
 }
 
 /*MAIN_ SECTION3 MOST VIEWED*/
@@ -577,7 +584,7 @@ width: 40vw;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: darkorchid;
+  background-color: pink;
 }
 
 /*FOOTER*/

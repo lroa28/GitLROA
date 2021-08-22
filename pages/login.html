@@ -12,6 +12,12 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
   </head>
   <body class="body">
     <!--Hearder-->
@@ -34,16 +40,38 @@
     <!-- Fin Hearder-->
     <main class="main">
       <!--Main-->
-      <form class="main_form">
-        <label for="usuario">Usuario:</label>
-        <input type="text" name="usuario" />
-        <br />
-        <br />
-        <label for="pss">Password:</label>
-        <input type="pss" name="pss" />
-        <br />
-        <button>Login</button>
+      <form class="form">
+        <div class="mb-3>
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+          <div id="emailHelp" class="form-text">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
       </form>
+      <br />
       <br />
       <br />
     </main>

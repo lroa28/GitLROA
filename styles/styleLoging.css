@@ -85,6 +85,7 @@
   .body {
     margin: 0;
     line-height: 1,6rem;
+    background-color: blue;
   }
   
   /*PÁRRAFOS*/
@@ -97,7 +98,6 @@
 
   /*MAIN*/
   .main {
-  color: white;
   width: 100vw;
   height: 75vh;
   display: flex;
@@ -106,13 +106,13 @@
   align-content: center;
   background-image: url("../img/social-media-cel.png"); 
   background-repeat: no-repeat;
-  background-position-x:center;
-  background-position-y:center;
+  background-position-x: center;
+  background-position-y: bottom;
   background-size: 100px;
   
 } 
 
-.main_form {
+.form {
   display: flex;
   flex-direction: column;
   color: black;

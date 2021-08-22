@@ -8,16 +8,218 @@ sales.css
    font-size: 62.5%;
  }
  
- /*BODY*/
- body {
-   margin: 0%;
-   padding: 0%;
-   background-color: whitesmoke;
-   display: flex;
-   flex-direction: column;
+/*BODY*/
+body {
+  margin: 0%;
+  padding: 0%;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+}
+
+/*HEADER*/
+.header--GRID {
+  background-image: url("../img/watercolor.png");
+  padding: 0% 0% 1% 0%; 
+  margin: 0%;
+  top:0%;
+  position: sticky;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+  "header--logo header--titulo1 header--titulo2 header--titulo3 header--navigation__listaulmodifier"
+  "header--section1 header--section1 header--section1 header--section1 header--section1";
+  grid-column-gap: 3px;
+  grid-row-gap: 3px;
+  z-index: 2; 
+}
+
+  .header a{
+    color: rgb(236, 11, 97);
+  }
+  
+  .header--logo {
+    width: 80px;
+    height: 60px;
+    border:rgb(236, 11, 97);
+    border-style: double;
+    grid-area: header--logo;
+    justify-self: start;
+    align-self: end;  
+  }
+
+  .header--logo a:hover{
+    transition: all 0,4s linear ;
+    height: 200px;
+  }
+
+  .header--titulo1{
+    font-style: "italic"; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif, cursive; 
+    text-align: left;
+    font-size: 40px;
+    margin-right: 0%;
+    padding-right: 0%;
+    text-decoration: underline;
+    font-style: "italic"; 
+    font-family: 'Dancing Script', cursive; 
+    color: rgb(236, 11, 97);
+    grid-area: header--titulo1;
+    justify-self: start;
+    align-self: center;
+    animation-duration: 4s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+ 
+  .header--titulo2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif, cursive; 
+    font-size: 32px;
+    margin-left: 0%;
+    grid-area: header--titulo2;
+  }
+
+  .header--titulo3{
+    font-style: "italic"; 
+    font-size: 32px;
+    font-family: 'Dancing Script', cursive; 
+    font-weight: bold;
+    color: grey;
+    grid-area: header--titulo3;
+    animation-duration: 4s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
  }
 
+.header--navigation__listaulmodifier{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content:flex-end ;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.226) ;
+  border-radius: 5px;
+  color: rgb(236, 11, 97);
+  grid-area: header--navigation__listaulmodifier;
+ }
+ 
+ .header--navigation__listaulmodifier hover {
+  background-color: grey ;
+  padding: 0,5rem 1rem;
+  transition: all 0,4s linear ;
+  border-radius: 5px;
+ }
 
+ .header--navigation__listaullanguages{
+  width: 25px;
+  height: 25 px; 
+ }
+
+ .header--navigation__listaulspanish {
+   width: 20px;
+   height: 20px; 
+ }
+/* falta agregar */
+ .header--navigation__listaulcroatia {
+  width: 20px;
+  height: 20px; 
+ }
+
+ .header--navigation__listaulenglish{
+  width: 20px;
+  height: 20px; 
+ }
+
+/*HEADER --> LISTA NAVEGABLE*/
+ .header--section1{
+  padding: 0%;
+  margin: 0%;
+  grid-area: header--section1;
+  justify-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-style: "italic"; 
+  font-family: 'Dancing Script', cursive; 
+  font-weight: bold;
+  color: grey;
+  font-size: 25px;
+}
+
+.header--section1 ul{
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  top: 0;
+}
+
+.header--section1 ul li{
+  display: inline;
+  text-align: center;
+  margin: 0 10px 0 0;
+}
+
+.header--section1 li{
+  display: inline;
+  text-align: center;
+  margin: 0 10px 0 0;
+}
+
+.header--section1 li a {
+  padding: 2px 7px 2px 7px;
+  color: rgb(8, 8, 8);
+  text-decoration: none;
+}
+
+.header--section1 li a:hover{
+  background-color: blue ;
+  padding: 0,5rem 1rem;
+  transition: all 0,4s linear ;
+  border-radius: 5px;
+}
+
+ /*PÁRRAFOS*/
+ p {
+  font-size: 15pt;
+  color: rgb(65, 62, 62);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-weight: bold;
+}
 
 
 

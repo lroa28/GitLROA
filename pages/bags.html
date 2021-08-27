@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bags</title>
+    <title>Bag</title>
     <link href="../styles/styleBags.css" rel="stylesheet" />
     <link href="../css/all.css" rel="stylesheet" />
     <link
@@ -17,31 +17,60 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
-  </head>
-  <body class="body">
-    <!--Body-->
-    <header class="header">
-      <!--Hearder-->
-      <ul class="header--titulo4__ul">
-        <li><a href="../index.html">Volver a la página principal</a></li>
-      </ul>
-      <!--Title= Nombre de mi page-->
-      <h2 class="header--titulo1">_luk_c</h2>
-      <!--Title= Indumentaria-->
-      <h1 class="header--titulo2">Indumentaria</h1>
-      <!--Title= Bags-->
-      <i class="fas fa-shopping-cart"></i>
-      <h2 class="header--titulo3">• Bags •</h2>
+</head>
+  <!--Body-->
+<body class="body">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+<!--Encabezado-->
+  <header class="header">
+    <nav class="navbar navbar-expand-sm">
+      <div class="container-fluid">
       <!--Logo linkeado a la pagina inicial: index.html-->
-      <a href="../index.html">
-        <img class="header--logo" src="../img/LC_LogoRedondo.png" alt="Logo" />
-      </a>
-    </header>
-    <main class="main">
-      <!--Main-->
-    </main>
-    <footer class="footer">
-      <!--Pie de página-->
+      <a class="navbar-brand" href="../index.html">
+      <img class="header--logo" src="../img/LC_LogoRedondo.png" alt="Logo" width="30" height="24"class="d-inline-block align-text-top"/></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+          data-bs-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" 
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <!--Title= Nombre de mi page-->
+              <li class="nav-item">
+                <a class="nav-link active header--titulo1" aria-current="page" href="#">_luk_c</a>
+              </li>
+               <!--Title= Indumentaria-->
+              <li class="nav-item">
+                <a class="nav-link header--titulo2" href="#">Indumentaria</a>
+              </li>
+              <!--Title= Bags-->
+              <li class="nav-item">
+                <a class="nav-link header--titulo3" href="#">• Bag •</a>
+              </li>
+              <!--Link Volver a la página principal-->
+              <li class="nav-item">
+                <a class="nav-link header--titulo4__ul" href="../index.html"=>Volver a la página principal</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+</div>
+</div>
+<!--Main-->
+<main class="main">
+<div class="row">
+<div class="col-md-12">      
+</main>
+
+<!--Pie de página-->
+<div class="row">
+<div class="col-md-12">  
+<footer class="footer">
       <h5 class="footer__titulo1--modifier">
         _luk_c | <i class="fas fa-phone-alt"></i>(+54) 9 1100000000 |
         <i class="fas fa-envelope"></i> lc.luluroa@gmail.com | Güemes 3311 -
@@ -79,6 +108,8 @@
         duplicación , distribución o almacenamiento en cualquier medio.
       </p>
     </footer>
+</div>
+</div>
     <!-- script js idem la ppt de la clase -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -95,5 +126,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
-  </body>
+</div>
+</body>
 </html>

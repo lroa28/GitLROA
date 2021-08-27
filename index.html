@@ -12,43 +12,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
-    
 </head>
-<body>                                       
-<header class="header--GRID"> <!--Encabezado-->
+<body>    
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+  <!--Encabezado-->
+  <header class="header--GRID">      
     <a href="index.html#section5__caja">
     <img class="header--logo" src="./img/LC_LogoRedondo.png" alt="Logo"> 
     </a>
     <h2 class="header--titulo1">_luk_c</h2> <!--Title= Nombre de mi page-->
     <h1 class="header--titulo2">Indumentaria</h1> <!--Title= Indumentaria-->
     <h2 class="header--titulo3">By • Lulú Roa • </h2> <!--Title= Mi nombre-->
-        <nav class="header--navigation"> <!--Botones de navegación del header, están linkedos a donde corresponde-->
-             <ul class="header--navigation__listaulmodifier"> 
+        <nav class="header--navigation navbar navbar-expand-sm"> <!--Botones de navegación del header-->
+         <div class="container-fluid">
+            <ul class="header--navigation__listaulmodifier"> 
                 <li><a href="./pages/buscar.html"> <i class="fas fa-search"></i></a></li>
                 <li><a href="https://www.google.com/maps/place/Recoleta,+CABA/@-34.5847911,-58.4138525,14z/data=!3m1!4b1!4m5!3m4!1s0x95bcca99c609fc2f:0x392ca99351808a75!8m2!3d-34.5873825!4d-58.3972762"><i class="fas fa-map-marker-alt"></i></a></li>
-                <li><img class="header--navigation__listaullanguages" src="./img/planet.png">=<img class="header--navigation__listaulspanish" src="./img/spanish.png"> <img class="header--navigation__listaulenglish" src="./img/england.png"></li>
+                <li><img class="header--navigation__listaullanguages" src="./img/planet.png">=<img class="header--navigation__listaulspanish" src="./img/spanish.png"> <img class="header--navigation__listaulenglish" src="./img/england.png"> <img class="header--navigation__listaulcroatia" src="./img/croatia.png"> </li>
                 <li><a href="./pages/contact.html"><i class="fas fa-envelope"></i></a></li>
                 <li><a href="./pages/bags.html"><i class="fas fa-shopping-cart"></i></a></li>
                 <li><a href="./pages/login.html"><i class="fas fa-user"></i></a></li>
             </ul>
+         </div> 
         </nav>
-
-        <section class="header--section1"> <!--Section Lista navegable en el Header-->
-            <ul> 
-               <li><a href="#section5">Who I am?</a></li>
-               <li><a href="./pages/products.html">Products</a></li>
-               <li><a href="./pages/sales.html">Sales</a></li>
-               <li><a href="./pages/courses.html">Courses</a></li>
-               <li><a href="./pages/news.html">News</a></li>
-               <li><a href="./pages/helping.html">Helping Others!</a></li>
-           </ul>
-        </section>
 </header> 
+</div> 
+</div>          
+
+<!-- MAIN -->
 <main class="main__grid">
-    <!--Contenedor-->    
-    </section class="section2"> <!--Section Season Items-->
+<!-- <div class="row">
+<div class="col-md-12 hidden-sx-down">
+  <div>
+    <ul class="mainlista--div1 flex-row"> 
+       <li><a href="#section5">Who I am?</a></li>
+       <li><a href="./pages/products.html">Products</a></li>
+       <li><a href="./pages/outlet.html">Outlet</a></li>
+       <li><a href="./pages/news.html">News</a></li>
+       <li><a href="./pages/helping.html">Helping Others!</a></li>
+       <li> 
+         <div class="dropdown">
+         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Courses </button>
+           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+             <a class="dropdown-item" href="#">Moldería básica</a>
+             <a class="dropdown-item" href="#">Tejido</a>
+             <a class="dropdown-item" href="#">Uso de máquinas</a>
+           </div>
+         </div>
+       </li>
+    </ul>
+</div>
+</div> 
+</div> -->
+
+<!--Section Season Items-->
+<div class="row">
+<div class="col-md-12">
+    </section class="section2"> 
         <fieldset class="section2__caja">
-            <div class="d-flex-column justify-content-strech align-items-center">
+            <div class="d-flex-column justify-content-strech align-items-end">
                 <legend><h1><b>Seanson Items</b></h1></legend>
                 <a class="section2__caja--buttonmod1 btn btn-link btn-ligth w-40" href="pages/products.html" role="button">Winter</a>
                 <a class="section2__caja--buttonmod2 btn btn-link btn-ligth w-40" href="pages/products.html" role="button">Summer</a>
@@ -65,11 +90,15 @@
                   <a class="dropdown-item" href="#">2019</a>
                 </div>
               </div>
-
         </fieldset>
     </section>
-    
-    <section class="section3"> <!--Section Most Viewed-->
+</div>
+</div>
+
+<!--Section Most Viewed-->
+<div class="row">
+<div class="col-md-12">
+<section class="section3"> 
         <fieldset class="section3__caja">
         <legend><h1><b>Most Viewed</b></h1></legend>
             <div id="carouselExampleControls" class="carousel slide col-md-7 container" data-ride="carousel">
@@ -95,19 +124,36 @@
             </div>
         </fieldset>
     </section>        
-    
-    <section class="section5"> <!--Section Presentation of page-->
+</div>
+</div>
+
+<!--Section Presentation of page-->
+<div class="row">
+<div class="col-md-12 hidden-md-down">
+    <section class="section5"> 
         <fieldset class="section5__caja">
-            <legend><h1><b><i>Presentation</b></i></h1></legend>
-            <p class="lead section5__caja--pmod">Since I was little my grandmother taught me to sew, I studied systems but design always accompanied me. Today I can make the clothes you want to suit your size and color: T-shirts, Pants, Jumpsuits, Scarves, Shirts, Knitted Collars, Bracelets and Jackets, the Boca or River set (there is no "crack" in this place) and your set Croatian.
+            <legend><h1 class="text-warning"><b><i>Presentation</b></i></h1></legend>
+            <p class="lead section5__caja--pmod text-red">Since I was little my grandmother taught me to sew, I studied systems but design always accompanied me. Today I can make the clothes you want to suit your size and color: T-shirts, Pants, Jumpsuits, Scarves, Shirts, Knitted Collars, Bracelets and Jackets, the Boca or River set (there is no "crack" in this place) and your set Croatian.
                 Also, you can take your own mold (s).
                 My wish for the future is to be able to open workshops to teach women who want a better future and allow them to be independent.</p>
-            <p class="lead">You can watch a small presentation video:</p> <i class="fab fa-youtube" style="color: red;" ></i>
-            <video class="section5__caja--videomod" src="" autoplay poster=""> Tu navegador no admite el elemento <code>video</code> </video>
+            <br>
+            <br>
+            <div>
+                <iframe class="section5__caja--videomod" src="./videos/PresentacionlukC.mp4 " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
+                <!--NO FUNCIONA EL LINK DEL MISMO VIDEO DESDE YOUTUBE
+                <iframe class="section5__caja--videomod" src="https://www.youtube.com/watch?v=WEKCTZ3y0O0&ab_channel=LucreciaRoa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
+                -->
+            </div>
         </fieldset>
     </section>
+</div>
+</div>
+
+<!-- Section Helping of my page-->
+<div class="row">
+<div class="col-md-12">
 <div class="div_section6y7">
-    <section class="section6"> <!-- Section Helping of my page-->
+    <section class="section6"> 
         <fieldset class="section6__caja">
             <legend><h1><b>Helping</b></h1></legend>
             <h2><i class="fab fa-whatsapp"></i> WhatsApp for help: +54 9 1100000000</h2> 
@@ -116,7 +162,8 @@
         </fieldset>
     </section>
 
-    <section class="section7"> <!-- Section Social media-->
+    <!-- Section Social media-->
+    <section class="section7"> 
         <fieldset class="section7__caja1">
             <legend><h1><b>Social Media</b></h1></legend>
             <p class="lead">You can find here the links to our networks:</p> 
@@ -130,8 +177,13 @@
         </fieldset>
     </section>
 </div>
+</div>
+</div>
 
-    <section class="section4"> <!--Section Offer-->
+<!--Section Offer-->
+<div class="row">
+<div class="col-md-12">
+<section class="section4"> 
         <fieldset class="section4__caja">
             <legend><h1><b>Offer</b></h1></legend>
             <h3>Subscribe to our newsletter and take advantage of a 10% discount on your next online purchase!</h3>
@@ -152,10 +204,15 @@
         <br>
         </fieldset>
     </section>
-
+</div>
+</div>
 </main>
 
-<footer class="footer"> <!--Pie de página-->
+<!--Footer-->
+
+<div class="row">
+<div class="col-md-12">
+  <footer class="footer"> 
     <h5 class="footer__titulo1--modifier"> _luk_c | <i class="fas fa-phone-alt"></i>(+54) 9 1100000000 | <i class="fas fa-envelope"></i> lc.luluroa@gmail.com | Güemes 3311 - Recoleta <img class="footer_imgArg" src="./img/argentina.svg"> Argentina</h5>
     <ul class="footer__titulo2--modifier"> <!-- Links otros sitios webs de ayuda a los usuarios que visitan la página-->
         <li><a href="https://www.argentina.gob.ar/aaip/datospersonales/reclama" style="color:black">Registro Nacional de Base de Datos •</a></li>  
@@ -163,7 +220,6 @@
         <li><a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario" style="color:black">Defensa de las y los consumidores. Para reclamos ingrese "aquí"</a></li> 
         <!--<li><a href="https://www.boletinoficial.gob.ar/detalleAviso/primera/179914/20180309" style="color:black">Agencia de Acceso a la Información Pública</a></li>-->
     </ul>
-    
 <!-- Button to Open the Modal -->
 <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal">
     "Open mesagge"
@@ -182,7 +238,10 @@
   </div>
     <br>
     <p class="lead footer__p--modifier">© Copyright 2021 _luk_c . Todos los derechos reservados. Prohibida la duplicación , distribución o almacenamiento en cualquier medio.</p>
-</footer>   
+  </footer> 
+</div>
+</div>
+  
 <!-- Script a la pagina AOS (para hacer rotar las imganes)-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
@@ -203,5 +262,7 @@
       $('[data-toggle="popover"]').popover();
     });
     </script>
+    </div>
+</div>
 </body>
 </html>   <!-- Fin de la página web--> 

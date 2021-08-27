@@ -9,8 +9,6 @@
 
   /*HEADER*/
   .header {
-  background-image: url("../img/watercolor.png");
-  font-size: 15pt;
   padding: 0% ;
   margin: 0%;
   top:0%;
@@ -24,6 +22,8 @@
   align-items: center;
   list-style-type: none;
   gap: 5px;
+  background-image: url("../img/watercolor.png");
+  font-size: 15pt;
   
  }
   

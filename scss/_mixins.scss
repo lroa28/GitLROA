@@ -1,0 +1,44 @@
+// OPERACIONES
+.poperaciones {
+  font-size: 10pt +  $pgral; 
+   }
+
+// CONDICIONALES
+.h5operaciones {
+  @if $h5gral == 1.25rem {
+    color:  rgb(37, 35, 35);
+  }
+    @else if $h5gral == 1rem {
+      color: whitesmoke;
+   }
+    @else {
+       color: white;
+    }
+}
+
+// BUCLE FOR
+  @for $i from 1 to 4 {
+    .br-#{$i} {
+      border-radius: $i * 1 rem; 
+    } 
+  }
+
+  @for $i from 1 to 4 {
+    .bs-#{$i} {
+      box-shadow: $i * 1 rem; 
+    } 
+  }
+
+//EXTEND
+.resaltar1 :hover{
+ background-color: chartreuse;
+ transition: all 0,4s linear;
+ cursor: pointer;
+}
+
+.resaltar2 {
+  @extend .resaltar1;
+  height: 100px;
+  width: 100px;
+}
+

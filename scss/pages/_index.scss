@@ -2,7 +2,7 @@
 body {
   margin: 0%;
   padding: 0%;
-  background-color: whitesmoke;
+  background-color: white;
   display: flex;
   flex-direction: column;
 }
@@ -10,7 +10,7 @@ body {
  /*PÁRRAFOS*/
  p {
   font-size: 15pt;
-  color: rgb(65, 62, 62);
+  color: rgb(37, 35, 35);
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   font-weight: bold;
@@ -35,7 +35,6 @@ body {
   "div_section6y7"
   "section4"
   "footer";
-
  }
  
 /* MAIN LISTA */
@@ -121,7 +120,7 @@ body {
 .section2__caja--buttonmod1 {
   width: 200px;
   height: 200px;
-  color: blue;
+  color: whitesmoke;
   font-weight: bold;
   font-size: 24px;
   transition: height 4s, width 1s;
@@ -171,7 +170,7 @@ body {
 .section2__caja--buttonmod3 {
   width: 200px;
   height: 200px;
-  color: aliceblue;
+  color: rgb(252, 4, 4);
   font-weight: bold;
   font-size: 24px;
   background-image: url("../img/clothes.png"); 
@@ -192,7 +191,7 @@ body {
 .section2__caja--buttonmod4 {
   width: 200px;
   height: 200px;
-  color: rgb(110, 168, 52);
+  color: rgb(155, 56, 155);
   transition: height 4s, width 1s;
   font-size: 24px;
   font-weight: bold;

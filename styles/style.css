@@ -1,4 +1,44 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+.poperaciones {
+  font-size: 25pt; }
+
+.h5operaciones {
+  color: #252323; }
+
+.br-1 {
+  border-radius: 1 rem; }
+
+.br-2 {
+  border-radius: 2 rem; }
+
+.br-3 {
+  border-radius: 3 rem; }
+
+.bs-1 {
+  box-shadow: 1 rem; }
+
+.bs-2 {
+  box-shadow: 2 rem; }
+
+.bs-3 {
+  box-shadow: 3 rem; }
+
+.resaltar1 :hover, .resaltar2 :hover {
+  background-color: chartreuse;
+  transition: all 0,4s linear;
+  cursor: pointer; }
+
+.resaltar2 {
+  height: 100px;
+  width: 100px; }
+
 /*HEADER*/
 .header--GRID {
   background-image: url("../img/watercolor.png");
@@ -15,8 +55,8 @@
   align-items: center;
   display: grid;
   grid-template-columns: repeat(5, auto);
-  grid-template-rows: auto auto;
-  grid-template-areas: "header--logo header--titulo1 header--titulo2 header--titulo3 header--navigation__listaulmodifier" "header--div1 header--div1 header--div1 header--div1 header--div1";
+  grid-template-rows: auto;
+  grid-template-areas: "header--logo header--titulo1 header--titulo2 header--titulo3 header--navigation__listaulmodifier";
   grid-column-gap: 3px;
   grid-row-gap: 3px;
   z-index: 2; }
@@ -99,7 +139,7 @@
     border-radius: 5px; }
   .header--GRID .header--navigation__listaullanguages {
     width: 25px;
-    height: 25 px; }
+    height: 25px; }
   .header--GRID .header--navigation__listaulspanish {
     width: 20px;
     height: 20px; }
@@ -108,47 +148,7 @@
     height: 20px; }
   .header--GRID .header--navigation__listaulcroatia {
     width: 20px;
-    height: 16px; }
-
-/*HEADER --> LISTA EN EL HEADER*/
-.header--div1 {
-  padding: 0%;
-  margin: 0%;
-  grid-area: header--div1;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-items: stretch;
-  justify-content: center;
-  font-style: "italic";
-  font-family: 'Dancing Script', cursive;
-  font-weight: bold;
-  color: grey;
-  font-size: 25px; }
-  .header--div1 .header--div1 ul {
-    list-style-type: none;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    left: 0;
-    top: 0; }
-  .header--div1 .header--div1 ul li {
-    display: inline;
-    text-align: center;
-    margin: 0 10px 0 0; }
-  .header--div1 .header--div1 li {
-    display: inline;
-    text-align: center;
-    margin: 0 10px 0 0; }
-  .header--div1 .header--div1 li a {
-    padding: 2px 7px 2px 7px;
-    color: #080808;
-    text-decoration: none; }
-  .header--div1 .header--div1 li a:hover {
-    background-color: blue;
-    padding: 0,5rem 1rem;
-    transition: all 0,4s linear;
-    border-radius: 5px; }
+    height: 20px; }
 
 /*FOOTER*/
 .footer {
@@ -224,25 +224,18 @@
   flex-direction: row;
   border-radius: 5px; }
 
-* {
-  margin: 0;
-  padding: 0; }
-
-html {
-  font-size: 62.5%; }
-
 /*BODY*/
 body {
   margin: 0%;
   padding: 0%;
-  background-color: whitesmoke;
+  background-color: white;
   display: flex;
   flex-direction: column; }
 
 /*PÁRRAFOS*/
 p {
   font-size: 15pt;
-  color: #413e3e;
+  color: #252323;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   font-weight: bold; }
@@ -257,8 +250,49 @@ p {
   flex-direction: column;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(6, auto);
-  grid-template-areas: "section2" "section5" "section3" "div_section6y7" "section4" "footer"; }
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas: "mainlista--div1" "section2" "section5" "section3" "div_section6y7" "section4" "footer"; }
+
+/* MAIN LISTA */
+.mainlista--div1 {
+  grid-area: mainlista--div1;
+  padding: 0%;
+  margin: 0%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: stretch;
+  justify-content: center;
+  list-style-type: none;
+  font-style: "italic";
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  color: grey;
+  font-size: 25px; }
+  .mainlista--div1 .mainlista--div1 ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 0; }
+  .mainlista--div1 .mainlista--div1 ul li {
+    display: inline;
+    text-align: center;
+    margin: 0 10px 0 0; }
+  .mainlista--div1 .mainlista--div1 li {
+    display: inline;
+    text-align: center;
+    margin: 0 10px 0 0; }
+  .mainlista--div1 .mainlista--div1 li a {
+    padding: 2px 7px 2px 7px;
+    color: #080808;
+    text-decoration: none; }
+  .mainlista--div1 .mainlista--div1 li a:hover {
+    background-color: blue;
+    padding: 0,5rem 1rem;
+    transition: all 0,4s linear;
+    border-radius: 5px; }
 
 /*MAIN_ SECTION2 SEANSON ITEMS (BUTTONS)*/
 .section2 {
@@ -288,7 +322,7 @@ p {
 .section2__caja--buttonmod1 {
   width: 200px;
   height: 200px;
-  color: blue;
+  color: whitesmoke;
   font-weight: bold;
   font-size: 24px;
   transition: height 4s, width 1s;
@@ -334,7 +368,7 @@ p {
 .section2__caja--buttonmod3 {
   width: 200px;
   height: 200px;
-  color: aliceblue;
+  color: #fc0404;
   font-weight: bold;
   font-size: 24px;
   background-image: url("../img/clothes.png");
@@ -355,7 +389,7 @@ p {
 .section2__caja--buttonmod4 {
   width: 200px;
   height: 200px;
-  color: #6ea834;
+  color: #9b389b;
   transition: height 4s, width 1s;
   font-size: 24px;
   font-weight: bold;
@@ -474,8 +508,8 @@ p {
     text-align: center; }
   .section5 .section5__caja--videomod {
     position: relative;
-    width: 150%;
-    height: 250%;
+    width: 100%;
+    height: 150%;
     overflow: hidden;
     z-index: 0;
     outline: 0;

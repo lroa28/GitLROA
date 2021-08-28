@@ -16,7 +16,7 @@
   grid-template-columns: repeat(5, auto);
   grid-template-rows: auto;
   grid-template-areas: 
-  "header--logo header--titulo1 header--titulo2 header--titulo3 header--navigation__listaulmodifier"
+  "header--logo header--titulo1 header--titulo2 header--titulo3 header--navigation__listaulmodifier";
   grid-column-gap: 3px;
   grid-row-gap: 3px;
   z-index: 2; 
@@ -122,7 +122,7 @@ border-radius: 5px;
 
 .header--navigation__listaullanguages{
 width: 25px;
-height: 25 px; 
+height: 25px; 
 }
 
 .header--navigation__listaulspanish {
@@ -135,9 +135,10 @@ width: 20px;
 height: 20px; 
 }
 
-.header--navigation__listaulcroatia {
+.header--navigation__listaulcroatia{
 width: 20px;
-height: 16px; 
+height: 20px; 
 }
+
 }
 

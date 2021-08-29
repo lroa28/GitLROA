@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en|es">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,145 +16,43 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
+    <!-- link a css viejo-->
     <link href="../styles/styleOutlet.css" rel="stylesheet" />
+    <link href="./styles/style.css" rel="stylesheet" />
+    <!-- link a nuevos archivos scss-->
+    <link rel="stylesheet" href="../scss/componentes/_footer.scss" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://raw.github.com/daneden/animate.css/master/animate.css"
     />
-  </head>
-  <body>
-    <header class="header--GRID">
-      <!--Encabezado-->
-      <a href="index.html#section5__caja">
-        <img class="header--logo" src="./img/LC_LogoRedondo.png" alt="Logo" />
-      </a>
-      <h2 class="header--titulo1">_luk_c</h2>
-      <!--Title= Nombre de mi page-->
-      <h1 class="header--titulo2">Indumentaria</h1>
-      <!--Title= Indumentaria-->
-      <h2 class="header--titulo3">By • Lulú Roa •</h2>
-      <!--Title= Mi nombre-->
-      <nav class="header--navigation">
-        <!--Botones de navegación del header, están linkedos a donde corresponde-->
-        <ul class="header--navigation__listaulmodifier">
-          <li>
-            <a href="./pages/buscar.html"> <i class="fas fa-search"></i></a>
-          </li>
-          <li>
-            <a
-              href="https://www.google.com/maps/place/Recoleta,+CABA/@-34.5847911,-58.4138525,14z/data=!3m1!4b1!4m5!3m4!1s0x95bcca99c609fc2f:0x392ca99351808a75!8m2!3d-34.5873825!4d-58.3972762"
-              ><i class="fas fa-map-marker-alt"></i
-            ></a>
-          </li>
-          <li>
-            <img
-              class="header--navigation__listaullanguages"
-              src="./img/planet.png"
-            />=<img
-              class="header--navigation__listaulspanish"
-              src="./img/spanish.png"
-            />
-            <img
-              class="header--navigation__listaulenglish"
-              src="./img/england.png"
-            />
-          </li>
-          <li>
-            <a href="./pages/contact.html"><i class="fas fa-envelope"></i></a>
-          </li>
-          <li>
-            <a href="./pages/bags.html"><i class="fas fa-shopping-cart"></i></a>
-          </li>
-          <li>
-            <a href="./pages/login.html"><i class="fas fa-user"></i></a>
-          </li>
-        </ul>
-      </nav>
-
-      <section class="header--section1">
-        <!--Section Lista navegable en el Header-->
-        <ul>
-          <li><a href="#section5">Who I am?</a></li>
-          <li><a href="./pages/products.html">Products</a></li>
-          <li><a href="./pages/sales.html">Sales</a></li>
-          <li><a href="./pages/courses.html">Courses</a></li>
-          <li><a href="./pages/news.html">News</a></li>
-          <li><a href="./pages/helping.html">Helping Others!</a></li>
-        </ul>
-      </section>
-    </header>
-
-    <body></body>
-
-    <main></main>
-
-    <footer class="footer">
-      <!--Pie de página-->
-      <h5 class="footer__titulo1--modifier">
-        _luk_c | <i class="fas fa-phone-alt"></i>(+54) 9 1100000000 |
-        <i class="fas fa-envelope"></i> lc.luluroa@gmail.com | Güemes 3311 -
-        Recoleta
-        <img class="footer_imgArg" src="./img/argentina.svg" /> Argentina
-      </h5>
-      <ul class="footer__titulo2--modifier">
-        <!-- Links otros sitios webs de ayuda a los usuarios que visitan la página-->
-        <li>
-          <a
-            href="https://www.argentina.gob.ar/aaip/datospersonales/reclama"
-            style="color: black"
-            >Registro Nacional de Base de Datos •</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.argentina.gob.ar/produccion/defensadelconsumidor"
-            style="color: black"
-            >Defensa del Consumidor •</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario"
-            style="color: black"
-            >Defensa de las y los consumidores. Para reclamos ingrese "aquí"</a
-          >
-        </li>
-        <!--<li><a href="https://www.boletinoficial.gob.ar/detalleAviso/primera/179914/20180309" style="color:black">Agencia de Acceso a la Información Pública</a></li>-->
-      </ul>
-      <br />
-      <p class="lead footer__p--modifier">
-        © Copyright 2021 _luk_c . Todos los derechos reservados. Prohibida la
-        duplicación , distribución o almacenamiento en cualquier medio.
-      </p>
-    </footer>
-    <!-- Script a la pagina AOS (para hacer rotar las imganes)-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
+</head>
+<body>
+  
+  Outlet
+    
+  <!-- Script a la pagina AOS (para hacer rotar las imganes)-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
       AOS.init();
-    </script>
-    <!-- Script de animación WOW-->
-    <script src="js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
-    <!-- script js idem la ppt de la clase -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
+  </script>
+  <!-- Script de animación WOW-->
+  <script src="js/wow.min.js"></script>
+  <script>
+     new WOW().init();
+  </script>
+  <!-- script js idem la ppt de la clase -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <!-- script para Popover -->
+  <script>
+      $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+      });
+      </script>
+      </div>
+  </div>
   </body>
-</html>
-<!-- Fin de la página web-->
+  </html>   <!-- Fin de la página web--> 

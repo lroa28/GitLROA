@@ -19,153 +19,195 @@
     />
   </head>
   <body class="body">
-    <header class="header">
-      <!--Header-->
-      <ul class="header--titulo4__ul">
-        <li>
-          <a href="../index.html">Volver a la página principal</a>
-        </li>
-      </ul>
-      <h2 class="header--titulo1">_luk_c</h2>
-      <!--Title= Nombre de mi page-->
-      <h1 class="header--titulo2">Indumentaria</h1>
-      <!--Title= Indumentaria-->
-      <i class="fas fa-tshirt"></i>
-      <h2 class="header--titulo3">• Products •</h2>
-      <a href="../index.html">
-        <img class="header--logo" src="../img/LC_LogoRedondo.png" alt="Logo" />
-      </a>
-    </header>
-    <!--Fin de Header-->
-    <main class="main">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <!--Header-->
+          <header class="header">
+            <ul class="header--titulo4__ul">
+              <li>
+                <a href="../index.html">Volver a la página principal</a>
+              </li>
+            </ul>
+            <h2 class="header--titulo1">_luk_c</h2>
+            <!--Title= Nombre de mi page-->
+            <h1 class="header--titulo2">Indumentaria</h1>
+            <!--Title= Indumentaria-->
+            <i class="fas fa-tshirt"></i>
+            <h2 class="header--titulo3">• Products •</h2>
+            <a href="../index.html">
+              <img
+                class="header--logo"
+                src="../img/LC_LogoRedondo.png"
+                alt="Logo"
+              />
+            </a>
+          </header>
+        </div>
+      </div>
+      <!--Fin de Header-->
       <!--Main-->
-      <form class="main__formbusq" action="" method="post" target="_blank">
-        <!--Barra de búsqueda de prendas en el header-->
-        <p class="main--formbusq__p">
-          Búsqueda de prendas:
-          <input
-            type="search"
-            name="busquedaprendas"
-            placeholder="Remera, pantalón, cuellos..."
-          />
-          <input type="submit" value="Search" />
-        </p>
-      </form>
+      <div class="row">
+        <div class="col-md-12">
+          <main class="main">
+            <form
+              class="main__formbusq"
+              action=""
+              method="post"
+              target="_blank"
+            >
+              <!--Barra de búsqueda de prendas en el header-->
+              <p class="main--formbusq__p">
+                Búsqueda de prendas:
+                <input
+                  type="search"
+                  name="busquedaprendas"
+                  placeholder="Remera, pantalón, cuellos..."
+                />
+                <input type="submit" value="Search" />
+              </p>
+            </form>
 
-      <div class="dropdown">
-        <button
-          type="button"
-          class="btn btn-link dropdown-toggle btn-lg"
-          data-toggle="dropdown"
-        >
-          Select Year!
-        </button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">2021</a>
-          <a class="dropdown-item" href="#">2020</a>
-          <a class="dropdown-item" href="#">2019</a>
+            <div class="dropdown">
+              <button
+                type="button"
+                class="btn btn-link dropdown-toggle btn-lg"
+                data-toggle="dropdown"
+              >
+                Select Year!
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">2021</a>
+                <a class="dropdown-item" href="#">2020</a>
+                <a class="dropdown-item" href="#">2019</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <button
+                type="button"
+                class="btn btn-link dropdown-toggle btn-lg"
+                data-toggle="dropdown"
+              >
+                Select Season!
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Winter</a>
+                <a class="dropdown-item" href="#">Summer</a>
+                <div class="dropdown-item" href="#">Sets</div>
+                <div class="dropdown-item" href="#">Molds</div>
+              </div>
+            </div>
+
+            <h2 class="main__titulo">Table Products</h2>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Nro Product</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Information</th>
+                  <th scope="col">Benefics</th>
+                  <th scope="col">Photo(s)</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">0</th>
+                  <td>Cuellito tejido con corderito interno</td>
+                  <td>
+                    <ul>
+                      <li>Lana 100%</li>
+                      <li>Hecho a mano</li>
+                      <li>Corderito interno</li>
+                      <li>Se convierte en gorro</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ol>
+                      <li>Posible lavar en lavarropas</li>
+                      <li>Apto para alergicos a la lana</li>
+                      <li>Más comodo y práctico que una bufanda</li>
+                    </ol>
+                  </td>
+                  <td><img src="#" alt="IMG1" /></td>
+                  <td>$750</td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Pulsera macramé</td>
+                  <td>Hilo macramé</td>
+                  <td>Podes ducharte con ella</td>
+                  <td><img src="#" alt="IMG2" /></td>
+                  <td>$100 - $300</td>
+                </tr>
+              </tbody>
+            </table>
+          </main>
+        </div>
+      </div>
+      <!--Fin Main-->
+      <!--Pie de página-->
+      <div class="row">
+        <div class="col-md-12">
+          <footer class="footer">
+            <h5 class="footer__titulo1--modifier">
+              _luk_c | <i class="fas fa-phone-alt"></i>(+54) 9 1100000000 |
+              <i class="fas fa-envelope"></i> lc.luluroa@gmail.com | Güemes 3311
+              - Recoleta
+              <img class="footer_imgArg" src="../img/argentina.svg" /> Argentina
+            </h5>
+            <ul class="footer__titulo2--modifier">
+              <!-- Links otros sitios webs de ayuda a los usuarios que visitan la página-->
+              <li>
+                <a
+                  href="https://www.argentina.gob.ar/aaip/datospersonales/reclama"
+                  style="color: black"
+                  >Registro Nacional de Base de Datos •</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.argentina.gob.ar/produccion/defensadelconsumidor"
+                  style="color: black"
+                  >Defensa del Consumidor •</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario"
+                  style="color: black"
+                  >Defensa de las y los consumidores. Para reclamos ingrese
+                  "aquí"</a
+                >
+              </li>
+              <!--<li><a href="https://www.boletinoficial.gob.ar/detalleAviso/primera/179914/20180309" style="color:black">Agencia de Acceso a la Información Pública</a></li>-->
+            </ul>
+            <br />
+            <p class="footer__p--modifier">
+              © Copyright 2021 _luk_c . Todos los derechos reservados. Prohibida
+              la duplicación , distribución o almacenamiento en cualquier medio.
+            </p>
+          </footer>
         </div>
       </div>
 
-      <h2 class="main__titulo">Table Products</h2>
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Nro Product</th>
-            <th scope="col">Name</th>
-            <th scope="col">Information</th>
-            <th scope="col">Benefics</th>
-            <th scope="col">Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">0</th>
-            <td>Cuellito tejido con corderito interno</td>
-            <td>
-              <ul>
-                <li>Lana 100%</li>
-                <li>Hecho a mano</li>
-                <li>Corderito interno</li>
-                <li>Se convierte en gorro</li>
-              </ul>
-            </td>
-            <td>
-              <ol>
-                <li>Posible lavar en lavarropas</li>
-                <li>Apto para alergicos a la lana</li>
-                <li>Más comodo y práctico que una bufanda</li>
-              </ol>
-            </td>
-            <td>$750</td>
-          </tr>
-          <tr>
-            <th scope="row">1</th>
-            <td>Pulsera macramé</td>
-            <td>Hilo macramé</td>
-            <td>Podes ducharte con ella</td>
-            <td>$100 - $300</td>
-          </tr>
-        </tbody>
-      </table>
-    </main>
-    <!--Fin Main-->
-    <footer class="footer">
-      <!--Footer-->
-      <h5 class="footer__titulo1--modifier">
-        _luk_c | <i class="fas fa-phone-alt"></i>(+54) 9 1100000000 |
-        <i class="fas fa-envelope"></i> lc.luluroa@gmail.com | Güemes 3311 -
-        Recoleta
-        <img class="footer_imgArg" src="../img/argentina.svg" /> Argentina
-      </h5>
-      <ul class="footer__titulo2--modifier">
-        <!-- Links otros sitios webs de ayuda a los usuarios que visitan la página-->
-        <li>
-          <a
-            href="https://www.argentina.gob.ar/aaip/datospersonales/reclama"
-            style="color: black"
-            >Registro Nacional de Base de Datos •</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.argentina.gob.ar/produccion/defensadelconsumidor"
-            style="color: black"
-            >Defensa del Consumidor •</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario"
-            style="color: black"
-            >Defensa de las y los consumidores. Para reclamos ingrese "aquí"</a
-          >
-        </li>
-        <!--<li><a href="https://www.boletinoficial.gob.ar/detalleAviso/primera/179914/20180309" style="color:black">Agencia de Acceso a la Información Pública</a></li>-->
-      </ul>
-      <br />
-      <p class="footer__p--modifier">
-        © Copyright 2021 _luk_c . Todos los derechos reservados. Prohibida la
-        duplicación , distribución o almacenamiento en cualquier medio.
-      </p>
-    </footer>
-    <!--Fin de Footer-->
-
-    <!-- script js idem la ppt de la clase -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
+      <!-- script js idem la ppt de la clase -->
+      <script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"
+      ></script>
+    </div>
   </body>
 </html>

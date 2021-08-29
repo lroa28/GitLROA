@@ -51,10 +51,9 @@ body {
   font-style: "italic"; 
   font-family: 'Dancing Script', cursive; 
   font-weight: bold;
-  color: grey;
   font-size: 25px;
 
-   .mainlista--div1 ul{
+   & ul{
     list-style-type: none;
     text-align: center;
     padding: 0;
@@ -63,25 +62,25 @@ body {
     top: 0;
   }
   
-  .mainlista--div1 ul li{
+   & ul li{
     display: inline;
     text-align: center;
     margin: 0 10px 0 0;
   }
   
-  .mainlista--div1 li{
+   & li{
     display: inline;
     text-align: center;
     margin: 0 10px 0 0;
   }
   
-  .mainlista--div1 li a {
+    & li a {
     padding: 2px 7px 2px 7px;
     color: rgb(8, 8, 8);
     text-decoration: none;
-  }
+   }
   
-  .mainlista--div1 li a:hover{
+   & li a:hover{
     background-color: blue ;
     padding: 0,5rem 1rem;
     transition: all 0,4s linear ;
@@ -93,9 +92,9 @@ body {
  /*MAIN_ SECTION2 SEANSON ITEMS (BUTTONS)*/
 .section2{
  grid-area: section2;
- }
 
- .section2__caja{
+
+  &__caja{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -115,9 +114,9 @@ body {
   background-size: cover;
   background-position-x: center;
   background-position-y: top;
-  }
 
-.section2__caja--buttonmod1 {
+
+  &--buttonmod1 {
   width: 200px;
   height: 200px;
   color: whitesmoke;
@@ -134,7 +133,7 @@ body {
   /* transform: skewY(15deg); */
   
 }
-.section2__caja--buttonmod1 hover{
+  &--buttonmod1 hover{
   height: 300px; width: 300px;
   color: chartreuse ;
   padding: 0,5rem 1rem;
@@ -144,7 +143,7 @@ body {
 
 }
 
-.section2__caja--buttonmod2 {
+  &--buttonmod2 {
   width: 200px;
   height: 200px;
   color: coral;
@@ -159,7 +158,7 @@ body {
   
   
 }
-.section2__caja--buttonmod2 hover{
+  &--buttonmod2 hover{
   height: 200px; width: 200px;
   padding: 0,5rem 1rem;
   transition: all 0,4s linear ;
@@ -167,7 +166,7 @@ body {
   cursor: pointer;
 }
 
-.section2__caja--buttonmod3 {
+  &--buttonmod3 {
   width: 200px;
   height: 200px;
   color: rgb(252, 4, 4);
@@ -180,7 +179,7 @@ body {
   background-position-y: center;
   border-style: dotted;
 }
-.section2__caja--buttonmod3 hover{
+  &--buttonmod3 hover{
   height: 200px; width: 200px;
   padding: 0,5rem 1rem;
   transition: all 0,4s linear ;
@@ -188,7 +187,7 @@ body {
   cursor: pointer;
 }
 
-.section2__caja--buttonmod4 {
+  &--buttonmod4 {
   width: 200px;
   height: 200px;
   color: rgb(155, 56, 155);
@@ -203,21 +202,23 @@ body {
   border-style: dotted;
   
 }
-.section2__caja--buttonmod4 hover{
+  &--buttonmod4 hover{
   height: 200px; width: 200px;
   padding: 0,5rem 1rem;
   transition: all 0,4s linear ;
   transform: skewY(25deg);
   cursor: pointer;
 }
+}
+}
 
 /*MAIN_ SECTION3 MOST VIEWED*/
 .section3 {
  grid-area: section3;
  overflow: hidden;
-}  
+  
 
-.section3__caja{
+  &__caja{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -233,9 +234,9 @@ body {
   padding-bottom: 10rem;
   margin: 0% 0% 0% 0%;
   background: linear-gradient(to right, red,blue );
-}
 
- .section3__caja--img1{
+
+  &--img1{
   height: 300px;
   width: 300px;
   order: 2;
@@ -243,7 +244,7 @@ body {
   border-color: black;
 }
 
- .section3__caja--img2{
+  &--img2{
   height: 300px;
   width: 300px;
   order: 1;
@@ -251,7 +252,7 @@ body {
   border-color: black;
 }
 
-.section3__caja--img3{
+  &--img3{
   height: 300px;
   width: 300px;
   order: 0;
@@ -259,21 +260,23 @@ body {
   border-color: black;
 }
 
-.section3__caja--img4{
+  &--img4{
   height: 300px;
   width: 300px;
   order: 3;
   border-style:solid;
   border-color: black;
 }
+}
+}
 
 /*MAIN_ SECTION4 OFFER*/
 .section4{
   grid-area: section4;
  
-}
 
-.section4__caja{
+
+&__caja{
 display: flex;
 flex-direction: column;
 flex-wrap: nowrap;
@@ -292,13 +295,14 @@ background-size: 200px;
 background-position: unset center;
 background-color: blue;
 }
+}
 
 /*MAIN_ SECTION5 PRESENTATION*/
 .section5{
 grid-area: section5;
 text-align: justify;
 
-.section5__caja{
+  &__caja{
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -314,16 +318,16 @@ text-align: justify;
   padding-top: 5rem;
   padding-bottom: 10rem;
   background-color: black;
-}
 
-.section5__caja--pmod {
+
+  &--pmod {
   color: red; 
   font-family: 'Lucida Sans';
   font-size: 16px;
   text-align: center;
 }
 
-.section5__caja--videomod {
+  &--videomod {
   position: relative;
   width: 100%;
   height: 150%;
@@ -343,6 +347,7 @@ text-align: justify;
   -ms-high-contrast-adjust: none;
 }
 }
+}
 /*MAIN_ div_section6y7*/
 .div_section6y7{
   grid-area: div_section6y7;
@@ -360,9 +365,9 @@ text-align: justify;
 .section6{
 display: flex;  
 width: 40vw;
-}
 
-.section6__caja{
+ 
+  &__caja{
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -383,16 +388,16 @@ width: 40vw;
   background-size: cover;
   background-position: left center;
   background-size: 20rem;
- 
+} 
 }
 
 /*MAIN_ SECTION7 SOCIALMEDIA*/
 .section7{
 display: flex;
 width: 40vw;
-}
 
-.section7__caja1{
+
+  &__caja1{
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -409,7 +414,7 @@ width: 40vw;
   background-color: darkorchid;
 }
 
-.section7__caja2{
+  &__caja2{
   display: flex;
   list-style-type:none;
   flex-direction: column;
@@ -428,4 +433,5 @@ width: 40vw;
   background-size: cover;
   background-position: center;
   background-color: pink;
+}
 }

@@ -1,0 +1,62 @@
+/*BODY*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+ /*PÁRRAFOS*/
+ p {
+  font-size: 15pt;
+  color: rgb(37, 35, 35);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-weight: bold;
+}
+
+/*MAIN*/
+.grid-container {
+	display: grid;
+	margin: 40px 0 40px 0;
+	grid-template-columns: repeat(4,25%);
+	grid-template-rows: repeat(3,200px);
+	gap: 1px 1px;
+	text-align: center;
+	justify-content: stretch;
+	font-size: 1.5rem;
+	grid-template-areas:
+	"bannerUno bannerUno bannerUno bannerUno"
+	"noticiaDos noticiaDos noticiaTres noticiaCuatro"
+	"noticiaCinco noticiaSeis noticiaSiete noticiaCuatro";
+}
+
+.bannerUno {
+	grid-area: bannerUno;
+	background-color: blue;
+}
+.noticiaTres {
+	grid-area: noticiaTres;
+	background-color: #ff0505;
+}
+.noticiaDos {
+	grid-area: noticiaDos;
+	background-color: blueviolet;
+}
+.noticiaCuatro {
+	grid-area: noticiaCuatro;
+	background-color: chartreuse;
+}
+.noticiaCinco {
+	grid-area: noticiaCinco;
+	background-color: cyan;
+}
+.noticiaSeis {
+	grid-area: noticiaSeis;
+	background-color: deeppink;
+}
+.noticiaSiete {
+	grid-area: noticiaSiete;
+	background-color: dimgrey;
+}

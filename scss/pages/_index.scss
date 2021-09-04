@@ -1,7 +1,7 @@
 /*BODY*/
 body {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -38,6 +38,23 @@ body {
  }
  
 /* MAIN LISTA */
+.mainlista--div1__btn {
+  font-style: "italic"; 
+  font-family: 'Dancing Script', cursive; 
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+ 
+  
+  & a:hover{
+    background-color: blue ;
+    padding: 0,5rem 1rem;
+    transition: all 0,4s linear ;
+    border-radius: 5px;
+  }
+}
+
 .mainlista--div1 {
   grid-area: mainlista--div1;
   padding: 0%;
@@ -52,6 +69,12 @@ body {
   font-family: 'Dancing Script', cursive; 
   font-weight: bold;
   font-size: 25px;
+  background-image: url("../img/watercolor.png");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+ 
 
    & ul{
     list-style-type: none;
@@ -86,7 +109,6 @@ body {
     transition: all 0,4s linear ;
     border-radius: 5px;
   }
-
 }
 
  /*MAIN_ SECTION2 SEANSON ITEMS (BUTTONS)*/
@@ -105,7 +127,7 @@ body {
   font-family: 'Lucida Sans';
   font-size: 12px;
   font-weight: bold;
-  text-align: center;
+  text-align: end ;
   padding-top: 50px;
   padding-bottom: 50px;
   margin: 0% 0% 0% 0%;
@@ -114,7 +136,7 @@ body {
   background-size: cover;
   background-position-x: center;
   background-position-y: top;
-
+  }
 
   &--buttonmod1 {
   width: 200px;
@@ -122,6 +144,7 @@ body {
   color: whitesmoke;
   font-weight: bold;
   font-size: 24px;
+  text-align: center ;
   transition: height 4s, width 1s;
   background-image: url("../img/snowman.png"); 
   background-repeat: no-repeat;
@@ -129,19 +152,18 @@ body {
   background-position-x: center;
   background-position-y: center;
   border-style: dotted;
-  /* transition:  filter 2s, transform 1s ; no funciona*/
-  /* transform: skewY(15deg); */
-  
-}
+  transition:  filter 2s, transform 1s ; 
+  transform: skewY(15deg);
+  }
+
   &--buttonmod1 hover{
   height: 300px; width: 300px;
   color: chartreuse ;
   padding: 0,5rem 1rem;
-  /* cursor: pointer; no funciona */
-  /* filter: grayscale(1); no funciona */
+  cursor: pointer; 
+  filter: grayscale(1); 
   transform: scale(1,1);
-
-}
+  }
 
   &--buttonmod2 {
   width: 200px;
@@ -155,16 +177,15 @@ body {
   background-position-x: center;
   background-position-y: center;
   border-style: dotted;
-  
-  
-}
+  }
+
   &--buttonmod2 hover{
   height: 200px; width: 200px;
   padding: 0,5rem 1rem;
   transition: all 0,4s linear ;
   transform: skewY(25deg);
   cursor: pointer;
-}
+  }
 
   &--buttonmod3 {
   width: 200px;
@@ -178,14 +199,15 @@ body {
   background-position-x: center;
   background-position-y: center;
   border-style: dotted;
-}
+  }
+
   &--buttonmod3 hover{
   height: 200px; width: 200px;
   padding: 0,5rem 1rem;
   transition: all 0,4s linear ;
   transform: skewY(25deg);
   cursor: pointer;
-}
+  }
 
   &--buttonmod4 {
   width: 200px;
@@ -200,17 +222,17 @@ body {
   background-position-x: center;
   background-position-y: center;
   border-style: dotted;
-  
-}
+  }
+
   &--buttonmod4 hover{
   height: 200px; width: 200px;
   padding: 0,5rem 1rem;
   transition: all 0,4s linear ;
   transform: skewY(25deg);
   cursor: pointer;
+  }
 }
-}
-}
+
 
 /*MAIN_ SECTION3 MOST VIEWED*/
 .section3 {
@@ -218,7 +240,7 @@ body {
  overflow: hidden;
   
 
-  &__caja{
+  &__caja {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -233,16 +255,16 @@ body {
   padding-top: 5rem;
   padding-bottom: 10rem;
   margin: 0% 0% 0% 0%;
-  background: linear-gradient(to right, red,blue );
+  background: linear-gradient(  blue, red );
+  }
 
-
-  &--img1{
+  &--img1 {
   height: 300px;
   width: 300px;
   order: 2;
   border-style:solid;
   border-color: black;
-}
+  }
 
   &--img2{
   height: 300px;
@@ -250,7 +272,7 @@ body {
   order: 1;
   border-style:solid;
   border-color: black;
-}
+  }
 
   &--img3{
   height: 300px;
@@ -258,7 +280,7 @@ body {
   order: 0;
   border-style:solid;
   border-color: black;
-}
+  }
 
   &--img4{
   height: 300px;
@@ -266,15 +288,13 @@ body {
   order: 3;
   border-style:solid;
   border-color: black;
+  }
 }
-}
-}
+
 
 /*MAIN_ SECTION4 OFFER*/
 .section4{
   grid-area: section4;
- 
-
 
 &__caja{
 display: flex;
@@ -293,7 +313,7 @@ background-image: url("../img/sale.png");
 background-repeat: no-repeat;
 background-size: 200px;
 background-position: unset center;
-background-color: blue;
+background: linear-gradient(  blue, rgb(71, 70, 70) );
 }
 }
 
@@ -317,15 +337,19 @@ text-align: justify;
   margin: 0% 0% 0% 0%;
   padding-top: 5rem;
   padding-bottom: 10rem;
-  background-color: black;
-
+  background-image: url("../img/lucesRojas.png"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: top;
+  }
 
   &--pmod {
-  color: red; 
+  color: black; 
   font-family: 'Lucida Sans';
   font-size: 16px;
   text-align: center;
-}
+  }
 
   &--videomod {
   position: relative;
@@ -345,9 +369,9 @@ text-align: justify;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
   -ms-high-contrast-adjust: none;
+  }
 }
-}
-}
+
 /*MAIN_ div_section6y7*/
 .div_section6y7{
   grid-area: div_section6y7;
@@ -388,7 +412,7 @@ width: 40vw;
   background-size: cover;
   background-position: left center;
   background-size: 20rem;
-} 
+  } 
 }
 
 /*MAIN_ SECTION7 SOCIALMEDIA*/
@@ -412,7 +436,7 @@ width: 40vw;
   padding: 0% 0% 0% 0%;
   margin: 0% 0% 0% 0%; 
   background-color: darkorchid;
-}
+  }
 
   &__caja2{
   display: flex;
@@ -428,10 +452,10 @@ width: 40vw;
   color: black;
   padding: 0% 0% 0% 0%;
   margin: 0% 0% 0% 0%;
-  background-image: url("../img/social-media\ \(2\).png"); 
+  background-image: url("./img/socialmediaNegro.png"); 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: pink;
-}
+  }
 }

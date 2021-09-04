@@ -1,0 +1,46 @@
+  /*MAIN*/
+  .main {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    background-color: deeppink;
+    justify-content: center;
+    overflow: hidden;
+    
+  } 
+  
+  .formulario {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding-top: 30px;
+  padding-bottom: 30px; 
+  align-content: center;
+  margin: 0% 0% 0% 0%;
+  width: 60%;
+  background-color:blue;
+  }
+  
+  .fieldsetcontacto {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  color: black;
+  font-family: 'Lucida Sans';
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px; 
+  margin: 0% 0% 0% 0%;
+  background-image: url("../img/social-media-mail.png"); 
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: top left;
+  }
+  

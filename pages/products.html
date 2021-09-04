@@ -5,51 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Products</title>
-    <link rel="stylesheet" href="../styles/styleProducts.css" />
-    <link href="../css/all.min.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body class="body">
+    <link href="../css/all.min.css" rel="stylesheet"> 
+    <link href="../styles/style.css" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> <!-- CDN via jsDelivr -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+  <head>
+<!--Encabezado-->            
+  <body>    
     <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+                <!--Encabezado-->
+                <header class="header--GRID container-fluid d-flex justify-content-evenly">      
+                  <a href="../index.html">
+                  <img class="header--logo img-fluid rounded-circle" src="../img/logoOriginal.jpg" alt="Logo"> 
+                  </a>
+                  <h2 class="header--titulo1">_luk_c</h2> <!--Title= Nombre de mi page-->
+                  <h1 class="header--titulo2">Indumentaria</h1> <!--Title= Indumentaria-->
+                  <h2 class="header--titulo3">• Products • </h2><i class="fas fa-tshirt"></i>   <!--Title= Mi nombre-->
+                      <nav class="header--navigation navbar navbar-expand-sm"> <!--Botones de navegación del header-->
+                       <div class="container-fluid">
+                          <ul class="header--navigation__listaulmodifier"> 
+                            <li><img class="header--navigation__listaullanguages" src="../img/planet.png">=<img class="header--navigation__listaulspanish" src="../img/spanish.png"> <img class="header--navigation__listaulenglish" src="../img/england.png"> <img class="header--navigation__listaulcroatia" src="../img/croatia.png"> </li>  
+                            <li><a href="../index.html"> <i class="fas fa-home"></i> </a></li>  
+                            <li><a href="../pages/search.html"> <i class="fas fa-search"></i></a></li>
+                            <li><a href="https://www.google.com/maps/place/Recoleta,+CABA/@-34.5847911,-58.4138525,14z/data=!3m1!4b1!4m5!3m4!1s0x95bcca99c609fc2f:0x392ca99351808a75!8m2!3d-34.5873825!4d-58.3972762"><i class="fas fa-map-marker-alt"></i></a></li>
+                            <li><a href="../pages/contact.html"><i class="fas fa-envelope"></i></a></li>
+                            <li><a href="../pages/bag.html"><i class="fas fa-shopping-cart"></i></a></li>
+                            <li><a href="../pages/login.html"><i class="fas fa-user"></i></a></li>
+                          </ul>
+                       </div> 
+                      </nav>
+               </header> 
+          </div> 
+          </div>          
+<!--Fin de encabezado-->
+<!--Main-->
       <div class="row">
         <div class="col-md-12">
-          <!--Header-->
-          <header class="header">
-            <ul class="header--titulo4__ul">
-              <li>
-                <a href="../index.html">Volver a la página principal</a>
-              </li>
-            </ul>
-            <h2 class="header--titulo1">_luk_c</h2>
-            <!--Title= Nombre de mi page-->
-            <h1 class="header--titulo2">Indumentaria</h1>
-            <!--Title= Indumentaria-->
-            <i class="fas fa-tshirt"></i>
-            <h2 class="header--titulo3">• Products •</h2>
-            <a href="../index.html">
-              <img
-                class="header--logo"
-                src="../img/LC_LogoRedondo.png"
-                alt="Logo"
-              />
-            </a>
-          </header>
-        </div>
-      </div>
-      <!--Fin de Header-->
-      <!--Main-->
-      <div class="row">
-        <div class="col-md-12">
-          <main class="main">
+          <main class="main__products vw-100 vh-90">
+            <div
+              class="bg-image img-fluid img-responsive"
+              style="
+                background-image: url('../img/shop2.jpg');
+                height: 100vh;
+                background-repeat: repeat;
+                background-size: cover;
+                background-position: top;
+              "
+            >
             <form
               class="main__formbusq"
               action=""
@@ -57,7 +63,7 @@
               target="_blank"
             >
               <!--Barra de búsqueda de prendas en el header-->
-              <p class="main--formbusq__p">
+              <p class="main__products--formbusq__p">
                 Búsqueda de prendas:
                 <input
                   type="search"
@@ -98,9 +104,9 @@
                 <div class="dropdown-item" href="#">Molds</div>
               </div>
             </div>
-
+            <!-- Table-->
             <h2 class="main__titulo">Table Products</h2>
-            <table class="table">
+            <table class="table table-striped">
               <thead>
                 <tr>
                   <th scope="col">Nro Product</th>
@@ -130,7 +136,7 @@
                       <li>Más comodo y práctico que una bufanda</li>
                     </ol>
                   </td>
-                  <td><img src="#" alt="IMG1" /></td>
+                  <td> <img src="../img/cuellitoRivBoc.jpg" width="70" height="70" class="img-fluid border border-danger" alt="img1"></td>
                   <td>$750</td>
                 </tr>
                 <tr>
@@ -138,11 +144,12 @@
                   <td>Pulsera macramé</td>
                   <td>Hilo macramé</td>
                   <td>Podes ducharte con ella</td>
-                  <td><img src="#" alt="IMG2" /></td>
+                  <td><img src="../img/pulseraboca.jpg" width="70" height="70" class="img-fluid border border-primary" alt="img2" /></td>
                   <td>$100 - $300</td>
                 </tr>
               </tbody>
             </table>
+           </div>
           </main>
         </div>
       </div>

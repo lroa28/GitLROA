@@ -5,22 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>_luk_c - Indumentaria</title> 
-    <link href="css/all.min.css" rel="stylesheet"> 
+    <link href="./css/all.min.css" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> <!-- CDN via jsDelivr -->
     <link href="./styles/style.css" rel="stylesheet">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
 </head>
 <body>    
 <div class="container-fluid">
 <div class="row">
-<div class="col-md-12">
+<div class="col-sx-12">
   <!--Encabezado-->
-  <header class="header--GRID">      
-    <a href="#index.html">
-    <img class="header--logo" src="./img/LC_LogoRedondo.png" alt="Logo"> 
+  <header class="header--GRID container-fluid">      
+    <a href="./index.html">
+    <img class="header--logo img-fluid rounded-circle" src="./img/logoOriginal.jpg" alt="Logo"> 
     </a>
     <h2 class="header--titulo1">_luk_c</h2> <!--Title= Nombre de mi page-->
     <h1 class="header--titulo2">Indumentaria</h1> <!--Title= Indumentaria-->
@@ -28,12 +27,12 @@
         <nav class="header--navigation navbar navbar-expand-sm"> <!--Botones de navegación del header-->
          <div class="container-fluid">
             <ul class="header--navigation__listaulmodifier"> 
-                <li><a href="./pages/buscar.html"> <i class="fas fa-search"></i></a></li>
-                <li><a href="https://www.google.com/maps/place/Recoleta,+CABA/@-34.5847911,-58.4138525,14z/data=!3m1!4b1!4m5!3m4!1s0x95bcca99c609fc2f:0x392ca99351808a75!8m2!3d-34.5873825!4d-58.3972762"><i class="fas fa-map-marker-alt"></i></a></li>
-                <li><img class="header--navigation__listaullanguages" src="./img/planet.png">=<img class="header--navigation__listaulspanish" src="./img/spanish.png"> <img class="header--navigation__listaulenglish" src="./img/england.png"> <img class="header--navigation__listaulcroatia" src="./img/croatia.jpg"> </li>
-                <li><a href="./pages/contact.html"><i class="fas fa-envelope"></i></a></li>
-                <li><a href="./pages/bags.html"><i class="fas fa-shopping-cart"></i></a></li>
-                <li><a href="./pages/login.html"><i class="fas fa-user"></i></a></li>
+              <li><img class="header--navigation__listaullanguages" src="./img/planet.png">=<img class="header--navigation__listaulspanish" src="./img/spanish.png"> <img class="header--navigation__listaulenglish" src="./img/england.png"> <img class="header--navigation__listaulcroatia" src="./img/croatia.png"> </li>  
+              <li><a href="./pages/search.html"> <i class="fas fa-search"></i></a></li>
+              <li><a href="https://www.google.com/maps/place/Recoleta,+CABA/@-34.5847911,-58.4138525,14z/data=!3m1!4b1!4m5!3m4!1s0x95bcca99c609fc2f:0x392ca99351808a75!8m2!3d-34.5873825!4d-58.3972762"><i class="fas fa-map-marker-alt"></i></a></li>
+              <li><a href="./pages/contact.html"><i class="fas fa-envelope"></i></a></li>
+              <li><a href="./pages/bag.html"><i class="fas fa-shopping-cart"></i></a></li>
+              <li><a href="./pages/login.html"><i class="fas fa-user"></i></a></li>
             </ul>
          </div> 
         </nav>
@@ -44,22 +43,22 @@
 <!-- MAIN -->
 <main class="main__grid">
 <div class="row">
-<div class="col-md-12 hidden-sx-down">
-  <div>
-    <ul class="mainlista--div1 d-flex justify-content-center gap-5 align-items-center"> 
-       <li><a href="#presentation">Who I am?</a></li>
-       <li><a href="./pages/products.html">Products</a></li>
-       <li><a href="./pages/outlet.html">Outlet</a></li>
-       <li><a href="./pages/news.html">News</a></li>
-       <li><a href="./pages/helping.html">Helping Others!</a></li>
+<div class="col-sx-12 hidden-sx-down">
+  <div class="mainlista--div1">
+    <ul class="d-flex justify-content-center gap-5 align-items-center"> 
+       <li class="mainlista--li"><a href="#presentation">Who I am?</a></li>
+       <li class="mainlista--li"><a href="./pages/products.html">Products</a></li>
+       <li class="mainlista--li"><a href="./pages/outlet.html">Outlet</a></li>
+       <li class="mainlista--li"><a href="./pages/news.html">News</a></li>
+       <li class="mainlista--li"><a href="./pages/helping.html">Helping Others!</a></li>
        <li> 
          <div class="dropdown">
-         <button class="btn btn-link btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         <button class="btn btn-link btn-lg dropdown-toggle mainlista--div1__btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Courses </button>
            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-             <a class="dropdown-item" href="./pages/courses.html">Moldería básica</a>
-             <a class="dropdown-item" href="./pages/courses.html">Tejido</a>
-             <a class="dropdown-item" href="./pages/courses.html">Uso de máquinas</a>
+             <a class="dropdown-item mainlista--div1__btn" href="./pages/courses.html">Moldería básica</a>
+             <a class="dropdown-item mainlista--div1__btn" href="./pages/courses.html">Tejido</a>
+             <a class="dropdown-item mainlista--div1__btn" href="./pages/courses.html">Uso de máquinas</a>
            </div>
          </div>
        </li>
@@ -70,15 +69,31 @@
 
 <!--Section Season Items-->
 <div class="row">
-<div class="col-md-12">
+<div class="col-sx-12">
     </section class="section2 "> 
         <fieldset class="section2__caja ">
-          <div class="d-flex-column justify-content-between align-items-end">
-                <legend><h1><b>Seanson Items</b></h1></legend>
+          <div class="d-flex-column justify-content-center align-items-end">
+              <legend><h1><b>Seanson Items</b></h1></legend>
+                <!-- boton SnowMan -->
+                <div class="img-fluid bg-image" style="background-image: url('./img/snowman.png'); background-repeat: no-repeat;
+                background-size: cover;
+                background-position-x: center;
+                background-position-y: center;
+                border-style: dotted;width: 200px;
+                height: 200px;
+                color: whitesmoke;
+                font-weight: bold;
+                font-size: 24px;
+                text-align: center;">
                 <a class="section2__caja--buttonmod1 btn btn-link btn-ligth w-40" href="pages/products.html" role="button">Winter</a>
+                </div>
+                <!-- boton Beach -->
                 <a class="section2__caja--buttonmod2 btn btn-link btn-ligth w-40" href="pages/products.html" role="button">Summer</a>
+                <!-- boton Sets -->
                 <a class="section2__caja--buttonmod3 btn btn-link btn-ligth w-40" href="pages/products.html" role="button">Sets</a>
+                <!-- boton Molds -->
                 <a class="section2__caja--buttonmod4 btn btn-link btn-ligth w-40" href="pages/products.html" role="button">Molds</a>
+               
           </div>
         </fieldset>
     </section>
@@ -87,7 +102,7 @@
 
 <!--Section Most Viewed-->
 <div class="row">
-<div class="col-md-12">
+<div class="col-sx-12">
 <section class="section3"> 
         <fieldset class="section3__caja">
         <legend><h1><b>Most Viewed</b></h1></legend>
@@ -119,12 +134,12 @@
 
 <!--Section Presentation of page-->
 <div class="row">
-<div class="col-md-12 hidden-md-down">
+<div class="col-sx-12 hidden-md-down">
     <section class="section5"> 
       <a name="presentation"></a>
         <fieldset class="section5__caja">
-            <legend><h1 class="text-light"><b><i>Presentation</b></i></h1></legend>
-            <p class="lead section5__caja--pmod text-red">Since I was little my grandmother taught me to sew, I studied systems but design always accompanied me. Today I can make the clothes you want to suit your size and color: T-shirts, Pants, Jumpsuits, Scarves, Shirts, Knitted Collars, Bracelets and Jackets, the Boca or River set (there is no "crack" in this place) and your set Croatian.
+            <legend><h1 class="bg-danger"><b><i>Presentation</b></i></h1></legend>
+            <p class="lead section5__caja--pmod text-light bg-secondary">Since I was little my grandmother taught me to sew, I studied systems but design always accompanied me. Today I can make the clothes you want to suit your size and color: T-shirts, Pants, Jumpsuits, Scarves, Shirts, Knitted Collars, Bracelets and Jackets, the Boca or River set (there is no "crack" in this place) and your set Croatian.
                 Also, you can take your own mold (s).
                 My wish for the future is to be able to open workshops to teach women who want a better future and allow them to be independent.</p>
             <br>
@@ -141,10 +156,10 @@
 
 <!-- Section Helping of my page-->
 <div class="row">
-<div class="col-md-12">
-<div class="div_section6y7">
+<div class="col-sx-12">
+<div class="div_section6y7 container-flui col-sx-6">
     <section class="section6"> 
-        <fieldset class="section6__caja">
+        <fieldset class="section6__caja  container-fluid border border-dark">
             <legend><h1><b>Helping</b></h1></legend>
             <h2><i class="fab fa-whatsapp"></i> WhatsApp for help: +54 9 1100000000</h2> 
             <p class="lead poperaciones">Attention schedule:</p>
@@ -154,15 +169,18 @@
 
     <!-- Section Social media-->
     <section class="section7"> 
-        <fieldset class="section7__caja1">
+        <fieldset class="section7__caja1 container-fluid col-sx-6 border border-dark">
             <legend><h1><b>Social Media</b></h1></legend>
             <p class="poperaciones lead">You can find here the links to our networks:</p> 
             <fieldset class="section7__caja2"> 
+              <div class="img-fluid bg-image" style="background-image: url('./img/social-media.png'); background-repeat: no-repeat; background-size: cover;
+              background-position: center;"
                 <li> <a href="https://www.facebook.com/luk.caric.by.luluroa"><i class="fab fa-facebook-square"></i></a>_Facebook_</li> 
                 <li> <a href="https://www.instagram.com/_luk_c/"><i class="fab fa-instagram-square"></i></a>_Instagram_</li> 
                 <li> <a href="https://www.pinterest.com/lcluluroa"><i class="fab fa-pinterest"></i></a>_Pinterest_</li>
                 <li> <a href="https://linktr.ee/_luk_c"> <img src="https://img.icons8.com/color/30/000000/linktree.png"/></a>_Linktree_</li>
-            </fieldset>
+              </div>
+              </fieldset>
             <a data-toggle="popover" title="SOCIAL MEDIA" data-content="Do you recommend any social network that you use?">"Touch here please"</a>
         </fieldset>
     </section>
@@ -172,26 +190,28 @@
 
 <!--Section Offer-->
 <div class="row">
-<div class="col-md-12">
+<div class="col-sx-12">
 <section class="section4"> 
         <fieldset class="section4__caja">
             <legend><h1><b>Offer</b></h1></legend>
             <h3>Subscribe to our newsletter and take advantage of a 10% discount on your next online purchase!</h3>
-            <p class="lead">Get a special "offer" by e-mail:</p>
-            <p class="lead">(*) required</p>
+            <p class="fs-5 fst-italic">Get a special "offer" by e-mail:</p>
+            <div class="d-flex-column flex-wrap"> 
+            <p class="display-inline text-warning fs-5 fst-italic">(*)required</p>
               <form>
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <label for="exampleInputEmail1" class="form-label">(*)Email address:</label> 
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  <div id="emailHelp" class="form-text"> <p class="fs-5 fst-italic">We'll never share your email with anyone else</p></div>
                 </div>
                 <div class="mb-3">
-                  <label for="exampleInputName1" class="form-label">Name</label>
+                  <label for="exampleInputName1" class="form-label">Name:</label>
                   <input type="text" class="form-text" id="exampleInputName1">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
-        <br>
+              <br>
+            </div>
         </fieldset>
     </section>
 </div>
@@ -200,7 +220,7 @@
 
 <!--Footer-->
 <div class="row">
-<div class="col-md-12">
+<div class="col-xs-12">
   <footer class="footer"> 
     <h5 class="footer__titulo1--modifier h5operaciones"> _luk_c | <i class="fas fa-phone-alt"></i>(+54) 9 1100000000 | <i class="fas fa-envelope"></i> lc.luluroa@gmail.com | Güemes 3311 - Recoleta <img class="footer_imgArg" src="./img/argentina.svg"> Argentina</h5>
     <ul class="footer__titulo2--modifier"> <!-- Links otros sitios webs de ayuda a los usuarios que visitan la página-->
@@ -236,11 +256,11 @@
 <script>
     AOS.init();
 </script>
-<!-- Script de animación WOW-->
+<!-- Script de animación WOW
 <script src="js/wow.min.js"></script>
 <script>
    new WOW().init();
-</script>
+</script>-->
 <!-- script js idem la ppt de la clase -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

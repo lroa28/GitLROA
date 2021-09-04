@@ -1,10 +1,9 @@
 /*HEADER*/
 .header--GRID {
-  background-image: url("../img/watercolor.png");
   padding: 0% 0% 1% 0%; 
   margin: 0%;
   top:0%;
-  position: sticky;
+  position: fixed;
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -12,6 +11,7 @@
   flex-wrap: wrap;
   justify-items: center;
   align-items: center;
+  background: radial-gradient( whitesmoke, rgb(87, 86, 86) );
   display: grid;
   grid-template-columns: repeat(5, auto);
   grid-template-rows: auto;
@@ -21,15 +21,14 @@
   grid-row-gap: 3px;
   z-index: 2; 
 
+
   .header a {
     color: rgb(236, 11, 97);
   }
 
   .header--logo {
-    width: 80px;
+    width: 60px;
     height: 60px;
-    border:rgb(236, 11, 97);
-    border-style: double;
     grid-area: header--logo;
     justify-self: start;
     align-self: end;  
@@ -41,16 +40,15 @@
   }
 
   .header--titulo1{
-    font-style: "italic"; 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif, cursive; 
-    text-align: left;
-    font-size: 40px;
     margin-right: 0%;
     padding-right: 0%;
+    color: black;
+    // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif, cursive; 
+    text-align: left;
+    font-size: 40px;
     text-decoration: underline;
-    font-style: "italic"; 
-    font-family: 'Dancing Script', cursive; 
-    color: rgb(236, 11, 97);
+    // font-style: "italic"; 
+    // font-family: 'Dancing Script', cursive; 
     grid-area: header--titulo1;
     justify-self: start;
     align-self: center;
@@ -80,7 +78,7 @@
   font-size: 32px;
   font-family: 'Dancing Script', cursive; 
   font-weight: bold;
-  color: grey;
+  color: rgb(44, 44, 44);
   grid-area: header--titulo3;
   animation-duration: 4s;
   animation-name: aparecer;
@@ -103,7 +101,7 @@ list-style: none;
 display: flex;
 flex-direction: row;
 justify-content: space-around;
-align-content:flex-end ;
+align-content: flex-end;
 align-items: center;
 gap: 10px;
 font-size: 20px;
@@ -114,7 +112,7 @@ grid-area: header--navigation__listaulmodifier;
 }
 
 .header--navigation__listaulmodifier hover {
-background-color: grey ;
+background-color: rgb(75, 73, 73) ;
 padding: 0,5rem 1rem;
 transition: all 0,4s linear ;
 border-radius: 5px;

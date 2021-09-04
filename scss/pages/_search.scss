@@ -1,0 +1,24 @@
+  /*MAIN*/
+  .main {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    line-height: 1,6rem;
+    background-color: blue;
+    justify-content: center;
+
+    &_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    background-image: url("../img/searching2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px;
+    font-family: 'Lucida Sans';
+    font-size: 12px;
+    font-weight: bold;
+    width: 50%;
+    margin-top: 20px;
+    }
+} 

@@ -1,0 +1,29 @@
+  /*MAIN*/
+  .main__login {
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    background-image: url("../img/social-media-cel.png"); 
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: 100px;
+    
+ 
+  
+  &--form {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    display: flex;
+    background-color: grey;
+    font-family: 'Lucida Sans';
+    font-size: 12px;
+    font-weight: bold;
+    border: 10rem;
+    background: linear-gradient(to right, red,blue );
+  }
+} 

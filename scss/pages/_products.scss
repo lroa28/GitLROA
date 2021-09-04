@@ -1,0 +1,27 @@
+  /*MAIN PRODUCTOS*/
+  .main__products {
+    width: 100vw;
+    height: 100vh;
+  
+  
+   &--formbusq {
+    font-family: 'Lucida Sans';
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: deeppink;
+    width: 100vw;
+    padding-bottom: 1%;
+    padding-top: 1%;
+  }
+  
+  .main__img1 {
+    width: 100px;
+    height: 100px;
+    border: solid;
+  }
+
+}

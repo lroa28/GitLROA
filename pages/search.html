@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search _luk_c</title>
+    <title>Search lc</title>
     <link href="../css/all.min.css" rel="stylesheet" />
+    <link href="../scss/style.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
       rel="stylesheet"
@@ -17,121 +18,179 @@
       crossorigin="anonymous"
     />
     <!-- CDN via jsDelivr -->
-    <link href="../styles/style.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://raw.github.com/daneden/animate.css/master/animate.css"
     />
   </head>
-  <body>
+  <body class="body">
     <div class="container-fluid">
-      <!--Encabezado-->
       <div class="row">
-        <div class="col-md-12">
-          <header class="header--GRID d-flex justify-content-evenly">
+        <div class="col-sx-12">
+          <!--Header-->
+          <header
+            class="header__grid d-flex justify-content-between container-fluid"
+          >
             <a href="../index.html">
               <img
-                class="header--logo img-fluid rounded-circle"
+                class="header__grid--logo img-fluid rounded-circle"
                 src="../img/logoOriginal.jpg"
                 alt="Logo"
               />
             </a>
-            <h2 class="header--titulo1">_luk_c</h2>
+            <h2 class="header__grid--titulo1">_luk_c</h2>
             <!--Title= Nombre de mi page-->
-            <h1 class="header--titulo2">Indumentaria</h1>
+            <h1 class="header__grid--titulo2">Clothing</h1>
             <!--Title= Indumentaria-->
-            <h2 class="header--titulo3">• Search •</h2>
-            <i class="fas fa-search"></i>
-            <!--Title= Nombre de la página-->
-            <nav class="header--navigation navbar navbar-expand-sm">
-              <!--Botones de navegación del header-->
-              <div class="container-fluid">
-                <ul class="header--navigation__listaulmodifier">
-                  <li>
-                    <img
-                      class="header--navigation__listaullanguages"
-                      src="../img/planet.png"
-                    />=<img
-                      class="header--navigation__listaulspanish"
-                      src="../img/spanish.png"
-                    />
-                    <img
-                      class="header--navigation__listaulenglish"
-                      src="../img/england.png"
-                    />
-                    <img
-                      class="header--navigation__listaulcroatia"
-                      src="../img/croatia.png"
-                    />
-                  </li>
+            <h2 class="header__grid--titulo3">• Search •</h2>
+            <!--Title= Search-->
+
+            <!-- Lista Botones de navegación del header -->
+            <nav
+              class="
+                navbar navbar-expand-lg navbar-light
+                bg-secondary
+                rounded-pill
+              "
+            >
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul
+                  class="
+                    navbar-nav
+                    mr-auto
+                    header__grid--navigation__listaulmodifier
+                  "
+                >
                   <li>
                     <a href="../index.html"> <i class="fas fa-home"></i> </a>
                   </li>
-                  <li>
-                    <a href="../pages/search.html">
-                      <i class="fas fa-search"></i
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/search.html"
+                      ><i class="fas fa-search"></i
                     ></a>
                   </li>
-                  <li>
+                  <li class="nav-item">
                     <a
+                      class="nav-link"
                       href="https://www.google.com/maps/place/Recoleta,+CABA/@-34.5847911,-58.4138525,14z/data=!3m1!4b1!4m5!3m4!1s0x95bcca99c609fc2f:0x392ca99351808a75!8m2!3d-34.5873825!4d-58.3972762"
                       ><i class="fas fa-map-marker-alt"></i
                     ></a>
                   </li>
-                  <li>
-                    <a href="../pages/contact.html"
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contact.html"
                       ><i class="fas fa-envelope"></i
                     ></a>
                   </li>
-                  <li>
-                    <a href="../pages/bag.html"
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/bag.html"
                       ><i class="fas fa-shopping-cart"></i
                     ></a>
                   </li>
-                  <li>
-                    <a href="../pages/login.html"><i class="fas fa-user"></i></a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/login.html"
+                      ><i class="fas fa-user"></i
+                    ></a>
                   </li>
+                  <li class="nav-item">
+                    <img
+                      class="header__grid--navigation__listaullanguages"
+                      src="../img/planet.png"
+                    />=<img
+                      class="header__grid--navigation__listaulspanish"
+                      src="../img/spanish.png"
+                    />
+                    <img
+                      class="header__grid--navigation__listaulenglish"
+                      src="../img/england.png"
+                    />
+                    <img
+                      class="header__grid--navigation__listaulcroatia"
+                      src="../img/croatia.png"
+                    />
+                  </li>
+                  <!-- </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li> -->
+                  <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a> -->
+                  <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div> 
+        </li>-->
+                  <!-- <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li> -->
                 </ul>
+                <!-- <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
               </div>
             </nav>
+            <!-- Fin Lista Botones de navegación del header -->
           </header>
         </div>
       </div>
-      <!--Fin Encabezado-->
-
-<!-- Main -->
-<div
-              class="img-fluid bg-image"
-              style="
-                background-image: url('../img/searching2.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size:  auto 50%;
-              "
-            >
-<main class="main__search vh-100 ">
+      <!--Fin Header-->
+      <!-- Main -->
+      <main class="main__search vh-90">
         <div class="row">
           <div class="col-md-12">
-             <form class="main__search--form border border-dark bg-info bg-gradient">
-                <label for="buscar">
-                  <p class="text-dark">Ingrese la palabra que desea buscar:</p>
-                </label>
-                <br />
-                <input type="text" name="buscar" />
-                <br />
-                <br />
-                <input type="submit" value="Buscar" />
-                <br />
-                <br />
-              </form>
-            </div>
+            <form class="main__search--form border border-dark bg-info">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Select year</option>
+                <option value="1">2019</option>
+                <option value="2">2020</option>
+                <option value="3">2021</option>
+              </select>
+              <br />
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Select option</option>
+                <option value="1">Winter</option>
+                <option value="2">Summer</option>
+                <option value="3">Sets</option>
+                <option value="4">Molds</option>
+              </select>
+              <label for="buscar">
+                <p class="text-dark">Enter the word to search:</p>
+              </label>
+              <br />
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Input text here"
+              />
+              <br />
+              <input type="submit" value="Search" />
+              <br />
+            </form>
           </div>
-</div>
-</main>
+        </div>
+      </main>
+      <!--Fin Main -->
       <!--Footer-->
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-xs-12">
           <footer class="footer">
             <h5 class="footer__titulo1--modifier h5operaciones">
               _luk_c | <i class="fas fa-phone-alt"></i>(+54) 9 1100000000 |
@@ -139,6 +198,7 @@
               - Recoleta
               <img class="footer_imgArg" src="../img/argentina.svg" /> Argentina
             </h5>
+            <br />
             <ul class="footer__titulo2--modifier">
               <!-- Links otros sitios webs de ayuda a los usuarios que visitan la página-->
               <li>
@@ -174,7 +234,7 @@
             <!-- Button to Open the Modal -->
             <button
               type="button"
-              class="btn btn-dark"
+              class="btn btn-link btn-lg"
               data-toggle="modal"
               data-target="#myModal"
             >
@@ -190,7 +250,7 @@
                     authors and owners.
                     <button
                       type="button"
-                      class="btn btn-danger"
+                      class="btn btn-dark btn-lg"
                       data-dismiss="modal"
                     >
                       Close
@@ -200,25 +260,28 @@
               </div>
             </div>
             <br />
-            <p class="lead footer__p--modifier">
+            <p class="lead footer__p--modifier fw-bold">
               © Copyright 2021 _luk_c . Todos los derechos reservados. Prohibida
               la duplicación , distribución o almacenamiento en cualquier medio.
+            </p>
+            <br />
+            <p class="lead footer__p--modifier bg-danger">
+              Powered and developed by • Lucrecia Cecilia Roa •
             </p>
           </footer>
         </div>
       </div>
-
       <!-- Script a la pagina AOS (para hacer rotar las imganes)-->
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>
         AOS.init();
       </script>
-      <!-- Script de animación WOW
-  <script src="js/wow.min.js"></script>
-  <script>
-     new WOW().init();
-  </script>-->
-      <!-- script js idem la ppt de la clase -->
+      <!-- Script de animación WOW-->
+      <script src="js/wow.min.js"></script>
+      <script>
+        new WOW().init();
+      </script>
+      <!-- Script js idem la ppt de la clase -->
       <script
         src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

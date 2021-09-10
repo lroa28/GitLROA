@@ -1,10 +1,9 @@
 /*MAIN BAG*/
-.main_bag {
+.main__bag {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 12rem;
   display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  border: solid pink;
   background-image: url("../img/bags.jpg");
   background-position: center;
   background-size: cover;

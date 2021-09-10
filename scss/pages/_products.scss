@@ -1,8 +1,12 @@
   /*MAIN PRODUCTOS*/
-  .main__products {
+.main__products {
     width: 100vw;
     height: 100vh;
-  
+    margin-top: 65px;
+    background-image: url("../img/fondoMolde3.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: norepeat;
   
    &--formbusq {
     font-family: 'Lucida Sans';
@@ -17,11 +21,10 @@
     padding-bottom: 1%;
     padding-top: 1%;
   }
-  
-  .main__img1 {
+}
+.main__img1 {
     width: 100px;
     height: 100px;
     border: solid;
-  }
-
 }
+

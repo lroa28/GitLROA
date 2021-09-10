@@ -1,61 +1,56 @@
 /*HEADER*/
-.header--GRID {
-  padding: 0% 0% 1% 0%; 
-  margin: 0%;
-  top:0%;
+.header__grid {
+  grid-area: header__grid;
+  padding: 0% 0% 0% 0%; 
+  margin: 0% 0% 0% 0%;
   position: fixed;
-  width: 100%;
+  top:0px;
+  width: 100vw;
   overflow: hidden;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
   justify-items: center;
   align-items: center;
-  background: radial-gradient( whitesmoke, rgb(87, 86, 86) );
+  background: radial-gradient( whitesmoke, rgba(73, 70, 70, 0.39) );
   display: grid;
   grid-template-columns: repeat(5, auto);
   grid-template-rows: auto;
   grid-template-areas: 
-  "header--logo header--titulo1 header--titulo2 header--titulo3 header--navigation__listaulmodifier";
+  "header__grid--logo header__grid--titulo1 header__grid--titulo2 header__grid--titulo3 header__grid--navigation__listaulmodifier";
   grid-column-gap: 3px;
   grid-row-gap: 3px;
   z-index: 2; 
+  box-shadow: 1px 3px rgba(134, 128, 128, 0.63);
 
+    & a {
+    color: black;
+    }
 
-  .header a {
-    color: rgb(236, 11, 97);
-  }
-
-  .header--logo {
+    &--logo {
     width: 60px;
     height: 60px;
-    grid-area: header--logo;
+    grid-area: header__grid--logo;
     justify-self: start;
     align-self: end;  
-  }
+    }
 
-  .header--logo a:hover{
-    transition: all 0,4s linear ;
-    height: 200px;
-  }
-
-  .header--titulo1{
+    &--titulo1 {
+    grid-area: header__grid--titulo1;
     margin-right: 0%;
     padding-right: 0%;
     color: black;
-    // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif, cursive; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif, cursive; 
     text-align: left;
-    font-size: 40px;
-    text-decoration: underline;
-    // font-style: "italic"; 
-    // font-family: 'Dancing Script', cursive; 
-    grid-area: header--titulo1;
+    font-size: 25px;
+    font-style: "italic";
     justify-self: start;
     align-self: center;
     animation-duration: 4s;
     animation-name: aparecer;
     animation-iteration-count: infinite;
-  }
+   }
 
   @keyframes aparecer {
     0% {
@@ -66,24 +61,25 @@
     }
  }
 
- .header--titulo2{
+  &--titulo2 {
+  grid-area: header__grid--titulo2;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif, cursive; 
   font-size: 32px;
   margin-left: 0%;
-  grid-area: header--titulo2;
-}
+  
+  }
 
-.header--titulo3{
+  &--titulo3 {
+  grid-area: header__grid--titulo3;
   font-style: "italic"; 
   font-size: 32px;
   font-family: 'Dancing Script', cursive; 
   font-weight: bold;
-  color: rgb(44, 44, 44);
-  grid-area: header--titulo3;
+  color: deeppink;
   animation-duration: 4s;
   animation-name: aparecer;
   animation-iteration-count: infinite;
-}
+ }
 
 @keyframes aparecer {
   0% {
@@ -94,7 +90,8 @@
   }
 }
 
-.header--navigation__listaulmodifier{
+&--navigation__listaulmodifier {
+grid-area: header__grid--navigation__listaulmodifier;
 margin: 0;
 padding: 0;
 list-style: none;
@@ -105,38 +102,36 @@ align-content: flex-end;
 align-items: center;
 gap: 10px;
 font-size: 20px;
-background-color: rgba(0, 0, 0, 0.226) ;
-border-radius: 5px;
-color: rgb(236, 11, 97);
-grid-area: header--navigation__listaulmodifier;
+// background-color: rgba(0, 0, 0, 0.226) ;
+// border-radius: 5px;
+// color: black;
 }
 
-.header--navigation__listaulmodifier hover {
-background-color: rgb(75, 73, 73) ;
+&--navigation__listaulmodifier hover {
+background-color: blue ;
 padding: 0,5rem 1rem;
 transition: all 0,4s linear ;
 border-radius: 5px;
 }
 
-.header--navigation__listaullanguages{
+&--navigation__listaullanguages{
 width: 25px;
 height: 25px; 
 }
 
-.header--navigation__listaulspanish {
+&--navigation__listaulspanish {
  width: 20px;
  height: 20px; 
 }
 
-.header--navigation__listaulenglish{
+&--navigation__listaulenglish{
 width: 20px;
 height: 20px; 
 }
 
-.header--navigation__listaulcroatia{
+&--navigation__listaulcroatia{
 width: 20px;
 height: 20px; 
 }
-
 }
 

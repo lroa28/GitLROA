@@ -4,111 +4,174 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact _luk_c</title> 
+    <title>Contact lc</title> 
     <link href="../css/all.min.css" rel="stylesheet"> 
+    <link href="../scss/style.css" rel="stylesheet">  
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> <!-- CDN via jsDelivr -->
-    <link href="../styles/style.css" rel="stylesheet">  
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
   </head>
-  <body>    
-    <div class="container-fluid">
-    <div class="row">
-    <div class="col-md-12">
-      <!--Encabezado-->
-      <header class="header--GRID container-fluid d-flex justify-content-evenly">      
-        <a href="../index.html">
-        <img class="header--logo img-fluid rounded-circle" src="../img/logoOriginal.jpg" alt="Logo"> 
-        </a>
-        <h2 class="header--titulo1">_luk_c</h2> <!--Title= Nombre de mi page-->
-        <h1 class="header--titulo2">Indumentaria</h1> <!--Title= Indumentaria-->
-        <h2 class="header--titulo3">• Contact • </h2> <i class="fas fa-envelope"></i> <!--Title= Mi nombre-->
-            <nav class="header--navigation navbar navbar-expand-sm"> <!--Botones de navegación del header-->
-             <div class="container-fluid">
-                <ul class="header--navigation__listaulmodifier"> 
-                  <li><img class="header--navigation__listaullanguages" src="../img/planet.png">=<img class="header--navigation__listaulspanish" src="../img/spanish.png"> <img class="header--navigation__listaulenglish" src="../img/england.png"> <img class="header--navigation__listaulcroatia" src="../img/croatia.png"> </li>  
-                  <li><a href="../index.html"> <i class="fas fa-home"></i> </a></li>  
-                  <li><a href="../pages/search.html"> <i class="fas fa-search"></i></a></li>
-                  <li><a href="https://www.google.com/maps/place/Recoleta,+CABA/@-34.5847911,-58.4138525,14z/data=!3m1!4b1!4m5!3m4!1s0x95bcca99c609fc2f:0x392ca99351808a75!8m2!3d-34.5873825!4d-58.3972762"><i class="fas fa-map-marker-alt"></i></a></li>
-                  <li><a href="../pages/contact.html"><i class="fas fa-envelope"></i></a></li>
-                  <li><a href="../pages/bag.html"><i class="fas fa-shopping-cart"></i></a></li>
-                  <li><a href="../pages/login.html"><i class="fas fa-user"></i></a></li>
+<body class="body">    
+ <div class="container-fluid">
+ <div class="row">
+ <div class="col-md-12">
+<!--Header-->
+<header
+class="header__grid d-flex justify-content-between container-fluid"
+>
+<a href="../index.html">
+  <img
+    class="header__grid--logo img-fluid rounded-circle"
+    src="../img/logoOriginal.jpg"
+    alt="Logo"
+  />
+</a>
+<h2 class="header__grid--titulo1">_luk_c</h2>
+<!--Title= Nombre de mi page-->
+<h1 class="header__grid--titulo2">Clothing</h1>
+<!--Title= Indumentaria-->
+<h2 class="header__grid--titulo3">• Contact • </h2><!--Title= Contact-->
+
+            <!-- Lista Botones de navegación del header -->
+            <nav
+              class="
+                navbar navbar-expand-lg navbar-light
+                bg-secondary
+                rounded-pill
+              "
+            >
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul
+                  class="
+                    navbar-nav
+                    mr-auto
+                    header__grid--navigation__listaulmodifier
+                  "
+                >
+                  <li>
+                    <a href="../index.html"> <i class="fas fa-home"></i> </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/search.html"
+                      ><i class="fas fa-search"></i
+                    ></a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="https://www.google.com/maps/place/Recoleta,+CABA/@-34.5847911,-58.4138525,14z/data=!3m1!4b1!4m5!3m4!1s0x95bcca99c609fc2f:0x392ca99351808a75!8m2!3d-34.5873825!4d-58.3972762"
+                      ><i class="fas fa-map-marker-alt"></i
+                    ></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contact.html"
+                      ><i class="fas fa-envelope"></i
+                    ></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/bag.html"
+                      ><i class="fas fa-shopping-cart"></i
+                    ></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/login.html"
+                      ><i class="fas fa-user"></i
+                    ></a>
+                  </li>
+                  <li class="nav-item">
+                    <img
+                      class="header__grid--navigation__listaullanguages"
+                      src="../img/planet.png"
+                    />=<img
+                      class="header__grid--navigation__listaulspanish"
+                      src="../img/spanish.png"
+                    />
+                    <img
+                      class="header__grid--navigation__listaulenglish"
+                      src="../img/england.png"
+                    />
+                    <img
+                      class="header__grid--navigation__listaulcroatia"
+                      src="../img/croatia.png"
+                    />
+                  </li>
+                  <!-- </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li> -->
+                  <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a> -->
+                  <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div> 
+        </li>-->
+                  <!-- <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li> -->
                 </ul>
-             </div> 
+                <!-- <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+              </div>
             </nav>
-     </header> 
+            <!-- Fin Lista Botones de navegación del header -->
+</header>    
 </div> 
 </div>          
-<!--Fin de encabezado-->
-
+<!--Fin header-->
 <!-- Main -->
 <main class="main__contact vh-90">
 <div class="row">
-<div class="col-md-12">
-      <form class="formulario border border-dark bg-info bg-gradient">
-        <fieldset class="fieldsetcontacto border border-dark ">
-          <legend><strong>Formulario de "Contacto"</strong></legend>
-          <!-- Fieldset con Inputs del usuario -->
-          <div>
-            <label for="nombre">Nombre</label>
-            <br />
-            <input type="text" name="nombre" />
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <br />
-            <input type="email" name="email" required />
-          </div>
-          <br />
-          <label for="estadocivil">Estado civil</label>
-          <select name="estadocivil">
-            <option name="S">Soltera/o</option>
-            <option name="C">Casada/o</option>
-            <option name="D">Divorciada/o</option>
-            <option name="O">Otro</option>
-          </select>
-          <br />
-          <br />
-          <br />
-          <label for="comentarios">Comentarios:</label>
-          <br />
-          <textarea name="consulta" rows="10" cols="35">
- Ingrese sus comentarios</textarea
-          >
-          <div id="terminos">
-            ¿Desea recibir nuestro newsletter?
-            <input type="checkbox" id="terminos" name="acepta" value="1" />
-          </div>
-        </fieldset>
-        <br />
-        <input type="submit" value="Enviar formulario" />
-        <br />
-        <input type="reset" value="Limpiar datos" />
-        <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      </form>
-      
-      
+ <div class="col-md-12">
+  <form class="main__contact--form border border-dark bg-info">
+  <div class="mb-3">
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Select option</option>
+      <option value="1">Claim</option>
+      <option value="2">Change</option>
+      <option value="3">Query </option>
+    </select>
+    <br />
+    <label for="exampleFormControlInput1" class="form-label">Email:</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Message:</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <br />
+  <input type="submit" value="Submit" />
+              <br />
+</form>
 </div>
 </div>
 </main>
-
 <!-- Fin Main -->
-
 <!--Footer-->
 <div class="row">
-  <div class="col-md-12">
+  <div class="col-xs-12">
     <footer class="footer"> 
       <h5 class="footer__titulo1--modifier h5operaciones"> _luk_c | <i class="fas fa-phone-alt"></i>(+54) 9 1100000000 | <i class="fas fa-envelope"></i> lc.luluroa@gmail.com | Güemes 3311 - Recoleta <img class="footer_imgArg" src="../img/argentina.svg"> Argentina</h5>
+      <br>
       <ul class="footer__titulo2--modifier"> <!-- Links otros sitios webs de ayuda a los usuarios que visitan la página-->
           <li><a href="https://www.argentina.gob.ar/aaip/datospersonales/reclama" style="color:black">Registro Nacional de Base de Datos •</a></li>  
           <li><a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor" style="color:black">Defensa del Consumidor •</a></li>      
@@ -116,7 +179,7 @@
           <li><a href="https://www.boletinoficial.gob.ar/detalleAviso/primera/179914/20180309" style="color:black">Agencia de Acceso a la Información Pública</a></li>
       </ul>
   <!-- Button to Open the Modal -->
-  <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal">
+  <button type="button" class="btn btn-link btn-lg" data-toggle="modal" data-target="#myModal">
       "Open mesagge here please"
     </button>
     <!-- The Modal -->
@@ -126,13 +189,15 @@
           <!-- Modal footer -->
           <div class="modal-footer">
           The above written addresses may vary according to their authors and owners. 
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-dark btn-lg" data-dismiss="modal">Close</button>
           </div>
          </div>
       </div>
     </div>
       <br>
-      <p class="lead footer__p--modifier">© Copyright 2021 _luk_c . Todos los derechos reservados. Prohibida la duplicación , distribución o almacenamiento en cualquier medio.</p>
+      <p class="lead footer__p--modifier fw-bold">© Copyright 2021 _luk_c . Todos los derechos reservados. Prohibida la duplicación , distribución o almacenamiento en cualquier medio.</p>
+    <br>
+    <p class="lead footer__p--modifier bg-danger">Powered and developed by • Lucrecia Cecilia Roa •</p>
     </footer> 
   </div>
   </div>

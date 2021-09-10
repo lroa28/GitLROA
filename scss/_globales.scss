@@ -1,9 +1,36 @@
 *{
-  margin: 0;
-  padding: 0;
+  padding: 0% 0% 0% 0%;
+  margin: 0% 0% 0% 0%;
+  box-sizing: border-box;
   }
   
  html {
    font-size: 62.5%;
-   box-sizing: border-box;
  }
+
+//  a {
+// 	text-decoration: none;
+// }
+
+// a:hover {
+// 	text-decoration: underline;
+// }
+
+ /*BODY*/
+.body {
+  padding: 0% 0% 0% 0%;
+  margin: 0% 0% 0% 0%;
+  background-color: whitesmoke;
+  width: 100vw;
+  // display: flex;
+  // width: 100%;
+}
+
+ /*PÁRRAFOS*/
+ p {
+  font-size: 15pt;
+  color: rgb(37, 35, 35);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-weight: bold;
+}

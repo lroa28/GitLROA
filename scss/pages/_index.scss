@@ -2,7 +2,7 @@
 .main__grid {
   padding: 0% 0% 0% 0%;
   margin: 0% 0% 0% 0%;
-  width: 100%;
+  // width: 100%;
   gap: 0%;
   display: flex; 
   flex-direction: column;
@@ -489,9 +489,9 @@ width: 35vw;
 
 /*MAIN_ SECTION SOCIAL MEDIA*/
 .sectionSM {
-display: flex;
-width: 35vw;
-background-image: url("../img/socialMedia4.png"); 
+  display: flex;
+  width: 35vw;
+  background-image: url("../img/socialMedia4.png"); 
   background-repeat: no-repeat;
   background-size: 15rem;
   background-position: left center;
@@ -510,7 +510,6 @@ background-image: url("../img/socialMedia4.png");
   text-align: center;
   padding: 0% 0% 0% 0%;
   margin: 0% 0% 0% 0%; 
-  
   }
 
   &__caja2{
@@ -531,9 +530,9 @@ background-image: url("../img/socialMedia4.png");
  }
 }
 
-/*BOTON ARRIBA*/
-.flecharriba {
-  position: fixed;
-  bottom: 10px;
-  left: 95%;
-  }
+// /*BOTON ARRIBA*/
+// .flecharriba {
+//   position: fixed;
+//   bottom: 10px;
+//   left: 95%;
+//   }

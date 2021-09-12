@@ -14,13 +14,12 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
 </head>
-<body class="body">  
-<div class="container-fluid">  
+<body class="body w-100">  
 
 <div class="row">
 <div class="col-sx-12">
 <!--Header-->
-<header class="header__grid container-fluid">      
+<header class="header__grid d-flex justify-content-between w-100">      
   <a href="./index.html">
   <img class="header__grid--logo img-fluid rounded-circle" src="./img/logoOriginal.jpg" alt="Logo of Page"> 
   </a>
@@ -42,30 +41,7 @@
         <li class="nav-item"><a class="nav-link" href="./pages/bag.html"><i class="fas fa-shopping-cart"></i></a></li>
         <li class="nav-item"><a class="nav-link" href="./pages/login.html"><i class="fas fa-user"></i></a></li>
         <li class="nav-item"><img class="header__grid--navigation__listaullanguages" src="./img/planet.png" alt="photo world">=<img class="header__grid--navigation__listaulspanish" src="./img/spanish.png" alt="photo idioma español"> <img class="header__grid--navigation__listaulenglish" src="./img/england.png" alt="photo idioma english"> <img class="header__grid--navigation__listaulcroatia" src="./img/croatia.png" alt="photo idioma croatian"> </li>  
-        <!-- </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li> -->
-        <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
-             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a> -->
-          <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div> 
-        </li>-->
-        <!-- <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li> -->
       </ul>
-      <!-- <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form> -->
     </div>
   </nav>
   <!-- Fin Lista Botones de navegación del header -->
@@ -74,12 +50,12 @@
 </div>          
 <!--Fin Header-->
 <!-- MAIN -->
-<main class="main__grid vh-90">
+<main class="main__grid w-100">
 <div class="row">
 <div class="col-sx-12">
 
 <!-- MAIN Lista superior-->
-<div class="mainlista__div1">
+<div class="mainlista__div1 w-100 col-sx-12">
     <ul class="menu"> 
        <li class="mainlista__div1--li"><a href="#sectionPT"></i>Who I am? </a></li>
        <li class="mainlista__div1--li"><a href="./pages/products.html"></i>Products</a></li>
@@ -94,15 +70,13 @@
     </ul>
 </div>
 <!-- Fin MAIN Lista superior-->
-
 </div> 
 </div>
 
 <!--Section Season Items-->
 <div class="row">
 <div class="col-sx-12">
-
-<section class="sectionSI"> 
+<section class="sectionSI w-100"> 
   <div class="row">
     <fieldset class="sectionSI__caja">
       <div class="sectionSI__caja--div">
@@ -118,14 +92,13 @@
      </fieldset>
   </div>
 </section>
-
 </div>
 </div>
 
 <!--Section Most Viewed-->
 <div class="row">
 <div class="col-sx-12">
-<section class="sectionMV"> 
+<section class="sectionMV w-100"> 
         <fieldset class="sectionMV__caja">
         <legend><h1><b>Most viewed in Instagram</b></h1></legend>
             <div id="carouselExampleControls" class="carousel slide col-md-7 container" data-ride="carousel">
@@ -165,8 +138,10 @@
 
 <!--Section Presentation of page-->
 <div class="row">
-<a name="sectionPT" <a/>
-<section class="sectionPT"> 
+<div class="col-sx-12">
+
+<a name="sectionPT"></a>
+<section class="sectionPT w-100"> 
 <fieldset class="sectionPT__caja">
   <div class="row">
     <legend><h1 class="bg-black text-white"><b><i>Presentation</b></i></h1></legend>
@@ -182,17 +157,17 @@
    <div class="ratio ratio-16x9 col-lg-6">
      <iframe  class="sectionPT__caja--videomod" width="560" height="300" src="https://www.youtube.com/embed/WEKCTZ3y0O0?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
    </div>     
-</div>
+  </div>
 </fieldset>
 </section>
 </div>
-
+</div>
 <!-- Section Helping y Social media-->
 
 <!-- Section Helping-->
 <div class="row">
 <div class="col-sx-12">
-    <div class="div__sectionHPYSM container-flui col-sx-6">
+    <div class="div__sectionHPYSM w-100">
         <section class="sectionHP"> 
             <fieldset class="sectionHP__caja  container-fluid border border-dark">
                 <legend><h1><b>Helping</b></h1></legend>
@@ -207,7 +182,7 @@
 <!-- Section Social media-->
     <section class="sectionSM"> 
       <a name="sectionSM"></a>
-        <fieldset class="sectionSM__caja1 container-fluid col-sx-6 border border-dark">
+        <fieldset class="sectionSM__caja1 container-fluid border border-dark">
             <legend><h1><b>Social Media</b></h1></legend>
             <p class="poperaciones lead bg-secondary bg-gradient">You can find here the links to our networks:</p> 
             <fieldset class="sectionSM__caja2 bg-info bg-gradient"> 
@@ -228,7 +203,7 @@
 <!--Section Offer-->
 <div class="row">
 <div class="col-sx-12">
-<section class="sectionOFF"> 
+<section class="sectionOFF w-100"> 
         <fieldset class="sectionOFF__caja">
             <legend><h1><b>Offer</b></h1></legend>
             <h3>Subscribe to our newsletter and take advantage of a 10% discount on your next online purchase!</h3>
@@ -259,7 +234,7 @@
 <!--Footer-->
 <div class="row">
 <div class="col-xs-12">
-  <footer class="footer"> 
+  <footer class="footer w-100"> 
     <h5 class="footer__titulo1--modifier h5operaciones"> _luk_c | <i class="fas fa-phone-alt"></i>(+54) 9 1100000000 | <i class="fas fa-envelope"></i> lc.luluroa@gmail.com | Güemes 3311 - Recoleta <img class="footer_imgArg" src="./img/argentina.svg" alt="photo Argentina"> Argentina</h5>
     <br>
     <ul class="footer__titulo2--modifier"> <!-- Links otros sitios webs de ayuda a los usuarios que visitan la página-->
@@ -314,6 +289,6 @@
   });
  </script>
 <!-- script para Popover -->
-</div>
+
 </body>
 </html>   <!-- Fin de la página web--> 

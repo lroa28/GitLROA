@@ -418,24 +418,29 @@ p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   justify-items: stretch;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   list-style-type: none;
   font-family: 'Dancing Script', cursive;
   font-weight: bold;
   font-size: 25px;
+  background-color: rgba(96, 96, 110, 0.158);
 }
 
 .mainlista__div1 li {
   display: inline;
   text-align: center;
   margin: 0 10px 0 0;
+  background-color: rgba(96, 96, 110, 0.466);
+  border-radius: 5px;
 }
 
 .mainlista__div1 li a {
   padding: 2px 7px 2px 7px;
   color: #080808;
   text-decoration: none;
+  gap: 10px;
 }
 
 .mainlista__div1 li a:hover {
@@ -563,7 +568,7 @@ p {
 }
 
 .sectionSI__caja--buttonmod1:hover {
-  background-color: darkmagenta;
+  background-color: darkorange;
   -webkit-box-shadow: 0 0 10px #203de2, 0 0 20px #203de2, 0 0 20px #203de2;
           box-shadow: 0 0 10px #203de2, 0 0 20px #203de2, 0 0 20px #203de2;
   border-radius: 30px;
@@ -609,7 +614,7 @@ p {
 }
 
 .sectionSI__caja--buttonmod2:hover {
-  background-color: gold;
+  background-color: springgreen;
   -webkit-box-shadow: 0 0 10px #203de2, 0 0 20px #203de2, 0 0 20px #203de2;
           box-shadow: 0 0 10px #203de2, 0 0 20px #203de2, 0 0 20px #203de2;
   color: #434343;
@@ -653,7 +658,7 @@ p {
 }
 
 .sectionSI__caja--buttonmod3:hover {
-  background-color: springgreen;
+  background-color: gold;
   -webkit-box-shadow: 0 0 10px #203de2, 0 0 20px #203de2, 0 0 20px #203de2;
           box-shadow: 0 0 10px #203de2, 0 0 20px #203de2, 0 0 20px #203de2;
   color: #434343;
@@ -1158,7 +1163,7 @@ p {
 /*MAIN*/
 .main__login {
   width: 100vw;
-  height: 68vh;
+  height: 65vh;
   margin-top: 66px;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,32 +1,47 @@
 /*MAIN*/
   .main__search {
+    width: 100vw;
+    height: 75vh;
+    margin-top: 73px;
     display: flex;
-    flex-direction: row;
-    height: 60vh;
-    line-height: 1,6rem;
-    background-color: blue;
-    justify-content: flex-start ;
-    margin-top: 60px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    background-color: rgba(4, 4, 247, 0.719);
     background-image: url("../img/searching2.png");
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
     background-size: 100px;
-    
 
-    &--form{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    color: black;
-    background-color: grey;
-    font-family: 'Lucida Sans';
-    font-size: 12px;
-    font-weight: bold;
-    border: 5rem;
-    width: 300px;
-    height: 300px;
-    padding: 1% 2% 1% 2%;
-    margin: 0% 0% 0% 0%;
+    &--titulo1{
+      font-family: 'Poppins', sans-serif;
+      font-size: 20px;
     }
-} 
+
+    &--form {
+      display: flex;
+      flex-direction: column;
+      color: black;
+      background-color: grey;
+      font-family: 'Poppins', sans-serif;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 30px;
+      width: 300px;
+      height: 260px;
+      padding: 1% 2% 1% 2%;
+      margin: 0% 0% 0% 0%;
+    }
+  } 
+
+  @media (max-width: 980px) { //para Dispositivos móviles. Min-width es para Desk
+    .main__search {
+      margin-top: 50px;
+    }
+  
+    .main__search--form {
+      width: 200px;
+      height: 100px;
+    }
+  }

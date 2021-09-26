@@ -13,137 +13,75 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> <!-- CDN via jsDelivr -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/> <!--Aos animate-->
   <head>
 <!--Body-->
-<body class="body">
-  
-<div class="row">
-<div class="col-md-12">
-<!--Header-->
- <header class="header__grid d-flex justify-content-between">   
-   <a href="../index.html">
-   <img class="header__grid--logo img-fluid rounded-circle" src="../img/logoOriginal.jpg" alt="Logo"> 
-   </a>
-   <h2 class="header__grid--titulo1">_luk_c</h2> <!--Title= Nombre de mi page-->
-   <h1 class="header__grid--titulo2">Clothing</h1> <!--Title= Indumentaria-->
-   <h2 class="header__grid--titulo3">• Products • </h2><!--Title= Products-->
-   <!-- Lista Botones de navegación del header -->
-            <nav
-              class="
-                navbar navbar-expand-lg navbar-light
-                bg-secondary
-                rounded-pill
-              "
-            >
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul
-                  class="
-                    navbar-nav
-                    mr-auto
-                    header__grid--navigation__listaulmodifier
-                  "
-                >
-                  <li>
-                    <a href="../index.html"> <i class="fas fa-home"></i> </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/search.html"
-                      ><i class="fas fa-search"></i
-                    ></a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="https://www.google.com/maps/place/Recoleta,+CABA/@-34.5847911,-58.4138525,14z/data=!3m1!4b1!4m5!3m4!1s0x95bcca99c609fc2f:0x392ca99351808a75!8m2!3d-34.5873825!4d-58.3972762"
-                      ><i class="fas fa-map-marker-alt"></i
-                    ></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/contact.html"
-                      ><i class="fas fa-envelope"></i
-                    ></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/bag.html"
-                      ><i class="fas fa-shopping-cart"></i
-                    ></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/login.html"
-                      ><i class="fas fa-user"></i
-                    ></a>
-                  </li>
-                  <li class="nav-item">
-                    <img
-                      class="header__grid--navigation__listaullanguages"
-                      src="../img/planet.png" alt="photo world"
-                    />=<img
-                      class="header__grid--navigation__listaulspanish"
-                      src="../img/spanish.png" alt="photo idioma español"
-                    />
-                    <img
-                      class="header__grid--navigation__listaulenglish"
-                      src="../img/england.png" alt="photo idioma ingles"
-                    />
-                    <img
-                      class="header__grid--navigation__listaulcroatia"
-                      src="../img/croatia.png" alt="photo idioma croatian"
-                    />
-                  </li>
-                  <!-- </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li> -->
-                  <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
-             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a> -->
-                  <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div> 
-        </li>-->
-                  <!-- <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li> -->
-                </ul>
-                <!-- <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form> -->
-              </div>
-            </nav>    
-</header> 
-</div> 
-</div>          
-<!--Fin Header-->
+<body class="body"> 
+
+  <div class="row">
+    <!--Header-->
+    <header class="header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"> 
+      <div class="d-flex v-100 container-fluid">
+      <div class="header__divlogo">
+       <a href="../index.html"><img class="header__logo img-fluid rounded-circle" src="../img/logoOriginal.jpg" alt="Logo of Page"></a> <!--Logo-->
+      </div>
+      <div class="header__menulista">
+        <ul class="menu"> 
+           <li class="menu__item"><a href="../index.html#sectionPT"></i>WHO I AM?</a></li>
+           <li class="menu__item"><a href="../pages/products.html"></i>PRODUCTS</a></li>
+           <li class="menu__item"><a href="../index.html#sectionSM"></i>SOCIAL MEDIA</a>
+           <li class="menu__item"><a href="../pages/courses.html"></i>COURSES</a>
+        </ul>
+      </div>
+    </div>
+    <!-- Lista Botones de navegación del header -->
+    <div>
+      <nav class="header__navigation navbar navbar-expand-lg btn-lg ">
+      <div class="header__listafinal">
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fas fa-hamburger"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav header__navigation">
+            <li class="nav-item"><a class="nav-link" href="../pages/search.html"><i class="fas fa-search"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.google.com/maps/place/Recoleta,+CABA/@-34.5847911,-58.4138525,14z/data=!3m1!4b1!4m5!3m4!1s0x95bcca99c609fc2f:0x392ca99351808a75!8m2!3d-34.5873825!4d-58.3972762"><i class="fas fa-map-marker-alt"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="../pages/contact.html"><i class="fas fa-envelope"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="../pages/bag.html"><i class="fas fa-shopping-cart"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="../pages/login.html"><i class="fas fa-user"></i></a></li>
+            <!-- <li class="nav-item"><img class="header__grid--navigation__listaulspanish" src="./img/spanish.png" alt="photo idioma español"> <img class="header__grid--navigation__listaulenglish" src="./img/england.png" alt="photo idioma english"> <img class="header__grid--navigation__listaulcroatia" src="./img/croatia.png" alt="photo idioma croatian"> </li>-->
+          </ul>
+        </div>
+      </div>
+      </nav>
+    </div>
+    </div>
+    <!-- Fin Lista Botones de navegación del header -->
+    </header> 
+              
+    <!--Fin Header-->
 <!--Main-->
 <main class="main__products vw-100 vh-90">
 <div class="row">
 <div class="col-md-12">
 <!--Selección antes de buscar productos --> 
- <div class="bg-image img-fluid img-responsive">
+<div class="d-flex-row">
+
+  <div>
   <form class="main__formbusq" action="" method="post" target="_blank">
-    <!--Barra de búsqueda de prendas en el header-->
+    <!--Barra de búsqueda de prendas-->
     <p class="main__products--formbusq__p text-dark">Búsqueda de prendas:
       <input type="search" name="busquedaprendas" placeholder="Remera, pantalón, cuellos..."/>
       <input type="submit" value="Search" />
     </p>
   </form>
+  </div>
       <div class="dropdown">
               <button
                 type="button"
@@ -173,173 +111,121 @@
                 <div class="dropdown-item" href="#">Molds</div>
               </div>
       </div>
-      <!-- Table-->
-      <h2 class="main__titulo">Products</h2>
-      <table class="table table-striped table-hover fw-bold fs-4">
-              <thead>
-                <tr class="table-dark">
-                  <th scope="col">Nro Product</th>
-                  <th scope="col">Name</th>
-                  <th scope="col">Information</th>
-                  <th scope="col">Benefics</th>
-                  <th scope="col">Photo(s)</th>
-                  <th scope="col">Price</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="table-success">
-                  <th scope="row">0</th>
-                  <td>Cuellito tejido con corderito interno</td>
-                  <td>
-                    <ul>
-                      <li>Lana 100%</li>
-                      <li>Hecho a mano</li>
-                      <li>Corderito interno</li>
-                      <li>Se convierte en gorro</li>
-                    </ul>
-                  </td>
-                  <td>
-                    <ol>
-                      <li>Posible lavar en lavarropas</li>
-                      <li>Apto para alergicos a la lana</li>
-                      <li>Más comodo y práctico que una bufanda</li>
-                    </ol>
-                  </td>
-                  <td> <img class="img-fluid rounded-circle" src="../img/cuellitoRivBoc.jpg" width="70" height="70" class="img-fluid border border-danger" alt="img1"></td>
-                  <td>$750</td>
-                </tr>
-                <tr class="table-warning">
-                  <th scope="row">1</th>
-                  <td>Pulsera macramé</td>
-                  <td>Hilo macramé</td>
-                  <td>Podes ducharte con ella</td>
-                  <td><img  class="img-fluid rounded-circle" src="../img/pulseraboca.jpg" width="70" height="70" class="img-fluid border border-primary" alt="img2" /></td>
-                  <td>$100 - $300</td>
-                </tr>
-                <tr class="table-danger">
-                  <th scope="row">3</th>
-                  <td>Set barbijo, pulsera y llavero</td>
-                  <td>
-                    <ul>
-                      <li>Jean</li>
-                      <li>Hilo macramé</li>
-                    </ul>
-                  </td>
-                  <td>
-                    <ol>
-                      <li>Posible lavar en lavarropas</li>
-                      <li>Doble tela</li>
-                    </ol>
-                  </td>
-                  <td> <img class="img-fluid rounded-circle" src="../img/barbRivBoc.jpg" width="70" height="70" class="img-fluid border border-danger" alt="img1"></td>
-                  <td>$350</td>
-                </tr>
-              </tbody>
-      </table>
- </div>
+</div>
 
+      <div class="row">
+        <div class="container section1 d-flex-row" data-aos="fade-down" data-aos-duration="1500">
+            <div class="container-fluid">
+                <div class="contenedor__tarjeta d-flex-row">
+                  <figure>
+                    <img
+                      src="../img/CanguroAndre.jpg"
+                      class="main__img1"
+                      alt="Foto Canguro"
+                    />
+                    <figcaption>
+                      <h3>Campera</h3>
+                      <hr />
+                      <p>Canguro pólarsoft negro</p>
+                      <span><i class="fa fa-star"></i></span>
+                      <span><i class="fa fa-star"></i></span>
+                      <span><i class="fa fa-star"></i></span>
+                      <span><i class="fa fa-star"></i></span>
+                      <span><i class="fa fa-star"></i></span>
+                      <p>$2.999</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="contenedor__tarjeta">
+                  <figure>
+                    <img
+                      src="../img/Campera.jpg"
+                      class="main__img1"
+                      alt="Foto Campera algodon"
+                    />
+                    <figcaption>
+                      <h3>Campera</h3>
+                      <hr />
+                      <p>Con capucha algodón</p>
+                      <span><i class="fa fa-star"></i></span>
+                      <span><i class="fa fa-star"></i></span>
+                      <span><i class="fa fa-star"></i></span>
+                      <span><i class="fa fa-star"></i></span>
+                      <span><i class="fa fa-star"></i></span>
+                      <p>$1.0000</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="contenedor__tarjeta">
+                  <figure>
+                    <img
+                      src="../img/Barbijos2.jpg"
+                      class="main__img1"
+                      alt="Barbijos"
+                    />
+                    <figcaption>
+                      <h3>Barbijos</h3>
+                      <hr />
+                      <p>Barbijos de jeans</p>
+                      <span><i class="fa fa-star"></i></span>
+                      <span><i class="fa fa-star"></i></span>
+                      <span><i class="fa fa-star"></i></span>
+                      <span><i class="fa fa-star"></i></span>
+                      <p>$200 C/U</p>
+                    </figcaption>
+                  </figure>
+                </div>
+            </div>
+        </div>
+      </div>
 </div>
 </div>
 </main>
 <!--Fin Main-->
-      <!--Footer-->
-      <div class="row">
-        <div class="col-xs-12">
-          <footer class="footer">
-            <h5 class="footer__titulo1--modifier h5operaciones">
-              _luk_c | <i class="fas fa-phone-alt"></i>(+54) 9 1100000000 |
-              <i class="fas fa-envelope"></i> lc.luluroa@gmail.com | Güemes 3311
-              - Recoleta
-              <img class="footer_imgArg" src="../img/argentina.svg" /> Argentina
-            </h5>
-            <br />
-            <ul class="footer__titulo2--modifier">
-              <!-- Links otros sitios webs de ayuda a los usuarios que visitan la página-->
-              <li>
-                <a
-                  href="https://www.argentina.gob.ar/aaip/datospersonales/reclama"
-                  style="color: black"
-                  >Registro Nacional de Base de Datos •</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.argentina.gob.ar/produccion/defensadelconsumidor"
-                  style="color: black"
-                  >Defensa del Consumidor •</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario"
-                  style="color: black"
-                  >Defensa de las y los consumidores. Para reclamos ingrese
-                  "aquí" •</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.boletinoficial.gob.ar/detalleAviso/primera/179914/20180309"
-                  style="color: black"
-                  >Agencia de Acceso a la Información Pública</a
-                >
-              </li>
-            </ul>
-            <!-- Button to Open the Modal -->
-            <button
-              type="button"
-              class="btn btn-link btn-lg"
-              data-toggle="modal"
-              data-target="#myModal"
-            >
-              "Open mesagge here please"
-            </button>
-            <!-- The Modal -->
-            <div class="modal" id="myModal">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <!-- Modal footer -->
-                  <div class="modal-footer">
-                    The above written addresses may vary according to their
-                    authors and owners.
-                    <button
-                      type="button"
-                      class="btn btn-dark btn-lg"
-                      data-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <br />
-            <p class="lead footer__p--modifier fw-bold">
-              © Copyright 2021 _luk_c . Todos los derechos reservados. Prohibida
-              la duplicación , distribución o almacenamiento en cualquier medio.
-            </p>
-            <br />
-            <p class="lead footer__p--modifier bg-danger">
-              Powered and developed by • Lucrecia Cecilia Roa •
-            </p>
-          </footer>
-        </div>
+
+<!--Footer-->
+<div class="row">
+  <div class="col-xs-12">
+    <footer class="footer"> 
+      <h5 class="footer__titulo1--modifier h5operaciones"> _luk_c | <i class="fas fa-phone-alt"></i>(+54) 9 1100000000 | <i class="fas fa-envelope"></i> lc.luluroa@gmail.com | Güemes 3311 - Recoleta <img class="footer_imgArg" src="../img/argentina.svg"> Argentina</h5>
+      <br>
+      <div>
+        <ul class="footer__titulo2--modifier"> <!-- Links otros sitios webs de ayuda a los usuarios que visitan la página-->
+          <li><a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario">Defensa del consumidor en la República Argentina. Para reclamos ingrese <i class="fas fa-hand-point-right"></i>"aquí"</a></li> 
+        </ul>
+      </div>
+      <br>
+      <span class="lead footer__p--modifier">© Copyright 2021 _luk_c . Todos los derechos reservados. Prohibida la duplicación , distribución o almacenamiento en cualquier medio.</span>
+    <br>
+    <span class="lead footer__p--modifier bg-danger d-inline">Developed by •Lucrecia Cecilia Roa•</span>
+    </footer> 
 </div>
+</div>
+<!--Fin de Footer-->
+<!-- Script a la pagina AOS (para hacer rotar las imganes)-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
 <!-- script js idem la ppt de la clase -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<!-- Fin script js idem la ppt de la clase -->
+<!--Bootstrap-->
 <script
-  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-  crossorigin="anonymous"
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+crossorigin="anonymous"
 ></script>
-<script
-        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"
-></script>
-<script
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"
-></script>
+<!-- Script para Popover -->
+ <script>
+  $(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+  });
+ </script>
+
+
 </body>
-</html>
+</html>   <!-- Fin de la página web-->     

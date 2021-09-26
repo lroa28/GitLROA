@@ -1,8 +1,8 @@
 /*MAIN*/
 .maincourses__grid {
-  margin-top: 65px;
-  width: 100%;
-  gap: 0%;
+  width: 100vw;
+  height: 180vh;
+  margin-top: 73px;
   display: flex; 
   flex-direction: column;
   display: grid;
@@ -12,15 +12,15 @@
   "contenedor1"
   "contenedor2"
   "contenedor3";
-	background-image: url("../img/fondoCosturera.jpg");
+  background-image: url("../img/fondoCosturera.jpg");
   background-position: center;
   background-size: cover;
-  background-repeat: norepeat;
+  background-repeat: no-repeat;
 }
 
 .contenedor1 {
 	max-width: 1000px;
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	grid-area: contenedor1;
 }
@@ -40,13 +40,13 @@
 }
 
 .tarjeta {
-	background-color: #cccccc;
+	background-color: royalblue;
 	border-radius: 15px;
 	padding: 20px;
 	display: flex;
 	align-items: center;
 	position: relative;
-	margin-bottom: 50px; 
+	margin-bottom: 30px; 
 }
 
 .tarjeta__img {

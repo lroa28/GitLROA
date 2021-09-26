@@ -1,137 +1,213 @@
 /*HEADER*/
-.header__grid {
+.header {
   grid-area: header__grid;
-  padding: 0% 0% 0% 0%; 
-  margin: 0% 0% 0% 0%;
+  padding: 0.3% 0% 0.3% 0%; 
   position: fixed;
-  top:0px;
   width: 100vw;
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
-  justify-items: center;
   align-items: center;
   background: radial-gradient( whitesmoke, rgba(73, 70, 70, 0.39) );
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  grid-template-rows: auto;
-  grid-template-areas: 
-  "header__grid--logo header__grid--titulo1 header__grid--titulo2 header__grid--titulo3 header__grid--navigation__listaulmodifier";
-  grid-column-gap: 3px;
-  grid-row-gap: 3px;
   z-index: 2; 
   box-shadow: 1px 3px rgba(134, 128, 128, 0.63);
 
-    & a {
-    color: black;
-    }
+  &__divlogo{
+   display: flex;
+   flex-direction: row;
+   padding:  0% 2% 0% 2%; 
+  }
 
-    &--logo {
-    width: 60px;
-    height: 60px;
-    grid-area: header__grid--logo;
-    justify-self: start;
-    align-self: end;  
-    }
-
-    &--titulo1 {
-    grid-area: header__grid--titulo1;
-    margin-right: 0%;
-    padding-right: 0%;
-    color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif, cursive; 
-    text-align: left;
-    font-size: 25px;
-    font-style: "italic";
-    justify-self: start;
-    align-self: center;
-    animation-duration: 4s;
-    animation-name: aparecer;
-    animation-iteration-count: infinite;
+ &__logo {
+   width: 60px;
+   height: 60px;
+   // grid-area: header__grid--logo;
+   // justify-self: start;
+   // align-self: center;  
+   // display: flex;
+   // justify-content: center;
+   justify-items: center;
+   align-items: center;
+   top: 50%;
+   left: 50%;
    }
 
-  @keyframes aparecer {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
- }
+  //   &__titulo1 {
+  //   // grid-area: header__grid--titulo1;
+  //   // display: flex;
+  //   // justify-content: flex-start;
+  //   // justify-items: center;
+  //   // align-items: center;
+  //   margin-right: 0%;
+  //   padding-right: 0%;
+  //   color:black;
+  //   font-family: 'Poppins', sans-serif;
+  //   // text-align: left;
+  //   font-size: 20px;
+  //   font-style: italic;
+  //   // justify-self: start;
+  //   align-self: center;
+  //   animation-duration: 4s;
+  //   animation-name: aparecer;
+  //   animation-iteration-count: infinite;
+  //  }
 
-  &--titulo2 {
-  grid-area: header__grid--titulo2;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif, cursive; 
-  font-size: 32px;
-  margin-left: 0%;
+  // @keyframes aparecer {
+  //   0% {
+  //     opacity: 0;
+  //   }
+  //   100% {
+  //     opacity: 1;
+  //   }
+  //  }
+
+  &__menulista {
+    display: flex;
+    justify-content: center;
+      
+   }
+
+   &__navigation {
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   font-size: 20px;
+   color: black;
+   gap: 0.5rem;
+   max-width: 980px;
+   margin: 0 auto;
+  
+   & li a {
+   color: black
+   } 
+}
+
+&__grid--navigation__listaulspanish,
+&__grid--navigation__listaulenglish,
+&__grid--navigation__listaulcroatia {
+  width: 30px;
+  height: 30px;
+  gap: 1rem;
+}
+}
+
+  .menu {
+  padding: 0%;
+  margin: 0%; 
+  display: flex;
+  flex-direction: row;
+  line-height: 60px;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  font-size: 15px;
+  gap: 1.5rem;
+ 
+  &__item {
+  width: max-content;
   
   }
 
-  &--titulo3 {
-  grid-area: header__grid--titulo3;
-  font-style: "italic"; 
-  font-size: 32px;
-  font-family: 'Dancing Script', cursive; 
-  font-weight: bold;
-  color: deeppink;
-  animation-duration: 4s;
-  animation-name: aparecer;
-  animation-iteration-count: infinite;
+& > li {
+  float:left;
+  // gap: 10rem;
+}
+
+& li a{
+  text-decoration:none;
+  padding: 1px 2px;
+  display:block;
+  position: relative;
+  font-size: 20px;
+  color: black;
+}
+
+ & a::before {
+  content: ’’;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+ & a:hover::before {
+  transform: scaleX(1);
+}
+
+ & [data-animation="to-left"] a::before {
+  transform-origin: right;
+}
+
+&[data-animation="center"] a::before {
+  transform-origin: center;
+}
+
+& li a:hover{
+  transition: all 1s;
+  // background: linear-gradient(to right, #2936ad, #e878a2, #565868);
+  border-radius: 15px;
+  color: #203de2;
+  font-style: italic;
+  
  }
 
-@keyframes aparecer {
-  0% {
-    opacity: 0;
+ & li ul{
+  display:none;
+	position: absolute;
+  background-color: rgba(152, 152, 160, 0.521) ;
+  min-width: 120px;
+  list-style: none;
+}
+
+& li:hover > ul {
+  display:block;
+  padding: 1px 2px;
+  border-radius: 5px;
+  z-index: 4;
+}
+
+& li ul li {
+  position:relative;
+  text-decoration:none;
+}
+
+& li ul li ul {
+  right:-140px;
+  top:0px;
+  list-style: none;
+}
+
+
+}
+
+@media (max-width: 980px) { //para DM. min width es para Desk
+  /* Header */
+  .header__menulista {
+    display: none;
+    // font-size: 10px;
+   }
+   
+   .menu {
+    font-size: 15px;
   }
-  100% {
-    opacity: 1;
+
+  .menu__item{
+    color: black;
   }
-}
 
-&--navigation__listaulmodifier {
-grid-area: header__grid--navigation__listaulmodifier;
-margin: 0;
-padding: 0;
-list-style: none;
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-align-content: flex-end;
-align-items: center;
-gap: 10px;
-font-size: 20px;
-// background-color: rgba(0, 0, 0, 0.226) ;
-// border-radius: 5px;
-// color: black;
+   .header__navigation {
+    background-color: rgba(0, 0, 255, 0.336) ;
+    border-radius: 15px;
+    font-size: 12px;
+  }
+ 
 }
-
-&--navigation__listaulmodifier hover {
-background-color: blue ;
-padding: 0,5rem 1rem;
-transition: all 0,4s linear ;
-border-radius: 5px;
-}
-
-&--navigation__listaullanguages{
-width: 25px;
-height: 25px; 
-}
-
-&--navigation__listaulspanish {
- width: 20px;
- height: 20px; 
-}
-
-&--navigation__listaulenglish{
-width: 20px;
-height: 20px; 
-}
-
-&--navigation__listaulcroatia{
-width: 20px;
-height: 20px; 
-}
-}
-

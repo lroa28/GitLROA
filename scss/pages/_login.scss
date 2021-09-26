@@ -1,31 +1,48 @@
   /*MAIN*/
   .main__login {
     width: 100vw;
-    height: 65vh;
-    margin-top: 66px;
+    height: 75vh;
+    margin-top: 73px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
-    background-color: deepskyblue;
+    background-color: rgba(4, 4, 247, 0.719);
     background-image: url("../img/social-media-cel.png"); 
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
     background-size: 100px;
  
+    &--titulo1{
+      font-family: 'Poppins', sans-serif;
+      font-size: 20px;
+    }
+
     &--form {
     display: flex;
     flex-direction: column;
     color: black;
     background-color: grey;
-    font-family: 'Lucida Sans';
+    font-family: 'Poppins', sans-serif;
     font-size: 12px;
     font-weight: bold;
-    border: 10rem;
+    border-radius: 30px;
+    border-style: solid rgba(0, 0, 0, 0.589);
     width: 300px;
-    height: 300px;
+    height: 200px;
     padding: 1% 2% 1% 2%;
     margin: 0% 0% 0% 0%;
   }
 } 
+
+@media (max-width: 980px) { //para Dispositivos móviles. Min-width es para Desk
+  .main__login {
+    margin-top: 50px;
+  }
+
+  .main__login--form {
+    width: 200px;
+    height: 200px;
+  }
+}

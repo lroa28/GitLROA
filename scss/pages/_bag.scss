@@ -1,11 +1,19 @@
 /*MAIN BAG*/
 .main__bag {
   width: 100vw;
-  height: 100vh;
-  padding-top: 12rem;
+  height: 120vh;
+  margin-top: 73px;
   display: flex;
-  background-image: url("../img/bags.jpg");
+  background-image: url("../img/bags1.jpg");
   background-position: center;
-  background-size: cover;
-  background-repeat: norepeat;
+  background-size: 100%;
+  background-repeat: no-repeat;
 } 
+
+@media (max-width: 980px) { //para Dispositivos móviles. Min-width es para Desk
+  .main__bag {
+    margin-top: 60px;
+    background-size: cover;
+  }
+
+}

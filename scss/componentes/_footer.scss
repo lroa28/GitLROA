@@ -11,6 +11,9 @@
   top:0%;
   width: 100vw;
   background-color: black;
+  background-image: url("../img/fondonegro.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
   
     &__p--modifier{
     font-size: 10pt;
@@ -73,6 +76,15 @@
    }
   }
 
-  // ul li a {
-  //   color: white;
-  // }
+  @media (max-width: 980px) { //para Dispositivos móviles. Min-width es para Desk
+
+  .footer__titulo1--modifier{
+    font-size: 12px;
+    
+    &:hover{
+      transition: 0s;
+      font-size: 1rem;
+     }
+  }
+
+}

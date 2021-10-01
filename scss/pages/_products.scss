@@ -1,9 +1,10 @@
   /*MAIN PRODUCTOS*/
 .main__products {
     width: 100vw;
-    height: 200vh;
-    margin-top: 73px;
-    background-color: rgba(4, 4, 247, 0.719);
+    height: 100%;
+    //*margin-top: 85px; este es el margin para que quede OK el Header*//
+    padding-top: 8.6rem; //* con este padding la pag queda sin scroll horizontal*//
+    // background-color: rgba(73, 70, 70, 0.39);
 
    &--formbusq {
     font-family: 'Lucida Sans';
@@ -28,11 +29,7 @@
 }
 
  .section1 {
-  background-image: url("../img/tiendahippiechic1.jpg");
-  background-position: center;
-  background-position-y: top;
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding-top: 1rem;
  }
 
  .contenedor__tarjeta {
@@ -49,4 +46,107 @@
   background: radial-gradient( whitesmoke, rgba(73, 70, 70, 0.699) );
   width: 300px;
   height: 300px;
+}
+
+.link{
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 28px;
+  cursor: pointer;
+  width: fit-content;
+  margin: 0 auto 48px;
+  z-index: 0;
+  transition: all 450ms ease;
+
+  &::after,
+  &::before{
+      content: '';
+      display: block;
+      position: absolute;
+      transition: width 540ms, opacity 300ms ease;
+  }
+}
+/* LINK 3 */
+.link--3{
+  height: 56px;
+  width: 164px;
+  display: grid;
+  place-items: center;
+
+  &-b-tr,
+  &-b-bl{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+
+      &::before,
+      &::after{
+          content: '';
+          position: absolute;
+          background-color: red;
+          border-radius: 10px;
+          transition: all 400ms ease-in-out;
+      }
+  }
+
+  &-b-tr::before{
+      right: 0;
+      bottom: 0;
+      width: 0;
+      height: 1px;
+  }
+
+  &-b-tr::after{
+      right: 0;
+      top: 0;
+      height: 0;
+      width: 1px;
+  }
+
+  &-b-bl::before{
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 1px;
+  }
+
+  &-b-bl::after{
+      left: 0;
+      bottom: 0;
+      height: 0;
+      width: 1px;
+  }
+
+  &:hover{
+      color:black;
+      background-color: red;
+      border-radius: 8px;
+      .link--3-b-tr::before,
+      .link--3-b-bl::before{
+          width: 100%;
+      }
+
+      .link--3-b-tr::after,
+      .link--3-b-bl::after{
+          height: 100%;
+      }
+  }
+}
+
+
+@media (max-width: 980px) { //para Dispositivos móviles. Min-width es para Desk
+  .footer__titulo1--modifier{
+    font-size: 12px;
+    
+    &:hover{
+      transition: 0s;
+      font-size: 1rem;
+     }
+  }
 }

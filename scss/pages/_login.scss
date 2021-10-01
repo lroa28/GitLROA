@@ -1,19 +1,25 @@
+  .body{
+    background-color: blue;
+  }
+  
   /*MAIN*/
   .main__login {
     width: 100vw;
-    height: 75vh;
-    margin-top: 73px;
+    height: 80vh;
+    //*margin-top: 85px; este es el margin para que quede OK el Header*//
+    padding-top: 8.6rem; //* con este padding la pag queda sin scroll horizontal*//
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
-    background-color: rgba(4, 4, 247, 0.719);
+    background-color: blue;
     background-image: url("../img/social-media-cel.png"); 
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
     background-size: 100px;
- 
+    overflow-x: hidden;
+    
     &--titulo1{
       font-family: 'Poppins', sans-serif;
       font-size: 20px;
@@ -44,5 +50,14 @@
   .main__login--form {
     width: 200px;
     height: 200px;
+  }
+
+  .footer__titulo1--modifier{
+    font-size: 12px;
+    
+    &:hover{
+      transition: 0s;
+      font-size: 1rem;
+     }
   }
 }

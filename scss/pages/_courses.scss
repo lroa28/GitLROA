@@ -1,18 +1,22 @@
+.body{
+    background-color: blue;
+  }
+
 /*MAIN*/
 .maincourses__grid {
   width: 100vw;
-  height: 180vh;
-  margin-top: 73px;
+  height: 140vh;
+  margin-top: 87px;
   display: flex; 
   flex-direction: column;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
   "contenedor1"
   "contenedor2"
   "contenedor3";
-  background-image: url("../img/fondoCosturera.jpg");
+  background-image: url("../img/fondoManiki.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -21,26 +25,26 @@
 .contenedor1 {
 	max-width: 1000px;
 	width: 100%;
-	margin: 0 auto;
+	// margin: 0 auto;
 	grid-area: contenedor1;
 }
 
 .contenedor2 {
 	max-width: 1000px;
-	width: 90%;
+	width: 110%;
 	margin: 0 auto;
 	grid-area: contenedor2;
 }
 
 .contenedor3 {
 	max-width: 1000px;
-	width: 90%;
-	margin: 0 auto;
+	width: 80%;
+	margin: auto 0;
 	grid-area: contenedor3;
 }
 
 .tarjeta {
-	background-color: royalblue;
+	background: linear-gradient(90deg, rgba(2, 0, 36, 0.507) 0%, rgba(35, 10, 224, 0.808) 35%, rgb(255, 0, 0) 100%);
 	border-radius: 15px;
 	padding: 20px;
 	display: flex;
@@ -53,24 +57,25 @@
 	width: 300px;
 	height: 180px;
 	margin-right: 30px;
+	border-radius: 1rem;
 }
 
 .tarjeta__titulo {
-	font-size: 2rem;
-	margin-bottom: 20px;
+  font-size: 3rem;
+  margin-bottom: 20px;
   text-decoration: underline;
   font-style: italic;
 }
 
 .tarjeta__parrafo {
 	line-height: 28px;
-	font-size: 2rem;
+	font-size: 3rem;
 }
 
 .boton{
 	height: 60px;
 	padding: 20px;
-	background-color: rgba(255, 0, 0, 0.774);
+	background: linear-gradient(to bottom, rgb(27, 26, 26), rgba(228, 201, 201, 0.315));
 	color: black;
 	display: inline-block;
 	text-decoration: none;
@@ -82,3 +87,40 @@
 	right: 20px;
 	bottom: -15px;
 }
+
+@media (max-width: 980px) { //para Dispositivos móviles. Min-width es para Desk
+	.maincourses__grid {
+		width: 100vw;
+		height: 240vh;
+	}
+	
+	.contenedor1 {
+		max-width: 500px;
+		width: 500%;
+		// margin: 0 auto;
+		grid-area: contenedor1;
+	}
+	
+	.contenedor2 {
+		max-width: 500px;
+		width: 500%;
+		margin: 0 auto;
+		grid-area: contenedor2;
+	}
+	
+	.contenedor3 {
+		max-width: 500px;
+		width: 500%;
+		margin: auto 0;
+		grid-area: contenedor3;
+	}
+    .footer__titulo1--modifier{
+		font-size: 12px;
+		
+		&:hover{
+		  transition: 0s;
+		  font-size: 1rem;
+		 }
+	  }
+  
+  }

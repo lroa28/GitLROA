@@ -1,8 +1,14 @@
+.body{
+  background: #eee;
+  // background: blue;
+  overflow-x: hidden;
+}
+
 /*MAIN*/
 .main__grid {
   padding: 0% 0% 0% 0%;
   margin: 0% 0% 0% 0%;
-  padding-top: 10rem;
+  padding-top: 8.6rem; //*este es el padding para que quede OK el Header*//
   width: 100vw;
   gap: 0%;
   display: flex; 
@@ -12,10 +18,10 @@
   grid-template-rows: repeat(7, auto);
   grid-template-areas:
   "header__grid"
-  "sectionMV"
   "sectionSI"
+  "sectionMV"
   "sectionPT"
-  "div__sectionHPYSM"
+  "sectionHPYSM"
   "sectionOFF"
   "footer";
  }
@@ -23,12 +29,14 @@
 /*MAIN SECTION SEANSON ITEMS*/
 .sectionSI{
  grid-area: sectionSI;
+ background: rgb(22, 21, 21); //*ult negro de la seccion*//
+ padding-top: 5rem;
+  padding-bottom: 1rem;
  
-
   &__caja{
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-  margin: 0% 4% 0% 4%;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  margin:  0% 4% 4% 4%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -53,9 +61,24 @@
     font-family: 'Poppins', sans-serif;
     font-size: 32px;
     font-weight: bold;
-    border-radius: 20px;
-    background: radial-gradient( whitesmoke, rgba(73, 70, 70, 0.39) );
+    border-radius: 2px;
+    background: radial-gradient( rgba(245, 245, 245, 0.618), rgba(73, 70, 70, 0.405) );
+    align-self: center;
+    animation-duration: 4s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    border-radius: 10px;
   }
+    
+   @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+   }
+
  
   &--buttonmod1 {
   width: 200px;
@@ -235,38 +258,40 @@
 }
 }
 
-/*MAIN_ SECTION MOST VIEWED*/
-.sectionMV {
- grid-area: sectionMV;
- overflow: hidden;
- padding-bottom: 5rem;
- margin: 0% 4% 0% 4%;
+ /*MAIN_ SECTION MOST VIEWED*/
+ .sectionMV {
+  grid-area: sectionMV;
+  // overflow: hidden;
+  // padding-bottom: 0.1rem;
+  // margin: 0% 0% 0% 4%;
+  background: rgb(22, 21, 21); 
+  // background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,10,224,1) 35%, rgb(255, 17, 0) 100%);
   
-
-  &__caja {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  color: black;
-  font-family: 'Lucida Sans';
-  font-size: 12px;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  margin: 0% 5% 0% 5%;
-  background: white;
-  border-radius: 20px;
-  }
-}
+ 
+   &__caja {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   align-content: center;
+   color: black;
+   font-family: 'Lucida Sans';
+   font-size: 12px;
+   font-weight: bold;
+   text-align: center;
+   padding-top: 5rem;
+   padding-bottom: 5rem;
+   margin: 0% 5% 0% 5%;
+  
+   }
+ }
 
 /*MAIN_ SECTION PRESENTATION*/
 .sectionPT{
 grid-area: sectionPT;
 text-align: justify;
+background: blue;
 
   &__caja{
   display: flex;
@@ -276,21 +301,24 @@ text-align: justify;
   align-items: center;
   align-content: center;
   color: black;
-  font-family: 'Lucida Sans';
-  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  // font-size: 14px;
   font-weight: bold;
   text-align: center;
-  margin: 0% 4% 0% 4%;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: rgba(4, 4, 247, 0.719);
+  margin:  4% 4% 4% 4%;
+  max-width: 1000px;
+  // padding-top: 5rem;
+  // padding-bottom: 5rem;
+  padding: 5rem;
+  background: rgba(0, 0, 0, 0.898);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,10,224,1) 35%, rgb(255, 0, 221) 100%);
   border-radius: 20px;
   }
 
   &--pmod {
   color: black; 
   font-family: 'Poppins', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   }
 
@@ -317,90 +345,61 @@ text-align: justify;
   }
 }
 
-/*MAIN_ div_section HELPING Y SOCIAL MEDIA*/
-.div__sectionHPYSM {
-  grid-area: div__sectionHPYSM;
+/*MAIN section HELPING Y SOCIAL MEDIA*/
+.sectionHPYSM {
+  grid-area: sectionHPYSM;
   display: flex;
   justify-content: center;
   padding-top: 5rem;
   padding-bottom: 10rem;
-  background: radial-gradient( whitesmoke, rgba(218, 205, 205, 0.39) );
-  border-radius: 20px;
+  background: #eee;
+  // border-radius: 20px;
 }
 
-/*MAIN_ SECTION HELPING*/
-.sectionHP{
-display: flex;  
-flex-direction: row;
-width: 35vw;
-border-radius: 20px;
-
- 
-  &__caja{
+.iconos__container {
+  background: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  color: black;
-  font-family: 'Lucida Sans';
-  font-size: 12px;
-  font-weight: bold;
-  text-align: center;
-  padding-bottom: 20px; 
-  margin: 0% 0% 0% 0%;
-  background-image: url("../img/phone.png"); 
-  background-repeat: no-repeat;
-  background-size: 16rem;
-  background-position: left center;
-  border-radius: 20px;
-  
-  } 
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
-/*MAIN_ SECTION SOCIAL MEDIA*/
-.sectionSM {
+.iconos__container__ind {
+  background: #fff;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  width: 35vw;
-  background-image: url("../img/socialMedia4.png"); 
-  background-repeat: no-repeat;
-  background-size: 15rem;
-  background-position: left center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25rem;
+          flex: 1 1 25rem;
+  margin: 1rem;
+}
 
-  &__caja1{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  padding-bottom: 5px; 
+.iconos__container__img {
+  height: 15rem;
+  margin-right: 2rem;
+}
+
+.iconos__container__titulo {
   color: black;
-  font-family: 'Lucida Sans';
+  padding-bottom: 0.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  text-align: center;
-  padding: 0% 0% 0% 0%;
-  margin: 0% 0% 0% 0%; 
-  border-radius: 20px;
-  }
+}
 
-  &__caja2{
-  display: flex;
-  list-style-type:none;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
-  align-items: center;
-  font-size: 20px;
-  width: 150px;
-  height: 150px;
-  color: black;
-  padding: 0% 0% 0% 0%;
-  margin: 0% 0% 0% 0%;
+.iconos__container__span {
+  color: rgb(53, 52, 52);
+  font-size: 1.8rem;
   
- }
 }
 
 /*MAIN_ SECTION OFFER*/
@@ -408,6 +407,7 @@ border-radius: 20px;
   grid-area: sectionOFF;
   width: 100vw;
   background: linear-gradient(  blue, black );
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,10,224,1) 35%, rgba(255, 51, 0, 0.644) 100%);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -417,11 +417,11 @@ border-radius: 20px;
   color: black;
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
-  font-weight: bold;
+  // font-weight: bold;
   text-align: center;
   overflow: hidden;
   padding: 0% 0% 0% 0%; 
-  margin-top: 10px;
+  // margin-top: 10px;
  
  &__form {
  display: flex;
@@ -513,5 +513,23 @@ border-radius: 20px;
   .sectionSI__caja{
     background-size:  cover;
   }
+
+  .sectionSI__buttonmod1,
+  .sectionSI__buttonmod2, 
+  .sectionSI__buttonmod3, 
+  .sectionSI__buttonmod4{
+    width: 100px;
+    height: 100px;
+  }
+
+  .footer__titulo1--modifier{
+    font-size: 12px;
+    
+    &:hover{
+      transition: 0s;
+      font-size: 1rem;
+     }
+  }
+
 
 }

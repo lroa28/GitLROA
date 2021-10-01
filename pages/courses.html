@@ -13,68 +13,64 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> <!-- CDN via jsDelivr -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--Aos animate-->
     <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
-	
-    <link rel="stylesheet" href="./js/arriba.js">
+
 </head>
 <!--Body-->
 <body class="body">
 
   <div class="row">
     <div class="col-xs-12">
+    
     <!--Header-->
-    <header class="header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"> 
-      <div class="d-flex v-100 container-fluid">
-      <div class="header__divlogo">
-       <a href="../index.html"><img class="header__logo img-fluid rounded-circle" src="../img/logoOriginal.jpg" alt="Logo of Page"></a> <!--Logo-->
-      </div>
-      <div class="header__menulista">
-        <ul class="menu"> 
-          <li class="menu__item"><a href="../index.html#sectionPT"></i>WHO I AM?</a></li>
-          <li class="menu__item"><a href="../pages/products.html"></i>PRODUCTS</a></li>
-          <li class="menu__item"><a href="../index.html#sectionSM"></i>SOCIAL MEDIA</a>
-          <li class="menu__item"><a href="../pages/courses.html"></i>COURSES</a>
-       </ul>
-      </div>
+    <header> 
+      <nav class="navbar navbar-expand-lg fixed-top header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+       
+          <div class="header__divlogo">
+           <a class="navbar-brand" href="../index.html"><img class="header__logo img-fluid rounded-circle" src="../img/logoOriginal.jpg" alt="Logo" class="d-inline-block align-top"></a> 
+          </div>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"
+                    ><i class="fas fa-hamburger"></i
+                  ></span>
+                </button>
+      
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="navbar-nav m-auto mb-2 mb-lg-0 text-center d-flex-row justificy-content-center gap-4 header__menu">
+                      <a class="nav-item nav-link header__menu "  style="color:black;" href="../index.html#sectionPT">Who I am? LC</a></li>
+                      <a class="nav-item nav-link header__menu "  style="color:black;" href="../pages/products.html">Products</a></li>
+                      <a class="nav-item nav-link header__menu "  style="color:black;" href="../index.html#sectionHPYSM">Social Networks</a></li>
+                      <a class="nav-item nav-link header__menu "  style="color:black;" href="../pages/courses.html">Courses</a></li>
+                  </div>
+                  
+                </div>
+                
+               <ul class="header__icons">
+                <li><a href="../pages/search.html"><i class="fas fa-search"></i></a></li>
+                <li><a href="../pages/contact.html"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="../pages/bag.html"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="../pages/login.html"><i class="fas fa-user "></i></a></li>
+               </ul>
+              </div> 
+      </nav> 
+      </header>  
     </div>
-    <!-- Lista Botones de navegación del header -->
-    <div>
-      <nav class="header__navigation navbar navbar-expand-lg btn-lg ">
-      <div class="header__listafinal">
-        <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"><i class="fas fa-hamburger"></i></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav header__navigation">
-            <li class="nav-item"><a class="nav-link" href="../pages/search.html"><i class="fas fa-search"></i></a></li>
-            <li class="nav-item"><a class="nav-link" href="https://www.google.com/maps/place/Recoleta,+CABA/@-34.5847911,-58.4138525,14z/data=!3m1!4b1!4m5!3m4!1s0x95bcca99c609fc2f:0x392ca99351808a75!8m2!3d-34.5873825!4d-58.3972762"><i class="fas fa-map-marker-alt"></i></a></li>
-            <li class="nav-item"><a class="nav-link" href="../pages/contact.html"><i class="fas fa-envelope"></i></a></li>
-            <li class="nav-item"><a class="nav-link" href="../pages/bag.html"><i class="fas fa-shopping-cart"></i></a></li>
-            <li class="nav-item"><a class="nav-link" href="../pages/login.html"><i class="fas fa-user"></i></a></li>
-            <!-- <li class="nav-item"><img class="header__grid--navigation__listaulspanish" src="./img/spanish.png" alt="photo idioma español"> <img class="header__grid--navigation__listaulenglish" src="./img/england.png" alt="photo idioma english"> <img class="header__grid--navigation__listaulcroatia" src="./img/croatia.png" alt="photo idioma croatian"> </li>-->
-          </ul>
-        </div>
-      </div>
-      </nav>
-    </div>
-    </div>
-    </div>
-    <!-- Fin Lista Botones de navegación del header -->
-    </header> 
-    <!--Fin Header-->
+  </div>  
+
 <!-- MAIN -->
 <div class="row">
 <div class="col-md-12">
-<main class="maincourses__grid">
+<main class="maincourses__grid py-4">
 
-	<section class="contenedor1 py-4">
-		<div class="tarjeta" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"> <!-- Bloque1 -->
+	<section class="contenedor1">
+		<div class="tarjeta"> <!-- Bloque1 -->
 			<img class="tarjeta__img" src="../img/molde.jpg" alt="Img mold">
 			<div>
 				<h3 class="tarjeta__titulo">
@@ -82,17 +78,17 @@
 				</h3>
 				<p class="tarjeta__parrafo">
 					Description
-					<ol>
+					<ul>
 						<li>
-							What will you learn?: make molds t-shirts, pants, jumpsuits, scarves and shirts
+							<h4>What will you learn?: make molds t-shirts, pants, jumpsuits, scarves and shirts</h4>
 						</li>
 						<li>
-							Days and hours: Saturday 10:00 pm, one hours
+							<h4>Days and hours: Saturday 10:00 pm, one hours</h4>
 						</li>
 						<li>
-							Price: $1000
+						<h4>Price: $1000</h>	
 						</li>
-					</ol>
+					</ul>
 				</p>
 				<button class="boton"
                 data-aos="fade-left"
@@ -104,7 +100,7 @@
 	</section>
 
   <section class="contenedor2">
-		<div class="tarjeta" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"> <!-- Bloque2 -->
+		<div class="tarjeta" > <!-- Bloque2 -->
 			<img class="tarjeta__img" src="../img/lanas.jpg" alt="img mold">
 			<div>
 				<h3 class="tarjeta__titulo">
@@ -112,17 +108,17 @@
 				</h3>
 				<p class="tarjeta__parrafo">
 					Description
-					<ol>
+					<ul>
 						<li>
-							What will you learn?: two needles and crocket
+							<h4>What will you learn?: make molds t-shirts, pants, jumpsuits, scarves and shirts</h4>
 						</li>
 						<li>
-							Days and hours: Saturday 11:00 pm, one hours
+							<h4>Days and hours: Saturday 10:00 pm, one hours</h4>
 						</li>
 						<li>
-							Price: $1000
+						<h4>Price: $1000</h>	
 						</li>
-					</ol>
+					</ul>
 				</p>
 				<button class="boton boton--derecha"
                 data-aos="fade-left"
@@ -134,25 +130,26 @@
 	</section>
 
   <section class="contenedor3">
-		<div class="tarjeta" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"> <!-- Bloque3 -->
+		<div class="tarjeta" > <!-- Bloque3 -->
 			<img class="tarjeta__img" src="../img/maquinaRecta.jpg" alt="img maquinaRecta">
 			<div>
 				<h3 class="tarjeta__titulo">
-					Course: "Uso de máquinas: Recta y Overlock"
+					Course: "Uso de máquinas Recta y Overlock"
 				</h3>
 				<p class="tarjeta__parrafo">
 					Description
 					<ol>
-						<li>
-							What will you learn?: use machine
-						</li>
-						<li>
-							Days and hours: Saturday 12:00 pm, one hours
-						</li>
-						<li>
-							Price: $1000
-						</li>
-					</ol>
+            <ul>
+              <li>
+                <h4>What will you learn?: make molds t-shirts, pants, jumpsuits, scarves and shirts</h4>
+              </li>
+              <li>
+                <h4>Days and hours: Saturday 10:00 pm, one hours</h4>
+              </li>
+              <li>
+              <h4>Price: $1000</h>	
+              </li>
+            </ul>
 				</p>
 				<button class="boton"
                 data-aos="fade-left"
@@ -162,7 +159,6 @@
                 </button>
 		</div><!--Fin Bloque3-->
 	</section>
-	
 
 </main>  
 </div>
@@ -170,10 +166,13 @@
 <!-- Fin MAIN -->
 
 <!--Footer-->
-<div class="row">
-  <div class="col-xs-12">
-    <footer class="footer"> 
-      <h5 class="footer__titulo1--modifier h5operaciones"> _luk_c | <i class="fas fa-phone-alt"></i>(+54) 9 1100000000 | <i class="fas fa-envelope"></i> lc.luluroa@gmail.com | Güemes 3311 - Recoleta <img class="footer_imgArg" src="../img/argentina.svg"> Argentina</h5>
+<div class="row bg-black">
+  <div class="col-xs-12 bg-black">
+    <footer class="footer bg-black"> 
+      <h5 class="footer__titulo1--modifier h5operaciones"> _luk_c | <i class="fas fa-phone-alt"></i>(+54) 9-11 00000000 |
+      <i class="fas fa-envelope"></i> <a href="mailto:lc.luluroa@gmail.com?Subject=Hola!%20les%20hago%20una%20consulta.">lc.luluroa@gmail.com</a> 
+      |<a href="https://www.google.com/maps/place/Recoleta,+CABA/@-34.5847911,-58.4138525,14z/data=!3m1!4b1!4m5!3m4!1s0x95bcca99c609fc2f:0x392ca99351808a75!8m2!3d-34.5873825!4d-58.3972762"><i class="fas fa-map-marker-alt"></i></a>
+       Güemes 3311 - Recoleta <img class="footer_imgArg" src="../img/argentina.svg"> Argentina</h5>
       <br>
       <div>
         <ul class="footer__titulo2--modifier"> <!-- Links otros sitios webs de ayuda a los usuarios que visitan la página-->
@@ -181,19 +180,24 @@
         </ul>
       </div>
       <br>
-      <span class="lead footer__p--modifier">© Copyright 2021 _luk_c . Todos los derechos reservados. Prohibida la duplicación , distribución o almacenamiento en cualquier medio.</span>
+      <span class="lead footer__p--modifier">© Copyright 2021 _luk_c Todos los derechos reservados. Prohibida la duplicación , distribución o almacenamiento en cualquier medio.</span>
     <br>
-    <span class="lead footer__p--modifier bg-danger d-inline">Developed by •Lucrecia Cecilia Roa•</span>
+    <h1 class="lead footer__p--modifier bg-danger bg-gradient">Developed Overflow-X by •Lucrecia Cecilia Roa•</h1>
     </footer> 
 </div>
 </div>
 <!--Fin de Footer-->
+  
 <!-- Script a la pagina AOS (para hacer rotar las imganes)-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
 </script>
-
+<!-- Script de animación WOW
+<script src="js/wow.min.js"></script>
+<script>
+   new WOW().init();
+</script>-->
 <!-- script js idem la ppt de la clase -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -211,7 +215,11 @@ crossorigin="anonymous"
     $('[data-toggle="popover"]').popover();
   });
  </script>
-
+<!--Aos animate-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
-</html>   <!-- Fin de la página web-->     
+</html>   <!-- Fin de la página web--> 

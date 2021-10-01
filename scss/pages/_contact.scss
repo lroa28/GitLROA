@@ -1,18 +1,25 @@
-  /*MAIN*/
+//*BODY*//
+.body{
+  background-color: blue;
+} 
+ 
+ /*MAIN*/
   .main__contact {
     width: 100vw;
-    height: 75vh;
-    margin-top: 73px;
+    height: 80vh;
+     //*margin-top: 85px; este es el margin para que quede OK el Header*//
+     padding-top: 8.6rem; //* con este padding la pag queda sin scroll horizontal*//
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
-    background-color: rgba(4, 4, 247, 0.719);
+    background: blue;
     background-image: url("../img/social-media-mail.png"); 
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
     background-size: 100px;
+    
 
     &--titulo1{
       font-family: 'Poppins', sans-serif;
@@ -38,5 +45,14 @@
   @media (max-width: 980px) { //para Dispositivos móviles. Min-width es para Desk
     .main__contact {
       margin-top: 60px;
+    }
+
+    .footer__titulo1--modifier{
+      font-size: 12px;
+      
+      &:hover{
+        transition: 0s;
+        font-size: 1rem;
+       }
     }
    }

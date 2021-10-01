@@ -1,15 +1,24 @@
-*{
-  padding: 0% 0% 0% 0%;
-  margin: 0% 0% 0% 0%;
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  outline: none;
+  // border: none;
+  transition: 0.2s linear;
+  font-family: 'Poppins', sans-serif;
  }
   
  html {
    font-size: 62.5%;
+   overflow-x: hidden;
  }
 
  ul li a {
 	text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 /*BODY*/
@@ -18,7 +27,6 @@
   margin: 0% 0% 0% 0%;
   background-color: whitesmoke; 
   font-family: 'Poppins', sans-serif;
-  width: 100vw;
 }
 
  /*PÁRRAFOS*/
@@ -27,4 +35,4 @@
   color: rgb(37, 35, 35);
   font-family: 'Poppins', sans-serif;
   font-weight: 100;
-   }
+  }

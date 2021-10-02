@@ -95,27 +95,24 @@
 	}
 	
 	.contenedor1 {
-		max-width: 500px;
-		width: 500%;
+		width: 90%;
 		// margin: 0 auto;
-		grid-area: contenedor1;
+		
 	}
 	
 	.contenedor2 {
-		max-width: 500px;
-		width: 500%;
-		margin: 0 auto;
-		grid-area: contenedor2;
+		width: 90%;
+		// margin: 0 auto;
+		
 	}
 	
 	.contenedor3 {
-		max-width: 500px;
-		width: 500%;
-		margin: auto 0;
-		grid-area: contenedor3;
+		width: 90%;
+		// margin: 0 auto;
+		
 	}
     .footer__titulo1--modifier{
-		font-size: 12px;
+		font-size: 10px;
 		
 		&:hover{
 		  transition: 0s;

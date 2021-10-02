@@ -44,7 +44,7 @@
   align-content: center;
   align-items: center;
   color: black;
-  font-family: 'Lucida Sans';
+  font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: bold;
   text-align: center ;
@@ -261,12 +261,7 @@
  /*MAIN_ SECTION MOST VIEWED*/
  .sectionMV {
   grid-area: sectionMV;
-  // overflow: hidden;
-  // padding-bottom: 0.1rem;
-  // margin: 0% 0% 0% 4%;
   background: rgb(22, 21, 21); 
-  // background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,10,224,1) 35%, rgb(255, 17, 0) 100%);
-  
  
    &__caja {
    display: flex;
@@ -276,12 +271,12 @@
    align-items: center;
    align-content: center;
    color: black;
-   font-family: 'Lucida Sans';
+   font-family: 'Poppins', sans-serif;
    font-size: 12px;
    font-weight: bold;
    text-align: center;
-   padding-top: 5rem;
-   padding-bottom: 5rem;
+   padding-top: 10rem;
+   padding-bottom: 10rem;
    margin: 0% 5% 0% 5%;
   
    }
@@ -505,6 +500,7 @@ background: blue;
   }
 }
 
+
 @media (max-width: 980px) { //para Dispositivos móviles. Min-width es para Desk
   .main__bag {
     margin-top: 60px;
@@ -530,6 +526,16 @@ background: blue;
       font-size: 1rem;
      }
   }
+}
 
+@media only screen and (max-width: 768px) {
+  .carousel-item {
+    height: 40vh;
+  }
+}
 
+@media only screen and (max-width: 375px) {
+  .carousel-item {
+    height: 30vh;
+  }
 }

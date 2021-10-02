@@ -400,7 +400,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: black;
+  color: whitesmoke;
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: bold;
@@ -871,91 +871,6 @@ p {
   background-position-y: center;
 }
 
-/*BOTON ARRIBA*/
-.go-top-container {
-  position: fixed;
-  bottom: 4rem;
-  right: 4rem;
-  width: 6.6rem;
-  height: 6.6rem;
-  z-index: -1;
-}
-
-.go-top-button {
-  width: 0rem;
-  height: 0rem;
-  background: #b22020;
-  border-radius: 50%;
-  cursor: pointer;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: -1;
-}
-
-.go-top-button i {
-  position: absolute;
-  font-size: 1.7rem;
-  top: 48%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(0);
-          transform: translate(-50%, -50%) scale(0);
-  color: #fff;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.show {
-  z-index: 10;
-}
-
-.show .go-top-button {
-  -webkit-animation: popup 0.3s ease-in-out;
-          animation: popup 0.3s ease-in-out;
-  width: 6.6rem;
-  height: 6.6rem;
-  z-index: 11;
-}
-
-.show i {
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
-}
-
-@-webkit-keyframes popup {
-  0% {
-    width: 0;
-    height: 0;
-  }
-  50% {
-    width: 8rem;
-    height: 8rem;
-  }
-  100% {
-    width: 6.6rem;
-    height: 6.6rem;
-  }
-}
-
-@keyframes popup {
-  0% {
-    width: 0;
-    height: 0;
-  }
-  50% {
-    width: 8rem;
-    height: 8rem;
-  }
-  100% {
-    width: 6.6rem;
-    height: 6.6rem;
-  }
-}
-
 @media (max-width: 980px) {
   .main__bag {
     margin-top: 60px;
@@ -981,6 +896,9 @@ p {
   }
   .pilares {
     display: none;
+  }
+  .sectionSI__caja {
+    background-color: whitesmoke;
   }
 }
 
@@ -1462,8 +1380,8 @@ p {
 }
 
 .tarjeta {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(2, 0, 36, 0.507)), color-stop(35%, rgba(35, 10, 224, 0.808)), to(red));
-  background: linear-gradient(90deg, rgba(2, 0, 36, 0.507) 0%, rgba(35, 10, 224, 0.808) 35%, red 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(249, 249, 252, 0.507)), color-stop(35%, rgba(35, 10, 224, 0.918)), to(red));
+  background: linear-gradient(90deg, rgba(249, 249, 252, 0.507) 0%, rgba(35, 10, 224, 0.918) 35%, red 100%);
   border-radius: 15px;
   padding: 20px;
   display: -webkit-box;

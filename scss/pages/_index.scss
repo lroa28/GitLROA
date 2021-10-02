@@ -519,12 +519,16 @@ background: blue;
   }
 
   .footer__titulo1--modifier{
-    font-size: 12px;
+    font-size: 10px;
     
     &:hover{
       transition: 0s;
       font-size: 1rem;
      }
+  }
+
+  .pilares{
+    display: none;
   }
 }
 

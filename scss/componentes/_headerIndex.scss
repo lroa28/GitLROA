@@ -1,17 +1,12 @@
 /*HEADER*/
 .header {
   grid-area: header__grid;
-  // padding: 0.3% 0% 0.3% 0%; 
   position: fixed;
-  // width: 100vw;
   overflow: hidden;
-  // display: flex;
-  // flex-direction: row;
-  // flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to bottom, rgba(107, 106, 106, 0.808), rgba(245, 245, 245, 0.507));
-  // background: white;
+  background: linear-gradient(to bottom, rgba(107, 106, 106, 0.808), rgba(245, 245, 245, 0.288));
+
  
 
   &__divlogo{
@@ -104,7 +99,7 @@
   /* Header */
   .header__menu {
     display: none;
-    // font-size: 10px;
+  
    }
 
    .header__icons{

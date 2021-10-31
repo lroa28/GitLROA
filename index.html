@@ -41,22 +41,32 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="navbar-nav m-auto mb-2 mb-lg-0 text-center d-flex-row justificy-content-center gap-4 header__menu">
-                <a class="nav-item nav-link header__menu "  style="color:black;" href="#sectionPT">Who I am? LC</a></li>
-                <a class="nav-item nav-link header__menu "  style="color:black;" href="./pages/products.html">Products</a></li>
-                <a class="nav-item nav-link header__menu "  style="color:black;" href="#sectionHPYSM">Social Networks</a></li>
-                <a class="nav-item nav-link header__menu "  style="color:black;" href="./pages/courses.html">Courses</a></li>
-            </div>
-          </div>
-          
-         <ul class="header__icons">
-          <li><a href="./pages/search.html"><i class="fas fa-search"></i></a></li>
-          <li><a href="./pages/contact.html"><i class="fas fa-envelope"></i></a></li>
-          <li><a href="./pages/bag.html"><i class="fas fa-shopping-cart"></i></a></li>
-          <li><a href="./pages/login.html"><i class="fas fa-user "></i></a></li>
-         </ul>
-        
-        </div> 
+            <div class="navbar-nav m-auto mb-2 mb-lg-0 text-center d-flex-row justificy-content-left align-items-left gap-4">
+                <a class="nav-item nav-link header__menu"  style="color:black; font-style: italic; text-transform: lowercase;" href="#sectionPT">_luk_c</a></li>
+                <a class="nav-item nav-link header__menu"  style="color:black;" href="./pages/products.html">Products</a></li>
+                <a class="nav-item nav-link header__menu"  style="color:black;" href="#sectionHPYSM">Social Networks</a></li>
+                <!-- <a class="nav-item nav-link header__menu "  style="color:black;" href="./pages/courses.html">Courses</a></li> -->
+                <li class="nav-item nav-link header__menu dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Courses
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Moldería básica</a></li>
+                    <li><a class="dropdown-item" href="#">Tejido</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Máquinas</a></li>
+                  </ul>
+                </li>
+             </div>
+             <ul class="header__icons navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="./index.html"><i class="fas fa-home"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="./pages/search.html"><i class="fas fa-search"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="./pages/contact.html"><i class="fas fa-envelope"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="./pages/bag.html"><i class="fas fa-shopping-cart"></i></a></li>
+              <li class="nav-item"><a class="nav-link" href="./pages/login.html"><i class="fas fa-user"></i></a></li>
+             </ul> 
+        </div>
+      </div> 
 </nav> 
 </header>  
 </div>
@@ -67,20 +77,19 @@
 <!--Section Season Items-->
 <div class="row">
 <div class="col-xs-12">
-<div class="sectionSI py-6 col-xs-12" data-aos="fade-right" data-aos-duration="1500">
+<div class="sectionSI py-8 col-xs-12" data-aos="fade-right" data-aos-duration="1500">
     <div class="sectionSI__caja bg-black container-fluid">
-      <div class="container-fluid">
-        <h1 class="bg-black text-white py-2 rounded-3"><b><i>Seasons</b></i></h1>
-        <br>
-        <br>
+      <div>
+        <!-- <h1 class="text-black py-2 rounded-3"><b><i>Seasons</b></i></h1>
+        <br> -->
             <!-- boton Invierno -->
-            <a class="sectionSI__caja--buttonmod1 btn w-40 d-flex-row align-items-center" href="pages/products.html" role="button"><h3 class="sectionSI__caja--h3">Winter</h3></a>
+            <a class="sectionSI__caja--buttonmod1 btn w-40 d-flex-row align-items-center" href="pages/products.html" role="button"><h3 class="sectionSI__caja--h3"></h3></a>
             <!-- boton Verano -->
-            <a class="sectionSI__caja--buttonmod2 btn w-40 d-flex-row align-items-center" href="pages/products.html" role="button"><h3 class="sectionSI__caja--h3">Summer</h3></a>
+            <a class="sectionSI__caja--buttonmod2 btn w-40 d-flex-row align-items-center" href="pages/products.html" role="button"><h3 class="sectionSI__caja--h3"></h3></a>
             <!-- boton Sets -->
-            <a class=" sectionSI__caja--buttonmod3 btn w-40 d-flex-row align-items-center" href="pages/products.html" role="button"><h3 class="sectionSI__caja--h3">Sets</h3></a>
+            <a class=" sectionSI__caja--buttonmod3 btn w-40 d-flex-row align-items-center" href="pages/products.html" role="button"><h3 class="sectionSI__caja--h3"></h3></a>
             <!-- boton Molds -->
-            <a class="sectionSI__caja--buttonmod4 btn w-40 d-flex-row align-items-center" href="pages/products.html" role="button"><h3 class="sectionSI__caja--h3">Molds</h3></a>
+            <a class="sectionSI__caja--buttonmod4 btn w-40 d-flex-row align-items-center" href="pages/products.html" role="button"><h3 class="sectionSI__caja--h3"></h3></a>
       </div>
     </div>
   </div>
@@ -97,10 +106,11 @@
   <section class="iconos__container container-fluid">
     <div class="d-flex-row justificy-content-center">
      <h3 class="w3-center text-center fs-1"><b>• P I L L A R S •</b></h3>
-     
+     <br>
      <div class="iconos__container__ind text-center col-xs-12">
  
        <div class="iconos__container__ind col-xs-12">
+         <br>
          <div class="w3-quarter">
            <i class="fa fa-heart w3-margin-bottom w3-jumbo w3-center fs-1" style="color:black;"></i>
            <p class="w3-large text-decoration-underline">Mission</p>
@@ -325,7 +335,7 @@
 
     <img class="iconos__container__img" src="./img/socialMedia3.png"  alt="img de medios"/>
     <div class="iconos__info">
-      <h3 class="iconos__container__titulo">Social networks</h3>
+      <h3 class="iconos__container__titulo">Social Networks</h3>
       <fieldset class="bg-light bg-gradient rounded-3"> 
         <div>
           <ul>
@@ -382,17 +392,86 @@
       <a href="https://www.google.com/maps/place/Recoleta,+CABA/@-34.5847911,-58.4138525,14z/data=!3m1!4b1!4m5!3m4!1s0x95bcca99c609fc2f:0x392ca99351808a75!8m2!3d-34.5873825!4d-58.3972762"><i class="fas fa-map-marker-alt"></i></a>
       <img class="footer_imgArg" src="./img/argentina.svg"> Argentina</h5>
       <br>
-      <div>
-        <ul class="footer__titulo2--modifier"> <!-- Links otros sitios webs de ayuda a los usuarios que visitan la página-->
-          <li><a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario">Defensa del consumidor en la República Argentina. Para reclamos ingrese <i class="fas fa-hand-point-right"></i>"aquí"</a></li> 
+      <!-- <div class="row">
+        <div class="col-lg-11 m-auto py-5">
+          <div class="row">
+            <div class="col-lg-3 py-3 text-center">
+              <h5 class="pb-3">Quick Links</h5>
+              <ul class="footer__quickLinks m-0 p-0">
+                <li>
+                  <a class="footer__quickLinks__a" href="faqs.html"
+                    >Preguntas frecuentes</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__quickLinks__a" href="faqs.html"
+                    >Politicas de cambio</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__quickLinks__a" href="faqs.html"
+                    >Cómo comprar</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 py-3 text-center">
+              <h5 class="pb-3">Ayuda</h5>
+              <ul class="footer__quickLinks m-0 p-0">
+                <li>
+                  <a class="footer__quickLinks__a" href="faqs.html"
+                    >Devoluciones</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__quickLinks__a" href="faqs.html"
+                    >Formas de pago</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__quickLinks__a" href="faqs.html"
+                    >Costos de envío</a
+                  >
+                </li>
+              </ul>
+            </div> -->
+            <!-- <div class="col-lg-3 py-3 text-center">
+              <h5 class="pb-3">_luk_c</h5>
+              <ul class="footer__quickLinks m-0 p-0">
+                <li>
+                  <a class="footer__quickLinks__a" href="faqs.html" 
+                    >Who I am?</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__quickLinks__a" href="faqs.html">Phone<i class="fas fa-phone-alt"></i>(+54) 9-11 00000000</a>
+                </li>
+                <li>
+                  <a class="footer__quickLinks__a" href="faqs.html">Mail <i class="fas fa-envelope"></i> <a href="mailto:lc.luluroa@gmail.com?Subject=Hola!%20les%20hago%20una%20consulta.">lc.luluroa@gmail.com</a> </a>
+                </li> -->
+<!-- <li>
+<a class="footer__quickLinks__a" href="faqs.html"><a href="https://www.google.com/maps/place/Recoleta,+CABA/@-34.5847911,-58.4138525,14z/data=!3m1!4b1!4m5!3m4!1s0x95bcca99c609fc2f:0x392ca99351808a75!8m2!3d-34.5873825!4d-58.3972762"><i class="fas fa-map-marker-alt"></i></a>
+    <img class="footer_imgArg" src="./img/argentina.svg"><h5>Argentina</h5>
+</li> -->
+              <!-- </ul>
+            </div>
+            
+          </div>
+        </div>
+      <div> -->
+        <!-- <ul class="footer__titulo2--modifier"> <!-- Links otros sitios webs de ayuda a los usuarios que visitan la página-->
+          <!-- <li><a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario">Defensa del consumidor en la República Argentina. Para reclamos ingrese <i class="fas fa-hand-point-right"></i>"aquí"</a></li> 
         </ul>
       </div>
-      <br>
+      <br> -->
+      <!-- <h1 class="lead footer__p--modifier bg-danger bg-gradient col-md-12 text-black">Developed Overflow-X by •Lucrecia Cecilia Roa•</h1>
       <span class="lead footer__p--modifier col-md-12">© Copyright 2021 _luk_c Todos los derechos reservados. Prohibida la duplicación , distribución o almacenamiento en cualquier medio.</span>
-    <br>
-    <h1 class="lead footer__p--modifier bg-danger bg-gradient col-md-12">Developed Overflow-X by •Lucrecia Cecilia Roa•</h1>
-    </footer> 
-
+    </footer>  -->
+<!--Boton Volver Arriba-->
+    <!-- <div class="w3-center w3-black w3-padding-64">
+      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Volver arriba</a>
+    </div> -->
+    
 </div>
 </div>
 <!--Fin de Footer-->

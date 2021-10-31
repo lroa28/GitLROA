@@ -1,5 +1,5 @@
 .body{
-  background: #eee;
+  background: rgb(77, 75, 75);
   // background: blue;
   overflow-x: hidden;
 }
@@ -29,13 +29,14 @@
 /*MAIN SECTION SEANSON ITEMS*/
 .sectionSI{
  grid-area: sectionSI;
- background: rgb(22, 21, 21); //*ult negro de la seccion*//
- padding-top: 5rem;
-  padding-bottom: 1rem;
+ background: rgb(22, 21, 21); //*último negro de la seccion*//
+ padding-top: 8rem;
+ padding-bottom: 4rem;
+ 
  
   &__caja{
-  padding-top: 8rem;
-  padding-bottom: 5rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   margin:  0% 4% 4% 4%;
   display: flex;
   flex-direction: row;
@@ -43,41 +44,41 @@
   justify-content: center;
   align-content: center;
   align-items: center;
-  color: whitesmoke;
+  // color: whitesmoke;
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: bold;
   text-align: center ;
   background-image: url("../img/shop.jpg"); 
   background-repeat: no-repeat;
-  background-size:  91%;
+  background-size:  90%;
   background-position-x: center;
   background-position-y: top ;
-  border-radius: 20px;
+  border-radius: 40px;
   
 
-  &--h3{
-    color: black;
-    font-family: 'Poppins', sans-serif;
-    font-size: 32px;
-    font-weight: bold;
-    border-radius: 2px;
-    background: radial-gradient( rgba(245, 245, 245, 0.618), rgba(73, 70, 70, 0.405) );
-    align-self: center;
-    animation-duration: 4s;
-    animation-name: aparecer;
-    animation-iteration-count: infinite;
-    border-radius: 10px;
-  }
+  // &--h3{
+  //   color: black;
+  //   font-family: 'Poppins', sans-serif;
+  //   font-size: 32px;
+  //   font-weight: bold;
+  //   border-radius: 2px;
+  //   background: radial-gradient( rgba(245, 245, 245, 0.618), rgba(73, 70, 70, 0.405) );
+  //   align-self: center;
+  //   animation-duration: 4s;
+  //   animation-name: aparecer;
+  //   animation-iteration-count: infinite;
+  //   border-radius: 10px;
+  // }
     
-   @keyframes aparecer {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-   }
+  //  @keyframes aparecer {
+  //   0% {
+  //     opacity: 0;
+  //   }
+  //   100% {
+  //     opacity: 1;
+  //   }
+  //  }
 
  
   &--buttonmod1 {
@@ -286,7 +287,7 @@
 .sectionPT{
 grid-area: sectionPT;
 text-align: justify;
-background: blue;
+// background: blue;
 
   &__caja{
   display: flex;
@@ -301,9 +302,9 @@ background: blue;
   font-weight: bold;
   text-align: center;
   margin:  4% 4% 4% 4%;
-  max-width: 1000px;
-  // padding-top: 5rem;
-  // padding-bottom: 5rem;
+  max-width: 2000px;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   padding: 5rem;
   background: rgba(0, 0, 0, 0.898);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,10,224,1) 35%, rgb(255, 0, 221) 100%);

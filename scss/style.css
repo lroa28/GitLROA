@@ -99,8 +99,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 241, 241, 0.904)), to(rgba(245, 245, 245, 0.575)));
-  background: linear-gradient(to bottom, rgba(245, 241, 241, 0.904), rgba(245, 245, 245, 0.575));
+  background: radial-gradient(whitesmoke, rgba(92, 87, 87, 0.274));
 }
 
 .header__divlogo {
@@ -149,7 +148,7 @@ p {
 
 .header__menu li a {
   list-style: none;
-  padding: 1px 2px;
+  padding: 1px 1px;
   display: block;
   position: relative;
   font-size: 20px;
@@ -236,8 +235,7 @@ p {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   overflow: hidden;
-  padding: 0% 0% 2% 0%;
-  top: 0%;
+  padding: 1% 0% 1% 0%;
   width: 100vw;
   background-color: black;
   background-image: url("../img/fondonegro.jpg");
@@ -342,7 +340,7 @@ p {
 }
 
 .body {
-  background: #eee;
+  background: #4d4b4b;
   overflow-x: hidden;
 }
 
@@ -375,13 +373,13 @@ p {
   -ms-grid-column: 1;
   grid-area: sectionSI;
   background: #161515;
-  padding-top: 5rem;
-  padding-bottom: 1rem;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
 }
 
 .sectionSI__caja {
-  padding-top: 8rem;
-  padding-bottom: 5rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   margin: 0% 4% 4% 4%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -400,54 +398,16 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: whitesmoke;
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: bold;
   text-align: center;
   background-image: url("../img/shop.jpg");
   background-repeat: no-repeat;
-  background-size: 91%;
+  background-size: 90%;
   background-position-x: center;
   background-position-y: top;
-  border-radius: 20px;
-}
-
-.sectionSI__caja--h3 {
-  color: black;
-  font-family: 'Poppins', sans-serif;
-  font-size: 32px;
-  font-weight: bold;
-  border-radius: 2px;
-  background: radial-gradient(rgba(245, 245, 245, 0.618), rgba(73, 70, 70, 0.405));
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-name: aparecer;
-          animation-name: aparecer;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  border-radius: 10px;
-}
-
-@-webkit-keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  border-radius: 40px;
 }
 
 .sectionSI__caja--buttonmod1 {
@@ -684,7 +644,6 @@ p {
   -ms-grid-column: 1;
   grid-area: sectionPT;
   text-align: justify;
-  background: blue;
 }
 
 .sectionPT__caja {
@@ -709,7 +668,9 @@ p {
   font-weight: bold;
   text-align: center;
   margin: 4% 4% 4% 4%;
-  max-width: 1000px;
+  max-width: 2000px;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   padding: 5rem;
   background: rgba(0, 0, 0, 0.898);
   background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(35%, #220ae0), to(#ff00dd));
@@ -914,10 +875,6 @@ p {
   }
 }
 
-.body {
-  background-color: blue;
-}
-
 /*MAIN*/
 .main__search {
   width: 100vw;
@@ -981,10 +938,6 @@ p {
     transition: 0s;
     font-size: 1rem;
   }
-}
-
-.body {
-  background-color: blue;
 }
 
 /*MAIN*/
@@ -1051,10 +1004,6 @@ p {
   }
 }
 
-.body {
-  background-color: blue;
-}
-
 /*MAIN BAG*/
 .main__bag {
   width: 100vw;
@@ -1074,10 +1023,6 @@ p {
     margin-top: 89px;
     background-size: cover;
   }
-}
-
-.body {
-  background-color: blue;
 }
 
 /*MAIN*/
@@ -1324,10 +1269,6 @@ p {
   }
 }
 
-.body {
-  background-color: blue;
-}
-
 /*MAIN*/
 .maincourses__grid {
   width: 100vw;
@@ -1348,7 +1289,8 @@ p {
       grid-template-rows: repeat(3, 1fr);
       grid-template-areas: "contenedor1" "contenedor2" "contenedor3";
   background-image: url("../img/fondoManiki.png");
-  background-position: center;
+  background-position-x: end;
+  background-position-y: top;
   background-size: cover;
   background-repeat: no-repeat;
 }

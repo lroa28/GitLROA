@@ -1,5 +1,5 @@
 .body{
-    background-color: blue;
+    // background-color: blue;
   }
 
 /*MAIN*/
@@ -17,7 +17,8 @@
   "contenedor2"
   "contenedor3";
   background-image: url("../img/fondoManiki.png");
-  background-position: center;
+  background-position-x: end; //*probar como hacer la imagen mas a la izq*//
+  background-position-y: top;  
   background-size: cover;
   background-repeat: no-repeat;
 }

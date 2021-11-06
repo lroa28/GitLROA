@@ -13,7 +13,7 @@ console.log("Hello," + nombre + "!");
 /* Desafio 1-B: Pedir un número mediante prompt, parsearlo, sumarlo a otro que se encuentre almacenado en una 
 variable y luego mostrar el resultado en consola.*/
 
-var numero;
+const numero;
 numero = 1; 
 
 let descuentodeseado = prompt("Ingrese el descuento que le gustaría obtener en su compra (del 1 al 100):");

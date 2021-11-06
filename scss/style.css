@@ -93,13 +93,13 @@ p {
   grid-area: header__grid;
   position: fixed;
   overflow: hidden;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: radial-gradient(whitesmoke, rgba(92, 87, 87, 0.274));
+  background: radial-gradient(whitesmoke, rgba(136, 127, 127, 0.616));
 }
 
 .header__divlogo {
@@ -156,9 +156,11 @@ p {
 }
 
 .header__menu :hover {
-  -webkit-text-decoration: underline red;
-          text-decoration: underline red;
   font-style: italic;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.151)), to(rgba(82, 80, 80, 0.664)));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.151), rgba(82, 80, 80, 0.664));
+  -webkit-box-shadow: 0 0 20px rgba(128, 128, 128, 0.521), 0 0 20px rgba(128, 128, 128, 0.548), 0 0 20px rgba(128, 128, 128, 0.493);
+          box-shadow: 0 0 20px rgba(128, 128, 128, 0.521), 0 0 20px rgba(128, 128, 128, 0.548), 0 0 20px rgba(128, 128, 128, 0.493);
   background: rgba(128, 128, 128, 0.486);
   border-radius: 10px;
   -webkit-transition: all 1.5s;
@@ -179,7 +181,9 @@ p {
   font-size: 20px;
   gap: 2rem;
   color: black;
-  margin: 0 2% 0 0;
+  margin: 0 3% 0 0;
+  background: whitesmoke;
+  border-radius: 10px;
 }
 
 .header__icons li a {
@@ -372,15 +376,15 @@ p {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: sectionSI;
-  background: #161515;
-  padding-top: 8rem;
-  padding-bottom: 4rem;
+  background: #4d4b4b;
+  padding-top: 3.5rem;
+  padding-bottom: 1rem;
 }
 
 .sectionSI__caja {
   padding-top: 10rem;
   padding-bottom: 10rem;
-  margin: 0% 4% 4% 4%;
+  margin: 0% 4% 2% 4%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -404,10 +408,47 @@ p {
   text-align: center;
   background-image: url("../img/shop.jpg");
   background-repeat: no-repeat;
-  background-size: 90%;
-  background-position-x: center;
-  background-position-y: top;
+  background-size: 100%;
+  background-position-x: right;
+  background-position-y: center;
   border-radius: 40px;
+}
+
+.sectionSI__caja--h3 {
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  border-radius: 2px;
+  background: radial-gradient(rgba(245, 245, 245, 0.618), rgba(73, 70, 70, 0.405));
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  border-radius: 10px;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .sectionSI__caja--buttonmod1 {
@@ -458,8 +499,8 @@ p {
 
 .sectionSI__caja--buttonmod1:hover {
   background-color: whitesmoke, rgba(73, 70, 70, 0.39);
-  -webkit-box-shadow: 0 0 10px #203de2, 0 0 20px #203de2, 0 0 20px #203de2;
-          box-shadow: 0 0 10px #203de2, 0 0 20px #203de2, 0 0 20px #203de2;
+  -webkit-box-shadow: 0 0 10px whitesmoke, 0 0 20px whitesmoke, 0 0 20px whitesmoke;
+          box-shadow: 0 0 10px whitesmoke, 0 0 20px whitesmoke, 0 0 20px whitesmoke;
   border-radius: 30px;
   color: blue;
   -webkit-transition: all .5s;
@@ -505,8 +546,8 @@ p {
 
 .sectionSI__caja--buttonmod2:hover {
   background-color: whitesmoke, rgba(73, 70, 70, 0.39);
-  -webkit-box-shadow: 0 0 10px #203de2, 0 0 20px #203de2, 0 0 20px #203de2;
-          box-shadow: 0 0 10px #203de2, 0 0 20px #203de2, 0 0 20px #203de2;
+  -webkit-box-shadow: 0 0 10px whitesmoke, 0 0 20px whitesmoke, 0 0 20px whitesmoke;
+          box-shadow: 0 0 10px whitesmoke, 0 0 20px whitesmoke, 0 0 20px whitesmoke;
   color: #434343;
   border-radius: 30px;
   -webkit-transition: all .5s;
@@ -549,8 +590,8 @@ p {
 
 .sectionSI__caja--buttonmod3:hover {
   background-color: whitesmoke, rgba(73, 70, 70, 0.39);
-  -webkit-box-shadow: 0 0 10px #203de2, 0 0 20px #203de2, 0 0 20px #203de2;
-          box-shadow: 0 0 10px #203de2, 0 0 20px #203de2, 0 0 20px #203de2;
+  -webkit-box-shadow: 0 0 10px whitesmoke, 0 0 20px whitesmoke, 0 0 20px whitesmoke;
+          box-shadow: 0 0 10px whitesmoke, 0 0 20px whitesmoke, 0 0 20px whitesmoke;
   color: #434343;
   border-radius: 30px;
   -webkit-transition: all .5s;
@@ -595,8 +636,8 @@ p {
 
 .sectionSI__caja--buttonmod4:hover {
   background-color: whitesmoke, rgba(73, 70, 70, 0.39);
-  -webkit-box-shadow: 0 0 10px #203de2, 0 0 20px #203de2, 0 0 20px #203de2;
-          box-shadow: 0 0 10px #203de2, 0 0 20px #203de2, 0 0 20px #203de2;
+  -webkit-box-shadow: 0 0 10px whitesmoke, 0 0 20px whitesmoke, 0 0 20px whitesmoke;
+          box-shadow: 0 0 10px whitesmoke, 0 0 20px whitesmoke, 0 0 20px whitesmoke;
   color: #434343;
   border-radius: 30px;
   -webkit-transition: all .5s;

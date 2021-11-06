@@ -29,15 +29,15 @@
 /*MAIN SECTION SEANSON ITEMS*/
 .sectionSI{
  grid-area: sectionSI;
- background: rgb(22, 21, 21); //*último negro de la seccion*//
- padding-top: 8rem;
- padding-bottom: 4rem;
+ background: rgb(77, 75, 75); //*último negro de la seccion*//
+ padding-top: 3.5rem;
+ padding-bottom: 1rem;
  
  
   &__caja{
   padding-top: 10rem;
   padding-bottom: 10rem;
-  margin:  0% 4% 4% 4%;
+  margin:  0% 4% 2% 4%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -51,34 +51,34 @@
   text-align: center ;
   background-image: url("../img/shop.jpg"); 
   background-repeat: no-repeat;
-  background-size:  90%;
-  background-position-x: center;
-  background-position-y: top ;
+  background-size:  100%;
+  background-position-x: right;
+  background-position-y: center ;
   border-radius: 40px;
   
 
-  // &--h3{
-  //   color: black;
-  //   font-family: 'Poppins', sans-serif;
-  //   font-size: 32px;
-  //   font-weight: bold;
-  //   border-radius: 2px;
-  //   background: radial-gradient( rgba(245, 245, 245, 0.618), rgba(73, 70, 70, 0.405) );
-  //   align-self: center;
-  //   animation-duration: 4s;
-  //   animation-name: aparecer;
-  //   animation-iteration-count: infinite;
-  //   border-radius: 10px;
-  // }
+  &--h3{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 2px;
+    background: radial-gradient( rgba(245, 245, 245, 0.618), rgba(73, 70, 70, 0.405) );
+    align-self: center;
+    animation-duration: 4s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    border-radius: 10px;
+  }
     
-  //  @keyframes aparecer {
-  //   0% {
-  //     opacity: 0;
-  //   }
-  //   100% {
-  //     opacity: 1;
-  //   }
-  //  }
+   @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+   }
 
  
   &--buttonmod1 {
@@ -125,7 +125,7 @@
 
   &:hover{
   background-color: ( whitesmoke, rgba(73, 70, 70, 0.39) );
-  box-shadow: 0 0 10px #203de2, 0 0 20px #203de2, 0 0 20px #203de2;
+  box-shadow: 0 0 10px whitesmoke, 0 0 20px whitesmoke, 0 0 20px whitesmoke;
   border-radius: 30px;
   color: blue;
   transition: all .5s;
@@ -168,8 +168,8 @@
     }
   
     &:hover{
-      background-color: ( whitesmoke, rgba(73, 70, 70, 0.39) );
-    box-shadow: 0 0 10px #203de2, 0 0 20px #203de2, 0 0 20px #203de2;
+    background-color: ( whitesmoke, rgba(73, 70, 70, 0.39) );
+    box-shadow: 0 0 10px whitesmoke, 0 0 20px whitesmoke, 0 0 20px whitesmoke;
     color: #434343;
     border-radius: 30px;
     transition: all .5s;
@@ -208,8 +208,8 @@
     }
   
     &:hover{
-      background-color: ( whitesmoke, rgba(73, 70, 70, 0.39) );
-    box-shadow: 0 0 10px #203de2, 0 0 20px #203de2, 0 0 20px #203de2;
+    background-color: ( whitesmoke, rgba(73, 70, 70, 0.39) );
+    box-shadow: 0 0 10px whitesmoke, 0 0 20px whitesmoke, 0 0 20px whitesmoke;
     color: #434343;
     border-radius: 30px;
     transition: all .5s;
@@ -249,8 +249,8 @@
     }
   
     &:hover{
-      background-color: ( whitesmoke, rgba(73, 70, 70, 0.39) );
-    box-shadow: 0 0 10px #203de2, 0 0 20px #203de2, 0 0 20px #203de2;
+    background-color: ( whitesmoke, rgba(73, 70, 70, 0.39) );
+    box-shadow: 0 0 10px whitesmoke, 0 0 20px whitesmoke, 0 0 20px whitesmoke;
     color: #434343;
     border-radius: 30px;
     transition: all .5s;

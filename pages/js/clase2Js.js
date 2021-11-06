@@ -14,7 +14,7 @@ if( numeroUno > 1000){
 
 let palabraUsuario = prompt("Ingrese una palabra");
 
-if( (palabraUsuario = "Hola")){
+if( (palabraUsuario == "Hola")){
     
     console.log("El usuario dijo: Hola");
 

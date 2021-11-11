@@ -1048,14 +1048,14 @@ p {
 /*MAIN BAG*/
 .main__bag {
   width: 100vw;
-  height: 120vh;
+  height: 90vh;
   margin-top: 85px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-image: url("../img/bags1.jpg");
   background-position: center;
-  background-size: 100%;
+  background-size: 80%;
   background-repeat: no-repeat;
 }
 

@@ -1,5 +1,5 @@
 .body{
-  background: rgb(77, 75, 75);
+  background: whitesmoke;
   // background: blue;
   overflow-x: hidden;
 }
@@ -8,7 +8,7 @@
 .main__grid {
   padding: 0% 0% 0% 0%;
   margin: 0% 0% 0% 0%;
-  padding-top: 8.6rem; //*este es el padding para que quede OK el Header*//
+  //padding-top: 8.6rem; //*este es el padding para que quede OK el Header*//
   width: 100vw;
   gap: 0%;
   display: flex; 
@@ -29,13 +29,13 @@
 /*MAIN SECTION SEANSON ITEMS*/
 .sectionSI{
  grid-area: sectionSI;
- background: rgb(77, 75, 75); //*último negro de la seccion*//
- padding-top: 3.5rem;
- padding-bottom: 1rem;
+ background: whitesmoke; //*último negro de la seccion*//
+ padding-top: 1,5rem;
+ padding-bottom: 0,5rem;
  
  
   &__caja{
-  padding-top: 10rem;
+  padding-top: 16rem;
   padding-bottom: 10rem;
   margin:  0% 4% 2% 4%;
   display: flex;
@@ -44,7 +44,7 @@
   justify-content: center;
   align-content: center;
   align-items: center;
-  // color: whitesmoke;
+  color: whitesmoke;
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: bold;
@@ -54,7 +54,7 @@
   background-size:  100%;
   background-position-x: right;
   background-position-y: center ;
-  border-radius: 40px;
+  // border-radius: 80px;
   
 
   &--h3{
@@ -262,7 +262,10 @@
  /*MAIN_ SECTION MOST VIEWED*/
  .sectionMV {
   grid-area: sectionMV;
-  background: rgb(22, 21, 21); 
+  background-color: #EAEAEA;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100%25 100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='100%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23eaeaea'/%3E%3Cstop offset='0.02' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.02' stop-color='%23d3d3d3'/%3E%3Cstop offset='0.032' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.032' stop-color='%23e3e3e3'/%3E%3Cstop offset='0.056' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.056' stop-color='%23bebebe'/%3E%3Cstop offset='0.07' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.07' stop-color='%23dedede'/%3E%3Cstop offset='0.1' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.1' stop-color='%23cccccc'/%3E%3Cstop offset='0.126' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.126' stop-color='%23c1c1c1'/%3E%3Cstop offset='0.142' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.142' stop-color='%23f1f1f1'/%3E%3Cstop offset='0.159' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.159' stop-color='%23eaeaea'/%3E%3Cstop offset='0.17' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.17' stop-color='%23949494'/%3E%3Cstop offset='0.197' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.197' stop-color='%23d2d2d2'/%3E%3Cstop offset='0.218' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.218' stop-color='%23e9e9e9'/%3E%3Cstop offset='0.239' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.239' stop-color='%23d4d4d4'/%3E%3Cstop offset='0.254' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.254' stop-color='%23d9d9d9'/%3E%3Cstop offset='0.283' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.283' stop-color='%23f2f2f2'/%3E%3Cstop offset='0.294' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.294' stop-color='%237d7d7d'/%3E%3Cstop offset='0.305' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.305' stop-color='%23ebebeb'/%3E%3Cstop offset='0.332' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.332' stop-color='%23d1d1d1'/%3E%3Cstop offset='0.346' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.346' stop-color='%23dedede'/%3E%3Cstop offset='0.362' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.362' stop-color='%23f4f4f4'/%3E%3Cstop offset='0.381' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.381' stop-color='%23d0d0d0'/%3E%3Cstop offset='0.415' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.415' stop-color='%23b6b6b6'/%3E%3Cstop offset='0.428' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.428' stop-color='%23bdbdbd'/%3E%3Cstop offset='0.442' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.442' stop-color='%23e3e3e3'/%3E%3Cstop offset='0.456' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.456' stop-color='%23aaaaaa'/%3E%3Cstop offset='0.498' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.498' stop-color='%23e7e7e7'/%3E%3Cstop offset='0.511' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.511' stop-color='%23aeaeae'/%3E%3Cstop offset='0.532' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.532' stop-color='%23e9e9e9'/%3E%3Cstop offset='0.541' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.541' stop-color='%23b4b4b4'/%3E%3Cstop offset='0.56' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.56' stop-color='%23f1f1f1'/%3E%3Cstop offset='0.581' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.581' stop-color='%23d2d2d2'/%3E%3Cstop offset='0.6' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.6' stop-color='%23e0e0e0'/%3E%3Cstop offset='0.618' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.618' stop-color='%23e4e4e4'/%3E%3Cstop offset='0.656' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.656' stop-color='%23a0a0a0'/%3E%3Cstop offset='0.679' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.679' stop-color='%23ebebeb'/%3E%3Cstop offset='0.689' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.689' stop-color='%23e2e2e2'/%3E%3Cstop offset='0.720' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.720' stop-color='%23a2a2a2'/%3E%3Cstop offset='0.734' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.734' stop-color='%23d6d6d6'/%3E%3Cstop offset='0.748' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.748' stop-color='%23e6e6e6'/%3E%3Cstop offset='0.764' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.764' stop-color='%23f0f0f0'/%3E%3Cstop offset='0.788' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.788' stop-color='%23e9e9e9'/%3E%3Cstop offset='0.808' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.808' stop-color='%23cecece'/%3E%3Cstop offset='0.831' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.831' stop-color='%23e9e9e9'/%3E%3Cstop offset='0.856' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.856' stop-color='%23dbdbdb'/%3E%3Cstop offset='0.872' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.872' stop-color='%23eaeaea'/%3E%3Cstop offset='0.894' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.894' stop-color='%23e0e0e0'/%3E%3Cstop offset='0.914' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.914' stop-color='%23cdcdcd'/%3E%3Cstop offset='0.942' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.942' stop-color='%23d5d5d5'/%3E%3Cstop offset='0.957' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.957' stop-color='%23cccccc'/%3E%3Cstop offset='0.973' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.973' stop-color='%23555555'/%3E%3Cstop offset='1' stop-color='%23EAEAEA'/%3E%3Cstop offset='1' stop-color='%23e4e4e4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' x='0' y='0' width='100%25' height='100%25'/%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
  
    &__caja {
    display: flex;
@@ -306,8 +309,10 @@ text-align: justify;
   padding-top: 10rem;
   padding-bottom: 10rem;
   padding: 5rem;
-  background: rgba(0, 0, 0, 0.898);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,10,224,1) 35%, rgb(255, 0, 221) 100%);
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23222222' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%23444444' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%23666666' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23888888' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23aaaaaa' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23cccccc' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23EEE' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
   border-radius: 20px;
   }
 
@@ -437,7 +442,20 @@ text-align: justify;
  }
 }
 
+//BOTON ARRIBA
 
+/*Flecha para hacer la pagina hacia arriba*/
+.ir-arriba{
+  display:none;
+  background-repeat:no-repeat;
+  font-size:20px;
+  color:black;
+  cursor:pointer;
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  z-index:2;
+}
 
 
 @media (max-width: 980px) { //para Dispositivos móviles. Min-width es para Desk

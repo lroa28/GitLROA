@@ -3,15 +3,16 @@
   grid-area: header__grid;
   position: fixed;
   overflow: hidden;
-  justify-content: space-between;
+  display: flex;
+  justify-content: end;
   align-items: flex-end;
   background: $fondogrisdegradado; 
 
   &__divlogo{
    display: flex;
    flex-direction: row;
-   padding:  0% 2% 0% 2%; 
-   gap: 10rem;
+   padding:  0% 10% 0% 10%; 
+  //  gap: 10rem;
    
   }
 
@@ -20,16 +21,16 @@
    height: 70px;
    top: 50%;
    left: 50%;
-   border-style: solid black;
-   color: rgba(0, 0, 0, 0.623);
+   border-style: groove rgb(10, 10, 10);
+  //  color: rgba(0, 0, 0, 0.623);
    }
 
   &__menu {
     padding: 0%;
     margin: 0%; 
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+    // display: flex;
+    // justify-content: center;
+    // flex-direction: row;
     line-height: 45px;
     font-family: 'Poppins', sans-serif;
     color: black;
@@ -72,9 +73,6 @@
       border-radius: 10px;
       transition: all 1.5s;
     }
-
-
-   
   }
   
   
@@ -86,8 +84,8 @@
    gap: 0.5rem;
    color: black;
   //  margin: 0 3% 0 0 ;
-   background: rgba(245, 245, 245, 0.726);
-   border-radius: 10px;
+   background: rgba(245, 245, 245, 0.432);
+  //  border-radius: 10px;
   
  
   & li a{
@@ -106,6 +104,76 @@
 
   }
 }
+
+//EFECTO DE ROTACIÓN DEL LOGO
+
+.rotate {
+  -webkit-animation: rotate 5s normal linear infinite;
+  animation: rotate 5s normal linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  25% {
+    -webkit-transform: rotate3d(0, 0, 1, 90deg);
+    transform: rotate3d(0, 0, 1, 90deg);
+  }
+  50% {
+    -webkit-transform: rotate3d(0, 0, 1, 180deg);
+    transform: rotate3d(0, 0, 1, 180deg);
+  }
+  75% {
+    -webkit-transform: rotate3d(0, 0, 1, 270deg);
+    transform: rotate3d(0, 0, 1, 270deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+
+//EFECTO APARECER EN TITULO
+
+.aparecer {
+  animation-name: aparecer;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+ }
+
+//EFECTO SUBRAYADO DEL MENU EN EL HEADER
+
+.header__menu {
+  display: inline-block;
+  position: relative;
+  color: #333;
+  text-decoration: none;
+  }
+  .header__menu:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  transition: all .8s;
+  }
+  .header__menu:hover:after {
+  width: 100%;
+  background: red;
+  }
+
+
 
 @media (max-width: 980px) { //para DM. min width es para Desk
   /* Header */

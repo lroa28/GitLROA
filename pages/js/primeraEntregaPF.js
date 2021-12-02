@@ -53,7 +53,11 @@ console.log( productos );
 
 //Descuento de productos
 
-let importeConImpuestos,importeSinImpuestos,tipoDeProducto,impuesto;
+let importeConImpuestos,importeSinImpuestos,tipoDeProducto,impuesto; 
+/*No crear muchas variables globales por fuera de la función, por ejemplo importeConImpuestos. Tal vez puede crearse dentro de la función. 
+Si necesito usarla por fuera, la devuelvo con un return.*/
+/* En lo posible separar la funcionalidad de cada función. Por ejemplo, la función pedir datos sólamente debería pedir datos. 
+Sin embargo además de pedirlos nos dice cuánto es el importe y lo calcula.*/
 	
     function introDatos(){
 	    importeSinImpuestos=prompt('Introduzca el importe del producto');
@@ -68,6 +72,7 @@ let importeConImpuestos,importeSinImpuestos,tipoDeProducto,impuesto;
 	}
 
     function obtenerImporteConImpuestos(importeSinImpuestos,tipoDeProducto) {
+
         if(tipoDeProducto==1){
             impuesto=1.21;
         }else if(tipoDeProducto==2){
@@ -78,6 +83,33 @@ let importeConImpuestos,importeSinImpuestos,tipoDeProducto,impuesto;
 		importeConImpuestos=importeSinImpuestos*impuesto;
 		alert('El importe con impuestos del tipo de producto '+tipoDeProducto+ ' es: $'+ importeConImpuestos+ '\n\n');
     }    
+
+
+//Descuento segun día
+
+/*En la línea let resultado = (precio - descuento(precio, dia)); de la función que me consultabas, 
+estás metiendo una función dentro de otra (esto se llama recursión) y no hay forma de que se frene, por lo tanto el 
+navegador termina colapsando. Hay que evitar las recursiones a menos que se esté trabajando con ese tipo de lógica.*/
+
+function descuento ( precio , dia ){
+  
+    if( dia == "lunes"){
+        let descuentoPrecio = precio * 0.05;         
+        return descuentoPrecio;    
+    }
+    else if( dia == "viernes"){
+        let descuentoPrecio = precio * 0.15;          
+        return descuentoPrecio;    
+    }
+    else if( dia == "sabado"){
+        let descuentoPrecio = precio * 0.20;           
+        return descuentoPrecio;
+    }
+    let resultado = ( precio -  descuento(precio , dia) );
+    alert(resultado);
+}
+let precio = prompt("Ingrese el precio del producto");
+let dia = prompt("Ingrese el dia de la compra: lunes, viernes o sabado");
 
 //Ordenar los productos
 

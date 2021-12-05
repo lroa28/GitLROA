@@ -107,10 +107,36 @@
 </div>
 
 <!-- <script src="./js/clase4Simulador.js"></script> -->
-<script src="./js/clase5.js"></script>
-<script src="./js/clase6Arrays.js"></script>
+<!-- <script src="./js/clase5.js"></script>-->
+<!--<script src="./js/clase6Arrays.js"></script> -->
+<!-- <button onclick="login(usuario, password)" type="button" class="btn btn-danger"> Simular LOGIN (CLASE 4 y  5) </button> -->
 
-<button onclick="login(usuario, password)" type="button" class="btn btn-danger"> Simular LOGIN (CLASE 4 y  5) </button>
+<h1>Ingresa Tus Datos 
+</h1> 
+<form name="login"> 
+     <table width="200"> 
+       <tr> 
+         <th scope="row"><h2>Usuario</h2></th> 
+         <td><span class="cnt"> 
+           <input name="usuario" type="text" class="Input" value="" size="20" /> 
+         </span>
+        </td> 
+       </tr> 
+       <tr> 
+         <th height="33" scope="row"><h2>Clave</h2></th> 
+         <td><span class="cnt"> 
+           <input name="password" type="password" class="Input" value="" size="20" /> 
+         </span></td> 
+         <td><span class="cnt"> 
+           <input value="Entrar" target="_parent" onclick="Login()" type="button" class="boton"/> 
+         </span></td> 
+       </tr> 
+       <tr> 
+         <th scope="row"><input type="reset" name="Borrar" id="Borrar" value="Reset" class="boton" /></th> 
+       </tr> 
+     </table> 
+</form> 
+
 
 </main>
 <!--Fin Main-->

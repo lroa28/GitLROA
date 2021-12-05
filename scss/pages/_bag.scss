@@ -1,6 +1,6 @@
 //*BODY*//
 .body{
-  // background-color: blue;
+  background-color: blue;
 }
 
 /*MAIN BAG*/
@@ -22,5 +22,56 @@
     margin-top: 89px;
     background-size: cover;
   }
+  
 
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+      width: 60%;
+      margin: auto;
+  }
+  .button {
+      cursor: pointer;
+      transition: all 0.2s;
+  }
+  .button:hover {
+      background-color: #fca311;
+      color: #fff;
+      cursor: pointer;
+  }
+}
+
+
+.container {
+  width: 95%;
+  margin: auto;
+  text-align: center;
+}
+
+.container h1 {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1rem 0;
+}
+
+.button {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 2rem;
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  background-color: transparent;
+  border: 2px solid #fca311;
+}
+
+/* Modificaciones para modo oscuro */
+
+body.dark {
+  background-color: #14213d;
+  color: #fff;
+}
+
+body.dark button {
+  color: #f5f5f5;
 }

@@ -7,6 +7,7 @@
   justify-content: end;
   align-items: flex-end;
   background: $fondogrisdegradado; 
+  // background: grey;
 
   &__divlogo{
    display: flex;
@@ -85,7 +86,7 @@
    color: black;
   //  margin: 0 3% 0 0 ;
    background: rgba(245, 245, 245, 0.432);
-  //  border-radius: 10px;
+   border-radius: 10px;
   
  
   & li a{
@@ -154,24 +155,24 @@
 
 //EFECTO SUBRAYADO DEL MENU EN EL HEADER
 
-.header__menu {
-  display: inline-block;
-  position: relative;
-  color: #333;
-  text-decoration: none;
-  }
-  .header__menu:after {
-  content: "";
-  display: block;
-  margin: auto;
-  height: 2px;
-  width: 0px;
-  transition: all .8s;
-  }
-  .header__menu:hover:after {
-  width: 100%;
-  background: red;
-  }
+// .header__menu {
+//   display: inline-block;
+//   position: relative;
+//   color: #333;
+//   text-decoration: none;
+//   }
+  // .header__menu:after {
+  // content: "";
+  // display: block;
+  // margin: auto;
+  // height: 2px;
+  // width: 0px;
+  // transition: all .8s;
+  // }
+  // .header__menu:hover:after {
+  // width: 100%;
+  // background: red;
+  // }
 
 
 

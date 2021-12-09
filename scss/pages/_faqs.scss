@@ -1,0 +1,118 @@
+/*FAQS*/
+.nosotros {
+    margin-bottom: 60px;
+  }
+  
+  .nosotros .titulo {
+    width: 70%;
+    font-size: 44px;
+    -webkit-text-decoration: uppercase;
+            text-decoration: uppercase;
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+  
+  .subtitulo {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    z-index: 2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .subtitulo span {
+    background-color: #eeeeee;
+    padding: 0 15px;
+    z-index: 3;
+    position: relative;
+  }
+  
+  .subtitulo::after {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background: black;
+    position: relative;
+    top: -29px;
+    z-index: 1;
+  }
+  
+  .hero__jeans {
+    background: url(../../img/Jeans/clothing-2886783_1920.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: 50% 50%;
+  }
+  
+  @media only screen and (max-width: 375px) {
+    .hero__jeans {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .hero__jeans {
+      display: none;
+    }
+  }
+  
+  .hero__jeans__titulo {
+    position: absolute;
+    left: 38%;
+    font-size: 4rem;
+    font-weight: 700;
+    color: black;
+  }
+  
+  .hero__jeans__subtitulo {
+    position: absolute;
+    left: 32%;
+    font-size: 4rem;
+    font-weight: 700;
+    color: seagreen;
+  }
+  
+  .container__video {
+    position: relative;
+  }
+  
+  .container__video video {
+    border-radius: 1rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+  .container__video__titulo {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    font-size: 2rem;
+    background: #fff;
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+  }
+  
+  @media only screen and (max-width: 375px) {
+    .container__video {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .container__video {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .container__video {
+      display: none;
+    }
+  }
+  

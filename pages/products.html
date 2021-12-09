@@ -12,14 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> <!-- CDN via jsDelivr -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+    <!-- <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css"> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/> <!--Aos animate-->
   <head>
 <!--Body-->
 <body class="body">
-
-  <div class="row">
-  <div class="col-xs-12">
+<div class="row">
+<div class="col-xs-12">
   
 <!--Header-->
 <div class="row">
@@ -29,16 +28,9 @@
     <div class="divlogo">
      <a  class="navbar-brand rotate" href="../index.html"><img class="header__logo img-fluid rounded-circle" src="../img/logoOriginal.jpg" alt="Logo" class="d-inline-block align-top"></a> 
     </div>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation">
-  
-      <span class="navbar-toggler-icon"><i class="fas fa-hamburger"></i></span>
+ 
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"><i class="fas fa-hamburger"></i></span>
     </button>
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -57,8 +49,34 @@
             <li><a class="dropdown-item" href="#">Máquinas</a></li>
           </ul>
         </li> -->
-  
-     </div>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                  <img src="../img/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px"
+                      width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false"></img>
+                  <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                      <table id="lista-carrito" class="table">
+                          <thead>
+                              <tr>
+                                  <th>Imagen</th>
+                                  <th>Nombre</th>
+                                  <th>Precio</th>
+                                  <th></th>
+                              </tr>
+                          </thead>
+                          <tbody></tbody>
+                      </table>
+
+                      <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                      <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar Compra</a>
+                  </div>
+              </li>
+          </ul>
+      </div>
+    </div> 
+
      <ul class="header__icons navbar-nav">
       <li class="nav-item"><a class="nav-link" href="./index.html"><i class="fas fa-home"></i></a></li>
       <li class="nav-item"><a class="nav-link" href="./pages/search.html"><i class="fas fa-search"></i></a></li>
@@ -66,9 +84,7 @@
       <li class="nav-item"><a class="nav-link" href="./pages/bag.html"><i class="fas fa-shopping-cart"></i></a></li>
       <li class="nav-item"><a class="nav-link" href="./pages/login.html"><i class="fas fa-user"></i></a></li>
      </ul> 
-   </div>
-  
-  </nav> 
+ </nav> 
   
   </header>  
   </div>
@@ -78,12 +94,8 @@
 <main class="main__products">
 <div class="row">
 <div class="col-md-12">
-
-<!-- <script src="./js/clase6Ordenar.js"></script>  -->
-<!-- <script src="./js/primeraEntregaPF.js"></script>  -->
-
 <!--Selección antes de buscar productos --> 
-<div class="d-flex-row py-5">
+ <!--<div class="d-flex-row py-5">
        <div class="dropdown text-center">
               <button
                 type="button"
@@ -97,7 +109,7 @@
                 <a class="dropdown-item" href="#">2020</a>
                 <a class="dropdown-item" href="#">2019</a>
               </div>
-      </div>
+      </div> 
       <br>
       <div class="dropdown text-center">
               <button
@@ -115,302 +127,216 @@
               </div>
               <br>
       </div>
+</div> -->
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+  <h1 class="display-4 mt-4">Lista de Productos</h1>
+  <p class="lead">Selecciona uno de nuestros productos</p>
 </div>
 
-      <div class="row">
-        <div class="container section1 d-flex-row" data-aos="fade-down" data-aos-duration="1500">
-            <div class="container-fluid  px-0 py-0 d-flex-row">
-                
-              <section class="iconos__container text-center">
-                <div class="iconos__container__ind d-flex-row justify-content-center" >
-                  <figure>
-                    <img
-                      src="../img/CanguroAndre.jpg"
-                      class="main__img1"
-                      alt="Foto Canguro"
-                    />
-                    <br>
-                      <br>
-                      <br>
-                      <br>
-                    <figcaption>
-                      <h3 class="bg-black text-white rounded-3">Campera</h3>
-                      <hr />
-                      <p>Canguro pólarsoft negro</p>
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                      <br>
-                      <br>
-                     <a class="link link--3">
-                        <span>
-                          <p class="text-BLACK rounded-3">$2.999</p>
-                        </span>
-                        <i class="link--3-b-tr"></i>
-                        <i class="link--3-b-bl"></i>
-                    </a>
-                    </figcaption>
-                  </figure>
-                </div>
+<div class="container" id="lista-productos">
+  
+  <div class="card-deck mb-3 text-center">
+      
+      <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+              <h4 class="my-0 font-weight-bold">CANGURO</h4>
+          </div>
+          <div class="card-body">
+            <img src="../img/CanguroAndre.jpg" class="main__img1" alt="Foto Canguro"/>
+              <h1 class="card-title pricing-card-title precio">$<span class="">5000</span></h1>
 
-                <div class="iconos__container__ind d-flex-row justify-content-center" >
-                  <figure>
-                    <img
-                    src="../img/Campera.jpg"
-                    class="main__img1"
-                    alt="Foto Campera algodon"
-                    />
-                    <br>
-                      <br>
-                      <br>
-                      <br>
-                    <figcaption>
-                      <h3 class="bg-black text-white rounded-3">Campera</h3>
-                      <hr />
-                      <p>Algodón con capucha</p>
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                      <br>
-                      <br>
-                     <a class="link link--3">
-                        <span>
-                          <p class="text-BLACK rounded-3">$1.000</p>
-                        </span>
-                        <i class="link--3-b-tr"></i>
-                        <i class="link--3-b-bl"></i>
-                    </a>
-                    </figcaption>
-                  </figure>
-                </div>
-              
-                <div class="iconos__container__ind d-flex-row justify-content-center" >
-                <figure>
-                  <img
-                    src="../img/Barbijos2.jpg"
-                    class="main__img1"
-                    alt="Barbijos"
-                  />
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <figcaption>
-                    <h3 class="bg-black text-white rounded-3">Barbijos</h3>
-                      <hr />
-                    <p>Barbijos de jeans</p>
-                    <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                      <br>
-                      <br>
-                     <a class="link link--3">
-                        <span>
-                          <p class="text-BLACK rounded-3">$200 C/u</p>
-                        </span>
-                        <i class="link--3-b-tr"></i>
-                        <i class="link--3-b-bl"></i>
-                    </a>
-                    </figcaption>
-                  </figure>
-                </div>
+              <ul class="list-unstyled mt-3 mb-4">
+                <p>Canguro pólarsoft negro</p>
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+              </ul>
+              <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+          </div>
+      </div>
 
-                <div class="iconos__container__ind d-flex-row justify-content-center" >
-                  <figure>
-                    <img
-                      src="../img/Barbijos2.jpg"
-                      class="main__img1"
-                      alt="Barbijos"
-                    />
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <figcaption>
-                      <h3 class="bg-black text-white rounded-3">Barbijos</h3>
-                        <hr />
-                      <p>Barbijos de jeans</p>
-                      <span><i class="fa fa-star"></i></span>
-                        <span><i class="fa fa-star"></i></span>
-                        <span><i class="fa fa-star"></i></span>
-                        <span><i class="fa fa-star"></i></span>
-                        <span><i class="fa fa-star"></i></span>
-                        <br>
-                        <br>
-                       <a class="link link--3">
-                          <span>
-                            <p class="text-BLACK rounded-3">$200 C/u</p>
-                          </span>
-                          <i class="link--3-b-tr"></i>
-                          <i class="link--3-b-bl"></i>
-                      </a>
-                      </figcaption>
-                    </figure>
-                  </div>
+      <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+              <h4 class="my-0 font-weight-bold">CAMPERA ALGODÓN</h4>
+          </div>
+          <div class="card-body">
+              <img src="../img/Campera.jpg" class="main__img1" alt="Foto Campera algodon">
+              <h1 class="card-title pricing-card-title precio">$<span class="">3000</span></h1>
 
-                  <div class="iconos__container__ind d-flex-row justify-content-center" >
-                    <figure>
-                      <img
-                        src="../img/Barbijos2.jpg"
-                        class="main__img1"
-                        alt="Barbijos"
-                      />
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <figcaption>
-                        <h3 class="bg-black text-white rounded-3">Barbijos</h3>
-                          <hr />
-                        <p>Barbijos de jeans</p>
-                        <span><i class="fa fa-star"></i></span>
-                          <span><i class="fa fa-star"></i></span>
-                          <span><i class="fa fa-star"></i></span>
-                          <span><i class="fa fa-star"></i></span>
-                          <span><i class="fa fa-star"></i></span>
-                          <br>
-                          <br>
-                         <a class="link link--3">
-                            <span>
-                              <p class="text-BLACK rounded-3">$200 C/u</p>
-                            </span>
-                            <i class="link--3-b-tr"></i>
-                            <i class="link--3-b-bl"></i>
-                        </a>
-                        </figcaption>
-                      </figure>
-                    </div>
+              <ul class="list-unstyled mt-3 mb-4">
+                <p>Algodón con capucha</p>
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+              </ul>
+              <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+          </div>
+      </div>
 
-                    <div class="iconos__container__ind d-flex-row justify-content-center" >
-                      <figure>
-                        <img
-                          src="../img/Barbijos2.jpg"
-                          class="main__img1"
-                          alt="Barbijos"
-                        />
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <figcaption>
-                          <h3 class="bg-black text-white rounded-3">Barbijos</h3>
-                            <hr />
-                          <p>Barbijos de jeans</p>
-                          <span><i class="fa fa-star"></i></span>
-                            <span><i class="fa fa-star"></i></span>
-                            <span><i class="fa fa-star"></i></span>
-                            <span><i class="fa fa-star"></i></span>
-                            <span><i class="fa fa-star"></i></span>
-                            <br>
-                            <br>
-                           <a class="link link--3">
-                              <span>
-                                <p class="text-BLACK rounded-3">$200 C/u</p>
-                              </span>
-                              <i class="link--3-b-tr"></i>
-                              <i class="link--3-b-bl"></i>
-                          </a>
-                          </figcaption>
-                        </figure>
-                      </div>
+      <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+              <h4 class="my-0 font-weight-bold">BARBIJOS JEANS</h4>
+          </div>
+          <div class="card-body">
+              <img src="../img/Barbijos2.jpg" class="main__img1" alt="Barbijos">
+              <h1 class="card-title pricing-card-title precio">$<span class="">350</span></h1>
 
-                      <div class="iconos__container__ind d-flex-row justify-content-center" >
-                        <figure>
-                          <img
-                            src="../img/Barbijos2.jpg"
-                            class="main__img1"
-                            alt="Barbijos"
-                          />
-                          <br>
-                          <br>
-                          <br>
-                          <br>
-                          <figcaption>
-                            <h3 class="bg-black text-white rounded-3">Barbijos</h3>
-                              <hr />
-                            <p>Barbijos de jeans</p>
-                            <span><i class="fa fa-star"></i></span>
-                              <span><i class="fa fa-star"></i></span>
-                              <span><i class="fa fa-star"></i></span>
-                              <span><i class="fa fa-star"></i></span>
-                              <span><i class="fa fa-star"></i></span>
-                              <br>
-                              <br>
-                             <a class="link link--3">
-                                <span>
-                                  <p class="text-BLACK rounded-3">$200 C/u</p>
-                                </span>
-                                <i class="link--3-b-tr"></i>
-                                <i class="link--3-b-bl"></i>
-                            </a>
-                            </figcaption>
-                          </figure>
-                        </div>
+              <ul class="list-unstyled mt-3 mb-4">
+                <p>Barbijos de jeans</p>
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+              </ul>
+              <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Comprar</a>
+          </div>
+      </div>
 
-                        <div class="iconos__container__ind d-flex-row justify-content-center" >
-                          <figure>
-                            <img
-                              src="../img/pulseraboca.jpg"
-                              class="main__img1"
-                              alt="pulseraboca"
-                            />
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <figcaption>
-                              <h3 class="bg-black text-white rounded-3">Pulsera</h3>
-                                <hr />
-                              <p>Macramé</p>
-                              <span><i class="fa fa-star"></i></span>
-                                <span><i class="fa fa-star"></i></span>
-                                <br>
-                                <br>
-                               <a class="link link--3">
-                                  <span>
-                                    <p class="text-BLACK rounded-3">$100 C/u</p>
-                                  </span>
-                                  <i class="link--3-b-tr"></i>
-                                  <i class="link--3-b-bl"></i>
-                              </a>
-                              </figcaption>
-                            </figure>
-                          </div>
-       </section>
- </div>
+      <div class="card-deck mb-3 text-center">
+      
+      <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+              <h4 class="my-0 font-weight-bold">PULSERA</h4>
+          </div>
+          <div class="card-body">
+              <img src="../img/pulseraboca.jpg" class="main__img1" alt="pulseraboca">
+              <h1 class="card-title pricing-card-title precio">$<span class="">200</span></h1>
+
+              <ul class="list-unstyled mt-3 mb-4">
+                <p>Macramé</p>
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+              </ul>
+              <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Comprar</a>
+          </div>
+      </div>
+
+  </div>
+
+</div>  
+</div>
+
 </div>
 </div>
 
+<script src="./js/pedido.js"></script>
+<script src="./js/carrito.js"></script>
 </main>
 <!--Fin Main-->
 
 <!--Footer-->
-<div class="row bg-black">
-  <div class="col-xs-12 bg-black">
+<footer class="footer">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-11 m-auto py-5">
+        <div class="row">
+          <div class="col-lg-3 py-3 text-center">
+            <h5 class="pb-3">Quick Links</h5>
+            <ul class="footer__quickLinks m-0 p-0">
+              <li>
+                <a class="footer__quickLinks__a" href="./pages/faqs.html"
+                  >Preguntas frecuentes</a
+                >
+              </li>
+              <li>
+                <a class="footer__quickLinks__a" href="./pages/faqs.html"
+                  >Politicas de cambio</a
+                >
+              </li>
+              <li>
+                <a class="footer__quickLinks__a" href="./pages/faqs.html"
+                  >Cómo comprar</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 py-3 text-center">
+            <h5 class="pb-3">Ayuda</h5>
+            <ul class="footer__quickLinks m-0 p-0">
+              <li>
+                <a class="footer__quickLinks__a" href="./pages/faqs.html"
+                  >Devoluciones</a
+                >
+              </li>
+              <li>
+                <a class="footer__quickLinks__a" href="./pages/faqs.html"
+                  >Formas de pago</a
+                >
+              </li>
+              <li>
+                <a class="footer__quickLinks__a" href="./pages/faqs.html"
+                  >Costos de envío</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 py-3 text-center">
+            <h5 class="pb-3">_luk_c</h5> 
+            <ul class="footer__quickLinks m-0 p-0">
+              <li>
+                 <a class="footer__quickLinks__a" href="./pages/faqs.html"
+                  >Quienes somos</a
+                >
+              </li>
+              <li>
+                <a class="footer__quickLinks__a" href="./pages/faqs.html"
+                  >Contacto</a
+                >
+              </li>
+              <li>
+                <a class="footer__quickLinks__a" href="./pages/faqs.html"
+                  >Visitanos</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 py-3">
+            <h5 class="pb-3">Contact</h5>
+            <ul class="footer__quickLinks m-0 p-0">
 
-    <footer class="footer bg-black"> 
-      <h5 class="footer__titulo1--modifier h5operaciones col-md-12"> _luk_c <i class="fas fa-phone-alt"></i>(+54) 9-11 00000000
-        <i class="fas fa-envelope"></i> <a href="mailto:lc.luluroa@gmail.com?Subject=Hola!%20les%20hago%20una%20consulta.">lc.luluroa@gmail.com</a> 
-        <a href="https://www.google.com/maps/place/Recoleta,+CABA/@-34.5847911,-58.4138525,14z/data=!3m1!4b1!4m5!3m4!1s0x95bcca99c609fc2f:0x392ca99351808a75!8m2!3d-34.5873825!4d-58.3972762"><i class="fas fa-map-marker-alt"></i></a>
-        <img class="footer_imgArg" src="../img/argentina.svg"> Argentina</h5>
-      <br>
-      <div>
-        <ul class="footer__titulo2--modifier"> <!-- Links otros sitios webs de ayuda a los usuarios que visitan la página-->
-          <li><a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario">Defensa del consumidor en la República Argentina. Para reclamos ingrese <i class="fas fa-hand-point-right"></i>"aquí"</a></li> 
-        </ul>
+              <li>
+                <a class="footer__quickLinks__a" href="./pages/faqs.html"><i class="fas fa-phone-alt"></i>(+54) 9-11 00000000</a>
+              </li>
+              <li>
+                <a class="footer__quickLinks__a" href="./pages/faqs.html"><i class="fas fa-envelope"></i> <a href="mailto:lc.luluroa@gmail.com?Subject=Hola!%20les%20hago%20una%20consulta.">lc.luluroa@gmail.com</a> </a>
+              </li>
+              
+            </ul>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-9 m-auto text-center">
+              <h3 class="h1">Recibí nuestras promociones</h3>
+              <form action="#">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Ingresá tu email"
+                  required
+                />
+                <button class="btn1 btn btn-secondary">Suscribir!</button>
+              </form>
+            </div>
+          </div>
+
+
+        </div>
       </div>
-      <br>
-      <span class="lead footer__p--modifier col-md-12">© Copyright 2021 _luk_c Todos los derechos reservados. Prohibida la duplicación , distribución o almacenamiento en cualquier medio.</span>
-    <br>
-    <h1 class="lead footer__p--modifier bg-danger bg-gradient col-md-12">Developed Overflow-X by •Lucrecia Cecilia Roa•</h1>
-    </footer> 
+    </div>
+  </div>
 
-</div>
-</div>
+  <ul class="footer__titulo2--modifier"> <!-- Links otros sitios webs de ayuda a los usuarios que visitan la página-->
+    <li><a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario">Defensa del consumidor en la República Argentina. Para reclamos ingrese <i class="fas fa-hand-point-right"></i>"aquí"</a></li> 
+    <h3 class="lead footer__p--modifier bg-danger bg-gradient col-md-12 text-black">Developed Overflow-X by •Lucrecia Cecilia Roa•</h3>
+    <span class="lead footer__p--modifier col-md-12">© Copyright 2021 _luk_c Todos los derechos reservados. </span>
+ </ul>
+
+</footer>
 <!--Fin de Footer-->
   
 <!-- Script a la pagina AOS (para hacer rotar las imganes)-->

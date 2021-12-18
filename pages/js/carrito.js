@@ -1,4 +1,6 @@
-class Carrito {
+//Funciones para subir info al CARRITO DEL HEADER DE LA PAGINA EN PRODUCTOS
+
+class carrito {
 
     //Añadir producto al carrito
     comprarProducto(e){
@@ -8,7 +10,7 @@ class Carrito {
             const producto = e.target.parentElement.parentElement;
             //Enviamos el producto seleccionado para tomar sus datos
             this.leerDatosProducto(producto);
-            return producto
+            
         }
     }
 

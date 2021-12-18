@@ -1,9 +1,9 @@
-const compra = new Carrito();
-const listaCompra = document.querySelector("#lista-compra tbody");
-const carrito = document.getElementById('carrito');
-const procesarCompraBtn = document.getElementById('procesar-compra');
-const cliente = document.getElementById('cliente');
-const correo = document.getElementById('correo');
+let compra = new carrito();
+let listaCompra = document.querySelector("#lista-compra tbody");
+let carrito = document.getElementById('carrito');
+let procesarCompraBtn = document.getElementById('procesar-compra');
+let cliente = document.getElementById('cliente');
+let correo = document.getElementById('correo');
 
 
 cargarEventos();

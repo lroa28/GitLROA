@@ -16,8 +16,8 @@ $ ("main").append("(*Comentarios Año 2021)");
 
 //INCORPORA UN HIJO AL PRINCIPIO DEL MAIN
 
-$("main").prepend(`<h2>¿Encontró el producto buscado? Si no: ¡Escribimos a nuestro WhatsApp:(+54) 9-11 00000000!</h2> 
-                   `);
+// $("main").prepend(`<h2>¿Encontró el producto buscado? Si no: ¡Escribimos a nuestro WhatsApp:(+54) 9-11 00000000!</h2> 
+//                    `);
 
 
 //FUNCION HOVER SOBRE EL PARRAFO P1
@@ -106,3 +106,23 @@ $(document).ready(function(){
   });
 });
 
+
+// ---------------- BUSCADOR ----------------//
+
+   $('form.buscador').submit( (e) => { 
+     //LO QUE INGRESA EL USUARIO
+     let inputDeUsuario = e.target[0].value
+     //LO QUE INGRESA EL USUARIO EN MAYUSCULA
+     let iputEnMayuscula = inputDeUsuario.toUpperCase()
+     //REFERENCIAS PARA CONDICIONAL 
+     $('.unProducto').remove();
+     $('.grid-container h3').remove();
+     $('.grid-container').prepend('<h3 class="col-md-12">Resultados para: ' + inputDeUsuario + '</h3>');
+     for (const iterator of productos_data) {
+         let productoEnMayuscula = iterator.nombre.toUpperCase()
+         if (productoEnMayuscula.indexOf(iputEnMayuscula) > -1) {
+             crearEstructura(iterator, $('.grid'))
+         } 
+     }
+     
+ });

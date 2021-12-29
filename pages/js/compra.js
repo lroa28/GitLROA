@@ -22,7 +22,6 @@ function cargarEventos() {
     carrito.addEventListener('change', (e) => { compra.obtenerEvento(e) });
     carrito.addEventListener('keyup', (e) => { compra.obtenerEvento(e) });
 
-
 }
 
 function procesarCompra() {

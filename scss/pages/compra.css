@@ -1,0 +1,149 @@
+.productoEnFinalizar img {
+  width: 100px;
+}
+
+.finalizarCompra {
+  background-color: white;
+  padding: 2.5rem;
+}
+
+.finalizarCompra .productos_finalizarCompra {
+  margin-top: 1rem;
+}
+
+.finalizarCompra .productos_finalizarCompra .producto_finalizarCompra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.finalizarCompra .productos_finalizarCompra .producto_finalizarCompra img {
+  width: 60px;
+}
+
+.finalizarCompra .productos_finalizarCompra .producto_finalizarCompra p:nth-child(2) {
+  text-align: center;
+}
+
+.finalizarCompra .productos_finalizarCompra .producto_finalizarCompra p:last-child:before {
+  content: '$';
+}
+
+.finalizarCompra .productos_finalizarCompra .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.finalizarCompra .productos_finalizarCompra .total p:last-child:before {
+  content: '$';
+}
+
+.finalizarCompra h1 {
+  text-align: center;
+  padding-top: 1rem;
+  border-bottom: 1px solid #21232a;
+  margin-bottom: 2rem;
+}
+
+.finalizarCompra .datosPersonales_finalizarCompra .tarjeta_finalizarCompra {
+  padding: 22px;
+  background-color: #C4C4C4;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.finalizarCompra .datosPersonales_finalizarCompra .tarjeta_finalizarCompra img {
+  width: 54px;
+  margin-bottom: 1rem;
+}
+
+.finalizarCompra .datosPersonales_finalizarCompra .tarjeta_finalizarCompra label {
+  margin-bottom: 2px;
+}
+
+.finalizarCompra .datosPersonales_finalizarCompra .tarjeta_finalizarCompra input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #21232a;
+  background: #C4C4C4;
+  margin-bottom: 1rem;
+}
+
+.finalizarCompra .datosPersonales_finalizarCompra .tarjeta_finalizarCompra input:focus {
+  outline: none;
+  border-bottom: 1px solid #0EB1D2;
+}
+
+.finalizarCompra .datosPersonales_finalizarCompra .tarjeta_finalizarCompra .izquierda_tarjeta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.finalizarCompra .datosPersonales_finalizarCompra .tarjeta_finalizarCompra .izquierda_tarjeta input {
+  font-size: 22px;
+}
+
+.finalizarCompra .datosPersonales_finalizarCompra .tarjeta_finalizarCompra .izquierda_tarjeta input:last-child {
+  width: 15%;
+}
+
+.finalizarCompra .datosPersonales_finalizarCompra .tarjeta_finalizarCompra .derecha_tarjeta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.finalizarCompra .datosPersonales_finalizarCompra .tarjeta_finalizarCompra .derecha_tarjeta input {
+  width: 80%;
+}
+
+.compraFinalizada {
+  background: white;
+  text-align: center;
+  padding: 2.5rem;
+  border-radius: 5px;
+}
+
+.compraFinalizada h3 {
+  margin-bottom: 22px;
+}
+
+.compraFinalizada span.greenColor {
+  color: #92c800;
+}
+
+.compraFinalizada p:last-child {
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=compra.css.map */

@@ -1,38 +1,63 @@
+/*GLOBALES*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   outline: none;
-  // border: none;
   transition: 0.2s linear;
   font-family: 'Poppins', sans-serif;
- }
-  
- html {
-   font-size: 62.5%;
-   overflow-x: hidden;
- }
 
- ul li a {
-	text-decoration: none;
 }
 
-ul {
-  list-style: none;
+h1, h2, h3, h4, h5{
+  font-family: 'Poppins', sans-serif;
 }
+
+/*HTML*/
+.html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
 
 /*BODY*/
 .body {
-  padding: 0% 0% 0% 0%;
-  margin: 0% 0% 0% 0%;
-  background-color: whitesmoke; 
+  background-color: #eee;
+  overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
 }
 
- /*PÁRRAFOS*/
- p {
-  font-size: 15pt;
-  color: rgb(116, 109, 109);
+/*PÁRRAFOS*/
+.p {
+  // font-size: 15pt; //tamaño
+  font-weight: normal; //negrita
+  // color: black;
   font-family: 'Poppins', sans-serif;
-  font-weight: 150;
+}
+
+/*LISTA ORDENADA*/
+.ul li a {
+	text-decoration: none; //quitar el subrayado
+}
+
+.ul {
+  list-style: none;
+}
+
+//EFECTO APARECER
+.aparecer {
+  animation-name: aparecer;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+ }

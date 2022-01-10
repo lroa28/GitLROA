@@ -1,26 +1,22 @@
-.body{
-  background: whitesmoke;
-  // background: blue;
-  overflow-x: hidden;
-}
-
 /*MAIN*/
 .main__grid {
   padding: 0% 0% 0% 0%;
   margin: 0% 0% 0% 0%;
-  padding-top: 8.6rem; //*este es el padding para que quede OK el Header
+  //padding-top: 8.6rem; //*este es el padding para que quede OK el Header
   width: 100vw;
   gap: 0%;
-  display: flex; 
+  display: flex;
   flex-direction: column;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(7, auto);
+  grid-template-rows: repeat(9 auto);
   grid-template-areas:
   "header__grid"
   "sectionSI"
+  "sale"
   "sectionMV"
   "sectionPT"
+  "pilares"
   "sectionHPYSM"
   "sectionOFF"
   "footer";
@@ -29,59 +25,43 @@
 /*MAIN SECTION SEANSON ITEMS*/
 .sectionSI{
  grid-area: sectionSI;
- background: whitesmoke; //*último negro de la seccion*//
- padding-top: 1,5rem;
- padding-bottom: 0,5rem;
- 
- 
+ background: rgba(0, 0, 0, 0.877); //*último background de la seccion*//
+ padding: 4.3rem 0rem 1rem 0rem;
+ margin: 0% ;
+
   &__caja{
-  padding-top: 16rem;
-  padding-bottom: 10rem;
-  margin:  0% 4% 2% 4%;
+  padding: 6rem 0rem 6rem 0rem;
+  margin:  4% 5% 5% 5%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-content: center;
   align-items: center;
-  color: whitesmoke;
   font-family: 'Poppins', sans-serif;
-  font-size: 32px;
-  font-weight: bold;
+  background: black; //background de la caja*//
   text-align: center ;
-  background-image: url("../img/shop.jpg"); 
+  background-image: url("../img/shop.jpg");
   background-repeat: no-repeat;
   background-size:  100%;
-  background-position-x: right;
-  background-position-y: center ;
-  // border-radius: 80px;
-  
+  background-position-x: center;
+  background-position-y: top ;
+  border-radius: 15px;
 
   &--h3{
     color: black;
     font-family: 'Poppins', sans-serif;
-    font-size: 32px;
+    font-size: 20px;
     font-weight: bold;
-    border-radius: 2px;
+    border-radius: 1px 60px 1px 60px;
     background: radial-gradient( rgba(245, 245, 245, 0.618), rgba(73, 70, 70, 0.405) );
-    align-self: center;
-    animation-duration: 4s;
-    animation-name: aparecer;
-    animation-iteration-count: infinite;
-    border-radius: 10px;
+    // align-self: center;
+    // animation-duration: 4s;
+    // animation-name: aparecer;
+    // animation-iteration-count: infinite;
   }
-    
-   @keyframes aparecer {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-   }
 
- 
-  &--buttonmod1 {
+ &--buttonmod1 {
   width: 200px;
   height: 200px;
   color: whitesmoke;
@@ -93,7 +73,7 @@
   border-style: dotted;
   position: relative;
   display: block;
-  border-radius: 4px;
+  border-radius: 40px;
   cursor: pointer;
 
   &::before {
@@ -104,7 +84,6 @@
   top: 50%;
   transform: translate(-50%,-50% );
   transition: all 500ms ease;
-  
   }
   
   &::after {
@@ -127,11 +106,9 @@
   background-color: ( whitesmoke, rgba(73, 70, 70, 0.39) );
   box-shadow: 0 0 10px whitesmoke, 0 0 20px whitesmoke, 0 0 20px whitesmoke;
   border-radius: 30px;
-  color: blue;
   transition: all .5s;
   content: "Winter";
   }
-
   }
 
   &--buttonmod2 {
@@ -259,7 +236,61 @@
 }
 }
 
- /*MAIN_ SECTION MOST VIEWED*/
+/*MAIN SECTION SALE*/
+.SALE{
+  grid-area: sale;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.sale__precio {
+  color: red;
+  font-size: 20px;
+  font-weight: 800;
+  padding-left: 5px;
+}
+
+.sale__btn {
+  height: 45px;
+  width: 110px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  opacity: 0;
+}
+
+.sale__btn:hover {
+  background-color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sale .card:hover input {
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.card {
+  border: none;
+  padding: 20px;
+}
+
+.card:hover {
+  box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+/*MAIN_ SECTION MOST VIEWED*/
  .sectionMV {
   grid-area: sectionMV;
   background-color: #EAEAEA;
@@ -286,6 +317,7 @@ background-size: cover;
    }
  }
 
+
 /*MAIN_ SECTION PRESENTATION*/
 .sectionPT{
 grid-area: sectionPT;
@@ -306,18 +338,17 @@ text-align: justify;
   text-align: center;
   margin:  4% 4% 4% 4%;
   max-width: 2000px;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  // padding-top: 10rem;
+  // padding-bottom: 10rem;
   padding: 5rem;
-  background-color: #000000;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23222222' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%23444444' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%23666666' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23888888' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23aaaaaa' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23cccccc' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23EEE' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
   background-attachment: fixed;
-  background-size: cover;
+  // background-size: cover;
   border-radius: 20px;
   }
 
   &--pmod {
-  color: black; 
+  color: black;
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
   text-align: center;
@@ -334,7 +365,7 @@ text-align: justify;
   color: #eee;
   text-align: left;
   direction: ltr;
-  font-size: 11px;
+  font-size: 90px;
   line-height: 1.3;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -346,13 +377,18 @@ text-align: justify;
   }
 }
 
-/*MAIN section HELPING Y SOCIAL MEDIA*/
+/*MAIN SECTION PILARES*/
+.pilares{
+  grid-area: pilares;
+}
+
+/*MAIN SECTION CONTACTS*/
 .sectionHPYSM {
   grid-area: sectionHPYSM;
   display: flex;
   justify-content: center;
-  padding-top: 5rem;
-  padding-bottom: 10rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
   background: #eee;
   // border-radius: 20px;
 }
@@ -365,8 +401,8 @@ text-align: justify;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 1rem;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .iconos__container__ind {
@@ -386,20 +422,20 @@ text-align: justify;
 }
 
 .iconos__container__img {
-  height: 15rem;
+  height: 10rem;
   margin-right: 2rem;
 }
 
 .iconos__container__titulo {
   color: black;
   padding-bottom: 0.5rem;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 .iconos__container__span {
   color: rgb(53, 52, 52);
-  font-size: 1.8rem;
+  font-size: 1.1rem;
   
 }
 
@@ -417,11 +453,9 @@ text-align: justify;
   align-content: center;
   color: black;
   font-family: 'Poppins', sans-serif;
-  font-size: 12px;
-  // font-weight: bold;
   text-align: center;
   overflow: hidden;
-  padding: 0% 0% 0% 0%; 
+  padding: 3% 0% 0% 0%;
   // margin-top: 10px;
  
  &__form {
@@ -436,7 +470,7 @@ text-align: justify;
  width: 300%;
  background-image: url("../img/cart.png"); 
  background-repeat: no-repeat;
- background-size: 20%;
+ background-size: 17%;
  background-position-x: x-star;
  background-position-y: center;
  }
@@ -457,7 +491,45 @@ text-align: justify;
   z-index:2;
 }
 
+.overlay {
+  position: absolute;
+  // top: 80px;
+  // height: calc(100vh - 80px);
+  // width: 100%;
+  // background-color: #ffe8d6;
+  opacity: 0.8;
+}
 
+.modal {
+  position: absolute;
+  // top: 80px;
+  // left: -100%;
+  // width: 320px;
+  // height: calc(100vh - 80px);
+  // background-color: #e76f51;
+  transition: all 0.4s;
+}
+
+.modal ul li a {
+  // padding: 0.3rem;
+  display: block;
+  // text-decoration: none;
+  // font-size: 1.5rem;
+  // text-transform: uppercase;
+  // text-align: center;
+  // color: #f5f5f5;
+  // font-weight: 600;
+}
+
+.hidden {
+  display: none;
+}
+
+.appear {
+  left: 0;
+}
+
+/*RESPONSIVE*/
 @media (max-width: 980px) { //para Dispositivos móviles. Min-width es para Desk
   .main__bag {
     margin-top: 60px;

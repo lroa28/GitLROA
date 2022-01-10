@@ -1,10 +1,6 @@
 $pgral: 15pt;
 $h5gral: 1.25rem;
 
-$color-primario: #55A;
-$color-secundario: #6B6;
-$color-texto: #666;
-
 $espaciado-estandar: 10px;
 $espaciado-doble: 20px;
 
@@ -17,3 +13,36 @@ $tipografia-alternativa: 'Times New Roman', Times, serif;
 
 $fondogrisdegradado: radial-gradient( whitesmoke, rgba(136, 127, 127, 0.616) );
 $letragral: 'Poppins', sans-serif;
+
+$color-primario: #55A;
+$color-secundario: #6B6;
+$color-texto: #666;
+
+// $theme-colors: (
+//   "primary":    $primary,
+//   "secondary":  $secondary,
+//   "success":    $success,
+//   "info":       $info,
+//   "warning":    $warning,
+//   "danger":     $danger,
+//   "light":      $light,
+//   "dark":       $dark
+// );
+
+// $colors: (
+//   "blue":       $blue,
+//   "indigo":     $indigo,
+//   "purple":     $purple,
+//   "pink":       $pink,
+//   "red":        $red,
+//   "orange":     $orange,
+//   "yellow":     $yellow,
+//   "green":      $green,
+//   "teal":       $teal,
+//   "cyan":       $cyan,
+//   "white":      $white,
+//   "gray":       $gray-600,
+//   "gray-dark":  $gray-800
+// );
+
+

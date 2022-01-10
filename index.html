@@ -1,135 +1,253 @@
-<!DOCTYPE html>                              
+<!DOCTYPE html>
 <html lang="en|es">
-<head>                                       
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="_luk_c by Lulu Roa. Custom dressmaking, clothing and fashion for men, women and children in all sizes"/>
-    <meta name="keywords" content="Ecommerce, clothing, fashion, women, men, children, t-shirts, pants, jumpsuits, scarves, shirts, bracelets and jackets, Boca, River"/>
-    <title>_luk_c - Clothes</title> 
-    <link href="./css/all.min.css" rel="stylesheet"> 
-    <link href="./scss/style.css" rel="stylesheet">  
-    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
-    <script src="./pages/js/popper.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/sweetalert2.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> <!-- CDN via jsDelivr -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/> <!--Aos animate-->
-    <!-- Script 3.6.0 JQuery clase11 JS-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="_luk_c by Lulu Roa. Custom dressmaking, clothing and fashion for men, women and children in all sizes"/>
+  <meta name="keywords" content="Ecommerce, clothing, fashion, women, men, children, t-shirts, pants, jumpsuits, scarves, shirts, bracelets and jackets, Boca, River"/>
+  <title>_luk_c - Clothes</title>
+  <link href="./css/all.min.css" rel="stylesheet">
+  <link href="./scss/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+  <script src="./pages/js/popper.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/sweetalert2.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> <!-- CDN via jsDelivr -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+  <!--Aos animate-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <!-- Script 3.6.0 JQuery clase11 JS-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
-<body class="body"> 
+<body class="body">
 
-<div class="row">
-<div class="col-xs-12">
 <!--Header-->
-<header> 
+<div class="col-xs-12">
+<header>
 <nav class="navbar navbar-expand-lg fixed-top header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-  <div class="divlogo">
-   <a  class="navbar-brand rotate d-inline-block align-top" href="./index.html"><img class="header__logo img-fluid rounded-circle" src="./img/logoOriginal.jpg" alt="Logo"></a> 
-  </div>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-bs-toggle="collapse"
-    data-bs-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent"
-    aria-expanded="false"
-    aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"><i class="fas fa-hamburger"></i></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-   <div class="header__menu navbar-nav m-auto mb-2 mb-lg-0 text-center d-flex-row align-items-left gap-4">
-      <li><a class="nav-item nav-link aparecer"  style="color:black; font-style: italic; text-transform: lowercase;" href="#sectionPT">_luk_c</a></li>
-      <li><a class="nav-item nav-link"  style="color:black;" href="./pages/products.html">Season & Products</a></li>
-      <li><a class="nav-item nav-link"  style="color:black;" href="#sectionHPYSM">Social Networks</a></li>
-      <li><a class="nav-item nav-link"  style="color:black;" href="./pages/courses.html">Courses</a></li>
-      <!-- <li class="nav-item nav-link dropdown">
-        <a class="nav-link dropdown-toggle header__menu" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Courses
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="#">Moldería básica</a></li>
-          <li><a class="dropdown-item" href="#">Tejido</a></li>
-          <li><a class="dropdown-item" href="#">Máquinas</a></li>
+  <div class="container-fluid d-flex-row">
+    
+   <div class="divlogo"><a class="navbar-brand rotate d-inline-block align-top" href="./index.html"><img class="header__logo img-fluid rounded-circle" src="./img/logoOriginal.jpg" alt="Logo"></a></div>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fas fa-hamburger"></i></span>
+    </button>
+  
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   <div class="header__menu navbar-nav m-auto mb-2 mb-lg-0">
+    <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: lowercase;" href="#sectionPT">_luk_c</a></li>
+    <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="./pages/products.html">Productos</a></li>
+    <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="#sectionHPYSM">Contact</a></li>
+    <li class="nav-item nav-link dropdown header__menu">
+        <a class="nav-link dropdown-toggle align-baseline header__menu" style="color:black;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+        <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item zindex-dropdown:1000 header__menu" href="./pages/courses.html">Moldería básica</a></li>
+          <li><a class="dropdown-item zindex-dropdown:1000 header__menu" href="./pages/courses.html">Tejido</a></li>
+          <li><a class="dropdown-item zindex-dropdown:1000 header__menu" href="./pages/courses.html">Máquinas</a></li>
         </ul>
-      </li> -->
-
+    </li>
+    <li><a class="nav-item nav-link align-baseline aparecer"  style="color:rgb(255, 4, 4);" href="./pages/products.html">Sale</a></li>
    </div>
-
-   <button class="menu-nav">
-    Reciclemos
-  </button>
+  </div>
+  
+  <button type="button" class="menu-nav btn btn-outline-dark btn-success" style="color: white;">Recycle
+      <i class="fas fa-recycle"></i>
   <div class="modal">
-    <ul>
+      <ul>
         <li><a href="https://ropalimpia.org/quienes-somos/">Ropa limpia</a></li>
         <li><a href="https://twenergy.com/ecologia-y-reciclaje/moda-sostenible-la-ropa-mas-ecologica-saludable-y-sociablemente-responsable-1853/">Twenergy</a></li>
-    </ul>
+        <li><a href="https://cnnespanol.cnn.com/2022/01/07/moda-sostenible-ropa-consciente-orix/">Moda Sostenible</a></li>
+      </ul>
   </div>
+  </button>
 
    <ul class="header__icons navbar-nav">
-    <li class="footer_imgArg" src="../img/argentina.svg"></li>
     <li class="nav-item"><a class="nav-link" href="./index.html"><i class="fas fa-home"></i></a></li>
     <li class="nav-item"><a class="nav-link" href="./pages/search.html"><i class="fas fa-search"></i></a></li>
     <li class="nav-item"><a class="nav-link" href="./pages/contact.html"><i class="fas fa-envelope"></i></a></li>
     <li class="nav-item"><a class="nav-link" href="./pages/bag.html"><i class="fas fa-shopping-cart"></i></a></li>
     <li class="nav-item"><a class="nav-link" href="./pages/login.html"><i class="fas fa-user"></i></a></li>
-   </ul> 
+    <li class="nav-item"><a class="nav-link" href="#sectionHPYSM"><i class="fab fa-instagram-square"></i></a></li>
+      <div class="container footer_imgArg align-top">
+        <a class="navbar-brand" href="https://www.argentina.com/">
+          <img src="./img/argentina.svg" alt="" width="34" height="36">
+        </a>
+      </div>
+  </ul>
+    
+  </div>
  </div>
-
-</nav> 
-
-</header>  
 </div>
+</nav>
+</header>
 </div>
 <!--Fin Header-->
+
 <!--Main -->
 <main class="main__grid">
+
 <!--Section Season Items-->
-<div class="row">
 <div class="col-xs-12">
 
-<div class="sectionSI py-8 col-xs-12" data-aos="fade-right" data-aos-duration="1500">
-    <div class="sectionSI__caja bg-black container-fluid">
-      <div>
-        <legend><h2 class="bg-black text-white rounded-3"><b><i>S E A S O N</b></i></h2></legend>
-            <br>
-            <!-- boton Invierno -->
-            <a class="sectionSI__caja--buttonmod1 btn w-40 d-flex-row align-items-center" href="pages/products.html" role="button"><h3 class="sectionSI__caja--h3"></h3></a>
-            <!-- boton Verano -->
-            <a class="sectionSI__caja--buttonmod2 btn w-40 d-flex-row align-items-center" href="pages/products.html" role="button"><h3 class="sectionSI__caja--h3"></h3></a>
-            <!-- boton Sets -->
-            <a class=" sectionSI__caja--buttonmod3 btn w-40 d-flex-row align-items-center" href="pages/products.html" role="button"><h3 class="sectionSI__caja--h3"></h3></a>
-            <!-- boton Molds -->
-            <a class="sectionSI__caja--buttonmod4 btn w-40 d-flex-row align-items-center" href="pages/products.html" role="button"><h3 class="sectionSI__caja--h3"></h3></a>
-            <br>
-            <br>
-          
+<div class="sectionSI container-fluid" data-aos="fade-right" data-aos-duration="1500">
+  <!-- <h3 class="text-center text-white fs-3"><b><i>P r o d u c t s</b></i></h3> -->
+  <div class="sectionSI__caja">
+        <div class="d-flex flex-row">
+           <div>
+           <!-- botón Verano -->
+           <h3 class="sectionSI__caja--h3 fs-2">Summer</h3>
+           <a class="sectionSI__caja--buttonmod2 btn w-80 d-flex-row align-items-center" href="pages/products.html" role="button"></a>
+           </div>
+           <br>
+           <br>
+           <div>
+           <!-- botón Invierno -->
+           <a class="sectionSI__caja--buttonmod1 btn w-80 d-flex-row align-items-center" href="pages/products.html" role="button"></a>
+           <h3 class="sectionSI__caja--h3 fs-2">Winter</h3>
+           </div>
+           <br>
+           <br>
+           <div>
+           <!-- botón Sets -->
+           <h3 class="sectionSI__caja--h3 fs-2">Set</h3>
+           <a class=" sectionSI__caja--buttonmod3 btn w-80 d-flex-row align-items-center" href="pages/products.html" role="button"></a>
+           </div>
+           <br>
+           <br>
+           <div>
+           <!-- botón Molds -->
+           <a class="sectionSI__caja--buttonmod4 btn w-80 d-flex-row align-items-center" href="pages/products.html" role="button"></a>
+           <h3 class="sectionSI__caja--h3 fs-2">Molds</h3>
+           <br>
+           <br>
+           </div>
       </div>
-    </div>
   </div>
 </div>
+
 </div>
 
-<!--Fin section Season Items-->
+<!--Section Sale-->
+<div class="row">
+  <div class="col-xs-12">
+    <section class="sale remeras">
+      <div
+        class="container py-5"
+        data-aos="fade-left"
+        data-aos-duration="1500"
+      >
+      <h3 class="text-black text-center fs-2"><b><i>S a l e</b></i></h3>
+        <div class="row py-5">
+          <div class="col-lg-3">
+            <div class="card">
+              <img
+                src="./img/Set1.jpg"
+                class="img-fluid mb-3"
+                alt="Set1"
+              />
+              <input
+                class="sale__btn"
+                type="button"
+                value="Ver"
+                onclick="location.href='../pages/products.html'"
+              />
+              <h5>Set 1: Cuello + Barbijo</h5>
+              <p>
+                <small
+                  ><del>$1.499</del
+                  ><span class="sale__precio">$1.299</span></small
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <img
+                src="./img/Set2.jpg"
+                class="img-fluid mb-3"
+                alt="Set 2"
+              />
+              <input
+                class="sale__btn"
+                type="button"
+                value="Ver"
+                onclick="location.href='../pages/products.html'"
+              />
+              <h5>Set 2: Cuello + Barbijo + Pulsera macramé</h5>
+              <p>
+                <small
+                  ><del>$1.999</del
+                  ><span class="sale__precio">$1.499</span></small
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <img
+                src="./img/Barbijos2.jpg"
+                class="img-fluid mb-3"
+                alt="Barbijos"
+              />
+              <input
+                class="sale__btn"
+                type="button"
+                value="Ver"
+                onclick="location.href='../pages/products.html'"
+              />
+              <h5>Barbijos</h5>
+              <p>
+                <small
+                  ><del>$499</del
+                  ><span class="sale__precio">$399</span></small
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <img
+                src="./img/Campera.jpg"
+                class="img-fluid mb-3"
+                alt="Campera de algodón"
+              />
+              <input
+                class="sale__btn"
+                type="button"
+                value="Ver"
+                onclick="location.href='../pages/products.html'"
+              />
+              <h5>Campera de algodón</h5>
+              <p>
+                <small
+                  ><del>$1.999</del
+                  ><span class="sale__precio">$1.499</span></small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!--Section Pilares-->
-<div class="row hero">
-<div class="col-xs-12">
-  
-  <!-- <button type="button" class="btn btn-danger btn-lg">Clase 3 JS Hace click
-    <script src="./pages/js/clase3Js.js"></script>
-  </button> -->
 
-<!--Section Most Viewed Carrusel-->
-  <div class="sectionMV"> 
+  </div>
+</div>
+
+<!--Section Most Viewed-->
+<div class="sectionMV">
+  <h3 class="text-black text-center fs-2"><b><i>M o s t   V i e w d in IG</b></i></h3>
   <div class="sectionMV__caja">
-  
     <div
     id="carouselExampleDark"
     class="carousel carousel-dark slide"
@@ -242,121 +360,109 @@
   </div>       
 </div>
 </div>
- 
-<div class="row">
-  <div class="col-xs-12"> 
-<div class="pilares">
-  <section class="iconos__container container-fluid">
-    <div class="d-flex-row justificy-content-center">
-     <h3 class="bg-black text-white rounded-3 w3-center text-center fs-1"><b><i>P I L L A R S</b></i></h3>
-     <br>
-     <br>
-     <br>
-     <br>
-     <br>
-     <div class="iconos__container__ind text-center col-xs-12">
- 
-       <div class="iconos__container__ind col-xs-12">
-         <br>
-         <div class="w3-quarter">
-           <i class="fa fa-heart w3-margin-bottom w3-jumbo w3-center fs-1" style="color:black;"></i>
-           <br>
-           <br>
-           <p class="w3-large text-decoration-underline">Mission</p>
-           <p class="col-md-12">Don't have limits with you like.</p>
-         </div>
-      </div>
-     
-     <div class="iconos__container__ind col-xs-12">
-       <div class="w3-quarter">
-         <i class="fas fa-tshirt w3-margin-bottom w3-jumbo fs-1" style="color:black;"></i>
-         <br>
-         <br>
-         <p class="w3-large text-decoration-underline">Desing</p>
-         <p class="col-md-12">Don't have limits with your tastes.</p>
-       </div>
-    </div>
-    
-    <div class="iconos__container__ind col-xs-12">
-       <div class="w3-quarter">
-         <i class="fa fa-peace w3-margin-bottom w3-jumbo fs-1" style="color:black;"></i>
-         <br>
-         <br>
-         <p class="w3-large text-decoration-underline">Liberty</p>
-         <p class="col-md-12">No one can tell you what to wear.</p>
-       </div>
-     </div>
-
-     <div class="iconos__container__ind col-xs-12">
-      <div class="w3-quarter">
-        <i class="fa fa-play w3-margin-bottom w3-jumbo fs-1" style="color:black;"></i>
-        <br>
-        <br>
-        <p class="w3-large text-decoration-underline">Action</p>
-        <p class="col-md-12">Preparing the seasons in advance.</p>
-      </div>
-    </div>
- 
-   </div> 
-   </div>
-  </section>
-</div>
-</div>
-</div>
-
-</div>
-</div>
-</div>
-</div>
-
 
 <!--Section Presentation of page-->
 <div class="row">
-<div class="col-xs-12"> 
-  <h3 class="bg-black text-white rounded-3 w3-center text-center fs-1"><b><i>_luk_c</b></i></h3>
-  
-  <div class="container w-200 ">
-  <a name="sectionPT"></a>
-  <section class="sectionPT"> 
-    
-  <fieldset class="sectionPT__caja">
-    <div class="row">
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <legend><h1 class="text-BLACK"><b><i>Who I am?</b></i></h1 ></legend>
-      <br>
-    </div>
-    <div class="row">
-    <div class="col-md-6">
-        <p class="sectionPT__caja--pmod lead bg-black fs-2 lh-lg text-white fst-italic rounded-pill">Hello! <i class="fas fa-smile"></i> Welcome!</p>
-        <p class="sectionPT__caja--pmod lead bg-black fs-3 lh-lg text-white text-center rounded-pill bg-dark bg-gradient">I studied at the Escuela Argentina de Modas (EAM). <br>And since I was little my grandmother taught me to sew. Today I can make the clothes you want to suit your size and color: <i class="fas fa-tshirt"></i> T-shirts, Pants, Shirts, set the River or Boca and croatian. I take your mold(s). 
-        <!-- <br><span class="text-black fst-italic fs-4 rounded-pill bg-primary bg-gradient"> My wish for the future is to be able to open workshops to teach women <i class="fas fa-female"></i> who want a better future and allow them to be independent.</span></p> -->
+  <div class="col-xs-12">
+    <h3 class="text-black text-center fs-2"><b><i>_luk_c</b></i></h3>
+    <div>
+    <a name="sectionPT"></a>
+    <section class="sectionPT">
+      
+    <fieldset class="sectionPT__caja">
+      <div class="row">
         <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <legend><h1 class="text-BLACK fs-3"><b><i>Who I am?</b></i></h1 ></legend>
+        <br>
+      </div>
+      <div class="row">
+      <div class="col-md-6">
+          <p class="sectionPT__caja--pmod lead bg-black fs-4 lh-lg text-white fst-italic rounded-pill">Hello! <i class="fas fa-smile"></i> Welcome!</p>
+          <p class="sectionPT__caja--pmod lead bg-black fs-5 lh-lg text-white text-center rounded-pill bg-dark bg-gradient">I studied at the Escuela Argentina de Modas (EAM). <br>And since I was little my grandmother taught me to sew. Today I can make the clothes you want to suit your size and color: <i class="fas fa-tshirt"></i> T-shirts, Pants, Shirts, set the River or Boca and croatian. I take your mold(s). 
+          <!-- <br><span class="text-black fst-italic fs-4 rounded-pill bg-primary bg-gradient"> My wish for the future is to be able to open workshops to teach women <i class="fas fa-female"></i> who want a better future and allow them to be independent.</span></p> -->
+          <br>
+      </div>
+       <div class="col-md-6">
+       <div class="ratio ratio-16x9 col-lg-6">
+         <iframe width="1000" height="1000" src="https://www.youtube.com/embed/WEKCTZ3y0O0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </fieldset>
+    </section>
     </div>
-     <div class="col-md-6">
-     <div class="ratio ratio-16x9 col-lg-6">
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/WEKCTZ3y0O0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>     
     </div>
-  </fieldset>
-  </section>
   </div>
-  </div>
-</div>
-<!-- Section Helping y Social media-->
 
+<!--Section Pilares-->
 <div class="row">
-<div class="col-xs-12">
-  <h3 class="bg-black text-white rounded-3 w3-center text-center fs-1"><b><i>C O N T A C T S</b></i></h3>
+ <div class="col-xs-12">
+   <div class="pilares">
+    <section class="iconos__container">
+      <div class="d-flex-row justificy-content-center">
+       <h3 class="text-black text-center fs-2"><b><i>P i l l a r s</b></i></h3>
+       <br>
+       <br>
+       <div class="iconos__container__ind text-center">
 
-<div class="sectionHPYSM py-3" data-aos="fade-left" data-aos-duration="1500">
-  <a name="sectionHPYSM"></a>
-  
-<section class="iconos__container">
+         <div class="iconos__container__ind">
+           <br>
+           <div class="w3-quarter">
+             <i class="fa fa-heart w3-jumbo fs-1" style="color:black;"></i>
+             <br>
+             <br>
+             <p class="w3-large text-decoration-underline fs-4">Mission</p>
+             <p class="col-md-12">Don't have limits with you like.</p>
+           </div>
+        </div>
+
+       <div class="iconos__container__ind">
+         <div class="w3-quarter">
+           <i class="fas fa-tshirt w3-margin-bottom w3-jumbo fs-1" style="color:black;"></i>
+           <br>
+           <br>
+           <p class="w3-large text-decoration-underline fs-4">Desing</p>
+           <p class="col-md-12">Don't have limits with your tastes.</p>
+         </div>
+      </div>
+
+      <div class="iconos__container__ind">
+         <div class="w3-quarter">
+           <i class="fa fa-peace w3-margin-bottom w3-jumbo fs-1" style="color:black;"></i>
+           <br>
+           <br>
+           <p class="w3-large text-decoration-underline fs-4">Liberty</p>
+           <p class="col-md-12">No one can tell you what to wear.</p>
+         </div>
+       </div>
+
+       <div class="iconos__container__ind">
+        <div class="w3-quarter">
+          <i class="fa fa-play w3-margin-bottom w3-jumbo fs-1" style="color:black;"></i>
+          <br>
+          <br>
+          <p class="w3-large text-decoration-underline fs-4">Action</p>
+          <p class="col-md-12">Preparing the seasons in advance.</p>
+        </div>
+      </div>
+
+     </div>
+    </section>
+  </div>
+ </div>
+</div>
+
+<!-- Section Contacts-->
+<div class="row">
+ <div class="col-xs-12">
+  <h3 class="text-black text-center fs-2"><b><i>C o n t a c t</b></i></h3>
+   <div class="sectionHPYSM" data-aos="fade-left" data-aos-duration="1500">
+    <a name="sectionHPYSM"></a>
+    <section class="iconos__container">
   
   <div class="iconos__container__ind" >
     <img
@@ -385,7 +491,7 @@
     <img class="iconos__container__img" src="./img/socialMedia3.png"  alt="img de medios"/>
     <div class="iconos__info">
       <h3 class="iconos__container__titulo">Social Networks</h3>
-      <fieldset class="bg-light bg-gradient rounded-3"> 
+      <fieldset class="bg-light bg-gradient rounded-3">
         <div>
           <ul>
           <li class="iconos__container__span">Facebook <i class="fas fa-hand-point-right"></i> <a href="https://www.facebook.com/luk.caric.by.luluroa"><i class="fab fa-facebook-square"></i></a></li> 
@@ -399,25 +505,23 @@
   </div>
 </section>
 
+  </div>
+ </div>
 </div>
-</div>
-</div>
-
 
 <!--Section Offer-->
 <div class="row">
-<div class="col-xs-12"> 
+<div class="col-xs-12">
 
   <div class="sectionOFF">
-
-      <legend><h2 class="bg-black text-white rounded-3"><b><i>O F F E R</b></i></h2></legend>
-        <h3 class="text-light">Subscribe to our newsletter and take advantage of a 10% discount on your next online purchase!</h3>
-        <!-- <p class="fs-5 fst-italic text-warning">Get a special "offer" by e-mail: (*)required </p> -->
-        <div> 
+        <h3 class="text-black text-center fs-2"><b><i>O f f e r</b></i></h3>
+        <h3 class="text-light fs-4">Subscribe to our newsletter and take advantage of a 10% discount on your next online purchase!</h3>
+        <p class="fs-5 fst-italic text-warning">Get a special "offer" by e-mail: (*)required </p>
+        <div>
           <form class="sectionOFF__form">
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label text-light"></label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"> 
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
               <div id="emailHelp" class="form-text"></div>
             </div>
             <button type="submit" class=" btn btn-dark btn-outline-danger">Submit</button>
@@ -434,22 +538,18 @@
 
 <!--Footer-->
 <footer class="footer">
-  <div class="container py-5">
+  <div class="container py-3">
     <div class="row">
       <div class="col-lg-11 m-auto py-5">
         <div class="row">
           <div class="col-lg-3 py-3 text-center">
-            <h5 class="pb-3">Quick Links</h5>
+            <h5 class="pb-3" style="color: grey;">Quick Links</h5>
             <ul class="footer__quickLinks m-0 p-0">
               <li>
-                <a class="footer__quickLinks__a" href="./pages/faqs.html"
-                  >Preguntas frecuentes</a
-                >
+                <a class="footer__quickLinks__a" href="./pages/faqs.html">Preguntas frecuentes</a>
               </li>
               <li>
-                <a class="footer__quickLinks__a" href="./pages/faqs.html"
-                  >Politicas de cambio</a
-                >
+                <a class="footer__quickLinks__a" href="./pages/faqs.html">Politicas de cambio</a>
               </li>
               <li>
                 <a class="footer__quickLinks__a" href="./pages/faqs.html"
@@ -459,75 +559,56 @@
             </ul>
           </div>
           <div class="col-lg-3 py-3 text-center">
-            <h5 class="pb-3">Ayuda</h5>
+            <h5 class="pb-3" style="color: grey;">Ayuda</h5>
             <ul class="footer__quickLinks m-0 p-0">
               <li>
-                <a class="footer__quickLinks__a" href="./pages/faqs.html"
-                  >Devoluciones</a
-                >
+                <a class="footer__quickLinks__a" href="./pages/faqs.html">Devoluciones</a>
               </li>
               <li>
-                <a class="footer__quickLinks__a" href="./pages/faqs.html"
-                  >Formas de pago</a
-                >
+                <a class="footer__quickLinks__a" href="./pages/faqs.html">Formas de pago</a>
               </li>
               <li>
-                <a class="footer__quickLinks__a" href="./pages/faqs.html"
-                  >Costos de envío</a
-                >
+                <a class="footer__quickLinks__a" href="./pages/faqs.html">Costos de envío</a>
               </li>
             </ul>
           </div>
           <div class="col-lg-3 py-3 text-center">
-            <h5 class="pb-3">_luk_c</h5> 
+            <h5 class="pb-3" style="color: grey;">_luk_c</h5>
             <ul class="footer__quickLinks m-0 p-0">
               <li>
-                 <a class="footer__quickLinks__a" href="./pages/faqs.html"
-                  >Quienes somos</a
-                >
+                <a class="footer__quickLinks__a" href="./pages/faqs.html">Quienes somos</a>
               </li>
               <li>
-                <a class="footer__quickLinks__a" href="./pages/faqs.html"
-                  >Contacto</a
-                >
+                <a class="footer__quickLinks__a" href="./pages/faqs.html">Contacto</a>
               </li>
               <li>
-                <a class="footer__quickLinks__a" href="./pages/faqs.html"
-                  >Visitanos</a
-                >
+                <a class="footer__quickLinks__a" href="./pages/faqs.html">Visitanos</a>
               </li>
             </ul>
           </div>
           <div class="col-lg-3 py-3">
-            <h5 class="pb-3">Contact</h5>
+            <h5 class="pb-3" style="color: grey;">Contact</h5>
             <ul class="footer__quickLinks m-0 p-0">
-
               <li>
                 <a class="footer__quickLinks__a" href="./pages/faqs.html"><i class="fas fa-phone-alt"></i>(+54) 9-11 00000000</a>
               </li>
               <li>
                 <a class="footer__quickLinks__a" href="./pages/faqs.html"><i class="fas fa-envelope"></i> <a href="mailto:lc.luluroa@gmail.com?Subject=Hola!%20les%20hago%20una%20consulta.">lc.luluroa@gmail.com</a> </a>
               </li>
-              
             </ul>
           </div>
 
           <div class="row">
             <div class="col-lg-9 m-auto text-center">
-              <h3 class="h1">Recibí nuestras promociones</h3>
+              <br>
+              <br>
+              <h3 class="fs-4" style="color: grey;">Recibí nuestras promociones</h3>
               <form action="#">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Ingresá tu email"
-                  required
-                />
+                <input type="email" name="email" id="email" placeholder="Ingresá tu email" required/>
                 <button class="btn1 btn btn-secondary">Suscribir!</button>
               </form>
             </div>
           </div>
-
 
         </div>
       </div>
@@ -536,14 +617,14 @@
 
   <ul class="footer__titulo2--modifier"> <!-- Links otros sitios webs de ayuda a los usuarios que visitan la página-->
     <li><a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario">Defensa del consumidor en la República Argentina. Para reclamos ingrese <i class="fas fa-hand-point-right"></i>"aquí"</a></li> 
-    <h3 class="lead footer__p--modifier bg-danger bg-gradient col-md-12 text-black">Developed Overflow-X by •Lucrecia Cecilia Roa•</h3>
-    <span class="lead footer__p--modifier col-md-12">© Copyright 2021 _luk_c Todos los derechos reservados. </span>
+    <h3 class="lead bg-danger bg-gradient col-md-12 text-black">Developed Overflow-X by •Lucrecia Cecilia Roa•</h3>
+    <span class="lead col-md-12 fs-6">© Copyright 2021 _luk_c Todos los derechos reservados. </span>
  </ul>
 
  <!-- Boton hacia arriba -->
 <script src="./pages/js/botonArriba.js"></script>
-<a class="ir-arriba"  javascript:void(0) title="Volver arriba">
-  <span class="fa-stack">
+  <!-- <a class="ir-arriba"  javascript:void(0) title="Volver arriba">
+  <span class="fa-stack"> -->
     <i class="fa fa-circle fa-stack-2x"></i>
     <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
   </span>
@@ -551,6 +632,11 @@
 
 </footer>
 <!--Fin de Footer-->
+
+<!-------------------------------------------//
+// ---------------- DIFERENTES --------------//
+// --------------- SCRIPTS ------------------//
+// ------------------------------------------->
 
 <!-- Script a la pagina AOS (para hacer rotar las imganes)-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -590,5 +676,5 @@ crossorigin="anonymous"
 
 
 </body>
-</html>   
-<!-- Fin de la página web--> 
+</html>
+<!-- Fin de la página web-->

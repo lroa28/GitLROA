@@ -2,41 +2,37 @@
 .header {
   grid-area: header__grid;
   position: fixed;
-  overflow: hidden;
+  // overflow: hidden;
   display: flex;
-  justify-content: end;
-  align-items: flex-end;
-  background: $fondogrisdegradado; 
-  // background: grey;
+  justify-content: space-between;
+  align-items: center;
+  background: $fondogrisdegradado;
+
 
   &__divlogo{
    display: flex;
    flex-direction: row;
-   padding:  0% 10% 0% 10%; 
-  //  gap: 10rem;
-   
+   padding:  0% 10% 0% 10%;
   }
 
  &__logo {
-   width: 70px;
-   height: 70px;
+   width: 80px;
+   height: 80px;
    top: 50%;
    left: 50%;
    border-style: groove rgb(10, 10, 10);
-  //  color: rgba(0, 0, 0, 0.623);
    }
 
   &__menu {
     padding: 0%;
-    margin: 0%; 
-    // display: flex;
-    // justify-content: center;
-    // flex-direction: row;
-    line-height: 45px;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
     font-family: 'Poppins', sans-serif;
     color: black;
-    font-size: 15px;
-    gap: 1.5rem;
+    font-size: 20px;
+    gap: 0.5rem;
     text-transform: uppercase;
     
     & [data-animation="bonus"] a::before {
@@ -50,45 +46,43 @@
       transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
     }
 
-
      & ul {
-      list-style: none; 
-      color: black;
+      list-style: none;
     }
 
       & li a{
       list-style: none;
-      padding: 1px 1px;
-      display:block;
+      display: block;
       position: relative;
-      font-size: 20px;
-      color: black;
+      //background: $fondogrisdegradado;
+      //border-radius: 8px;
     }
 
     & :hover {
-      // text-decoration: underline blue;
+      text-decoration: underline red;
       font-style: italic;
-      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.151), rgba(82, 80, 80, 0.664));
-      box-shadow: 0 0 20px rgba(128, 128, 128, 0.521), 0 0 20px rgba(128, 128, 128, 0.548), 0 0 20px rgba(128, 128, 128, 0.493);
-      background: rgba(128, 128, 128, 0.486);
-      border-radius: 10px;
+      //background: linear-gradient(to bottom, rgba(255, 255, 255, 0.151), rgba(82, 80, 80, 0.664));
+      // box-shadow: 6px -7px 61px 10px rgba(250,13,13,0.61);
+      // -webkit-box-shadow: 6px -7px 61px 10px rgba(250,13,13,0.61);
+      // -moz-box-shadow: 6px -7px 61px 10px rgba(250,13,13,0.61);
       transition: all 1.5s;
+      border-radius: 8px;
     }
   }
-  
   
    &__icons {
    display: flex;
    flex-direction: row;
-  //  justify-content: space-evenly;
-   font-size: 50px;
+   justify-content: space-evenly;
+   align-items: center;
+   font-size: 25px;
    gap: 0.5rem;
    color: black;
-  //  margin: 0 3% 0 0 ;
+   margin: 0 1% 0 0 ;
    background: rgba(245, 245, 245, 0.432);
-   border-radius: 10px;
-  
- 
+   border-style: groove rgb(10, 10, 10);
+   border-radius: 2px;
+
   & li a{
     list-style: none;
     padding: 1px 2px;
@@ -96,18 +90,24 @@
     position: relative;
     font-size: 20px;
     color: black;
+    border-style: groove rgb(10, 10, 10);
+    border-radius: 1px;
   }
 
   & :hover {
   color: red;
   transition: all .5s;
   }
-
-  }
+ }
 }
 
-//EFECTO DE ROTACIÓN DEL LOGO
+// .navbar a:hover {
+// 	background: #1d2f3d80;
+// 	color: #fff;
+// 	text-decoration: none;
+// }
 
+//EFECTO DE ROTACIÓN DEL LOGO
 .rotate {
   -webkit-animation: rotate 5s normal linear infinite;
   animation: rotate 5s normal linear infinite;
@@ -135,64 +135,40 @@
     transform: rotate3d(0, 0, 1, 360deg);
   }
 }
-
-//EFECTO APARECER EN TITULO
-
-.aparecer {
-  animation-name: aparecer;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
- }
-
 //EFECTO SUBRAYADO DEL MENU EN EL HEADER
-
 // .header__menu {
 //   display: inline-block;
 //   position: relative;
 //   color: #333;
 //   text-decoration: none;
 //   }
-  // .header__menu:after {
-  // content: "";
-  // display: block;
-  // margin: auto;
-  // height: 2px;
-  // width: 0px;
-  // transition: all .8s;
-  // }
-  // .header__menu:hover:after {
-  // width: 100%;
-  // background: red;
-  // }
-
-
+//   .header__menu:after {
+//   content: "";
+//   display: block;
+//   margin: auto;
+//   height: 2px;
+//   width: 0px;
+//   transition: all .8s;
+//   }
+//   .header__menu:hover:after {
+//   width: 100%;
+//   background: red;
+//   }
 
 @media (max-width: 980px) { //para DM. min width es para Desk
-  /* Header */
-  .header__menu {
-    display: none;
-  
-   }
+/* Header */
+.header__menu {
+ display: none;
+}
+.header__icons{
+ display: none;
+}
+.footer__titulo1--modifier{
+font-size: 12px;
+:hover{
+ transition: 0s;
+ font-size: 1rem;
 
-   .header__icons{
-    display: none;
-   }
-   .footer__titulo1--modifier{
-		font-size: 12px;
-		
-		&:hover{
-		  transition: 0s;
-		  font-size: 1rem;
-		 }
-	  }
-   
+}
+}
 }

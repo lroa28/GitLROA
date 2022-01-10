@@ -1,6 +1,7 @@
 //Funciones para los eventos del CARRITO DEL HEADER DE LA PAGINA EN PRODUCTOS
 
 const carro = new carrito();
+//BAJARLO DEL LOCALSTORE
 const carrito = document.getElementById('carrito');
 const productos = document.getElementById('lista-productos');
 const listaProductos = document.querySelector('#lista-carrito tbody');

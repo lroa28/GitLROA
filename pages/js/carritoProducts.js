@@ -1,13 +1,12 @@
-// ------------------------------------------------------------------//
 // --------------TOMA LAS ACCIONES DE LOS BOTONES--------------------//
 // --------------DE LA PAGINA DEL HTML: products.html----------------//
 
 const carrito = document.getElementById("carrito");
+//SUBIRLO AL LOCALSTORAGE
 const productos = document.getElementById("lista-productos");
 const listaProductos = document.querySelector("#lista-carrito tbody");
 const vaciarCarritoBtn = document.getElementById("vaciar-carrito");
 
-// ------------------------------------------------------------------//
 // -----------------------AGREGAR------------------------------------//
 // ----------------------PRODUCTOS-----------------------------------//
 // ---------------------AL CARRITO-----------------------------------//
@@ -36,6 +35,7 @@ function leerDatosProductos(producto){
         titulo: producto.querySelector('h4').textContent,
         precio: producto.querySelector('.precio span').textContent,
         id: producto.querySelector('a').getAttribute('data-id')
+        //agregar la cantidad! usan el push desde el HTML , CON UN IF SI ESTA EL PRODUCTO PARA Q LO SUME O NO. SINO EXISTE PONER 1
     }
 
     insertarCarrito(infoProductos);
@@ -80,6 +80,10 @@ function vaciarCarrito(){
     return false;
 }
 
+
+// -----------------------FUNCIONES------------------------------------//
+// ----------------------PARA MANEJO DE DATOS-------------------------//
+// ----------------------EN LOCAL STORAGE----------------------------//
 function guardarProductoLocalStorage(producto) {
     let productos;
 
@@ -120,6 +124,7 @@ function leerLocalStorage() {
         listaProductos.appendChild(row);
     });
 }
+//SACAR ESTO Y USAR EL ARRAY DE CARRITO QUE DEBO CREAR
 
 function eliminarProductoLocalStorage(producto) {
     let productosLS;

@@ -135,7 +135,7 @@ class carrito {
         });
     }
 
-    //Mostrar los productos guardados en el LS en compra.html
+    //Mostrar los productos guardados en el LS en bag.html
     leerLocalStorageCompra(){
         let productosLS;
         productosLS = this.obtenerProductosLocalStorage();
@@ -194,7 +194,7 @@ class carrito {
             })
         }
         else {
-            location.href = "compra.html";
+            location.href = "bag.html";
         }
     }
 

@@ -1,76 +1,96 @@
-<!DOCTYPE html>                              
+<!DOCTYPE html>
 <html lang="en|es">
-<head>                                       
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="_luk_c by Lulu Roa. Page of Courses"/>
     <meta name="keywords" content="Ecommerce, clothing, fashion, women, men, children, t-shirts, pants, jumpsuits, scarves, shirts, bracelets and jackets, Boca, River"/>
-    <title>Courses _luk_c</title> 
-    <link href="../css/all.min.css" rel="stylesheet"> 
-    <link href="../scss/style.css" rel="stylesheet">  
+    <title>Courses _luk_c</title>
+    <link href="../css/all.min.css" rel="stylesheet">
+    <link href="../scss/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> <!-- CDN via jsDelivr -->
+    <!-- CDN via jsDelivr -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--Aos animate-->
     <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
-
 </head>
 <!--Body-->
 <body class="body">
-
+  <div class="overlay hidden"></div>
+  <!--Header-->
   <div class="row">
-    <div class="col-xs-12">
-    
-    <!--Header-->
-    <header> 
-      <nav class="navbar navbar-expand-lg fixed-top header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-       
-          <div class="header__divlogo">
-           <a class="navbar-brand" href="../index.html"><img class="header__logo img-fluid rounded-circle" src="../img/logoOriginal.jpg" alt="Logo" class="d-inline-block align-top"></a> 
-          </div>
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon"
-                    ><i class="fas fa-hamburger"></i
-                  ></span>
-                </button>
+  <div class="col-xs-12">
+  <header>
+  <nav class="navbar navbar-expand-lg fixed-top header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+    <div class="container-fluid d-flex-row">
       
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <div class="navbar-nav m-auto mb-2 mb-lg-0 text-center d-flex-row justificy-content-center gap-4 header__menu">
-                      <a class="nav-item nav-link header__menu "  style="color:black;" href="../index.html#sectionPT">Who I am? LC</a></li>
-                      <a class="nav-item nav-link header__menu "  style="color:black;" href="../pages/products.html">Products</a></li>
-                      <a class="nav-item nav-link header__menu "  style="color:black;" href="../index.html#sectionHPYSM">Social Networks</a></li>
-                      <a class="nav-item nav-link header__menu "  style="color:black;" href="../pages/courses.html">Courses</a></li>
-                  </div>
-                  
-                </div>
-                
-               <ul class="header__icons">
-                <li><a href="../pages/search.html"><i class="fas fa-search"></i></a></li>
-                <li><a href="../pages/contact.html"><i class="fas fa-envelope"></i></a></li>
-                <li><a href="../pages/bag.html"><i class="fas fa-shopping-cart"></i></a></li>
-                <li><a href="../pages/login.html"><i class="fas fa-user "></i></a></li>
-               </ul>
-              </div> 
-      </nav> 
-      </header>  
+     <div class="divlogo"><a class="navbar-brand rotate d-inline-block align-top" href="../index.html"><img class="header__logo img-fluid rounded-circle" src="../img/logoOriginal.jpg" alt="Logo"></a></div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fas fa-hamburger"></i></span>
+      </button>
+  
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <div class="header__menu navbar-nav m-auto mb-2 mb-lg-0">
+      <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: lowercase;" href="#sectionPT">_luk_c</a></li>
+      <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="../pages/products.html">Products</a></li>
+      <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="#sectionHPYSM">Contact</a></li>
+      <!-- <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="./pages/courses.html">Courses</a></li> -->
+      <li><a class="nav-item nav-link align-baseline aparecer"  style="color:rgb(255, 4, 4);" href="#sale">Sale</a></li>
+      <li class="nav-item nav-link dropdown header__menu">
+          <a class="nav-link dropdown-toggle align-baseline header__menu" style="color:black;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+          <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item zindex-dropdown:1000" href="../pages/courses.html">Moldería básica</a></li>
+            <li><a class="dropdown-item zindex-dropdown:1000" href="../pages/courses.html">Tejido</a></li>
+            <li><a class="dropdown-item zindex-dropdown:1000" href="../pages/courses.html">Máquinas</a></li>
+          </ul>
+      </li>
+     </div>
+  
+    <button type="button" class="menu-nav btn btn--recycle btn-dark btn-outline-success" style="color: white;">Recycle
+      <i class="fas fa-recycle"></i>
+    </button>
+    <!-- <div class="modal">
+        <ul>
+          <li><a href="https://ropalimpia.org/quienes-somos/">Ropa limpia</a></li>
+          <li><a href="https://twenergy.com/ecologia-y-reciclaje/moda-sostenible-la-ropa-mas-ecologica-saludable-y-sociablemente-responsable-1853/">Twenergy</a></li>
+          <li><a href="https://cnnespanol.cnn.com/2022/01/07/moda-sostenible-ropa-consciente-orix/">Moda Sostenible</a></li>
+        </ul>
+    </div> -->
+     <ul class="header__icons navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="./index.html"><i class="fas fa-home"></i></a></li>
+      <li class="nav-item"><a class="nav-link" href="./pages/search.html"><i class="fas fa-search"></i></a></li>
+      <li class="nav-item"><a class="nav-link" href="./pages/contact.html"><i class="fas fa-envelope"></i></a></li>
+      <li class="nav-item"><a class="nav-link" href="./pages/bag.html"><i class="fas fa-shopping-cart"></i></a></li>
+      <li class="nav-item"><a class="nav-link" href="./pages/login.html"><i class="fas fa-user"></i></a></li>
+      <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/luk.caric.by.luluroa"><i class="fab fa-facebook"></i></a></li>
+    </ul>
+  
     </div>
-  </div>  
+  
+  </div>
+  </nav>
+  </header>
+  </div>
+  </div>
+  <!--Fin Header-->
 
 <!-- MAIN -->
 <div class="row">
 <div class="col-md-12">
 <main class="maincourses__grid py-4">
 
-	<section class="contenedor1 container-fluid">
-		<div class="tarjeta col-sx-12"> <!-- Bloque1 -->
+	<section class="contenedor1">
+
+		<!-- Bloque1 -->
+    <div class="tarjeta col-sx-12">
 			<img class="tarjeta__img img-fluid" src="../img/molde.jpg" alt="Img mold">
 			<div>
 				<h3 class="tarjeta__titulo col-sx-12">
@@ -86,7 +106,7 @@
 							<h4 class="col-sx-12">Days and hours: Saturday 10:00 pm, one hours</h4>
 						</li>
 						<li>
-						<h4>Price: $1000</h>	
+						<h4>Price: $1000</h>
 						</li>
 					</ul>
 				</p>
@@ -96,10 +116,10 @@
                 onclick="location.href= 'https://www.calendario-365.es/calendario-2022.html'">
                 Start 2022
                 </button>
-		</div><!--Fin Bloque1 -->
+		</div>
 	</section>
 
-  <section class="contenedor2 container-fluid">
+  <section class="contenedor2">
 		<div class="tarjeta col-sx-12" > <!-- Bloque2 -->
 			<img class="tarjeta__img img-fluid" src="../img/lanas.jpg" alt="img mold">
 			<div>
@@ -116,7 +136,7 @@
 							<h4 class="col-sx-12">Days and hours: Saturday 10:00 pm, one hours</h4>
 						</li>
 						<li>
-						<h4>Price: $1000</h>	
+						<h4>Price: $1000</h>
 						</li>
 					</ul>
 				</p>
@@ -126,11 +146,12 @@
                 onclick="location.href= 'https://www.calendario-365.es/calendario-2022.html'">
                 Start 2022
                 </button>
-		</div><!--Fin Bloque2-->
+		</div>
 	</section>
 
-  <section class="contenedor3 container-fluid">
-		<div class="tarjeta col-xs-12" > <!-- Bloque3 -->
+  <!-- Bloque3 -->
+  <section class="contenedor3">
+		<div class="tarjeta col-xs-12">
 			<img class="tarjeta__img img-fluid" src="../img/maquinaRecta.jpg" alt="img maquinaRecta">
 			<div>
 				<h3 class="tarjeta__titulo" class="col-sx-12">
@@ -147,7 +168,7 @@
                 <h4 class="col-sx-12">Days and hours: Saturday 10:00 pm, one hours</h4>
               </li>
               <li>
-              <h4>Price: $1000</h>	
+              <h4>Price: $1000</h>
               </li>
             </ul>
 				</p>
@@ -157,39 +178,125 @@
                 onclick="location.href= 'https://www.calendario-365.es/calendario-2022.html'">
                 Start 2022
                 </button>
-		</div><!--Fin Bloque3-->
+		</div>
 	</section>
 
-</main>  
+</main>
 </div>
 </div>
 <!-- Fin MAIN -->
 
 <!--Footer-->
-<div class="row bg-black">
-  <div class="col-xs-12 bg-black">
+<footer class="footer">
+  <!-- <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Volver arriba</a> -->
+  <div class="container py-3">
+    <div class="row">
+      <div class="col-lg-11 m-auto">
+        <div class="row">
+          <div class="col-lg-3 text-center">
+            <h5 class="pb-3" style="color: grey;">Quick Links</h5>
+            <ul class="footer__quickLinks m-0 p-0">
+              <li>
+                <a class="footer__quickLinks__a" href="../pages/faqs.html">Preguntas frecuentes</a>
+              </li>
+              <li>
+                <a class="footer__quickLinks__a" href="../pages/faqs.html">Políticas de cambio</a>
+              </li>
+              <li>
+                <a class="footer__quickLinks__a" href="../pages/faqs.html"
+                  >Cómo comprar</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 text-center">
+            <h5 class="pb-3" style="color: grey;">Ayuda</h5>
+            <ul class="footer__quickLinks m-0 p-0">
+              <li>
+                <a class="footer__quickLinks__a" href="../pages/faqs.html">Devoluciones</a>
+              </li>
+              <li>
+                <a class="footer__quickLinks__a" href="../pages/faqs.html">Formas de pago</a>
+              </li>
+              <li>
+                <a class="footer__quickLinks__a" href="../pages/faqs.html">Costos de envío</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 text-center">
+            <h5 class="pb-3" style="color: grey;">_luk_c</h5>
+            <ul class="footer__quickLinks m-0 p-0">
+              <li>
+                <a class="footer__quickLinks__a" href="../pages/faqs.html">Quiénes somos</a>
+              </li>
+              <li>
+                <a class="footer__quickLinks__a" href="../pages/faqs.html">Contacto</a>
+              </li>
+              <li>
+                <a class="footer__quickLinks__a" href="../pages/faqs.html">Visitanos</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 text-center">
+            <h5 class="pb-3" style="color: grey;">Contact</h5>
+            <ul class="footer__quickLinks m-0 p-0">
+              <li>
+                <a class="footer__quickLinks__a" href="../pages/faqs.html"><i class="fas fa-phone-alt"></i>(+54) 9 11 0000-0000</a>
+                <div class="container footer_imgArg align-top px-3 py-3">
+                  <a class="navbar-brand" href="https://www.argentina.com/"><img src="../img/argentina.svg" alt="" width="30" height="30"></a>
+                </div>
+              </li>
+              <li>
+                <a class="footer__quickLinks__a" href="../pages/faqs.html"><i class="fas fa-envelope"></i> <a href="mailto:lc.luluroa@gmail.com?Subject=Hola!%20les%20hago%20una%20consulta.">lc.luluroa@gmail.com</a> </a>
+            </li>
+            </ul>
+          </div>
 
-    <footer class="footer bg-black"> 
-      <h5 class="footer__titulo1--modifier h5operaciones col-md-12"> _luk_c <i class="fas fa-phone-alt"></i>(+54) 9-11 00000000
-        <i class="fas fa-envelope"></i> <a href="mailto:lc.luluroa@gmail.com?Subject=Hola!%20les%20hago%20una%20consulta.">lc.luluroa@gmail.com</a> 
-        <a href="https://www.google.com/maps/place/Recoleta,+CABA/@-34.5847911,-58.4138525,14z/data=!3m1!4b1!4m5!3m4!1s0x95bcca99c609fc2f:0x392ca99351808a75!8m2!3d-34.5873825!4d-58.3972762"><i class="fas fa-map-marker-alt"></i></a>
-        <img class="footer_imgArg" src="../img/argentina.svg"> Argentina</h5>
-      <br>
-      <div>
-        <ul class="footer__titulo2--modifier"> <!-- Links otros sitios webs de ayuda a los usuarios que visitan la página-->
-          <li><a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario">Defensa del consumidor en la República Argentina. Para reclamos ingrese <i class="fas fa-hand-point-right"></i>"aquí"</a></li> 
-        </ul>
+          <div class="row">
+            <div class="col-lg-9 m-auto text-center">
+              <br>
+              <br>
+              <h3 class="fs-4" style="color: grey;">Recibí nuestras promociones</h3>
+              <form action="#">
+                <input type="email" name="email" id="email" placeholder="Ingresá tu email" required/>
+                <button class="btn1 btn btn-secondary">Suscribir!</button>
+              </form>
+            </div>
+          </div>
+          <br>
+          <br>
+          <ul class="footer__titulo2--modifier"> <!-- Links otros sitios webs de ayuda a los usuarios que visitan la página-->
+            <li><a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario">Defensa del consumidor en la República Argentina. Para reclamos ingrese <i class="fas fa-hand-point-right"></i>"aquí"</a></li> 
+         </ul>
+         <br>
+         <br>
+         <br>
+         <div class="d-inline-flex justify-content-center p-2 bg-white text-danger bg-opacity-10">Developed Overflow-X by •Lucrecia Cecilia Roa•</div>
+         <span class="lead fs-6 d-inline-flex justify-content-center" style="color: grey;">© Copyright 2021 _luk_c Todos los derechos reservados. </span>
+
+        </div>
       </div>
-      <br>
-      <span class="lead footer__p--modifier col-md-12">© Copyright 2021 _luk_c Todos los derechos reservados. Prohibida la duplicación , distribución o almacenamiento en cualquier medio.</span>
-    <br>
-    <h1 class="lead footer__p--modifier bg-danger bg-gradient col-md-12">Developed Overflow-X by •Lucrecia Cecilia Roa•</h1>
-    </footer> 
+    </div>
+  </div>
 
-</div>
-</div>
+
+<!-- Boton hacia arriba -->
+<!-- <script src="./js/botonArriba.js"></script>
+  <a class="ir-arriba"  javascript:void(0) title="Volver arriba">
+  <span class="fa-stack">
+    <i class="fa fa-circle fa-stack-2x"></i>
+    <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+  </span>
+</a> -->
+
+</footer>
 <!--Fin de Footer-->
-  
+
+<!-------------------------------------------//
+// ---------------- DIFERENTES --------------//
+// --------------- SCRIPTS ------------------//
+// ------------------------------------------->
+
 <!-- Script a la pagina AOS (para hacer rotar las imganes)-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
@@ -224,4 +331,4 @@ crossorigin="anonymous"
 </script>
 
 </body>
-</html>   <!-- Fin de la página web--> 
+</html>   <!-- Fin de la página web-->

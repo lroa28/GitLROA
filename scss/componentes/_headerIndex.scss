@@ -16,8 +16,8 @@
   }
 
  &__logo {
-   width: 80px;
-   height: 80px;
+   width: 70px;
+   height: 60px;
    top: 50%;
    left: 50%;
    border-style: groove rgb(10, 10, 10);
@@ -75,20 +75,19 @@
    flex-direction: row;
    justify-content: space-evenly;
    align-items: center;
-   font-size: 25px;
-   gap: 0.5rem;
+   //gap: 0.5rem;
    color: black;
-   margin: 0 1% 0 0 ;
+  //  margin: 0 1% 0 0 ;
    background: rgba(245, 245, 245, 0.432);
-   border-style: groove rgb(10, 10, 10);
-   border-radius: 2px;
+   //border-style: groove rgb(10, 10, 10);
+   border-radius: 5px;
 
   & li a{
     list-style: none;
     padding: 1px 2px;
     display:block;
     position: relative;
-    font-size: 20px;
+    font-size: 24px;
     color: black;
     border-style: groove rgb(10, 10, 10);
     border-radius: 1px;
@@ -101,11 +100,9 @@
  }
 }
 
-// .navbar a:hover {
-// 	background: #1d2f3d80;
-// 	color: #fff;
-// 	text-decoration: none;
-// }
+.btn--recycle :hover{
+  background-color: green;
+}
 
 //EFECTO DE ROTACIÓN DEL LOGO
 .rotate {
@@ -135,7 +132,7 @@
     transform: rotate3d(0, 0, 1, 360deg);
   }
 }
-//EFECTO SUBRAYADO DEL MENU EN EL HEADER
+//EFECTO SUBRAYADO DEL MENU EN EL HEADER (NO FUNCIONA)
 // .header__menu {
 //   display: inline-block;
 //   position: relative;

@@ -7,7 +7,8 @@
   align-content: space-between;
   flex-wrap: nowrap;
   overflow: hidden;
-  padding: 1% 0% 1% 0%; 
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   width: 100vw;
   background-color: black;
   background-image: url("../img/fondonegro.jpg"); 
@@ -47,9 +48,7 @@
     font-size: 2rem;
     color:deeppink;
    }
-
   }
-
 
    .footer__titulo2--modifier {
     font-family: 'Poppins', sans-serif;
@@ -70,8 +69,8 @@
    }
 
    .footer_imgArg{
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,7 +87,13 @@
   .footer__quickLinks__a {
     text-decoration: none;
     color: white;
-    font-size: 10pt;
+    font-size: 20px;
+  }
+
+  .footer__quickLinks__a:hover {
+    color: red;
+    -webkit-transition: 1s;
+    transition: 1s;
   }
   
   .footer__quickLinks__redes {

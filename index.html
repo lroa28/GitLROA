@@ -10,11 +10,11 @@
   <link href="./css/all.min.css" rel="stylesheet">
   <link href="./scss/style.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
-  <script src="./pages/js/popper.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/sweetalert2.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> <!-- CDN via jsDelivr -->
+  <!-- CDN via jsDelivr -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
   <!--Aos animate-->
@@ -22,10 +22,14 @@
   <!-- Script 3.6.0 JQuery clase11 JS-->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
+<!-------------------------------------------//
+// ---------------- BODY --------------------//
+// ------------------------------------------->
 
 <body class="body">
-
+<div class="overlay hidden"></div>
 <!--Header-->
+<div class="row">
 <div class="col-xs-12">
 <header>
 <nav class="navbar navbar-expand-lg fixed-top header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
@@ -42,54 +46,49 @@
       aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"><i class="fas fa-hamburger"></i></span>
     </button>
-  
+
    <div class="collapse navbar-collapse" id="navbarSupportedContent">
    <div class="header__menu navbar-nav m-auto mb-2 mb-lg-0">
     <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: lowercase;" href="#sectionPT">_luk_c</a></li>
-    <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="./pages/products.html">Productos</a></li>
+    <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="./pages/products.html">Products</a></li>
     <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="#sectionHPYSM">Contact</a></li>
+    <!-- <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="./pages/courses.html">Courses</a></li> -->
+    <li><a class="nav-item nav-link align-baseline aparecer"  style="color:rgb(255, 4, 4);" href="#sale">Sale</a></li>
     <li class="nav-item nav-link dropdown header__menu">
         <a class="nav-link dropdown-toggle align-baseline header__menu" style="color:black;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
         <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item zindex-dropdown:1000 header__menu" href="./pages/courses.html">Moldería básica</a></li>
-          <li><a class="dropdown-item zindex-dropdown:1000 header__menu" href="./pages/courses.html">Tejido</a></li>
-          <li><a class="dropdown-item zindex-dropdown:1000 header__menu" href="./pages/courses.html">Máquinas</a></li>
+          <li><a class="dropdown-item zindex-dropdown:1000" href="./pages/courses.html">Moldería básica</a></li>
+          <li><a class="dropdown-item zindex-dropdown:1000" href="./pages/courses.html">Tejido</a></li>
+          <li><a class="dropdown-item zindex-dropdown:1000" href="./pages/courses.html">Máquinas</a></li>
         </ul>
     </li>
-    <li><a class="nav-item nav-link align-baseline aparecer"  style="color:rgb(255, 4, 4);" href="./pages/products.html">Sale</a></li>
    </div>
-  </div>
-  
-  <button type="button" class="menu-nav btn btn-outline-dark btn-success" style="color: white;">Recycle
-      <i class="fas fa-recycle"></i>
-  <div class="modal">
+
+  <button type="button" class="menu-nav btn btn--recycle btn-dark btn-outline-success" style="color: white;">Recycle
+    <i class="fas fa-recycle"></i>
+  </button>
+  <!-- <div class="modal">
       <ul>
         <li><a href="https://ropalimpia.org/quienes-somos/">Ropa limpia</a></li>
         <li><a href="https://twenergy.com/ecologia-y-reciclaje/moda-sostenible-la-ropa-mas-ecologica-saludable-y-sociablemente-responsable-1853/">Twenergy</a></li>
         <li><a href="https://cnnespanol.cnn.com/2022/01/07/moda-sostenible-ropa-consciente-orix/">Moda Sostenible</a></li>
       </ul>
-  </div>
-  </button>
-
+  </div> -->
    <ul class="header__icons navbar-nav">
     <li class="nav-item"><a class="nav-link" href="./index.html"><i class="fas fa-home"></i></a></li>
     <li class="nav-item"><a class="nav-link" href="./pages/search.html"><i class="fas fa-search"></i></a></li>
     <li class="nav-item"><a class="nav-link" href="./pages/contact.html"><i class="fas fa-envelope"></i></a></li>
     <li class="nav-item"><a class="nav-link" href="./pages/bag.html"><i class="fas fa-shopping-cart"></i></a></li>
     <li class="nav-item"><a class="nav-link" href="./pages/login.html"><i class="fas fa-user"></i></a></li>
-    <li class="nav-item"><a class="nav-link" href="#sectionHPYSM"><i class="fab fa-instagram-square"></i></a></li>
-      <div class="container footer_imgArg align-top">
-        <a class="navbar-brand" href="https://www.argentina.com/">
-          <img src="./img/argentina.svg" alt="" width="34" height="36">
-        </a>
-      </div>
+    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/luk.caric.by.luluroa"><i class="fab fa-facebook"></i></a></li>
   </ul>
-    
+
   </div>
- </div>
+
 </div>
 </nav>
 </header>
+</div>
 </div>
 <!--Fin Header-->
 
@@ -97,62 +96,61 @@
 <main class="main__grid">
 
 <!--Section Season Items-->
-<div class="col-xs-12">
-
-<div class="sectionSI container-fluid" data-aos="fade-right" data-aos-duration="1500">
-  <!-- <h3 class="text-center text-white fs-3"><b><i>P r o d u c t s</b></i></h3> -->
-  <div class="sectionSI__caja">
+<div class="row">
+ <div class="col-xs-12">
+  <div class="sectionSI" data-aos="fade-right" data-aos-duration="1500">
+     <div class="sectionSI__caja">
+      <h3 class="text-center text-dark fs-1 py-3 bg-opacity-10" data-aos="zoom-in" data-aos-duration="3000"><u><i>P r o d u c t s</u></i></h3>
+       <!-- <h3 class="text-center text-white fs-2"><b><i>S e a s o n</b></i></h3> -->
         <div class="d-flex flex-row">
-           <div>
-           <!-- botón Verano -->
-           <h3 class="sectionSI__caja--h3 fs-2">Summer</h3>
-           <a class="sectionSI__caja--buttonmod2 btn w-80 d-flex-row align-items-center" href="pages/products.html" role="button"></a>
-           </div>
-           <br>
-           <br>
-           <div>
-           <!-- botón Invierno -->
-           <a class="sectionSI__caja--buttonmod1 btn w-80 d-flex-row align-items-center" href="pages/products.html" role="button"></a>
-           <h3 class="sectionSI__caja--h3 fs-2">Winter</h3>
-           </div>
-           <br>
-           <br>
-           <div>
-           <!-- botón Sets -->
-           <h3 class="sectionSI__caja--h3 fs-2">Set</h3>
-           <a class=" sectionSI__caja--buttonmod3 btn w-80 d-flex-row align-items-center" href="pages/products.html" role="button"></a>
-           </div>
-           <br>
-           <br>
-           <div>
-           <!-- botón Molds -->
-           <a class="sectionSI__caja--buttonmod4 btn w-80 d-flex-row align-items-center" href="pages/products.html" role="button"></a>
-           <h3 class="sectionSI__caja--h3 fs-2">Molds</h3>
-           <br>
-           <br>
-           </div>
+          <!-- botón Molds -->
+          <div class="container-fluid">
+            <ul>
+              <li class="text-decoration-none"><a class="sectionSI__caja--boton4  d-flex-row align-items-center text-decoration-none" href="pages/products.html" ><h3 class="sectionSI__caja--h3 text-decoration-none  bg-opacity-10">Molds</h3></a>
+            </ul>
+          </div>
+          <!-- botón Sets -->
+          <div class="container-fluid">
+            <ul>
+              <li class="text-decoration-none"><a class=" sectionSI__caja--boton3 d-flex-row align-items-center text-decoration-none" href="pages/products.html" ><h3 class="sectionSI__caja--h3 text-decoration-none  bg-opacity-10">Set</h3></a></li>
+            </ul>
+          </div>
+          <!-- botón Verano -->
+          <div class="container-fluid">
+            <ul>
+              <li class="text-decoration-none"><a class="sectionSI__caja--boton1 d-flex-row align-items-center text-decoration-none" href="pages/products.html"><h3 class="sectionSI__caja--h3 text-decoration-none bg-opacity-10">Summer</h3></a></li>
+            </ul>
+          </div>
+          <!-- botón Invierno -->
+          <div class="container-fluid">
+            <ul>
+              <li class="text-decoration-none"><a class="sectionSI__caja--boton2 d-flex-row align-items-center text-decoration-none" href="pages/products.html" ><h3 class="sectionSI__caja--h3 text-decoration-none  bg-opacity-10">Winter</h3></a></li>
+            </ul>
+          </div>
+        </div>
       </div>
+   </div>
   </div>
-</div>
-
 </div>
 
 <!--Section Sale-->
 <div class="row">
   <div class="col-xs-12">
-    <section class="sale remeras">
+    <a name="sale"></a>
+    <section class="sale">
       <div
-        class="container py-5"
+        class="container"
         data-aos="fade-left"
         data-aos-duration="1500"
       >
       <h3 class="text-black text-center fs-2"><b><i>S a l e</b></i></h3>
         <div class="row py-5">
+          <!-- Primer card -->
           <div class="col-lg-3">
             <div class="card">
               <img
                 src="./img/Set1.jpg"
-                class="img-fluid mb-3"
+                class="sale__img-fluid mb-2"
                 alt="Set1"
               />
               <input
@@ -161,21 +159,22 @@
                 value="Ver"
                 onclick="location.href='../pages/products.html'"
               />
-              <h5>Set 1: Cuello + Barbijo</h5>
-              <p>
-                <small
-                  ><del>$1.499</del
-                  ><span class="sale__precio">$1.299</span></small
-                >
-              </p>
+              <h5 class="text-center">Cuello + Barbijo</h5>
+              <p><small><del>$1.499</del></small></p>
+              <p><small><span class="sale__precio">$1.299</span></small></p>
+              <ul class="list-unstyled mt-3 mb-4">
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+              </ul>
             </div>
           </div>
           <div class="col-lg-3">
             <div class="card">
               <img
                 src="./img/Set2.jpg"
-                class="img-fluid mb-3"
-                alt="Set 2"
+                class="sale__img-fluid mb-2"
+                alt="Set2"
               />
               <input
                 class="sale__btn"
@@ -183,20 +182,22 @@
                 value="Ver"
                 onclick="location.href='../pages/products.html'"
               />
-              <h5>Set 2: Cuello + Barbijo + Pulsera macramé</h5>
-              <p>
-                <small
-                  ><del>$1.999</del
-                  ><span class="sale__precio">$1.499</span></small
-                >
-              </p>
+              <h5 class="text-center">Cuello + Barbijo + Pulsera</h5>
+              <p><small><del>$1.999</del></small></p>
+              <p><small><span class="sale__precio">$1.499</span></small></p>
+              <ul class="list-unstyled mt-3 mb-4">
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+              </ul>
             </div>
           </div>
+          
           <div class="col-lg-3">
             <div class="card">
               <img
                 src="./img/Barbijos2.jpg"
-                class="img-fluid mb-3"
+                class="sale__img-fluid mb-2"
                 alt="Barbijos"
               />
               <input
@@ -205,20 +206,22 @@
                 value="Ver"
                 onclick="location.href='../pages/products.html'"
               />
-              <h5>Barbijos</h5>
-              <p>
-                <small
-                  ><del>$499</del
-                  ><span class="sale__precio">$399</span></small
-                >
-              </p>
+              <h5 class="text-center">Barbijos</h5>
+              <p><small><del>$499</del></small></p>
+              <p><small><span class="sale__precio">$399</span></small></p>
+              <ul class="list-unstyled mt-3 mb-4">
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+              </ul>
             </div>
           </div>
           <div class="col-lg-3">
             <div class="card">
               <img
-                src="./img/Campera.jpg"
-                class="img-fluid mb-3"
+              src="./img/Antesydespues1.jpg"
+                class="sale__img-fluid mb-2"
                 alt="Campera de algodón"
               />
               <input
@@ -227,283 +230,179 @@
                 value="Ver"
                 onclick="location.href='../pages/products.html'"
               />
-              <h5>Campera de algodón</h5>
-              <p>
-                <small
-                  ><del>$1.999</del
-                  ><span class="sale__precio">$1.499</span></small
-                >
-              </p>
+              <h5 class="text-center">Cuello + Barbijo</h5>
+              <p><small><del>$1.499</del></small></p>
+              <p><small><span class="sale__precio">$1.399</span></small></p>
+              <ul class="list-unstyled mt-3 mb-4">
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-
   </div>
-</div>
-
-<!--Section Most Viewed-->
-<div class="sectionMV">
-  <h3 class="text-black text-center fs-2"><b><i>M o s t   V i e w d in IG</b></i></h3>
-  <div class="sectionMV__caja">
-    <div
-    id="carouselExampleDark"
-    class="carousel carousel-dark slide"
-    data-bs-ride="carousel"
-  >
-    <div class="carousel-indicators">
-      <button
-        type="button"
-        data-bs-target="#carouselExampleDark"
-        data-bs-slide-to="0"
-        class="active"
-        aria-current="true"
-        aria-label="Slide 1"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#carouselExampleDark"
-        data-bs-slide-to="1"
-        aria-label="Slide 2"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#carouselExampleDark"
-        data-bs-slide-to="2"
-        aria-label="Slide 3"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#carouselExampleDark"
-        data-bs-slide-to="3"
-        aria-label="Slide 4"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#carouselExampleDark"
-        data-bs-slide-to="4"
-        aria-label="Slide 5"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#carouselExampleDark"
-        data-bs-slide-to="5"
-        aria-label="Slide 6"
-      ></button>
-    </div>
-    <div
-      class="carousel-inner"
-      data-aos="fade-left"
-      data-aos-anchor="#example-anchor"
-      data-aos-offset="500"
-      data-aos-duration="2000"
-    >
-      <div class="carousel-item active" data-bs-interval="2000">
-        <img class="br-1 bs-1 overflow-auto img-fluid d-block w-200 h-200" src="img/carrusel1.1.jpg" alt="First slide">
-        <div class="carousel-caption d-none d-md-block">
-          <h5 class="fs-1">Canguro antes</h5>
-        </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img class="br-2 bs-2 overflow-auto img-fluid d-block w-200 h-200" src="img/carrusel1.2.jpg" alt="Second slide">
-        <div class="carousel-caption d-none d-md-block">
-          <h5 class="fs-1 text-light">Canguro después</h5>
-        </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img class="br-3 bs-3 overflow-auto img-fluid d-block w-200 h-200" src="img/carrusel1.3.jpg" alt="Third slide">
-        <div class="carousel-caption d-none d-md-block">
-          <h5 class="fs-1 text-light">Canguro</h5>
-        </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img class="br-3 bs-3 overflow-auto img-fluid d-block w-200 h-200" src="img/carrusel1.4.png" alt="Quarter slide">
-        <div class="carousel-caption d-none d-md-block">
-          <h5 class="fs-1">Barbijos</h5>
-        </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img class="br-3 bs-3 overflow-auto img-fluid d-block w-200 h-200" src="img/carrusel1.5.png" alt="Fifth slide">
-        <div class="carousel-caption d-none d-md-block">
-          <h5 class="fs-1">Cuellos tejidos</h5>
-        </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img class="br-3 bs-3 overflow-auto img-fluid d-block w-200 h-200" src="img/carrusel1.6.png" alt="Six2h slide">
-        <div class="carousel-caption d-none d-md-block">
-          <h5 class="fs-1">Set River-Boca</h5>
-        </div>
-      </div>
-    </div>
-    <button
-      class="carousel-control-prev"
-      type="button"
-      data-bs-target="#carouselExampleDark"
-      data-bs-slide="prev"
-    >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button
-      class="carousel-control-next"
-      type="button"
-      data-bs-target="#carouselExampleDark"
-      data-bs-slide="next"
-    >
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-   </section> 
-  </div>       
-</div>
 </div>
 
 <!--Section Presentation of page-->
 <div class="row">
   <div class="col-xs-12">
-    <h3 class="text-black text-center fs-2"><b><i>_luk_c</b></i></h3>
-    <div>
+    <div class="d-flex flex-row justify-content-center">
     <a name="sectionPT"></a>
-    <section class="sectionPT">
-      
-    <fieldset class="sectionPT__caja">
-      <div class="row">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <legend><h1 class="text-BLACK fs-3"><b><i>Who I am?</b></i></h1 ></legend>
-        <br>
-      </div>
-      <div class="row">
-      <div class="col-md-6">
-          <p class="sectionPT__caja--pmod lead bg-black fs-4 lh-lg text-white fst-italic rounded-pill">Hello! <i class="fas fa-smile"></i> Welcome!</p>
-          <p class="sectionPT__caja--pmod lead bg-black fs-5 lh-lg text-white text-center rounded-pill bg-dark bg-gradient">I studied at the Escuela Argentina de Modas (EAM). <br>And since I was little my grandmother taught me to sew. Today I can make the clothes you want to suit your size and color: <i class="fas fa-tshirt"></i> T-shirts, Pants, Shirts, set the River or Boca and croatian. I take your mold(s). 
-          <!-- <br><span class="text-black fst-italic fs-4 rounded-pill bg-primary bg-gradient"> My wish for the future is to be able to open workshops to teach women <i class="fas fa-female"></i> who want a better future and allow them to be independent.</span></p> -->
-          <br>
-      </div>
-       <div class="col-md-6">
-       <div class="ratio ratio-16x9 col-lg-6">
-         <iframe width="1000" height="1000" src="https://www.youtube.com/embed/WEKCTZ3y0O0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-    </fieldset>
-    </section>
-    </div>
-    </div>
+        <section class="sectionPT">
+          <fieldset class="sectionPT__caja">
+          <!-- <div class="row">
+          <legend><h1 class="text-BLACK fs-3"><b><i>Who I am?</b></i></h1 ></legend>
+          </div> -->
+          <h3 class="text-black text-center fs-2"><b><i>_luk_c</b></i></h3>
+          <div class="col-md-6">
+              <p class="sectionPT__caja--pmod lead fs-4 lh-lg text-white fst-italic rounded-pill">Hello! <!-- <i class="fas fa-smile"></i>--><br> Welcome!</p>
+              <p class="sectionPT__caja--pmod lead bg-black fs-5 lh-lg text-white text-center rounded-pill bg-dark bg-gradient">I studied at the Escuela Argentina de Modas (EAM). <br>And since I was little my grandmother taught me to sew. Today I can make the clothes you want to suit your size and color: <i class="fas fa-tshirt"></i> T-shirts, Pants, Shirts, set the River or Boca and croatian. I take your mold(s). 
+              <!-- <br><span class="text-black fst-italic fs-4 rounded-pill bg-primary bg-gradient"> My wish for the future is to be able to open workshops to teach women <i class="fas fa-female"></i> who want a better future and allow them to be independent.</span></p> -->
+              <br>
+          </div>
+          <div class="col-md-6">
+            <div class="ratio ratio-16x9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/WEKCTZ3y0O0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          </div>
+        </fieldset>
+      </section>
   </div>
+</div>
 
 <!--Section Pilares-->
 <div class="row">
  <div class="col-xs-12">
-   <div class="pilares">
-    <section class="iconos__container">
-      <div class="d-flex-row justificy-content-center">
-       <h3 class="text-black text-center fs-2"><b><i>P i l l a r s</b></i></h3>
-       <br>
-       <br>
-       <div class="iconos__container__ind text-center">
-
-         <div class="iconos__container__ind">
-           <br>
-           <div class="w3-quarter">
-             <i class="fa fa-heart w3-jumbo fs-1" style="color:black;"></i>
-             <br>
-             <br>
-             <p class="w3-large text-decoration-underline fs-4">Mission</p>
-             <p class="col-md-12">Don't have limits with you like.</p>
-           </div>
-        </div>
-
-       <div class="iconos__container__ind">
-         <div class="w3-quarter">
-           <i class="fas fa-tshirt w3-margin-bottom w3-jumbo fs-1" style="color:black;"></i>
-           <br>
-           <br>
-           <p class="w3-large text-decoration-underline fs-4">Desing</p>
-           <p class="col-md-12">Don't have limits with your tastes.</p>
-         </div>
+   <section class="pilares">
+   <div class="container-fluid iconos__container text-center d-flex-row justify-content-center">
+    <h3 class="text-black text-center fs-2 col-lg-12 m-auto py-5 px-5"><b><i>P i l l a r s</b></i></h3>
+   <br>
+   <br>
+    <!-- Card Mission -->
+    <div class="iconos__container__ind container-fluid text-center col-xs-6 m-auto py-5 px-5">
+      <img
+        class="iconos__container__img rounded-circle"
+        src="./img/LC_LogoRedondo.png"
+        alt="img de icono"
+      />
+      <div class="iconos__info">
+        <i class="fa fa-heart fs-1" style="color: black;"></i>
+        <!-- <i class="fa fa-heart fs-1" style="color: deeppink;"></i>
+        <i class="fa fa-heart fs-1" style="color: blue;"></i> -->
+        <h3 class="iconos__container__titulo">Mission</h3>
+        <span class="iconos__container__span">Don't have limits with you like.</span>
       </div>
+    </div>
 
-      <div class="iconos__container__ind">
-         <div class="w3-quarter">
-           <i class="fa fa-peace w3-margin-bottom w3-jumbo fs-1" style="color:black;"></i>
-           <br>
-           <br>
-           <p class="w3-large text-decoration-underline fs-4">Liberty</p>
-           <p class="col-md-12">No one can tell you what to wear.</p>
-         </div>
-       </div>
+    <!-- Card Desing -->
+    <div class="iconos__container__ind container-fluid text-center col-xs-6 m-auto py-5 px-5">
+      <img
+        class="iconos__container__img rounded-circle"
+        src="./img/fondoManiki.png"
+        alt="img de icono"
+      />
+      <div class="iconos__info">
+        <i class="fas fa-tshirt fs-1" style="color:black;"></i>
+        <h3 class="iconos__container__titulo">Desing</h3>
+        <span class="iconos__container__span">Don't have limits with your tastes.</span>
+      </div>
+    </div>
 
-       <div class="iconos__container__ind">
-        <div class="w3-quarter">
-          <i class="fa fa-play w3-margin-bottom w3-jumbo fs-1" style="color:black;"></i>
-          <br>
-          <br>
-          <p class="w3-large text-decoration-underline fs-4">Action</p>
-          <p class="col-md-12">Preparing the seasons in advance.</p>
+    <!-- Card Action -->
+    <!-- <div class="iconos__container__ind container-fluid text-center col-xs-6 m-auto py-5 px-5">
+      <img
+        class="iconos__container__img rounded-circle"
+        src="./img/fondoMaquinaCoser.png"
+        alt="img de icono"
+      />
+      <div class="iconos__info">
+        <i class="fa fa-play fs-1" style="color:black;"></i>
+        <h3 class="iconos__container__titulo">Action</h3>
+        <span class="iconos__container__span">Preparing the seasons in advance.</span>
+      </div>
+    </div> -->
+
+        <!-- Card Liberty -->
+        <div class="iconos__container__ind container-fluid text-center col-xs-6 m-auto py-5 px-5">
+          <img
+            class="iconos__container__img rounded-circle"
+            src="./img/tiendahippiechic1.jpg"
+            alt="img de icono"
+          />
+          <div class="iconos__info">
+            <i class="fa fa-peace fs-1" style="color:black;"></i>
+            <h3 class="iconos__container__titulo">Liberty</h3>
+            <span class="iconos__container__span">No one can tell you what to wear.</span>
+          </div>
         </div>
       </div>
-
-     </div>
     </section>
-  </div>
+
  </div>
 </div>
 
-<!-- Section Contacts-->
+<!-- Section Contact-->
 <div class="row">
  <div class="col-xs-12">
+      <!-- Solucionar estos br! -->
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
   <h3 class="text-black text-center fs-2"><b><i>C o n t a c t</b></i></h3>
    <div class="sectionHPYSM" data-aos="fade-left" data-aos-duration="1500">
     <a name="sectionHPYSM"></a>
-    <section class="iconos__container">
-  
-  <div class="iconos__container__ind" >
-    <img
-      class="iconos__container__img"
-      src="./img/socialMedia4.png"
-      alt="img de whatsapp"
-    />
-    <div class="iconos__info" >
-      <h3 class="iconos__container__titulo"><i class="fab fa-whatsapp"></i> WhatsApp</h3>
-      <span class="iconos__container__span">(+54) 9 1100000000</span>
-    </div>
-  </div>
-  <div class="iconos__container__ind" >
-    <img
-      class="iconos__container__img"
-      src="./img/phone.png"
-      alt="img de phono"
-    />
-    <div class="iconos__info">
-      <h3 class="iconos__container__titulo">Attention schedule</h3>
-      <span class="iconos__container__span text-center">Week= <br> 9:00hs - 18:00hs<br> Weekend=<br> 10:00hs - 15:00hs</span>
-    </div>
-  </div>
-  <div class="iconos__container__ind">
-
-    <img class="iconos__container__img" src="./img/socialMedia3.png"  alt="img de medios"/>
-    <div class="iconos__info">
-      <h3 class="iconos__container__titulo">Social Networks</h3>
-      <fieldset class="bg-light bg-gradient rounded-3">
-        <div>
-          <ul>
-          <li class="iconos__container__span">Facebook <i class="fas fa-hand-point-right"></i> <a href="https://www.facebook.com/luk.caric.by.luluroa"><i class="fab fa-facebook-square"></i></a></li> 
-          <li class="iconos__container__span">Instagram <i class="fas fa-hand-point-right"></i> <a href="https://www.instagram.com/_luk_c/"><i class="fab fa-instagram-square"></i></a></li> 
-          <li class="iconos__container__span">Pinterest <i class="fas fa-hand-point-right"></i> <a href="https://www.pinterest.com/lcluluroa"><i class="fab fa-pinterest"></i></a></li>
-          <li class="iconos__container__span">Linktree <i class="fas fa-hand-point-right"></i> <a href="https://linktr.ee/_luk_c"> <img src="https://img.icons8.com/color/30/000000/linktree.png"/></a></li>
-        </ul>
+      <section class="iconos__container border">
+      <!-- Card WhatsApp -->
+      <div class="iconos__container__ind" >
+        <img
+          class="iconos__container__img"
+          src="./img/socialMedia4.png"
+          alt="img de whatsapp"
+        />
+        <div class="iconos__info" >
+          <h3 class="iconos__container__titulo"><i class="fab fa-whatsapp"></i> WhatsApp</h3>
+          <span class="iconos__container__span">(+54) 9 11 0000-0000</span>
         </div>
-      </fieldset>
-    </div>
-  </div>
-</section>
+      </div>
+
+      <!-- Card Attention schedule -->
+      <div class="iconos__container__ind" >
+        <img
+          class="iconos__container__img"
+          src="./img/phone.png"
+          alt="img de phono"
+        />
+        <div class="iconos__info text-left">
+          <h3 class="iconos__container__titulo">Attention schedule</h3>
+            <span class="iconos__container__span">Week <br> 9:00hs - 18:00hs</span>
+            <span class="iconos__container__span">Weekend <br> 10:00hs - 15:00hs</span>
+        </div>
+      </div>
+
+      <!-- Card Social Networks -->
+      <div class="iconos__container__ind">
+      <img class="iconos__container__img" src="./img/socialMedia3.png"  alt="img de medios"/>
+      <div class="iconos__info">
+        <h3 class="iconos__container__titulo">Social Networks</h3>
+        <fieldset class="bg-light bg-gradient rounded-3">
+          <div>
+            <ul>
+            <li class="iconos__container__span">Facebook <i class="fas fa-hand-point-right"></i> <a href="https://www.facebook.com/luk.caric.by.luluroa"><i class="fab fa-facebook-square"></i></a></li> 
+            <li class="iconos__container__span">Instagr <i class="fas fa-hand-point-right"></i> <a href="https://www.instagram.com/_luk_c/"><i class="fab fa-instagram-square"></i></a></li> 
+            <li class="iconos__container__span">Pinterest <i class="fas fa-hand-point-right"></i> <a href="https://www.pinterest.com/lcluluroa"><i class="fab fa-pinterest"></i></a></li>
+            <li class="iconos__container__span">Linktree <i class="fas fa-hand-point-right"></i> <a href="https://linktr.ee/_luk_c"> <img src="https://img.icons8.com/color/30/000000/linktree.png"/></a></li>
+          </ul>
+          </div>
+        </fieldset>
+      </div>
+      </div>
+      </section>
 
   </div>
  </div>
@@ -515,8 +414,8 @@
 
   <div class="sectionOFF">
         <h3 class="text-black text-center fs-2"><b><i>O f f e r</b></i></h3>
-        <h3 class="text-light fs-4">Subscribe to our newsletter and take advantage of a 10% discount on your next online purchase!</h3>
-        <p class="fs-5 fst-italic text-warning">Get a special "offer" by e-mail: (*)required </p>
+        <h3 class="text-light fs-5">Subscribe to our newsletter and take advantage of a 10% discount on your next online purchase!</h3>
+        <p class="fs-6 fst-italic text-warning">Get a special "offer" by e-mail: (*)required </p>
         <div>
           <form class="sectionOFF__form">
             <div class="mb-3">
@@ -538,18 +437,19 @@
 
 <!--Footer-->
 <footer class="footer">
+  <!-- <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Volver arriba</a> -->
   <div class="container py-3">
     <div class="row">
-      <div class="col-lg-11 m-auto py-5">
+      <div class="col-lg-11 m-auto">
         <div class="row">
-          <div class="col-lg-3 py-3 text-center">
+          <div class="col-lg-3 text-center">
             <h5 class="pb-3" style="color: grey;">Quick Links</h5>
             <ul class="footer__quickLinks m-0 p-0">
               <li>
                 <a class="footer__quickLinks__a" href="./pages/faqs.html">Preguntas frecuentes</a>
               </li>
               <li>
-                <a class="footer__quickLinks__a" href="./pages/faqs.html">Politicas de cambio</a>
+                <a class="footer__quickLinks__a" href="./pages/faqs.html">Políticas de cambio</a>
               </li>
               <li>
                 <a class="footer__quickLinks__a" href="./pages/faqs.html"
@@ -558,7 +458,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-3 py-3 text-center">
+          <div class="col-lg-3 text-center">
             <h5 class="pb-3" style="color: grey;">Ayuda</h5>
             <ul class="footer__quickLinks m-0 p-0">
               <li>
@@ -572,11 +472,11 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-3 py-3 text-center">
+          <div class="col-lg-3 text-center">
             <h5 class="pb-3" style="color: grey;">_luk_c</h5>
             <ul class="footer__quickLinks m-0 p-0">
               <li>
-                <a class="footer__quickLinks__a" href="./pages/faqs.html">Quienes somos</a>
+                <a class="footer__quickLinks__a" href="./pages/faqs.html">Quiénes somos</a>
               </li>
               <li>
                 <a class="footer__quickLinks__a" href="./pages/faqs.html">Contacto</a>
@@ -586,15 +486,18 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-3 py-3">
+          <div class="col-lg-3 text-center">
             <h5 class="pb-3" style="color: grey;">Contact</h5>
             <ul class="footer__quickLinks m-0 p-0">
               <li>
-                <a class="footer__quickLinks__a" href="./pages/faqs.html"><i class="fas fa-phone-alt"></i>(+54) 9-11 00000000</a>
+                <a class="footer__quickLinks__a" href="./pages/faqs.html"><i class="fas fa-phone-alt"></i>(+54) 9 11 0000-0000</a>
+                <div class="container footer_imgArg align-top px-3 py-3">
+                  <a class="navbar-brand" href="https://www.argentina.com/"><img src="./img/argentina.svg" alt="" width="30" height="30"></a>
+                </div>
               </li>
               <li>
                 <a class="footer__quickLinks__a" href="./pages/faqs.html"><i class="fas fa-envelope"></i> <a href="mailto:lc.luluroa@gmail.com?Subject=Hola!%20les%20hago%20una%20consulta.">lc.luluroa@gmail.com</a> </a>
-              </li>
+            </li>
             </ul>
           </div>
 
@@ -609,26 +512,31 @@
               </form>
             </div>
           </div>
+          <br>
+          <br>
+          <ul class="footer__titulo2--modifier"> <!-- Links otros sitios webs de ayuda a los usuarios que visitan la página-->
+            <li><a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario">Defensa del consumidor en la República Argentina. Para reclamos ingrese <i class="fas fa-hand-point-right"></i>"aquí"</a></li> 
+         </ul>
+         <br>
+         <br>
+         <br>
+         <div class="d-inline-flex justify-content-center p-2 bg-white text-danger bg-opacity-10">Developed Overflow-X by •Lucrecia Cecilia Roa•</div>
+         <span class="lead fs-6 d-inline-flex justify-content-center" style="color: grey;">© Copyright 2021 _luk_c Todos los derechos reservados. </span>
 
         </div>
       </div>
     </div>
   </div>
 
-  <ul class="footer__titulo2--modifier"> <!-- Links otros sitios webs de ayuda a los usuarios que visitan la página-->
-    <li><a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario">Defensa del consumidor en la República Argentina. Para reclamos ingrese <i class="fas fa-hand-point-right"></i>"aquí"</a></li> 
-    <h3 class="lead bg-danger bg-gradient col-md-12 text-black">Developed Overflow-X by •Lucrecia Cecilia Roa•</h3>
-    <span class="lead col-md-12 fs-6">© Copyright 2021 _luk_c Todos los derechos reservados. </span>
- </ul>
 
- <!-- Boton hacia arriba -->
-<script src="./pages/js/botonArriba.js"></script>
-  <!-- <a class="ir-arriba"  javascript:void(0) title="Volver arriba">
-  <span class="fa-stack"> -->
+<!-- Boton hacia arriba -->
+<!-- <script src="./js/botonArriba.js"></script>
+  <a class="ir-arriba"  javascript:void(0) title="Volver arriba">
+  <span class="fa-stack">
     <i class="fa fa-circle fa-stack-2x"></i>
     <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
   </span>
-</a>
+</a> -->
 
 </footer>
 <!--Fin de Footer-->
@@ -660,11 +568,11 @@ integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIh
 crossorigin="anonymous"
 ></script>
 <!-- Script para Popover -->
- <script>
+ <!-- <script>
   $(document).ready(function(){
     $('[data-toggle="popover"]').popover();
   });
- </script>
+ </script> -->
 <!--Aos animate-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
@@ -672,9 +580,9 @@ crossorigin="anonymous"
 </script>
 
 <!--Scripts varios-->
-<script src="./pages/js/menuHoriz.js"></script>
-
+<script src="./js/menuHoriz.js"></script>
 
 </body>
+<!-- Fin de la body-->
 </html>
 <!-- Fin de la página web-->

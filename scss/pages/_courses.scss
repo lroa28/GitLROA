@@ -1,13 +1,8 @@
-.body{
-    // background-color: blue;
-  }
-
 /*MAIN*/
 .maincourses__grid {
-  width: 100vw;
-  height: 150vh;
+  width: 100%;
   margin-top: 87px;
-  display: flex; 
+  display: flex;
   flex-direction: column;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -17,41 +12,42 @@
   "contenedor2"
   "contenedor3";
   background-image: url("../img/fondoManiki.png");
-  background-position-x: end; //*probar como hacer la imagen mas a la izq*//
-  background-position-y: top;  
+  background-position-x: center; //*probar como hacer la imagen mas a la izq*//
+  background-position-y: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .contenedor1 {
 	max-width: 1000px;
-	width: 100%;
-	// margin: 0 auto;
+	width: 50%;
+	margin: 0 auto;
 	grid-area: contenedor1;
 }
 
 .contenedor2 {
 	max-width: 1000px;
-	width: 110%;
+	width: 100%;
 	margin: 0 auto;
 	grid-area: contenedor2;
 }
 
 .contenedor3 {
 	max-width: 1000px;
-	width: 80%;
+	width: 50%;
 	margin: auto 0;
 	grid-area: contenedor3;
 }
 
 .tarjeta {
-	background: linear-gradient(90deg, rgba(249, 249, 252, 0.507) 0%, rgba(35, 10, 224, 0.918) 35%, rgb(255, 0, 0) 100%);
+	background: linear-gradient(90deg, rgb(175, 173, 218) 0%, rgba(34,10,224,1) 35%, rgba(255, 51, 0, 0.644) 100%);
+    display: flex;
 	border-radius: 15px;
 	padding: 20px;
 	display: flex;
 	align-items: center;
 	position: relative;
-	margin-bottom: 30px; 
+	margin-bottom: 30px;
 }
 
 .tarjeta__img {
@@ -62,7 +58,7 @@
 }
 
 .tarjeta__titulo {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 20px;
   text-decoration: underline;
   font-style: italic;
@@ -70,7 +66,11 @@
 
 .tarjeta__parrafo {
 	line-height: 28px;
-	font-size: 3rem;
+	font-size: 1rem;
+}
+
+.ul li h4 {
+	font-size: 0.8rem;
 }
 
 .boton{

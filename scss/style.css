@@ -951,8 +951,8 @@ div ul {
 /*MAIN BAG*/
 .main__bag {
   width: 100vw;
-  height: 90vh;
-  margin-top: 86px;
+  height: 100vh;
+  padding-top: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

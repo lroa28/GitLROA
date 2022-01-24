@@ -6,10 +6,10 @@
 /*MAIN BAG*/
 .main__bag {
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   //*margin-top: 85px; este es el margin para que quede OK el Header*//
   //*padding-top: 3rem;  con este padding la pag queda sin scroll horizontal*//
-  margin-top: 86px;
+  padding-top: 90px;
   display: flex;
   background-image: url("../img/bags1.jpg");
   background-position: center;

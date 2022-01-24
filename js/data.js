@@ -62,12 +62,4 @@ const productosDB = [{
         "precio": 1000,
         "fecha": 2022
     },
-    {
-        "id": 9,
-        "imagen": "../img/Set1.jpg",
-        "titulo": "Set",
-        "descripción": "Cuello y pulsera",
-        "precio": 1000,
-        "fecha": 2022
-    },
 ]

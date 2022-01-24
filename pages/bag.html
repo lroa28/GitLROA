@@ -19,9 +19,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css"/>
   </head>
-
+<!-------------------------------------------//
+// ---------------- BODY --------------------//
+// ------------------------------------------->
 <body class="body" onLoad="alert('¡Bienvenido al Carrito de Compras! (Welcome to shopping bags!)')" onUnload="alert('¡Vuelva pronto! (Come back soon!)')">    
 
+<!-------------------------------------------//
+// ---------------- HEADER-------------------//
+// ------------------------------------------->
 <!--Header-->
 <div class="row">
   <div class="col-xs-12">
@@ -40,86 +45,64 @@
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"><i class="fas fa-hamburger"></i></span>
       </button>
-    
+  
      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-     <div class="header__menu navbar-nav m-auto mb-2 mb-lg-0">
-      <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: lowercase;" href="../index.html/sectionPT">_luk_c</a></li>
+  
+     <div class="header__menu navbar-nav  me-auto mb-2 mb-lg-0">
+  
+      <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: lowercase;" href="../pages/luk_c.html">_luk_c</a></li>
+      <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="../index.html#sectionHPYSM">Contact</a></li>
+      <!-- <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="./pages/courses.html">Courses</a></li> -->
+      <li><a class="nav-item nav-link align-baseline aparecer"  style="color:rgb(255, 4, 4);" href="../index.html#sale">Sale</a></li>
       <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="../pages/products.html">Products</a></li>
-      <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="../index.html/#sectionHPYSM">Contact</a></li>
-      <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="../pages/courses.html">Courses</a></li>
-      <!-- <li class="nav-item nav-link dropdown header__menu">
-          <a class="nav-link dropdown-toggle align-baseline header__menu" style="color:black;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
-          <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item zindex-dropdown:1000 header__menu" href="./pages/courses.html">Moldería básica</a></li>
-            <li><a class="dropdown-item zindex-dropdown:1000 header__menu" href="./pages/courses.html">Tejido</a></li>
-            <li><a class="dropdown-item zindex-dropdown:1000 header__menu" href="./pages/courses.html">Máquinas</a></li>
+      
+      <li class="nav-item dropdown header__menu m-auto mb-2 mb-lg-0">
+          <a class="nav-link dropdown-toggle align-baseline" style="color:black;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+          
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item zindex-dropdown:1000" href="../pages/courses.html">Tejido</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item zindex-dropdown:1000" href="../pages/courses.html">Moldería básica</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item zindex-dropdown:1000" href="../pages/courses.html">Máquinas</a></li>
           </ul>
-      </li> -->
-      <li><a class="nav-item nav-link align-baseline aparecer"  style="color:rgb(255, 4, 4);" href="#sale">Sale</a></li>
-      <ul class="navbar-nav mr-auto">
-        <!-- <li class="nav-item dropdown">
-          Carrito en el header mas chico pero posee contador -->
-          <!-- <a class="nav-link d-flex align-items-center" id="changuito">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
-              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-            </svg>
-            <p id="acumuladorCarrito" class="ml-2 d-flex justify-content-center align-items-center" style="background-color:rgb(35, 58, 161); width: 25px; height: 25px; border-radius: 50%; padding: 15px;"></p> -->
-
-          <!-- <img src="../img/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px" width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></img>
-           <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
-            <table id="lista-carrito" class="table">
-              <thead>
-                <tr>
-                 <th>Imagen</th>
-                 <th>Nombre</th>
-                 <th>Precio</th>
-                </tr>
-              </thead>
-              <tbody></tbody>
-            </table>
-           <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
-           <a href="../pages/bag.html" id="procesar-pedido" class="btn btn-danger btn-block">Procesar Compra</a>
-          </div>
-        </li> -->
-       </ul>
+  
+      </li>
+  
      </div>
-
-    <button type="button" class="menu-nav btn btn-outline-dark btn-success" style="color: white;">Recycle
-        <i class="fas fa-recycle"></i>
-    <div class="modal">
+     <form class="d-flex px-2">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-dark btn-outline-danger" type="submit">Search</button>
+    </form>
+  
+    <!-- <div class="modal">
         <ul>
           <li><a href="https://ropalimpia.org/quienes-somos/">Ropa limpia</a></li>
           <li><a href="https://twenergy.com/ecologia-y-reciclaje/moda-sostenible-la-ropa-mas-ecologica-saludable-y-sociablemente-responsable-1853/">Twenergy</a></li>
           <li><a href="https://cnnespanol.cnn.com/2022/01/07/moda-sostenible-ropa-consciente-orix/">Moda Sostenible</a></li>
         </ul>
-    </div>
-    </button>
+    </div> -->
      <ul class="header__icons navbar-nav">
       <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fas fa-home"></i></a></li>
-      <li class="nav-item"><a class="nav-link" href="../pages/search.html"><i class="fas fa-search"></i></a></li>
+      <!-- <li class="nav-item"><a class="nav-link" href="./pages/search.html"><i class="fas fa-search"></i></a></li> -->
       <li class="nav-item"><a class="nav-link" href="../pages/contact.html"><i class="fas fa-envelope"></i></a></li>
       <li class="nav-item"><a class="nav-link" href="../pages/bag.html"><i class="fas fa-shopping-cart"></i></a></li>
-      <li class="nav-item"><a class="nav-link" href="../pages/login.html"><i class="fas fa-user"></i></a></li>
+      <!-- <li class="nav-item"><a class="nav-link" href="./pages/login.html"><i class="fas fa-user"></i></a></li> -->
+      <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-recycle"></i></a></li>
       <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/luk.caric.by.luluroa"><i class="fab fa-facebook"></i></a></li>
-      <!-- <li class="nav-item d-flex flex-row align-items-center">
-        <a class="nav-link d-flex align-items-center" id="changuito">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
-            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-          </svg>
-          <p id="acumuladorCarrito" class="ml-2 d-flex justify-content-center align-items-center" style="background-color:rgb(35, 58, 161); width: 25px; height: 25px; border-radius: 50%; padding: 15px;"></p>
-        </a>
-      </li> -->
+      <!-- <button type="button" class="menu-nav btn btn--recycle btn-dark btn-outline-success" style="color: white;">
+        <i class="fas fa-recycle"></i>
+      </button> -->
     </ul>
-   
-       </div>
-      </div>
+  
     </div>
-   </div>
+  
+  </div>
   </nav>
   </header>
- </div>
-</div>
-<!--Fin Header-->
+  </div>
+  </div>
+  <!--Fin Header-->
 
 
 <!--Main-->
@@ -174,13 +157,13 @@
             <h5 class="pb-3" style="color: grey;">_luk_c</h5>
             <ul class="footer__quickLinks m-0 p-0">
               <li>
-                <a class="footer__quickLinks__a" href="../pages/faqs.html">Quiénes somos</a>
+                <a class="footer__quickLinks__a" href="../pages/luk_c.html">Quiénes somos</a>
               </li>
               <li>
-                <a class="footer__quickLinks__a" href="../pages/faqs.html">Contacto</a>
+                <a class="footer__quickLinks__a" href="../pages/contact.html">Contacto</a>
               </li>
               <li>
-                <a class="footer__quickLinks__a" href="../pages/faqs.html">Visitanos</a>
+                <a class="footer__quickLinks__a" href="../pages/products.html">Visitanos</a>
               </li>
             </ul>
           </div>
@@ -189,7 +172,7 @@
             <ul class="footer__quickLinks m-0 p-0">
               <li>
                 <a class="footer__quickLinks__a" href="../pages/faqs.html"><i class="fas fa-phone-alt"></i>(+54) 9 11 0000-0000</a>
-                <div class="container footer_imgArg align-top">
+                <div class="container footer_imgArg align-top px-3 py-3">
                   <a class="navbar-brand" href="https://www.argentina.com/"><img src="../img/argentina.svg" alt="" width="30" height="30"></a>
                 </div>
               </li>
@@ -220,6 +203,7 @@
          <br>
          <div class="d-inline-flex justify-content-center p-2 bg-white text-danger bg-opacity-10">Developed Overflow-X by •Lucrecia Cecilia Roa•</div>
          <span class="lead fs-6 d-inline-flex justify-content-center" style="color: grey;">© Copyright 2021 _luk_c Todos los derechos reservados. </span>
+
         </div>
       </div>
     </div>
@@ -227,13 +211,13 @@
 
 
 <!-- Boton hacia arriba -->
-<script src="./js/botonArriba.js"></script>
+<!-- <script src="./js/botonArriba.js"></script>
   <a class="ir-arriba"  javascript:void(0) title="Volver arriba">
   <span class="fa-stack">
     <i class="fa fa-circle fa-stack-2x"></i>
     <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
   </span>
-</a>
+</a> -->
 
 </footer>
 <!--Fin de Footer-->

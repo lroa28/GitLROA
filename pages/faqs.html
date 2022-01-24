@@ -14,63 +14,91 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--Aos animate-->
   <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
 </head>
-
-<body>
-
+<!-------------------------------------------//
+// ---------------- BODY --------------------//
+// ------------------------------------------->
+<body class="body">
+  <div class="overlay hidden"></div>
+<!-------------------------------------------//
+// ---------------- HEADER-------------------//
+// ------------------------------------------->
 <!--Header-->
 <div class="row">
   <div class="col-xs-12">
-  <header> 
+  <header>
   <nav class="navbar navbar-expand-lg fixed-top header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-    <div class="divlogo">
-     <a  class="navbar-brand rotate" href="../index.html"><img class="header__logo img-fluid rounded-circle" src="../img/logoOriginal.jpg" alt="Logo" class="d-inline-block align-top"></a> 
-    </div>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"><i class="fas fa-hamburger"></i></span>
-    </button>
+    <div class="container-fluid d-flex-row">
+      
+     <div class="divlogo"><a class="navbar-brand rotate d-inline-block align-top" href="../index.html"><img class="header__logo img-fluid rounded-circle" src="../img/logoOriginal.jpg" alt="Logo"></a></div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fas fa-hamburger"></i></span>
+      </button>
   
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-     <div class="header__menu navbar-nav m-auto mb-2 mb-lg-0 text-center d-flex-row align-items-left gap-4">
-        <li><a class="nav-item nav-link aparecer"  style="color:black; font-style: italic; text-transform: lowercase;" href="#sectionPT">_luk_c</a></li>
-        <li><a class="nav-item nav-link"  style="color:black;" href="./pages/products.html">Season</a></li>
-        <li><a class="nav-item nav-link"  style="color:black;" href="#sectionHPYSM">Social Networks</a></li>
-        <li><a class="nav-item nav-link"  style="color:black;" href="./pages/courses.html">Courses</a></li>
-        <!-- <li class="nav-item nav-link dropdown">
-          <a class="nav-link dropdown-toggle header__menu" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Courses
-          </a>
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+     <div class="header__menu navbar-nav  me-auto mb-2 mb-lg-0">
+  
+      <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: lowercase;" href="../pages/luk_c.html">_luk_c</a></li>
+      <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="../index.html#sectionHPYSM">Contact</a></li>
+      <!-- <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="./pages/courses.html">Courses</a></li> -->
+      <li><a class="nav-item nav-link align-baseline aparecer"  style="color:rgb(255, 4, 4);" href="../index.html#sale">Sale</a></li>
+      <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="../pages/products.html">Products</a></li>
+      
+      <li class="nav-item dropdown header__menu m-auto mb-2 mb-lg-0">
+          <a class="nav-link dropdown-toggle align-baseline" style="color:black;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+          
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Moldería básica</a></li>
-            <li><a class="dropdown-item" href="#">Tejido</a></li>
-            <li><a class="dropdown-item" href="#">Máquinas</a></li>
+            <li><a class="dropdown-item zindex-dropdown:1000" href="../pages/courses.html">Tejido</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item zindex-dropdown:1000" href="../pages/courses.html">Moldería básica</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item zindex-dropdown:1000" href="../pages/courses.html">Máquinas</a></li>
           </ul>
-        </li> -->
+  
+      </li>
   
      </div>
+     <form class="d-flex px-2">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-dark btn-outline-danger" type="submit">Search</button>
+    </form>
+  
+    <!-- <div class="modal">
+        <ul>
+          <li><a href="https://ropalimpia.org/quienes-somos/">Ropa limpia</a></li>
+          <li><a href="https://twenergy.com/ecologia-y-reciclaje/moda-sostenible-la-ropa-mas-ecologica-saludable-y-sociablemente-responsable-1853/">Twenergy</a></li>
+          <li><a href="https://cnnespanol.cnn.com/2022/01/07/moda-sostenible-ropa-consciente-orix/">Moda Sostenible</a></li>
+        </ul>
+    </div> -->
      <ul class="header__icons navbar-nav">
-      <li class="nav-item"> <img class="footer_imgArg" src="../img/argentina.svg"></li>
-      <li class="nav-item"><a class="nav-link" href="./index.html"><i class="fas fa-home"></i></a></li>
-      <li class="nav-item"><a class="nav-link" href="./pages/search.html"><i class="fas fa-search"></i></a></li>
-      <li class="nav-item"><a class="nav-link" href="./pages/contact.html"><i class="fas fa-envelope"></i></a></li>
-      <li class="nav-item"><a class="nav-link" href="./pages/bag.html"><i class="fas fa-shopping-cart"></i></a></li>
-      <li class="nav-item"><a class="nav-link" href="./pages/login.html"><i class="fas fa-user"></i></a></li>
-     </ul> 
-   </div>
+      <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fas fa-home"></i></a></li>
+      <!-- <li class="nav-item"><a class="nav-link" href="./pages/search.html"><i class="fas fa-search"></i></a></li> -->
+      <li class="nav-item"><a class="nav-link" href="../pages/contact.html"><i class="fas fa-envelope"></i></a></li>
+      <li class="nav-item"><a class="nav-link" href="../pages/bag.html"><i class="fas fa-shopping-cart"></i></a></li>
+      <!-- <li class="nav-item"><a class="nav-link" href="./pages/login.html"><i class="fas fa-user"></i></a></li> -->
+      <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-recycle"></i></a></li>
+      <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/luk.caric.by.luluroa"><i class="fab fa-facebook"></i></a></li>
+      <!-- <button type="button" class="menu-nav btn btn--recycle btn-dark btn-outline-success" style="color: white;">
+        <i class="fas fa-recycle"></i>
+      </button> -->
+    </ul>
   
-  </nav> 
+    </div>
   
-  </header>  
+  </div>
+  </nav>
+  </header>
   </div>
   </div>
   <!--Fin Header-->
-  
+
 <main>
   <section class="nosotros">
     <div class="container py-5">
@@ -167,6 +195,7 @@
 
 <!--Footer-->
 <footer class="footer">
+  <!-- <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Volver arriba</a> -->
   <div class="container py-3">
     <div class="row">
       <div class="col-lg-11 m-auto">
@@ -175,13 +204,13 @@
             <h5 class="pb-3" style="color: grey;">Quick Links</h5>
             <ul class="footer__quickLinks m-0 p-0">
               <li>
-                <a class="footer__quickLinks__a" href="./pages/faqs.html">Preguntas frecuentes</a>
+                <a class="footer__quickLinks__a" href="../pages/faqs.html">Preguntas frecuentes</a>
               </li>
               <li>
-                <a class="footer__quickLinks__a" href="./pages/faqs.html">Politicas de cambio</a>
+                <a class="footer__quickLinks__a" href="../pages/faqs.html">Políticas de cambio</a>
               </li>
               <li>
-                <a class="footer__quickLinks__a" href="./pages/faqs.html"
+                <a class="footer__quickLinks__a" href="../pages/faqs.html"
                   >Cómo comprar</a
                 >
               </li>
@@ -191,13 +220,13 @@
             <h5 class="pb-3" style="color: grey;">Ayuda</h5>
             <ul class="footer__quickLinks m-0 p-0">
               <li>
-                <a class="footer__quickLinks__a" href="./pages/faqs.html">Devoluciones</a>
+                <a class="footer__quickLinks__a" href="../pages/faqs.html">Devoluciones</a>
               </li>
               <li>
-                <a class="footer__quickLinks__a" href="./pages/faqs.html">Formas de pago</a>
+                <a class="footer__quickLinks__a" href="../pages/faqs.html">Formas de pago</a>
               </li>
               <li>
-                <a class="footer__quickLinks__a" href="./pages/faqs.html">Costos de envío</a>
+                <a class="footer__quickLinks__a" href="../pages/faqs.html">Costos de envío</a>
               </li>
             </ul>
           </div>
@@ -205,27 +234,27 @@
             <h5 class="pb-3" style="color: grey;">_luk_c</h5>
             <ul class="footer__quickLinks m-0 p-0">
               <li>
-                <a class="footer__quickLinks__a" href="./pages/faqs.html">Quienes somos</a>
+                <a class="footer__quickLinks__a" href="../pages/luk_c.html">Quiénes somos</a>
               </li>
               <li>
-                <a class="footer__quickLinks__a" href="./pages/faqs.html">Contacto</a>
+                <a class="footer__quickLinks__a" href="../pages/contact.html">Contacto</a>
               </li>
               <li>
-                <a class="footer__quickLinks__a" href="./pages/faqs.html">Visitanos</a>
+                <a class="footer__quickLinks__a" href="../pages/products.html">Visitanos</a>
               </li>
             </ul>
           </div>
-          <div class="col-lg-3 ">
+          <div class="col-lg-3 text-center">
             <h5 class="pb-3" style="color: grey;">Contact</h5>
             <ul class="footer__quickLinks m-0 p-0">
               <li>
-                <a class="footer__quickLinks__a" href="./pages/faqs.html"><i class="fas fa-phone-alt"></i>(+54) 9-11 00000000</a>
-                <div class="container footer_imgArg align-top">
+                <a class="footer__quickLinks__a" href="../pages/faqs.html"><i class="fas fa-phone-alt"></i>(+54) 9 11 0000-0000</a>
+                <div class="container footer_imgArg align-top px-3 py-3">
                   <a class="navbar-brand" href="https://www.argentina.com/"><img src="../img/argentina.svg" alt="" width="30" height="30"></a>
                 </div>
               </li>
               <li>
-                <a class="footer__quickLinks__a" href="./pages/faqs.html"><i class="fas fa-envelope"></i> <a href="mailto:lc.luluroa@gmail.com?Subject=Hola!%20les%20hago%20una%20consulta.">lc.luluroa@gmail.com</a> </a>
+                <a class="footer__quickLinks__a" href="../pages/faqs.html"><i class="fas fa-envelope"></i> <a href="mailto:lc.luluroa@gmail.com?Subject=Hola!%20les%20hago%20una%20consulta.">lc.luluroa@gmail.com</a> </a>
             </li>
             </ul>
           </div>
@@ -244,13 +273,13 @@
           <br>
           <br>
           <ul class="footer__titulo2--modifier"> <!-- Links otros sitios webs de ayuda a los usuarios que visitan la página-->
-            <li><a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario">Defensa del consumidor en la República Argentina. Para reclamos ingrese <i class="fas fa-hand-point-right"></i>"aquí"</a></li>
+            <li><a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario">Defensa del consumidor en la República Argentina. Para reclamos ingrese <i class="fas fa-hand-point-right"></i>"aquí"</a></li> 
          </ul>
          <br>
          <br>
          <br>
          <div class="d-inline-flex justify-content-center p-2 bg-white text-danger bg-opacity-10">Developed Overflow-X by •Lucrecia Cecilia Roa•</div>
-         <span class="lead fs-6" style="color: grey;">© Copyright 2021 _luk_c Todos los derechos reservados. </span>
+         <span class="lead fs-6 d-inline-flex justify-content-center" style="color: grey;">© Copyright 2021 _luk_c Todos los derechos reservados. </span>
 
         </div>
       </div>
@@ -259,13 +288,13 @@
 
 
 <!-- Boton hacia arriba -->
-<script src="./pages/js/botonArriba.js"></script>
+<!-- <script src="./js/botonArriba.js"></script>
   <a class="ir-arriba"  javascript:void(0) title="Volver arriba">
   <span class="fa-stack">
     <i class="fa fa-circle fa-stack-2x"></i>
     <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
   </span>
-</a>
+</a> -->
 
 </footer>
 <!--Fin de Footer-->
@@ -294,4 +323,5 @@
 
 
 </body>
+<!-- Fin de la página web-->
 </html>

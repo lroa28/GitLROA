@@ -3,7 +3,7 @@
   // width: 100vw;
   // height: 100%;
   //*margin-top: 85px; este es el margin para que quede OK el Header*//
-  padding: 6rem 0rem 5rem 0rem; //* con este padding la pag queda sin scroll horizontal*//
+  padding: 6rem 0rem 6rem 0rem; //* con este padding la pag queda sin scroll horizontal*//
   // background-color: rgba(73, 70, 70, 0.39);
 
   &--formbusq {
@@ -137,7 +137,7 @@
 //SECTION CARDS
 .card {
   border: none;
-  padding: 15px;
+  width: 20rem;
   height: 25rem;
   display: flex;
   flex-direction: row;
@@ -168,7 +168,7 @@
   padding-left: 5px;
 }
 
-.boton-comprar {
+.comprar {
   height: 45px;
   width: 110px;
   background: red;
@@ -198,6 +198,34 @@
   position: absolute;
 }
 
+// CARRITO AZUL
+.carrito{
+  min-height: 80vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+.table__productos{
+  display: flex;
+}
+.table__productos > img{
+  width: 9rem;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+.table__cantidad > input{
+  width: 40px;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+.hide, .remove{
+  display: none;
+}
 
 //SECTION CRITICAS
 .criticas span {
@@ -408,33 +436,26 @@
 }
 
 .fondo {
-  background-color: rgba(0, 0, 0, .3);
+  background-color: $fondogrisdegradado;
   border-radius: calc(1rem + 1vw);
 }
 
 .borde {
   border-radius: calc(1rem + 1vw);
-  border: 4px solid #281E4D;
+  border: 4px solid grey;
   transition: all .4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .borde:hover {
-  border: 4px solid red;
-  box-shadow: 0 0 5px red, 0 0 10px red, 0 0 30px red;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.781), 0 0 20px rgba(255, 0, 0, 0.747), 0 0 40px rgba(255, 0, 0, 0.781);
 }
 
 .borde--violeta {
-  border: 4px solid #B153F0;
-  box-shadow: 0 0 5px #B153F0, 0 0 10px #B153F0, 0 0 30px #B153F0, inset 0 0 20px #B153F0;
+  border: 4px solid black;
+  box-shadow: 0 0 5px #eee, 0 0 10px #eee, 0 0 30px #eee, inset 0 0 20px #eee;
 }
 
-/* 
-==============================
-
-        PRODUCTOS 
-
-==============================
-*/
+//PRODUCTOS
 
 .overlay {
   position: fixed;
@@ -552,7 +573,7 @@
 }
 
 .producto__cuerpo h3 {
-  color: #ebeeee;
+  color: black;
   text-align: center;
   padding: .5rem;
   font-size: calc(1rem + .5vw);
@@ -561,7 +582,7 @@
 }
 
 .producto__cuerpo p {
-  color: #ebeeee;
+  color: red;
   text-align: center;
   padding: .5rem;
   font-size: calc(1rem + .5vw);
@@ -588,13 +609,8 @@
   transform: translateY(0%);
 }
 
-/* 
-==============================
+//CARRITO
 
-          CARRITO 
-
-==============================
-*/
 
 .carrito {
   min-height: 40vh;

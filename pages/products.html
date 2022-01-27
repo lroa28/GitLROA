@@ -28,16 +28,15 @@
   <div class="overlay hidden"></div>
 
 <!--Body-->
-<body class="body"><!-- onLoad="alert('¡Bienvenid@ a la página de productos! (Welcome to products page!)')" onUnload="alert('¡Vuelva pronto! (Come back soon!)')"-->
+<body class="body" onLoad="alert('¡Bienvenid@ a la página de productos! (Welcome to products page!)')" onUnload="alert('¡Vuelva pronto! (Come back soon!)')">
  <div class="row">
   <div class="col-xs-12">
     <div class="overlay"></div>
-    <section class="detail borde borde--violeta padding fondo">
-    </section>
-  
+
 <!-------------------------------------------//
 // ---------------- HEADER-------------------//
 // ------------------------------------------->
+<!--Header-->
 <!--Header-->
 <div class="row">
   <div class="col-xs-12">
@@ -59,15 +58,15 @@
   
      <div class="collapse navbar-collapse" id="navbarSupportedContent">
   
-     <div class="header__menu navbar-nav  me-auto mb-2 mb-lg-0">
+     <div class="header__menu navbar-nav  me-auto mb-lg-0">
   
-      <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: lowercase;" href="../pages/luk_c.html">_luk_c</a></li>
+      <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: lowercase;" href="../pages/luk_c.html"><i>_luk_c</i></a></li>
       <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="../index.html#sectionHPYSM">Contact</a></li>
       <!-- <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="./pages/courses.html">Courses</a></li> -->
       <li><a class="nav-item nav-link align-baseline aparecer"  style="color:rgb(255, 4, 4);" href="../index.html#sale">Sale</a></li>
       <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="../pages/products.html">Products</a></li>
       
-      <li class="nav-item dropdown header__menu m-auto mb-2 mb-lg-0">
+      <li class="nav-item dropdown header__menu m-auto mb-lg-0">
           <a class="nav-link dropdown-toggle align-baseline" style="color:black;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
           
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -77,15 +76,55 @@
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item zindex-dropdown:1000" href="../pages/courses.html">Máquinas</a></li>
           </ul>
-  
       </li>
-  
      </div>
-     <form class="d-flex px-2">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-dark btn-outline-danger" type="submit">Search</button>
-    </form>
-  
+
+     <!-- <ul
+     class="nav nav-pills mb-3 py-3 container"
+     id="pills-tab"
+     role="tablist"
+   >
+     <li class="nav-item text-primary" role="presentation">
+       <a
+         class="nav-link "
+         id="pills-home-tab"
+         data-bs-toggle="pill"
+         data-bs-target="#pills-home"
+         type="button"
+         role="tab"
+         aria-controls="pills-home"
+         aria-selected="true"
+         >Home</a
+       >
+     </li>
+     <li class="nav-item" role="presentation">
+       <a
+         class="nav-link active"
+         id="pills-profile-tab"
+         data-bs-toggle="pill"
+         data-bs-target="#pills-profile"
+         type="button"
+         role="tab"
+         aria-controls="pills-profile"
+         aria-selected="false"
+         >Productos</a
+       >
+     </li>
+     <li class="nav-item" role="presentation">
+       <a
+         class="nav-link"
+         id="pills-contact-tab"
+         data-bs-toggle="pill"
+         data-bs-target="#pills-contact"
+         type="button"
+         role="tab"
+         aria-controls="pills-contact"
+         aria-selected="false"
+         >Carrito</a
+       >
+     </li>
+   </ul> -->
+
     <!-- <div class="modal">
         <ul>
           <li><a href="https://ropalimpia.org/quienes-somos/">Ropa limpia</a></li>
@@ -94,6 +133,10 @@
         </ul>
     </div> -->
      <ul class="header__icons navbar-nav">
+      <form class="d-flex mx-2">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn--search btn-dark btn-outline-danger" type="submit">Search</button>
+      </form>
       <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fas fa-home"></i></a></li>
       <!-- <li class="nav-item"><a class="nav-link" href="./pages/search.html"><i class="fas fa-search"></i></a></li> -->
       <li class="nav-item"><a class="nav-link" href="../pages/contact.html"><i class="fas fa-envelope"></i></a></li>
@@ -115,19 +158,35 @@
   </div>
   <!--Fin Header-->
 
+  <!-- <div class="alert container-fluid position-sticky top-0 alert-primary hide" role="alert">
+    Producto Añadido al carrito!
+  </div>
+  <div class="alert container-fluid position-sticky top-0 alert-danger remove" role="alert">
+    Producto removido!
+  </div> -->
+
 <!--Main-->
-<main class="main__products">
-<div class="row">
-<div class="col-md-12">
+
+<section class="detail borde borde--violeta padding fondo">
+</section>
+
+<main class="main main__products">
+    <div class="container">
+        <!-- <h2 class="title padding">Compra todo lo que quieras</h2> -->
+        <div class="fondo">
+            <div class="productos padding">
+            </div>
+        </div>
+    </div>
 
 <!--Section Buscar-->
-<section class="container d-flex justify-content-center align-items-center flex-column">
+<!-- <section class="container d-flex justify-content-center align-items-center flex-column">
   <form class="form-inline col-md-12 buscador" onsubmit="return false">
       <input class="form-control mr-sm-2" type="search" placeholder="Buscar por nombre" aria-label="Search">
       <button class="btn btn-danger btn-block" type="submit">Search</button>
   </form>
   <div class="toastContainer"></div>
-</section>
+</section> -->
 
 <!--Section Filtro-->
 <!-- <div class="container">
@@ -176,12 +235,18 @@
 </div> -->
 
 <!--Section Productos -->
+
+<!-- <div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">1</div>
+  <div class="tab-pane fade show active container" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+
 <div class="pricing-header text-center">
   <h1 class="display-4">Lista de Productos</h1>
   <p class="lead">Seleccioná uno de nuestros productos</p>
-</div>
+</div> -->
 
-<main class="main padding-bottom">
+<!-- <main class="main padding-bottom">
   <div class="container">
       <h2 class="title padding"></h2>
       <div class="fondo">
@@ -189,192 +254,125 @@
           </div>
       </div>
   </div>
-</main>
+</main> -->
 
-  <div class="container-fluid" id="productos">
+  <!-- <div class="container-fluid" id="productos">
   <div class="row">
     <div class="col-xs-12"><a name="products"></a>
       <section class="products">
         <div class="container-fluid">
-          <div class="row">
+          <div class="row"> -->
 
             <!-- Primer card -->
-            <div class="col-lg-3">
-              <div class="card">
-                <img src="../img/CanguroAndre.jpg" class="main__img1" alt="Foto Canguro"/>
-                <h3 class="bg-black text-white rounded-3">B u z o</h3>
-                <p>Canguro pólarsoft negro</p>
-                <p><small><span class="products__precio">$2.500</span></small></p>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <span><i class="fa fa-star"></i></span>
-                  <span><i class="fa fa-star"></i></span>
-                  <span><i class="fa fa-star"></i></span>
-                  <span><i class="fa fa-star"></i></span>
-                  <span><i class="fa fa-star"></i></span>
-                </ul>
-                <a class="link link--3" href="" class="btn btn-block btn-primary comprar" data-id="1">Comprar
-                  <i class="link--3-b-tr"></i>
-                  <i class="link--3-b-bl"></i>
-                </a>
+            <!-- <div class="col-lg-3 d-flex justify-content-center mb-4">
+              <div class="card py-7 px-10">
+                <h3 class="card-title bg-black text-white rounded-3">B u z o</h3>
+                <img src="../img/CanguroAndre.jpg"  class="main__img1" style="width: 5rem; height: 4rem;" alt="Foto canguro"/>
+                <div class="card-body text-center">
+                  <p class="card-text">Canguro pólarsoft negro</p>
+                  <p><small><span class="products__precio">$2.500</span></small></p>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star"></i></span>
+                  </ul>
+                  <button  class="btn btn-primary button">Añadir a Carrito</button>
+                </div>
               </div>
-            </div>
-
+            </div> -->
 
              <!-- Segundo card -->
-             <div class="col-lg-3">
-              <div class="card">
-                <img src="../img/Campera.jpg" class="main__img1" alt="Foto Campera algodon">
-                <h3 class="bg-black text-white rounded-3">C a m p e r a</h3>
-                <p>Algodón con capucha</p>
-                <p><small><span class="products__precio">$2.000</span></small></p>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <span><i class="fa fa-star"></i></span>
-                  <span><i class="fa fa-star"></i></span>
-                  <span><i class="fa fa-star"></i></span>
-                  <span><i class="fa fa-star"></i></span>
-                  <span><i class="fa fa-star"></i></span>
-                </ul>
-                <a class="link link--3" href="" class="btn btn-block btn-primary comprar" data-id="2">Comprar
-                  <i class="link--3-b-tr"></i>
-                  <i class="link--3-b-bl"></i>
-                </a>
+             <!-- <div class="col-lg-3 d-flex justify-content-center mb-4">
+              <div class="card py-5">
+                <h3 class="card-title bg-black text-white rounded-3">C a m p e r a</h3>
+                <img src="../img/Campera.jpg"  class="main__img1" alt="Foto campera"/>
+                <div class="card-body text-center">
+                  <p class="card-text">Algodón con capucha</p>
+                  <p><small><span class="products__precio">$2.000</span></small></p>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star"></i></span>
+                  </ul>
+                  <button  class="btn btn-primary button">Añadir a Carrito</button>
+                </div>
               </div>
-            </div>
+            </div> -->
 
              <!-- Tercer card -->
-            <div class="col-lg-3">
-              <div class="card">
-                <img src="../img/pulseraboca.jpg" class="main__img1" alt="pulseraboca">
-                <h3 class="bg-black text-white rounded-3">P u l s e r a</h3>
-                <p>Macramé</p>
-                <p><small><span class="products__precio">$200</span></small></p>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <span><i class="fa fa-star"></i></span>
-                  <span><i class="fa fa-star"></i></span>
-                  <span><i class="fa fa-star"></i></span>
-                  <span><i class="fa fa-star"></i></span>
-                  <span><i class="fa fa-star"></i></span>
-                </ul>
-                <a class="link link--3" href="" class="btn btn-block btn-primary comprar" data-id="3">Comprar
-                  <i class="link--3-b-tr"></i>
-                  <i class="link--3-b-bl"></i>
-                </a>
+            <!-- <div class="col-lg-3 d-flex justify-content-center mb-4">
+              <div class="card py-5">
+                <h3 class="card-title bg-black text-white rounded-3">P u l s e r a</h3>
+                <img src="../img/pulseraboca.jpg"  class="main__img1" alt="Foto Pulsera"/>
+                <div class="card-body text-center">
+                  <p class="card-text">Macramé</p>
+                  <p><small><span class="products__precio">$200</span></small></p>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star"></i></span>
+                  </ul>
+                  <button  class="btn btn-primary button">Añadir a Carrito</button>
+                </div>
               </div>
-            </div>
+            </div> -->
 
              <!-- Cuarto card -->
-            <div class="col-lg-3">
-              <div class="card">
-                <img src="../img/Barbijos2.jpg" class="main__img1" alt="Barbijos">
-                <h3 class="bg-black text-white rounded-3">B a r b i j o s</h3>
-                <p>Jeans</p>
-                <p><small><span class="products__precio">$500</span></small></p>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <span><i class="fa fa-star"></i></span>
-                  <span><i class="fa fa-star"></i></span>
-                  <span><i class="fa fa-star"></i></span>
-                  <span><i class="fa fa-star"></i></span>
-                  <span><i class="fa fa-star"></i></span>
-                </ul>
-                <a class="link link--3" href="" class="btn btn-block btn-primary border comprar" data-id="4">Comprar
-                  <i class="link--3-b-tr"></i>
-                  <i class="link--3-b-bl"></i>
-                </a>
+            <!-- <div class="col-lg-3 d-flex justify-content-center mb-4">
+              <div class="card py-5">
+                <h3 class="card-title bg-black text-white rounded-3">B a r b i j o s</h3>
+                <img src="../img/Barbijos2.jpg"  class="main__img1" alt="Foto Barbijo"/>
+                <div class="card-body text-center">
+                  <p class="card-text">Jeans y algodón</p>
+                  <p><small><span class="products__precio">$500</span></small></p>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fa fa-star"></i></span>
+                  </ul>
+                  <button  class="btn btn-primary button">Añadir a Carrito</button>
+                </div>
               </div>
-            </div>
-
-            <div class="container-fluid py-4">
-              <div class="row ">
-                <!-- Quinto card -->
-                <div class="col-lg-3">
-                  <div class="card">
-                    <img src="../img/Cuellos2.jpg" class="main__img1" alt="Foto Canguro"/>
-                    <h3 class="bg-black text-white rounded-3">C u e l l o s</h3>
-                    <p>Lana y corderito interno</p>
-                    <p><small><span class="products__precio">$700</span></small></p>
-                    <ul class="list-unstyled mt-3 mb-4">
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                    </ul>
-                    <a class="link link--3" href="" class="btn btn-block btn-primary comprar" data-id="5">Comprar
-                      <i class="link--3-b-tr"></i>
-                      <i class="link--3-b-bl"></i>
-                    </a>
-                  </div>
-                </div>
-
-                 <!-- Sexto card -->
-                 <div class="col-lg-3">
-                  <div class="card">
-                    <img src="../img/barbRivBoc.jpg" class="main__img1" alt="Foto Campera algodon">
-                    <h3 class="bg-black text-white rounded-3">S e t</h3>
-                    <p>Barbijo y accesorios</p>
-                    <p><small><span class="products__precio">$1.000</span></small></p>
-                    <ul class="list-unstyled mt-3 mb-4">
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                    </ul>
-                    <a class="link link--3" href="" class="btn btn-block btn-primary comprar" data-id="6">Comprar
-                      <i class="link--3-b-tr"></i>
-                      <i class="link--3-b-bl"></i>
-                    </a>
-                  </div>
-                </div>
-    
-                 <!-- Septimo  card -->
-                <div class="col-lg-3">
-                  <div class="card">
-                    <img src="../img/cuellitoRivBoc.jpg" class="main__img1" alt="pulseraboca">
-                    <h3 class="bg-black text-white rounded-3">C u e l l o</h3>
-                    <p>River o Boca</p>
-                    <p><small><span class="products__precio">$1.000</span></small></p>
-                    <ul class="list-unstyled mt-3 mb-4">
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                    </ul>
-                    <a class="link link--3" href="" class="btn btn-block btn-primary comprar" data-id="7">Comprar
-                      <i class="link--3-b-tr"></i>
-                      <i class="link--3-b-bl"></i>
-                    </a>
-                  </div>
-                </div>
-    
-                 <!-- Octavo card -->
-                <div class="col-lg-3">
-                  <div class="card">
-                    <img src="../img/Set2.jpg" class="main__img1" alt="Barbijos">
-                    <h3 class="bg-black text-white rounded-3">S e t</h3>
-                    <p>Cuello y pulsera</p>
-                    <p><small><span class="products__precio">$1.000</span></small></p>
-                    <ul class="list-unstyled mt-3 mb-4">
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                      <span><i class="fa fa-star"></i></span>
-                    </ul>
-                    <a class="link link--3" href="" class="btn btn-block btn-primary border comprar" data-id="8">Comprar
-                      <i class="link--3-b-tr"></i>
-                      <i class="link--3-b-bl"></i>
-                    </a>
-                  </div>
-                </div>
-
-        </div>
+            </div> -->
+        <!-- </div>
       </div>
     </section>
   </div>
 </div>
 
+</div>
+</div> -->
+
+<!-- Paginación de Carrito oscuro -->
+<!-- <div class="tab-pane fade carrito" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" >
+<br>
+  <table class="table table-dark table-hover">
+    <thead>
+      <tr class="text-primary">
+        <th scope="col">#</th>
+        <th scope="col">Productos</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Cantidad</th>
+      </tr>
+    </thead>
+    <tbody class="tbody"></tbody>
+    </table>
+    <br><br>
+    <div class="row mx-4">
+      <div class="col">
+          <h3 class="itemCartTotal text-dark">Total: 0</h3>
+    </div>
+    
+    <div class="col d-flex justify-content-end">
+   <button class="btn btn-danger">Comprar</button>
+</div> -->
+
+</div>
+</div>
 <!--Section Carrusel Most Viewed-->
 <div class="sectionMV">
   <h3 class="text-black text-center fs-2"><b><i>M o s t - V i e w d</b></i></h3>
@@ -493,7 +491,7 @@
 </div>
 
 <!--Section Críticas -->
-<section class="criticas">
+<section class="criticas pb-5">
   <h2 class="criticas__titulo text-center p-5 h1">
     Nuestras <span>Clientas</span>
   </h2>
@@ -504,7 +502,7 @@
       data-tilt
       data-tilt-reverse="true"
     >
-      <div class="criticas__contenedor__estrellas">
+      <div class="criticas__contenedor__estrellas text-center">
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -531,7 +529,7 @@
       data-tilt
       data-tilt-reverse="true"
     >
-      <div class="criticas__contenedor__estrellas">
+      <div class="criticas__contenedor__estrellas text-center">
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -558,7 +556,7 @@
       data-tilt
       data-tilt-reverse="true"
     >
-      <div class="criticas__contenedor__estrellas">
+      <div class="criticas__contenedor__estrellas text-center">
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -734,6 +732,7 @@ crossorigin="anonymous"
 <script src="../js/data.js"></script>
 <script src="../js/clases.js"></script>
 <script src="../js/productos.js"></script>
+<!-- <script src="../js/funcionesParaCards.js"></script> -->
 
   </div>
  </div>

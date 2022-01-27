@@ -1,7 +1,7 @@
 const productosDB = [{
         "id": 1,
         "imagen": "../img/CanguroAndre.jpg",
-        "titulo": "Buzo",
+        "titulo": "Buzo polarsoft",
         "descripción": "Canguro pólarsoft negro",
         "precio": 2500,
         "fecha": 2022
@@ -9,7 +9,7 @@ const productosDB = [{
     {
         "id": 2,
         "imagen": "../img/Campera.jpg",
-        "titulo": "Campera",
+        "titulo": "Campera algodón",
         "descripción": "Algodón con capucha",
         "precio": 2000,
         "fecha": 2022
@@ -41,7 +41,7 @@ const productosDB = [{
     {
         "id": 6,
         "imagen": "../img/barbRivBoc.jpg",
-        "titulo": "Set",
+        "titulo": "Set 1 barbijos-pulsera-llavero",
         "descripción": "Barbijo y accesorios",
         "precio": 1000,
         "fecha": 2022
@@ -49,7 +49,7 @@ const productosDB = [{
     {
         "id": 7,
         "imagen": "../img/cuellitoRivBoc.jpg",
-        "titulo": "Cuello",
+        "titulo": "Cuello Boca-River",
         "descripción": "River o Boca",
         "precio": 1000,
         "fecha": 2022
@@ -57,7 +57,16 @@ const productosDB = [{
     {
         "id": 8,
         "imagen": "../img/Set2.jpg",
-        "titulo": "Set",
+        "titulo": "Set 2",
+        "descripción": "Cuello y pulsera",
+        "precio": 1000,
+        "fecha": 2022
+    },
+
+    {
+        "id": 9,
+        "imagen": "../img/Set1.jpg",
+        "titulo": "Set 3",
         "descripción": "Cuello y pulsera",
         "precio": 1000,
         "fecha": 2022

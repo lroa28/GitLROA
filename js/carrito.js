@@ -1,16 +1,14 @@
-/* 
-==============================================
-VARIABLES GLOBALES
-==============================================
-*/
+//-------------------------------------------//
+// ----------VARIABLES GLOBALES--------------//
+// ------------------------------------------//
+
 //Capturamos el contenedor donde pondremos el carrito
 const contenedor = document.querySelector('.carrito');
 
-/* 
-==============================================
-LÓGICA Y EVENTOS
-==============================================
-*/
+
+//-------------------------------------------//
+// ----------LÓGICA Y EVENTOS----------------//
+// ------------------------------------------//
 
 //Utilizamos delegación de eventos para ejecutar una función si hacen clic sobre el contenedor
 contenedor.addEventListener('click', e => {

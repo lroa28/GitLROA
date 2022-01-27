@@ -22,8 +22,7 @@
 <!-------------------------------------------//
 // ---------------- BODY --------------------//
 // ------------------------------------------->
-<body class="body" onLoad="alert('¡Bienvenido al Carrito de Compras! (Welcome to shopping bags!)')" onUnload="alert('¡Vuelva pronto! (Come back soon!)')">    
-
+<body class="body" onLoad="alert('¡Bienvenido al Carrito de Compras! (Welcome to shopping bags!)')" onUnload="alert('¡Vuelva pronto! (Come back soon!)')">
 <!-------------------------------------------//
 // ---------------- HEADER-------------------//
 // ------------------------------------------->
@@ -48,15 +47,15 @@
   
      <div class="collapse navbar-collapse" id="navbarSupportedContent">
   
-     <div class="header__menu navbar-nav  me-auto mb-2 mb-lg-0">
+     <div class="header__menu navbar-nav  me-auto mb-lg-0">
   
-      <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: lowercase;" href="../pages/luk_c.html">_luk_c</a></li>
+      <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: lowercase;" href="../pages/luk_c.html"><i>_luk_c</i></a></li>
       <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="../index.html#sectionHPYSM">Contact</a></li>
       <!-- <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="./pages/courses.html">Courses</a></li> -->
       <li><a class="nav-item nav-link align-baseline aparecer"  style="color:rgb(255, 4, 4);" href="../index.html#sale">Sale</a></li>
       <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="../pages/products.html">Products</a></li>
       
-      <li class="nav-item dropdown header__menu m-auto mb-2 mb-lg-0">
+      <li class="nav-item dropdown header__menu m-auto mb-lg-0">
           <a class="nav-link dropdown-toggle align-baseline" style="color:black;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
           
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -70,11 +69,6 @@
       </li>
   
      </div>
-     <form class="d-flex px-2">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-dark btn-outline-danger" type="submit">Search</button>
-    </form>
-  
     <!-- <div class="modal">
         <ul>
           <li><a href="https://ropalimpia.org/quienes-somos/">Ropa limpia</a></li>
@@ -83,6 +77,10 @@
         </ul>
     </div> -->
      <ul class="header__icons navbar-nav">
+      <form class="d-flex mx-2">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn--search btn-dark btn-outline-danger" type="submit">Search</button>
+      </form>
       <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fas fa-home"></i></a></li>
       <!-- <li class="nav-item"><a class="nav-link" href="./pages/search.html"><i class="fas fa-search"></i></a></li> -->
       <li class="nav-item"><a class="nav-link" href="../pages/contact.html"><i class="fas fa-envelope"></i></a></li>
@@ -114,6 +112,9 @@
   </div>
   </div>
 </main>
+
+<!-- <button class="btn btn-dark btn-outline-danger" onclick="location.href='../pages/compra.html'">Comprar</button> -->
+
 <!--Fin Main-->
 
 <!--Footer-->

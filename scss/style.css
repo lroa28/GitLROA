@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5 {
 
 /*BODY*/
 .body {
-  background-color: #eee;
+  background-color: whitesmoke;
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
 }
@@ -89,7 +89,9 @@ h1, h2, h3, h4, h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: radial-gradient(whitesmoke, rgba(136, 127, 127, 0.616));
+  background: radial-gradient(whitesmoke, rgba(182, 176, 176, 0.11));
+  padding: 0%;
+  margin: 0%;
 }
 
 .header__divlogo {
@@ -100,14 +102,11 @@ h1, h2, h3, h4, h5 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 0% 10% 0% 10%;
 }
 
 .header__logo {
-  width: 70px;
+  width: 60px;
   height: 60px;
-  top: 50%;
-  left: 50%;
   border-style: groove #0a0a0a;
 }
 
@@ -123,8 +122,8 @@ h1, h2, h3, h4, h5 {
           flex-direction: row;
   font-family: 'Poppins', sans-serif;
   color: black;
-  font-size: 20px;
-  gap: 0.5rem;
+  font-size: 18px;
+  gap: 0.1rem;
   text-transform: uppercase;
 }
 
@@ -160,9 +159,10 @@ h1, h2, h3, h4, h5 {
   -webkit-text-decoration: underline red;
           text-decoration: underline red;
   font-style: italic;
-  -webkit-transition: all 1.5s;
-  transition: all 1.5s;
-  border-radius: 8px;
+  background: rgba(134, 138, 138, 0.212);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  border-radius: 3px;
 }
 
 .header__icons {
@@ -183,7 +183,7 @@ h1, h2, h3, h4, h5 {
   padding: 1px 2px;
   display: block;
   position: relative;
-  font-size: 24px;
+  font-size: 22px;
   color: black;
   border-style: groove #0a0a0a;
   border-radius: 1px;
@@ -195,13 +195,10 @@ h1, h2, h3, h4, h5 {
   transition: all .5s;
 }
 
-.btn--recycle {
-  width: 2rem;
-  height: 2rem;
-}
-
-.btn--recycle :hover {
-  background-color: green;
+.btn--search {
+  width: 5rem;
+  height: 2.2rem;
+  border-radius: 2px;
 }
 
 .rotate {
@@ -452,7 +449,7 @@ h1, h2, h3, h4, h5 {
 .main__grid {
   padding: 0% 0% 0% 0%;
   margin: 0% 0% 0% 0%;
-  padding-top: 6rem;
+  padding-top: 5.4rem;
   width: 100vw;
   gap: 0%;
   display: -webkit-box;
@@ -728,7 +725,7 @@ div ul {
 }
 
 .iconos__container__ind--pillars {
-  background: radial-gradient(whitesmoke, rgba(136, 127, 127, 0.616));
+  background: radial-gradient(whitesmoke, rgba(182, 176, 176, 0.11));
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
   padding: 2rem;
   display: -webkit-box;
@@ -952,7 +949,8 @@ div ul {
 .main__bag {
   width: 100vw;
   height: 100vh;
-  padding-top: 90px;
+  margin-top: 85px;
+  padding-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1313,7 +1311,7 @@ body.dark button {
 
 /*MAIN*/
 .maincourses__grid {
-  margin-top: 94.5px;
+  margin-top: 5.4rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   display: -webkit-box;
@@ -1648,7 +1646,7 @@ body.dark button {
 
 /*MAIN PRODUCTOS*/
 .main__products {
-  padding: 6rem 0rem 5rem 0rem;
+  padding: 6rem 0rem 6rem 0rem;
 }
 
 .main__products--formbusq {
@@ -1800,7 +1798,7 @@ body.dark button {
 
 .card {
   border: none;
-  padding: 15px;
+  width: 20rem;
   height: 25rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1844,7 +1842,7 @@ body.dark button {
   padding-left: 5px;
 }
 
-.boton-comprar {
+.comprar {
   height: 45px;
   width: 110px;
   background: red;
@@ -1865,6 +1863,41 @@ body.dark button {
 
 #carrito.table.thead.tr.th {
   position: absolute;
+}
+
+.carrito {
+  min-height: 80vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.table__productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.table__productos > img {
+  width: 9rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+
+.table__cantidad > input {
+  width: 40px;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.hide, .remove {
+  display: none;
 }
 
 .criticas span {
@@ -2094,36 +2127,28 @@ body.dark button {
 }
 
 .fondo {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: radial-gradient(whitesmoke, rgba(182, 176, 176, 0.11));
   border-radius: calc(1rem + 1vw);
 }
 
 .borde {
   border-radius: calc(1rem + 1vw);
-  border: 4px solid #281E4D;
+  border: 4px solid grey;
   -webkit-transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .borde:hover {
-  border: 4px solid red;
-  -webkit-box-shadow: 0 0 5px red, 0 0 10px red, 0 0 30px red;
-          box-shadow: 0 0 5px red, 0 0 10px red, 0 0 30px red;
+  -webkit-box-shadow: 0 0 10px rgba(255, 0, 0, 0.781), 0 0 20px rgba(255, 0, 0, 0.747), 0 0 40px rgba(255, 0, 0, 0.781);
+          box-shadow: 0 0 10px rgba(255, 0, 0, 0.781), 0 0 20px rgba(255, 0, 0, 0.747), 0 0 40px rgba(255, 0, 0, 0.781);
 }
 
 .borde--violeta {
-  border: 4px solid #B153F0;
-  -webkit-box-shadow: 0 0 5px #B153F0, 0 0 10px #B153F0, 0 0 30px #B153F0, inset 0 0 20px #B153F0;
-          box-shadow: 0 0 5px #B153F0, 0 0 10px #B153F0, 0 0 30px #B153F0, inset 0 0 20px #B153F0;
+  border: 4px solid black;
+  -webkit-box-shadow: 0 0 5px #eee, 0 0 10px #eee, 0 0 30px #eee, inset 0 0 20px #eee;
+          box-shadow: 0 0 5px #eee, 0 0 10px #eee, 0 0 30px #eee, inset 0 0 20px #eee;
 }
 
-/* 
-==============================
-
-        PRODUCTOS 
-
-==============================
-*/
 .overlay {
   position: fixed;
   top: 0;
@@ -2260,7 +2285,7 @@ body.dark button {
 }
 
 .producto__cuerpo h3 {
-  color: #ebeeee;
+  color: black;
   text-align: center;
   padding: .5rem;
   font-size: calc(1rem + .5vw);
@@ -2269,7 +2294,7 @@ body.dark button {
 }
 
 .producto__cuerpo p {
-  color: #ebeeee;
+  color: red;
   text-align: center;
   padding: .5rem;
   font-size: calc(1rem + .5vw);
@@ -2299,13 +2324,6 @@ body.dark button {
           transform: translateY(0%);
 }
 
-/* 
-==============================
-
-          CARRITO 
-
-==============================
-*/
 .carrito {
   min-height: 40vh;
   display: -webkit-box;
@@ -2516,7 +2534,7 @@ body.dark button {
 .sectionPT {
   grid-area: sectionPT;
   text-align: justify;
-  padding-top: 6rem;
+  padding-top: 5.4rem;
 }
 
 .sectionPT__caja {

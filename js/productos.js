@@ -1,8 +1,7 @@
-/* 
-==============================================
-VARIABLES GLOBALES
-==============================================
-*/
+//-------------------------------------------//
+// ----------VARIABLES GLOBALES--------------//
+// ------------------------------------------//
+
 //Capturamos el modal que vamos a mostrar
 const modal = document.querySelector('.detail');
 
@@ -12,11 +11,9 @@ const overlay = document.querySelector('.overlay');
 //Capturamos el contendor donde están todos los productos
 const productos = document.querySelector('.productos');
 
-/* 
-==============================================
-LÓGICA Y EVENTOS
-==============================================
-*/
+//-------------------------------------------//
+// ----------LÓGICA Y EVENTOS----------------//
+// ------------------------------------------//
 
 //Escuchamos los clic sobre el contenedor de los productos
 productos.addEventListener('click', e => {
@@ -27,7 +24,7 @@ productos.addEventListener('click', e => {
     }
 });
 
-//Si hacemos clic sobre el overley, que se oculte y suba el modal
+//Si hacemos clic sobre el overlay, que se oculte y suba el modal
 overlay.addEventListener('click', () => {
     Interfaz.modalHandler();
 });

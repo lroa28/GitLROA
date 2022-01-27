@@ -1,4 +1,7 @@
-/* Métodos generales que vamos a usar en todos lados */
+//-------------------------------------------//
+// ---------Métodos generales----------------//
+// ------------------------------------------//
+
 class Helper {
     static traerDeLocalStorage(key) {
         return localStorage.getItem(key) ? JSON.parse(localStorage.getItem(key)) : [];
@@ -13,7 +16,7 @@ class Helper {
     }
 }
 
-/* Acá tendremos los datos del carrito */
+/* Datos del carrito */
 class Carrito {
     constructor(productos = []) {
         this.productos = productos;
@@ -57,7 +60,7 @@ class Carrito {
     }
 }
 
-/* Esta clase se podría ampliar. Se puede utilizar para calcular descuentos, cuotas o sumar varios valores. En este caso lo usamos para el valor total */
+/* Valor total */
 class Contador {
     constructor(value) {
         this.valor = value;
@@ -72,7 +75,7 @@ class Contador {
     }
 }
 
-/* Nos sirve para generar todo lo que sea visual */
+/* Visual */
 class Interfaz {
     static modalHandler() {
         modal.classList.toggle('down');
@@ -116,14 +119,14 @@ class Interfaz {
         modal.innerHTML += `
                     <h2 class="title title--small">${producto.titulo}</h2>
                     <div class="detalle">
-                        <img src="${producto.imagen}" alt="">
+                        <img src="${producto.imagen}" alt="" class="rounded-circle">
                         <ul>
                             <li>Precio: ${producto.precio}$</li>
                             <li>Fecha: ${producto.fecha}</li>
                         </ul>
                     </div>
                     <div class="detail__button-container">
-                        <button id=${producto.id} class="btn agregar">Lo quiero</button>
+                        <button id=${producto.id} class="btn btn-light agregar">Agregar al Carrito</button>
                     </div>
         `;
     }
@@ -140,7 +143,7 @@ class Interfaz {
                                     <div class="producto__cuerpo">
                                         <h3>${producto.titulo}</h3>
                                         <p>${producto.precio}$</p>
-                                        <button class="btn btn--center ver-mas">Ver más</button>
+                                        <button class="btn btn--center btn-dark ver-mas">Ver más</button>
                                     </div>
                                 </div>
                             </article>

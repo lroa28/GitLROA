@@ -657,8 +657,8 @@
 }
 
 .carrito__item {
-  width: 90%;
-  max-width: 400px;
+  width: 30%;
+  max-width: 100px;
   margin: calc(.3rem + .5vw) auto;
   display: flex;
   flex-wrap: wrap;
@@ -724,3 +724,4 @@
       padding: 0;
   }
 }
+

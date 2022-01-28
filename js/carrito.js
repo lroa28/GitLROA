@@ -4,6 +4,7 @@
 
 //Capturamos el contenedor donde pondremos el carrito
 const contenedor = document.querySelector('.carrito');
+const DOMbotonVaciar = document.querySelector('#boton-vaciar');
 
 
 //-------------------------------------------//
@@ -33,5 +34,27 @@ contenedor.addEventListener('click', e => {
     }
 });
 
+
 //Mostramos el carrito apenas se carga la página
 Interfaz.mostrarCarrito();
+
+//-----------------------------------------------------------//
+// ----------Funciones para borrar el carrito----------------//
+// ----------------------------------------------------------//
+
+function vaciarCarrito() {
+    // Limpiamos los productos guardados
+    localStorage.removeItem('carrito');
+        contenedor.innerHTML = `
+                <div class="carrito__empty">
+                    <p>Tu carrito está vacío</p>
+                    <i class="bi bi-emoji-frown-fill"></i>
+                    <p>Total: $0</p>
+                </div>
+        `;
+    }
+
+
+// Evento click
+DOMbotonVaciar.addEventListener('click', vaciarCarrito);
+

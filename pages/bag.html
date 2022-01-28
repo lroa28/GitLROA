@@ -23,6 +23,7 @@
 // ---------------- BODY --------------------//
 // ------------------------------------------->
 <body class="body" onLoad="alert('¡Bienvenido al Carrito de Compras! (Welcome to shopping bags!)')" onUnload="alert('¡Vuelva pronto! (Come back soon!)')">
+
 <!-------------------------------------------//
 // ---------------- HEADER-------------------//
 // ------------------------------------------->
@@ -104,13 +105,20 @@
 
 
 <!--Main-->
-<main class="main main__bag">
-  <h1 class="title text-center">B a g</h1>
-  <div class="container">
-      <div class="carrito padding">
+<main class="main main__bag d-flex-row justify-content-center">
+
+  <div class="row px-5 py-5">
+    <div class="col-12">
+      <h1>Carrito</h1>
+      <div>
+        <button class="btn btn--center btn-dark btn-outline-danger boton-vaciar" id="boton-vaciar" onClick="vaciarCarrito()" style="font-weight: bold; margin-bottom: 10px;">Vaciar Carrito</button>
       </div>
   </div>
+
+  <div class="container d-flex justify-content-center">
+      <div class="carrito padding"></div>
   </div>
+
 </main>
 
 <!-- <button class="btn btn-dark btn-outline-danger" onclick="location.href='../pages/compra.html'">Comprar</button> -->

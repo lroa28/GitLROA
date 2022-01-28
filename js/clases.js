@@ -1,3 +1,4 @@
+
 //-------------------------------------------//
 // ---------Métodos generales----------------//
 // ------------------------------------------//
@@ -135,18 +136,19 @@ class Interfaz {
         productos.innerHTML = '';
         productosDB.forEach(producto => {
             productos.innerHTML += `
-                            <article id=${producto.id} class="producto borde fondo">
-                                <div class="producto__contenedor">
-                                    <div class="producto__header">
-                                        <img src="${producto.imagen}" class="producto__image"></img>
-                                    </div>
-                                    <div class="producto__cuerpo">
-                                        <h3>${producto.titulo}</h3>
-                                        <p>${producto.precio}$</p>
-                                        <button class="btn btn--center btn-dark ver-mas">Ver más</button>
-                                    </div>
-                                </div>
-                            </article>
+                <article id=${producto.id} class="producto borde fondo">
+                    <div class="producto__contenedor">
+                        <div class="producto__header">
+                            <img src="${producto.imagen}" class="producto__image"></img>
+                        </div>
+                        <div class="producto__cuerpo">
+                            <h3>${producto.titulo}</h3>
+                            <p>${producto.precio}$</p>
+                            <a class="btn btn--center btn-dark ver-mas" role="button">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
             `;
         });
     }
@@ -191,3 +193,16 @@ class Interfaz {
         }
     }
 }
+
+//Funciones adicionales
+
+let  acumuladorIndicadorCarrito = 0;
+
+let indicadorCarrito = () => {
+    carritoEnLocalStorage = JSON.parse(localStorage.getItem('carrito'));
+    acumuladorIndicadorCarrito = carritoEnLocalStorage.reduce( (acum , el) => acum += el.cantidad, 0);
+    localStorage.setItem('acumuladorIndicadorCarrito', acumuladorIndicadorCarrito)
+    document.getElementById("acumuladorCarrito").innerHTML = acumuladorIndicadorCarrito;  
+  };
+
+  document.getElementById("acumuladorCarrito").innerHTML = acumuladorIndicadorCarrito;

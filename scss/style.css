@@ -891,6 +891,91 @@ div ul {
   background-position-y: center;
 }
 
+/* GOTOP */
+.go-top-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 5rem;
+  height: 5rem;
+  z-index: -1;
+}
+
+.go-top-button {
+  width: 0rem;
+  height: 0rem;
+  background: black;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.go-top-button i {
+  position: absolute;
+  font-size: 1.7rem;
+  top: 48%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.show {
+  z-index: 10;
+}
+
+.show .go-top-button {
+  -webkit-animation: popup 0.3s ease-in-out;
+          animation: popup 0.3s ease-in-out;
+  width: 6.6rem;
+  height: 6.6rem;
+  z-index: 11;
+}
+
+.show i {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+@-webkit-keyframes popup {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  50% {
+    width: 8rem;
+    height: 8rem;
+  }
+  100% {
+    width: 6.6rem;
+    height: 6.6rem;
+  }
+}
+
+@keyframes popup {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  50% {
+    width: 8rem;
+    height: 8rem;
+  }
+  100% {
+    width: 6.6rem;
+    height: 6.6rem;
+  }
+}
+
 /*Flecha para hacer la pagina hacia arriba*/
 .ir-arriba {
   display: none;
@@ -948,7 +1033,7 @@ div ul {
 /*MAIN BAG*/
 .main__bag {
   width: 100vw;
-  height: 100vh;
+  height: 130vh;
   margin-top: 85px;
   padding-top: 3rem;
   display: -webkit-box;
@@ -2383,8 +2468,8 @@ body.dark button {
 }
 
 .carrito__item {
-  width: 90%;
-  max-width: 400px;
+  width: 30%;
+  max-width: 100px;
   margin: calc(.3rem + .5vw) auto;
   display: -webkit-box;
   display: -ms-flexbox;

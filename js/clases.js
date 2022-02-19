@@ -144,7 +144,7 @@ class Interfaz {
                         <div class="producto__cuerpo">
                             <h3>${producto.titulo}</h3>
                             <p>${producto.precio}$</p>
-                            <a class="btn btn--center btn-dark ver-mas" role="button">Ver más</a>
+                            <a class="btn btn--center btn-dark text-center ver-mas" role="button">Ver más</a>
                             </div>
                         </div>
                     </div>

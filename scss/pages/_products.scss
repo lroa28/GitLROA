@@ -358,6 +358,24 @@
   height: 60vh;
 }
 
+
+/*RESPONSIVE*/
+@media only screen and (max-width: 768px) {
+  .carousel-item {
+    height: 40vh;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .carousel-item {
+    height: 30vh;
+  }
+}
+
+.carousel-item div h5{
+  font-size: 10px;
+}
+
 /*PARA JS*/
 .counter {
   display: flex;

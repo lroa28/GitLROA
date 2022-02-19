@@ -1,8 +1,10 @@
-/*MAIN*/
+//-------------------------------------------//
+// ----------------/*MAIN*/------------------//
+// ------------------------------------------//
 .main__grid {
   padding: 0% 0% 0% 0%;
   margin: 0% 0% 0% 0%;
-  padding-top: 5.4rem; //*este es el padding para que quede OK el Header
+  //padding-top: 5.4rem; //*este es el padding para que quede OK el Header
   width: 100vw;
   gap: 0%;
   display: flex;
@@ -19,163 +21,291 @@
   "sectionOFF"
   "footer";
  }
- 
-/*MAIN SECTION SEANSON ITEMS*/
-.sectionSI{
- grid-area: sectionSI;
-//background: rgba(0, 0, 0, 0.877); //*último background de la seccion*//
-// padding: 6rem 0rem 9rem 0rem;
- margin: 0% ;
- overflow-x: hidden;
- overflow-y: hidden;
 
-  &__caja{
-  padding: 10rem 0rem 8rem 0rem; //agranda o achica la foto de la caja (perchero)
+//---------------------------------------------//
+//--------/*SECTION SEANSON ITEMS*/------------//
+// --------------------------------------------//
+.sectionSI{
+  grid-area: sectionSI;
+  //background: rgba(0, 0, 0, 0.877); //*último background de la seccion*//
+  // padding: 6rem 0rem 9rem 0rem;
+  margin: 0% ;
+  padding: 10rem 0rem 7rem 0rem; //Agranda o achica la foto de la caja (perchero)
   // margin:  4% 5% 5% 5%;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: center;
   align-content: center;
   align-items: center;
   font-family: 'Poppins', sans-serif;
   text-align: center ;
-  background-image: url("../img/shop.jpg");
-  background-repeat: no-repeat;
-  background-size:  cover;
-  background-position-x: right;
-  background-position-y: bottom ;
-  //border-radius: 15px;
-
+  
   &--h3{
-    color: rgb(71, 70, 70);
+    color:white;
     font-family: 'Poppins', sans-serif;
-    font-size: 30px;
+    // font-size: 50px;
     font-weight: bold;
+    text-shadow: 0 0 15px #171718, 0 0 15px #171718;
+    font-size: calc(.5rem + 3vw);
+    //font-weight: bold;
+    //text-decoration: underline 5px solid red;
+    //border-radius: 5px;
+    //background-color: rgba(245, 245, 245, 0.308);
+    //background-position: 50%;
+    //animation-duration: 4s;
+    //animation-name: aparecer;
+    //animation-iteration-count: infinite;
+    
+    &:hover{
+      font-style: italic;
+      //font-size: 60px;
+      }
+  }
+
+  &--h2{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
     font-style: italic;
-    // border-radius: 300px;
-    // background-color: rgba(212, 203, 203, 0.267);
-    // background-position: 50%;
-    align-self: center;
-    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 0 15px #c5c2c2, 0 0 15px #171718;
+    //text-decoration: underline 5px solid gray;
+    // border-radius: 90px;
+    //background-color: rgba(245, 245, 245, 0.308);
+    // background-position: bottom;
+    // text-decoration: none;
     // animation-duration: 4s;
     // animation-name: aparecer;
     // animation-iteration-count: infinite;
-    
   }
 
   &--boton1 {
-    width: 230px;
+    width: 250px;
     height: 250px;
-    background-image: url("../img/bikini.png");
     background-repeat: no-repeat;
-    background-size: 71%;
+    background-size: 90%;
     background-position-x: center;
-    background-position-y: bottom;
-    border-style: dotted black;
+    background-position-y: center;
+    cursor: pointer;
+    background-image: url("../img/summer.jpg");
     position: relative;
     display: block;
-    cursor: pointer;
     border-radius: 20px;
-    box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
-    background-color: rgba(255, 217, 0, 0.178);
-  
+    box-shadow: 0px 6px 50px 13px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 0px 6px 50px 13px rgba(0,0,0,0.46);
+    -moz-box-shadow: 0px 6px 50px 13px rgba(0,0,0,0.46);
+
       &:hover{
-      background-color: rgb(255, 217, 0);
-      box-shadow: -1px -1px 13px 2px rgb(0, 0, 0);
+      //background-color: rgba(245, 245, 245, 0.5);
+      //box-shadow: -1px -1px 13px 2px rgb(0, 0, 0);
       transition: all 1.5s;
-      border-radius: 40px;
+      border-radius: 30px;
+      box-shadow: -3px 9px 80px 3px rgba(247, 240, 240, 0.959);
+      -webkit-box-shadow: -3px 9px 80px 3px rgba(247, 240, 240, 0.931);
+      -moz-box-shadow: -3px 9px 80px 3px rgba(247, 240, 240, 0.945);
       }
-    }
+  }
 
   &--boton2 {
-  width: 230px;
-  height: 250px;
-  background-image: url("../img/bufanda.png");
-  background-repeat: no-repeat;
-  background-size: 95%;
-  background-position-x: center;
-  background-position-y: bottom;
-  border-style: dotted black;
-  position: relative;
-  display: block;
-  cursor: pointer;
-  border-radius: 20px;
-  box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
-  background-color: rgba(135, 206, 250, 0.247);
+    width: 250px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position-x: center;
+    background-position-y: center;
+    cursor: pointer;
+    background-image: url("../img/winter.jpg");
+    position: relative;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0px 6px 50px 13px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 0px 6px 50px 13px rgba(0,0,0,0.46);
+    -moz-box-shadow: 0px 6px 50px 13px rgba(0,0,0,0.46);
 
     &:hover{
-    background-color: rgb(135, 206, 250);
-    box-shadow: -1px -1px 13px 2px rgb(0, 0, 0);
-    transition: all 1.5s;
-    border-radius: 40px;
+      //background-color: rgba(245, 245, 245, 0.5);
+      //box-shadow: -1px -1px 13px 2px rgb(0, 0, 0);
+      transition: all 1.5s;
+      border-radius: 30px;
+      box-shadow: -3px 9px 80px 3px rgba(247, 240, 240, 0.959);
+      -webkit-box-shadow: -3px 9px 80px 3px rgba(247, 240, 240, 0.931);
+      -moz-box-shadow: -3px 9px 80px 3px rgba(247, 240, 240, 0.945);
     }
   }
 
   &--boton3 {
-  width: 230px;
-  height: 250px;
-  font-weight: bold;
-  font-size: 24px;
-  background-image: url("../img/clothes.png");
-  background-repeat: no-repeat;
-  background-size: 95%;
-  background-position-x: center;
-  background-position-y: bottom;
-  border-style: dotted black;
-  position: relative;
-  display: block;
-  cursor: pointer;
-  border-radius: 20px;
-  box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
-  background-color: rgba(255, 160, 122, 0.233);
+    width: 250px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position-x: center;
+    background-position-y: center;
+    cursor: pointer;
+    background-image: url("../img/sets.jpg");
+    position: relative;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0px 6px 50px 13px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 0px 6px 50px 13px rgba(0,0,0,0.46);
+    -moz-box-shadow: 0px 6px 50px 13px rgba(0,0,0,0.46);
+
 
     &:hover{
-    background-color: rgb(255, 160, 122);
+      content: "Sets" black;
+    //background-color: rgba(245, 245, 245, 0.5);
     box-shadow: -1px -1px 13px 2px rgb(0, 0, 0);
     transition: all 1.5s;
-    border-radius: 40px;
+    border-radius: 20px;
+    box-shadow: -3px 9px 80px 3px rgba(247, 240, 240, 0.959);
+    -webkit-box-shadow: -3px 9px 80px 3px rgba(247, 240, 240, 0.931);
+    -moz-box-shadow: -3px 9px 80px 3px rgba(247, 240, 240, 0.945);
     }
   }
 
   &--boton4 {
-  width: 230px;
-  height: 250px;
-  transition: height 4s, width 1s;
-  font-size: 24px;
-  font-weight: bold;
-  background-image: url("../img/dummy.png");
-  background-repeat: no-repeat;
-  background-size: 95%;
-  background-position-x: center;
-  background-position-y: bottom;
-  border-style: dotted black;
-  position: relative;
-  display: block;
-  cursor: pointer;
-  border-radius: 20px;
-  box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
-  background-color: rgba(255, 122, 162, 0.192);
+    width: 250px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position-x: center;
+    background-position-y: center;
+    cursor: pointer;
+    background-image: url("../img/moldes5.jpg");
+    position: relative;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0px 6px 50px 13px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 0px 6px 50px 13px rgba(0,0,0,0.46);
+    -moz-box-shadow: 0px 6px 50px 13px rgba(0,0,0,0.46);
+
 
     &:hover{
-    background-color: rgb(255, 122, 162);
+    content: "Sets" black;
+    //background-color: rgba(245, 245, 245, 0.5);
     box-shadow: -1px -1px 13px 2px rgb(0, 0, 0);
     transition: all 1.5s;
-    border-radius: 40px;
+    border-radius: 20px;
+    box-shadow: -3px 9px 80px 3px rgba(247, 240, 240, 0.959);
+    -webkit-box-shadow: -3px 9px 80px 3px rgba(247, 240, 240, 0.931);
+    -moz-box-shadow: -3px 9px 80px 3px rgba(247, 240, 240, 0.945);
     }
-}
-}
-}
-
-div ul li a {
-	text-decoration: none; //quitar el subrayado
+  }
 }
 
-div ul {
-  list-style: none;
+//Efecto Hover nombre de los botones//
+.centered {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-/*MAIN SECTION SALE*/
+.h-button {
+  //background: white;
+  padding: 40px;
+  width: 450px;
+  text-align: center;
+}
+
+.h-button span {
+  display: inline-block;
+  min-width: 0.3em;
+  transition: 0.25s cubic-bezier(0.5, -1, 0.5, 2);
+  opacity: 0;
+  transform: translate(0, -20px);
+}
+
+.h-button:before {
+  content: attr(data-text);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  transition: 0.25s cubic-bezier(0.5, -1, 0.5, 2);
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  opacity: 1;
+  transform: translate(0, 0px);
+}
+.h-button:hover:before, .h-button:focus:before {
+  opacity: 0;
+  transform: translate(0, 20px);
+}
+.h-button:hover span, .h-button:focus span {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.h-button:hover span:nth-child(1), .h-button:focus span:nth-child(1) {
+  transition-delay: 0.025s;
+}
+.h-button:hover span:nth-child(2), .h-button:focus span:nth-child(2) {
+  transition-delay: 0.05s;
+}
+.h-button:hover span:nth-child(3), .h-button:focus span:nth-child(3) {
+  transition-delay: 0.075s;
+}
+.h-button:hover span:nth-child(4), .h-button:focus span:nth-child(4) {
+  transition-delay: 0.1s;
+}
+.h-button:hover span:nth-child(5), .h-button:focus span:nth-child(5) {
+  transition-delay: 0.125s;
+}
+.h-button:hover span:nth-child(6), .h-button:focus span:nth-child(6) {
+  transition-delay: 0.15s;
+}
+
+//Hero página principal//
+.hero {
+  background: gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.285)), to(rgba(0, 0, 0, 0.285))), url(../../img/shop.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.271), rgba(0, 0, 0, 0.292)), url(../../img/shop.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+.hero .container {
+  height: 80vh;
+}
+
+/*RESPONSIVE SECTION SEANSON ITEMS*/
+
+/* Cuando la pantalla sea más chica que 480px aplica estos estilos */
+@media (max-width: 480px) {
+  .main__bag {
+    padding-top: 2rem;
+    
+  }
+}
+/* Pero si mi pantalla es mayor a 480 px aplica estos estilos siempre y cuando el tamaño sea menor a 768 px */
+@media (max-width: 768px) {
+  .main__bag {
+    padding-top: 3rem;
+
+  }
+}
+//max-width: para Dispositivos móviles. Min-width: es para Desk
+@media (max-width: 980px) {
+  .main__bag {
+    padding-top: 3.4rem;
+  }
+
+  .main__caja {
+    background-image: 50%;
+    min-width: 100px
+  }
+
+  .sectionSI__caja--boton1,
+  .sectionSI__caja--boton2,
+  .sectionSI__caja--boton3,
+  .sectionSI__caja--boton4{
+    max-width: 30%;
+    // min-width: 1300px
+  }
+}
+
+//-------------------------------------------//
+// ----------------/*SALE*/------------------//
+// ------------------------------------------//
+
 .sale{
   grid-area: sale;
   padding-top: 12rem;
@@ -221,12 +351,24 @@ div ul {
   width: 15rem;
   height: 10rem;
 }
+
+&--h3{
+  color:red;
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+&--h3:hover{
+  font-style: italic;
+  font-size: 60px;
+  }
 }
 
 .card {
   border: none;
-  padding: 25px;
-  height: 25.5rem;
+  padding: 10rem 1rem 10rem 1rem;
+  height: 35rem;
 
 &:hover {
   box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
@@ -237,12 +379,41 @@ div ul {
 }
 }
 
-/*MAIN SECTION PILARES*/
+.list-unstyled{
+  color: black;
+  font-size: 1.3rem;
+}
+
+//-------------------------------------------//
+// ----------------/*PILARES*/---------------//
+// ------------------------------------------//
 .pilares{
   grid-area: pilares;
-  padding-top: 6rem;
-  padding-bottom: 10rem;
+  padding-top: 10rem;
+  padding-bottom: 25rem;
   background: rgba(128, 128, 128, 0.335);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4 auto);
+  grid-template-areas:
+  "h3--pillars h3--pillars"
+  "card-1 card-maniki"
+  "card-2 card-maniki"
+  "card-3 card-maniki"
+  "card-4 card-maniki";
+  gap: 5%;
+}
+
+.pilares--h3{
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+
+  &:hover{
+    font-style: italic;
+    font-size: 70px;
+    }
 }
 
 .iconos__container--pillars {
@@ -257,9 +428,8 @@ div ul {
 }
 
 .iconos__container__ind--pillars {
-  background: $fondogrisdegradado;
+  background: rgba(245, 245, 245, 0.616);
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
-  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -269,15 +439,20 @@ div ul {
       flex: 1 1 1rem;
 -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
       box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
-border-radius: 0.5rem;
+border-radius: 0.5rem ;
 padding: 3rem 2rem;
 position: relative;
+box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
+-webkit-box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
+-moz-box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
+-webkit-transition: 1s;
+transition: 1s;
 }
 
 .iconos__container__ind--pillars:hover {
-  box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px -1px 13px 2px rgb(0, 0, 0);
+  -webkit-box-shadow: -1px -10px 53px 2px rgb(0, 0, 0);
+  -moz-box-shadow: -1px -10px 53px 2px rgb(0, 0, 0);
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -303,7 +478,63 @@ position: relative;
   
 }
 
-/*MAIN SECTION CONTACT*/
+.hero-pillars {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../img/shop.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.151), rgba(0, 0, 0, 0.158)), url(../../img/fondoEstrellas.png);
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+// Grid-áreas de Pilares
+.h3--pillars{
+ grid-area: h3--pillars;
+}
+
+.card-maniki{
+ grid-area: card-maniki;
+ //border-radius: 0.5rem ;
+ background-image: url("../img/maniqui2.jpg");
+ //background-attachment: fixed;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ border: 0.1rem solid rgba(0, 0, 0, 0.1);
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ border-radius: 0.5rem ;
+ -webkit-box-flex: 1;
+ -ms-flex: 1 1 1rem;
+     flex: 1 1 1rem;
+padding: 3rem 2rem;
+box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
+}
+
+.card-maniki:hover {
+  box-shadow: -1px -1px 13px 2px rgb(0, 0, 0);
+  -webkit-box-shadow: -1px -10px 53px 2px rgb(0, 0, 0);
+  -moz-box-shadow: -1px -10px 53px 2px rgb(0, 0, 0);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.card-1{
+ grid-area: card-1;
+}
+.card-2{
+ grid-area: card-2;
+}
+.card-3{
+ grid-area: card-3;
+}
+.card-4{
+ grid-area: card-4;
+}
+
+//-------------------------------------------//
+// ----------------/*CONTACT*/---------------//
+// ------------------------------------------//
 .sectionHPYSM {
   grid-area: sectionHPYSM;
   display: flex;
@@ -356,19 +587,34 @@ position: relative;
 .iconos__container__span {
   color: rgb(53, 52, 52);
   font-size: 1.1rem;
-  
 }
 
-/*MAIN_ SECTION OFFER*/
+.contact--h3{
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+
+  &:hover{
+    font-style: italic;
+    font-size: 60px;
+    }
+}
+
+//-------------------------------------------//
+// ----------------/*OFFER*/-----------------//
+// ------------------------------------------//
 .sectionOFF{
   grid-area: sectionOFF;
-  width: 100vw;
+  background-image: url("../img/descuento - copia.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 10%;
   //background: linear-gradient(  blue, black );
   //background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,10,224,1) 35%, rgba(255, 51, 0, 0.644) 100%);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23222222' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%23444444' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%23666666' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23888888' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23aaaaaa' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23cccccc' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23EEE' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
-  background-attachment: fixed;
-  background-size: cover;
-  display: flex;
+  // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23222222' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%23444444' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%23666666' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23888888' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23aaaaaa' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23cccccc' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23EEE' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+  // background-attachment: fixed;
+  // background-size: cover;
+  // display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
@@ -378,28 +624,36 @@ position: relative;
   font-family: 'Poppins', sans-serif;
   text-align: center;
   overflow: hidden;
-  padding: 3rem 0rem 3rem 0rem;
-  // margin-top: 10px;
- 
- &__form {
- display: flex;
- flex-direction: column;
- flex-wrap: wrap;
- justify-content: start;
- align-items: center;
- align-content:center;
- padding-top: 3rem;
- height:  130%;
- width: 250%;
- background-image: url("../img/cart.png");
- background-repeat: no-repeat;
- background-size: 15%;
- background-position-x: x-star;
- background-position-y: center;
- }
+
+//&__form {
+//  display: flex;
+//  flex-direction: column;
+//  flex-wrap: wrap;
+//  justify-content: start;
+//  align-items: center;
+//  align-content:center;
+//   padding-top: 3rem;
+//  height:  130%;
+//  width: 250%;
+//  background-image: url("../img/cart.png");
+//  background-repeat: no-repeat;
+//  background-size: 50%;
+//  background-position-x: center;
+//  background-position-y: center;
+//}
 }
 
-//BOTON ARRIBA
+/*RESPONSIVE*/
+//max-width: para Dispositivos móviles. Min-width: es para Desk
+@media (max-width: 980px) {
+  .sectionOFF__form{
+    background-position-x: left;
+  }
+}
+
+//-------------------------------------------//
+// ----------------/*BOTON ARRIBA*/----------//
+// ------------------------------------------//
 
 /* GOTOP */
 .go-top-container {
@@ -471,7 +725,7 @@ position: relative;
   background-repeat:no-repeat;
   font-size:20px;
   color:black;
-  cursor:pointer;
+  cursor: pointer;
   position:fixed;
   bottom:10px;
   right:10px;
@@ -563,22 +817,6 @@ position: relative;
 
 /*RESPONSIVE*/
 //max-width: para Dispositivos móviles. Min-width: es para Desk
-@media (max-width: 980px) {
-  .main__bag {
-    margin-top: 60px;
-    background-size: cover;
-  }
-  .sectionSI__caja{
-    background-size:  cover;
-  }
-
-  .sectionSI__buttonmod1,
-  .sectionSI__buttonmod2, 
-  .sectionSI__buttonmod3, 
-  .sectionSI__buttonmod4{
-    width: 100px;
-    height: 100px;
-  }
 
   .footer__titulo1--modifier{
     font-size: 10px;
@@ -588,25 +826,3 @@ position: relative;
       font-size: 1rem;
      }
   }
-
-  // .pilares{
-  //   display: none;
-  // }
-
-.sectionSI__caja{
-  background-color: whitesmoke;
-}
-
-}
-
-@media only screen and (max-width: 768px) {
-  .carousel-item {
-    height: 40vh;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .carousel-item {
-    height: 30vh;
-  }
-}

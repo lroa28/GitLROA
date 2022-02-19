@@ -26,8 +26,9 @@
 <!-------------------------------------------//
 // ---------------- HEADER-------------------//
 // ------------------------------------------->
+
 <!--Header-->
-<div class="row">
+<div class="row-xs-12">
   <div class="col-xs-12">
   <header>
   <nav class="navbar navbar-expand-lg fixed-top header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
@@ -46,28 +47,24 @@
       </button>
   
      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-  
-     <div class="header__menu navbar-nav  me-auto mb-lg-0">
-  
-      <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: lowercase;" href="../pages/luk_c.html"><i>_luk_c</i></a></li>
-      <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="../index.html#sectionHPYSM">Contact</a></li>
-      <!-- <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="./pages/courses.html">Courses</a></li> -->
-      <li><a class="nav-item nav-link align-baseline aparecer"  style="color:rgb(255, 4, 4);" href="../index.html#sale">Sale</a></li>
-      <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="../pages/products.html">Products</a></li>
-      
-      <li class="nav-item dropdown header__menu m-auto mb-lg-0">
-          <a class="nav-link dropdown-toggle align-baseline" style="color:black;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
-          
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <div class="navbar-nav me-auto mb-lg-0 d-flex flex-wrap justify-content-center">
+      <ul class="header__menu menu d-flex flex-wrap justify-content-center" data-animation="bonus">
+        <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: lowercase;" href="../pages/luk_c.html" data-animation="bonus"><i>_luk_c</i></a></li>
+        <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="../index.html#sectionHPYSM">Contact</a></li>
+        <!-- <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="./pages/courses.html">Courses</a></li> -->
+        <li><a class="nav-item nav-link align-baseline aparecer"  style="color:rgb(255, 4, 4);" href="../index.html#sale">Sale</a></li>
+        <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="../pages/products.html">Products</a></li>
+        <li class="nav-item dropdown header__menu m-auto mb-lg-0">
+          <a class="nav-link nav-link dropdown-toggle align-baseline" style="color:black;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+          <ul class="dropdown-menu menu text-center" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item zindex-dropdown:1000" href="../pages/courses.html">Tejido</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item zindex-dropdown:1000" href="../pages/courses.html">Moldería básica</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item zindex-dropdown:1000" href="../pages/courses.html">Máquinas</a></li>
           </ul>
-  
-      </li>
-  
+        </li>
+     </ul>
      </div>
     <!-- <div class="modal">
         <ul>
@@ -76,18 +73,25 @@
           <li><a href="https://cnnespanol.cnn.com/2022/01/07/moda-sostenible-ropa-consciente-orix/">Moda Sostenible</a></li>
         </ul>
     </div> -->
-     <ul class="header__icons navbar-nav">
+     <ul class="header__icons navbar-nav text-center">
       <form class="d-flex mx-2">
         <input class="form-control" type="search" placeholder="Search" aria-label="Search">
         <button class="btn--search btn-dark btn-outline-danger" type="submit">Search</button>
       </form>
-      <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fas fa-home"></i></a></li>
+      <li><a class=" nav-item nav-link" href="../index.html"><i class="fas fa-home"></i></a></li>
       <!-- <li class="nav-item"><a class="nav-link" href="./pages/search.html"><i class="fas fa-search"></i></a></li> -->
-      <li class="nav-item"><a class="nav-link" href="../pages/contact.html"><i class="fas fa-envelope"></i></a></li>
-      <li class="nav-item"><a class="nav-link" href="../pages/bag.html"><i class="fas fa-shopping-cart"></i></a></li>
+      <li><a class=" nav-item nav-link" href="../pages/contact.html"><i class="fas fa-envelope"></i></a></li>
+
+      <li class="nav-item d-flex flex-row align-items-center">
+        <a class="nav-link d-flex align-items-center" id="changuito"  href="../pages/bag.html">
+          <i class="fas fa-shopping-cart"></i>
+          <p id="acumuladorCarrito" class="ml-2 d-flex justify-content-center align-items-center text-white" style="background-color:rgb(17, 17, 17); width: 22px; height: 22px; border-radius: 50%; padding: 10px;"></p>
+        </a>
+      </li>
+
       <!-- <li class="nav-item"><a class="nav-link" href="./pages/login.html"><i class="fas fa-user"></i></a></li> -->
-      <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-recycle"></i></a></li>
-      <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/luk.caric.by.luluroa"><i class="fab fa-facebook"></i></a></li>
+      <li><a class=" nav-item nav-link" href="#"><i class="fas fa-recycle"></i></a></li>
+      <li><a class=" nav-item nav-link" href="https://www.facebook.com/luk.caric.by.luluroa"><i class="fab fa-facebook"></i></a></li>
       <!-- <button type="button" class="menu-nav btn btn--recycle btn-dark btn-outline-success" style="color: white;">
         <i class="fas fa-recycle"></i>
       </button> -->
@@ -109,42 +113,42 @@
 <div class="container d-flew-row justify-content-center">
   <div class="row row-cols-1 row-cols-md-3 g-4  bg-opacity-10" data-aos="fade-left" data-aos-duration="1500">
 
-    <div class="col">
-      <div class="card h-100">
-        <img src="../img/lanas.jpg" class="card-img-top" alt="Img lanas">
+    <div class="container-fluid col-lg-4 col-xs-4">
+      <div class="card h-80 bg-white bg-opacity-75 border">
+        <img src="../img/lanas.jpg" class="card-img-top border" alt="Img lanas">
         <div class="card-body">
           <h5 class="card-title text-center"><u><b>Tejido</b></u></h5>
           <p class="card-text">Two Needles.</p>
         </div>
-        <div class="card-footer">
+        <div class="card-footer text-center">
           <small class="text-muted">Saturday 10:00 am, one hour</small>
-          <button type="button" class=" btn btn-danger btn-outline-dark">Inscribite</button>
+          <button type="button" class=" btn btn-danger btn-outline-dark ">Inscribite</button>
         </div>
       </div>
     </div>
 
-    <div class="col">
-      <div class="card h-100">
-        <img src="../img/molde.jpg" class="card-img-top" alt="Img mold">
+    <div class="container-fluid col-lg-4 col-xs-4">
+      <div class="card h-80 bg-white bg-opacity-75 border">
+        <img src="../img/moldes2.jpg" class="card-img-top border" alt="Img mold">
         <div class="card-body">
           <h5 class="card-title text-center"><u><b>Moldería básica</b></u></h5>
           <p class="card-text">What will you learn?: make molds t-shirts, pants, jumpsuits, scarves and shirts.</p>
         </div>
-        <div class="card-footer">
+        <div class="card-footer text-center">
           <small class="text-muted">Saturday 10:00 am, one hour</small>
           <button type="button" class=" btn btn-danger btn-outline-dark">Inscribite</button>
         </div>
       </div>
     </div>
 
-    <div class="col">
-      <div class="card h-100">
-        <img src="../img/fondoMaquinaCoser.png" class="card-img-top" alt="Maquina de coser">
+    <div class="container-fluid col-lg-4 col-xs-4">
+      <div class="card h-80 bg-white bg-opacity-75 border">
+        <img src="../img/fondoMaquinaCoser.png" class="card-img-top border" alt="Maquina de coser">
         <div class="card-body">
           <h5 class="card-title text-center"><u><b>Uso de máquinas Recta y Overlock.</b></u></h5>
           <p class="card-text"></p>
         </div>
-        <div class="card-footer">
+        <div class="card-footer text-center">
           <small class="text-muted">Saturday 10:00 am, one hour</small>
           <button type="button" class=" btn btn-danger btn-outline-dark">Inscribite</button>
         </div>
@@ -337,10 +341,10 @@
             <div class="col-lg-9 m-auto text-center">
               <br>
               <br>
-              <h3 class="fs-4" style="color: grey;">Recibí nuestras promociones</h3>
+              <h3 class="fs-4" style="color:rgb(151, 148, 148); font-weight: bold;">"Recibí nuestras promociones"</h3>
               <form action="#">
                 <input type="email" name="email" id="email" placeholder="Ingresá tu email" required/>
-                <button class="btn1 btn btn-secondary">Suscribir!</button>
+                <button class="btn1 btn btn-dark btn-outline-danger">Suscribir!</button>
               </form>
             </div>
           </div>
@@ -352,8 +356,14 @@
          <br>
          <br>
          <br>
-         <div class="d-inline-flex justify-content-center p-2 bg-white text-danger bg-opacity-10">Developed Overflow-X by •Lucrecia Cecilia Roa•</div>
-         <span class="lead fs-6 d-inline-flex justify-content-center" style="color: grey;">© Copyright 2021 _luk_c Todos los derechos reservados. </span>
+         <div class="d-inline-flex justify-content-center p-2 bg-white text-danger bg-opacity-10 ">Developed Overflow-X by •Lucrecia Cecilia Roa•</div>
+         <span class="lead d-inline-flex justify-content-center p-2 text-center" style="color: grey; font-size: small;">© Copyright 2021 _luk_c Todos los derechos reservados. </span>
+         <!--Botón Arriba-->
+          <div class="go-top-container">
+            <div>
+              <button class="go-top-button btn btn-sm btn-dark btn-outline-danger"><i class="fas fa-chevron-up"></i></button>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -412,5 +422,6 @@ crossorigin="anonymous"
 </script>
 
 </body>
-<!-- Fin de la página web-->
+<!-- Fin del body-->
 </html>
+<!-- Fin de la página web-->

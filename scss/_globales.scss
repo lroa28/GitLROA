@@ -6,7 +6,6 @@
   outline: none;
   transition: 0.2s linear;
   font-family: 'Poppins', sans-serif;
-
 }
 
 h1, h2, h3, h4, h5{
@@ -21,10 +20,9 @@ h1, h2, h3, h4, h5{
   scroll-padding-top: 6rem;
 }
 
-
 /*BODY*/
 .body {
-  background-color: whitesmoke;
+  background-color: #eee;
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
 }
@@ -61,3 +59,56 @@ h1, h2, h3, h4, h5{
     opacity: 1;
   }
  }
+
+.subrayado-negro {
+  // border-bottom: 10px solid black;
+  text-decoration: underline 5px solid black;
+  //height: 13px;
+}
+
+.subrayado-rojo {
+  // border-bottom: 10px solid black;
+  text-decoration: underline 5px solid red;
+  //display: block;
+}
+
+.subrayado-amarillo{
+  text-decoration: underline 5px solid rgb(206, 206, 69);
+  //padding-bottom: 2px;
+ // height: 13px;
+  //display: block;
+  // border-radius: 50px;
+  // margin-top: -8px;
+  // border-bottom: 10px solid black;
+}
+
+//RESPONSIVE PARA FOTOS
+/* 1 columna para smartphones */
+.breakpoint_imgs  {
+  max-width: 100%;
+  display: inline-block;
+  }
+  /* 2 columnas para tablets */
+  @media (min-width: 420px) {
+  .breakpoint_imgs  {
+  max-width: 48%;
+  }
+  }
+  /* 4 columnas para grandes dispositivos*/
+  @media (min-width: 760px) {
+  .breakpoint_imgs  {
+  max-width: 24%;
+  }
+  }
+
+
+
+$bg-color: #F1E9DA;
+$link-text-color: #fff;
+$button-bg-1: #541388;
+$button-bg-2: #D90368;
+$button-bg-3: #104547;
+$button-bg-4: #4F000B;
+$button-bg-5: #F28123;
+$border-radius: 6px;
+$overlay-color: #fff;

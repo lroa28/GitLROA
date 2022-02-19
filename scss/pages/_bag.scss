@@ -11,8 +11,8 @@
   padding-top: 3rem;  //con este padding la pag queda sin scroll horizontal
   
   display: flex;
-  background-image: url("../img/bags1.jpg");
-  background-position: center;
+  background-image: url("../img/carrito2.jpg");
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 } 
@@ -83,7 +83,7 @@ body.dark button {
 /* CARRITO VACÍO */
 
 .carrito__empty p {
-  color: #FFC857;
+  color: black;
   text-shadow: 0 0 30px #FFC857;
   font-size: calc(.5rem + 3vw);
   font-family: 'Baloo Bhaijaan 2', cursive;
@@ -92,7 +92,7 @@ body.dark button {
 }
 
 .carrito__empty i {
-  color: #FFC857;
+  color: black;
   text-shadow: 0 0 80px #FFC857;
   font-size: calc(1rem + 5vw);
 }

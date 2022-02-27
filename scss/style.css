@@ -534,6 +534,7 @@ h1, h2, h3, h4, h5 {
 .main__grid {
   padding: 0% 0% 0% 0%;
   margin: 0% 0% 0% 0%;
+  padding-top: 5.4rem;
   width: 100vw;
   gap: 0%;
   display: -webkit-box;
@@ -549,7 +550,7 @@ h1, h2, h3, h4, h5 {
       grid-template-columns: repeat(1, 1fr);
   -ms-grid-rows: (auto)[7];
       grid-template-rows: repeat(7 auto);
-      grid-template-areas: "header__grid" "sectionSI" "sale" "pilares" "sectionHPYSM" "sectionOFF" "footer";
+      grid-template-areas: "header__grid" "sectionSI" "sale" "pilares" "sectionHPYSM" "sectionOFF" "footer";
 }
 
 .sectionSI {
@@ -557,7 +558,7 @@ h1, h2, h3, h4, h5 {
   -ms-grid-column: 1;
   grid-area: sectionSI;
   margin: 0%;
-  padding: 10rem 0rem 7rem 0rem;
+  padding: 5rem 0rem 5rem 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -924,7 +925,7 @@ h1, h2, h3, h4, h5 {
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (auto)[4];
       grid-template-rows: repeat(4 auto);
-      grid-template-areas: "h3--pillars h3--pillars" "card-1 card-maniki" "card-2 card-maniki" "card-3 card-maniki" "card-4 card-maniki";
+      grid-template-areas: "h3--pillars h3--pillars" "card-1 card-maniki" "card-2 card-maniki" "card-3 card-maniki" "card-4 card-maniki";
   gap: 5%;
 }
 
@@ -2790,25 +2791,12 @@ body.dark button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  color: black;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  text-align: center;
   width: 100%;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   background-color: #080808;
-  background-image: url("../img/maniqui1.jpg");
-  background-position-x: right;
+  background-image: url("../img/maniqui2.jpg");
+  background-position-x: top;
   background-position-y: top;
   background-attachment: fixed;
   background-size: cover;
@@ -2818,7 +2806,7 @@ body.dark button {
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (auto)[1];
       grid-template-rows: repeat(1 auto);
-      grid-template-areas: "grid-hello grid-hello" "grid-h3 grid-h3" "grid-p1 grid-p1" "grid-1 grid-2";
+      grid-template-areas: "grid-hello grid-hello" "grid-h3 grid-h3" "grid-p1 grid-p1" "grid-1 grid-2";
 }
 
 .sectionPT--videomod {

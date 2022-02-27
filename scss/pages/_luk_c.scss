@@ -8,20 +8,13 @@
   &__caja{
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  color: black;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  text-align: center;
+
   width: 100%;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   background-color: #080808;
-  background-image: url("../img/maniqui1.jpg");
-  background-position-x: right;
+  background-image: url("../img/maniqui2.jpg");
+  background-position-x: top;
   background-position-y: top;
   background-attachment: fixed;
   background-size: cover;

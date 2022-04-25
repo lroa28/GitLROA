@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5 {
   font-family: 'Poppins', sans-serif;
   color: black;
   font-size: 18px;
-  gap: 0.8rem;
+  gap: 0.4rem;
   text-transform: uppercase;
 }
 
@@ -258,9 +258,9 @@ h1, h2, h3, h4, h5 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 0.5rem;
+  gap: 0.2rem;
   color: black;
-  background: rgba(245, 245, 245, 0.432);
+  background: rgba(146, 140, 140, 0.432);
   border-radius: 5px;
 }
 
@@ -1139,6 +1139,11 @@ h1, h2, h3, h4, h5 {
 .contact--h3:hover {
   font-style: italic;
   font-size: 60px;
+}
+
+.img__redsocial {
+  width: 30px;
+  height: 30px;
 }
 
 .sectionOFF {

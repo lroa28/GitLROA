@@ -3,13 +3,12 @@
 //  background-color: blue;
 //}
 
-/*MAIN BAG*/
+//–––––––––––––/*MAIN BAG*/–––––––––––//
 .main__bag {
   width: 100vw;
   height: 130vh;
   margin-top: 85px; //este es el margin para que quede OK el Header
   padding-top: 3rem;  //con este padding la pag queda sin scroll horizontal
-  
   display: flex;
   background-image: url("../img/carrito2.jpg");
   background-position: center center;
@@ -17,14 +16,11 @@
   background-repeat: no-repeat;
 } 
 
-
 @media (max-width: 980px) { //para Dispositivos móviles. Min-width es para Desk
   .main__bag {
     margin-top: 89px;
     background-size: cover;
   }
-  
-
 }
 
 // .container {
@@ -69,8 +65,8 @@
 //   }
 // }
 
-/* Modificaciones para modo oscuro */
 
+//–––––––––––––/* Modificaciones para modo oscuro */–––––––––––//
 body.dark {
   background-color: #14213d;
   color: #fff;
@@ -80,26 +76,7 @@ body.dark button {
   color: #f5f5f5;
 }
 
-/* CARRITO VACÍO */
-
-.carrito__empty p {
-  color: black;
-  text-shadow: 0 0 30px #FFC857;
-  font-size: calc(.5rem + 3vw);
-  font-family: 'Baloo Bhaijaan 2', cursive;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.carrito__empty i {
-  color: black;
-  text-shadow: 0 0 80px #FFC857;
-  font-size: calc(1rem + 5vw);
-}
-
-
-/* CARRITO */
-
+//–––––––––––––/* CARRITO */–––––––––––//
 .carrito__listado {
   width: 100%;
   max-height: 400px;
@@ -159,6 +136,23 @@ body.dark button {
 .carrito__total span {
   font-size: calc(.8rem + 2vw);
 }
+
+//–––––––––––––/* CARRITO VACÍO */–––––––––––//
+.carrito__empty p {
+  color: white;
+  text-shadow: 0 0 30px black;
+  font-size: calc(.5rem + 3vw);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.carrito__empty i {
+  color: White;
+  text-shadow: 0 0 80px black;
+  font-size: calc(1rem + 5vw);
+}
+
 
 @media screen and (min-width:768px) {
   .carrito__item {

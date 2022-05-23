@@ -1,4 +1,8 @@
-/*MAIN PRODUCTOS*/
+//-----------------------------------------------//
+// ------------- /*MAIN PRODUCTOS*/-------------//
+// ---------------------------------------------//
+
+//-––––––––––––––––––––MAIN––––––––––––––––––––//
 .main__products {
   // width: 100vw;
   // height: 100%;
@@ -134,7 +138,7 @@
   }
 }
 
-//SECTION CARDS
+//-–––––––––––––––SECTION CARDS–––––––––––––//
 .card {
   border: none;
   width: 20rem;
@@ -183,51 +187,82 @@
   opacity: 0;
 }
 
+.toastContainer {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 1031;
+}
+
+.toastContainer .toast {
+  padding: .8rem;
+  opacity: 1;
+  min-width: 20rem;
+  min-width: 22rem;
+  max-height: 142.17px;
+  font-size: 1rem;
+  color: #21232a;
+  margin-bottom: 1rem;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.toastContainer .toast.hide {
+  opacity: 0;
+  -webkit-transform: translateX(1000px);
+          transform: translateX(1000px);
+}
+
+.toastContainer .toast.agregado {
+  background-color: #92c800;
+}
+
+.toastContainer .toast.removido {
+  background-color: #dc3545;
+}
+
+.toastContainer .toast .toastInner p {
+  margin: 0;
+}
+
+.toastContainer .toast .toastInner p:first-child {
+  margin-bottom: .8rem;
+  border-bottom: 1px #21232a solid;
+}
+
+.toastContainer .toast .toastInner p:nth-child(2) {
+  font-size: .9rem;
+}
+
+.toastContainer .toast .toastInner p:last-child {
+  font-size: .8rem;
+}
+
+.toastContainer .toast .toastInner p:last-child:before {
+  content: '$ ';
+}
+
+.toastContainer .toast .close {
+  font-size: 1rem;
+  text-align: right;
+  cursor: pointer;
+  text-shadow: none;
+  font-weight: 500;
+}
+
+.toastContainer .toast .close:hover {
+  color: #21232a;
+}
+
 // .btn:hover {
 //   background-color: blue;
 //   -webkit-transition: 0.5s;
 //   transition: 0.5s;
 // }
 
-//CARRITO DEL HEADER
-#carrito {
- position: relative;
-}
-
-#carrito.table.thead.tr.th{
-  position: absolute;
-}
-
-// CARRITO AZUL
-.carrito{
-  min-height: 80vh;
-  max-width: 1000px;
-  margin: 0 auto;
-  width: 100%;
-}
-.table__productos{
-  display: flex;
-}
-.table__productos > img{
-  width: 9rem;
-  object-fit: contain;
-  border-radius: 6px;
-  margin-right: 20px;
-}
-.table__cantidad > input{
-  width: 40px;
-  border: none;
-  outline: 0;
-  font-size: 16px;
-  font-weight: 700;
-  margin-right: 30px;
-  margin-bottom: 20px;
-}
-.hide, .remove{
-  display: none;
-}
-
-//SECTION CRITICAS
+//-–––––––––––––––SECTION CRITICAS–––––––––––––//
 .criticas span {
   color: red;
 }
@@ -250,6 +285,7 @@
   border-radius: 0.5rem;
   padding: 3rem 2rem;
   position: relative;
+  background: #fff;
 }
 
 .criticas__contenedor__ind:hover {
@@ -327,7 +363,52 @@
   padding: 50px;
 }
 
-/*MAIN_ SECTION MOST VIEWED*/
+/*Cards Fast y Metodos*/@at-root.iconos__container {
+  background: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.iconos__container__ind {
+  background: #fff;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 25rem;
+  flex: 1 1 25rem;
+  margin: 1rem;
+}
+
+.iconos__container__img {
+  height: 6rem;
+  margin-right: 2rem;
+}
+
+.iconos__container__titulo {
+  color: black;
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.iconos__container__span {
+  color: #353434;
+  font-size: 1.1rem;
+}
+
+//-–––––––––––––––SECTION MOST VIEWED–––––––––––––//
 .sectionMV {
   grid-area: sectionMV;
   background-color: #EAEAEA;
@@ -358,8 +439,9 @@
   height: 60vh;
 }
 
-
-/*RESPONSIVE*/
+//-----------------------------------------------//
+// ---------------- /*RESPONSIVE*/--------------//
+// ---------------------------------------------//
 @media only screen and (max-width: 768px) {
   .carousel-item {
     height: 40vh;
@@ -473,8 +555,7 @@
   box-shadow: 0 0 5px #eee, 0 0 10px #eee, 0 0 30px #eee, inset 0 0 20px #eee;
 }
 
-//PRODUCTOS
-
+//-–––––––––––––––PRODUCTOS–––––––––––––//
 .overlay {
   position: fixed;
   top: 0;
@@ -627,9 +708,7 @@
   transform: translateY(0%);
 }
 
-//CARRITO
-
-
+//-–––––––––––––––CARRITO–––––––––––––//
 .carrito {
   min-height: 40vh;
   display: flex;
@@ -642,12 +721,10 @@
   text-align: center;
 }
 
-
 /* CARRITO VACÍO */
-
 .carrito__empty p {
-  color: #FFC857;
-  text-shadow: 0 0 30px #FFC857;
+  color: black;
+  text-shadow: 0 0 30px black;
   font-size: calc(.5rem + 3vw);
   font-family: 'Baloo Bhaijaan 2', cursive;
   text-align: center;
@@ -655,14 +732,12 @@
 }
 
 .carrito__empty i {
-  color: #FFC857;
-  text-shadow: 0 0 80px #FFC857;
+  color: black;
+  text-shadow: 0 0 80px black;
   font-size: calc(1rem + 5vw);
 }
 
-
 /* CARRITO */
-
 .carrito__listado {
   width: 100%;
   max-height: 400px;

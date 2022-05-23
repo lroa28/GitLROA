@@ -22,12 +22,11 @@
 <!-------------------------------------------//
 // ---------------- BODY --------------------//
 // ------------------------------------------->
-<body class="body" onLoad="alert('¡Bienvenido al Carrito de Compras! (Welcome to shopping bags!)')" onUnload="alert('¡Vuelva pronto! (Come back soon!)')">
+<!--<body class="body" onLoad="alert('¡Bienvenido al Carrito de Compras! (Welcome to shopping bags!)')" onUnload="alert('¡Vuelva pronto! (Come back soon!)')">-->
 
 <!-------------------------------------------//
 // ---------------- HEADER-------------------//
 // ------------------------------------------->
-
 <!--Header-->
 <div class="row-xs-12">
   <div class="col-xs-12">
@@ -74,31 +73,23 @@
           <li><a href="https://cnnespanol.cnn.com/2022/01/07/moda-sostenible-ropa-consciente-orix/">Moda Sostenible</a></li>
         </ul>
     </div> -->
-     <ul class="header__icons navbar-nav text-center">
-      <form class="d-flex mx-2">
+     <ul class="header__icons navbar-nav">
+      <!--<form class="d-flex mx-2">
         <input class="form-control" type="search" placeholder="Search" aria-label="Search">
         <button class="btn--search btn-dark btn-outline-danger" type="submit">Search</button>
-      </form>
-      <li><a class=" nav-item nav-link" href="../index.html"><i class="fas fa-home"></i></a></li>
+      </form> -->
+      <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fas fa-home"></i></a></li>
       <!-- <li class="nav-item"><a class="nav-link" href="./pages/search.html"><i class="fas fa-search"></i></a></li> -->
-      <li><a class=" nav-item nav-link" href="../pages/contact.html"><i class="fas fa-envelope"></i></a></li>
-      
-      <li class="nav-item d-flex flex-row align-items-center">
-        <a class="nav-link d-flex align-items-center" id="changuito"  href="../pages/bag.html">
-          <i class="fas fa-shopping-cart"></i>
-          <p id="acumuladorCarrito" class="ml-2 d-flex justify-content-center align-items-center text-white" style="background-color:rgb(17, 17, 17); width: 22px; height: 22px; border-radius: 50%; padding: 10px;"></p>
-        </a>
-      </li>
-
-      <!-- <li><a class=" nav-item nav-link" href="../pages/bag.html"><i class="fas fa-shopping-cart"></i></a></li> -->
+      <!-- <li class="nav-item"><a class="nav-link" href="./pages/contact.html"><i class="fas fa-envelope"></i></a></li> -->
+      <li class="nav-item"><a class="nav-link" href="../pages/bag.html"><i class="fas fa-shopping-cart"></i></a></li>
       <!-- <li class="nav-item"><a class="nav-link" href="./pages/login.html"><i class="fas fa-user"></i></a></li> -->
-      <li><a class=" nav-item nav-link" href="#"><i class="fas fa-recycle"></i></a></li>
-      <li><a class=" nav-item nav-link" href="https://www.facebook.com/luk.caric.by.luluroa"><i class="fab fa-facebook"></i></a></li>
+      <li class="nav-item"><a class="nav-link" href="https://twenergy.com/ecologia-y-reciclaje/moda-sostenible-la-ropa-mas-ecologica-saludable-y-sociablemente-responsable-1853/"><i class="fas fa-recycle"></i></a></li>
+      <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/luk.caric.by.luluroa"><i class="fab fa-facebook"></i></a></li>
+      <!-- <li class="nav-item carrito"><span data-toggle="tooltip" data-placement="bottom" title="0" id="contador"></span></li> -->
       <!-- <button type="button" class="menu-nav btn btn--recycle btn-dark btn-outline-success" style="color: white;">
         <i class="fas fa-recycle"></i>
       </button> -->
     </ul>
-  
     </div>
   
   </div>
@@ -130,6 +121,9 @@
 
 <!--Fin Main-->
 
+<!-------------------------------------------//
+// ----------------FOOTER--------------------//
+// ------------------------------------------->
 <!--Footer-->
 <footer class="footer">
   <!-- <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Volver arriba</a> -->
@@ -140,70 +134,42 @@
           <div class="col-lg-3 text-center">
             <h5 class="pb-3" style="color: grey;">Quick Links</h5>
             <ul class="footer__quickLinks m-0 p-0">
-              <li>
-                <a class="footer__quickLinks__a" href="../pages/faqs.html">Preguntas frecuentes</a>
-              </li>
-              <li>
-                <a class="footer__quickLinks__a" href="../pages/faqs.html">Políticas de cambio</a>
-              </li>
-              <li>
-                <a class="footer__quickLinks__a" href="../pages/faqs.html"
-                  >Cómo comprar</a
-                >
-              </li>
+              <li><a class="footer__quickLinks__a" href="../pages/faqs.html">Preguntas frecuentes</a></li>
+              <li><a class="footer__quickLinks__a" href="../pages/faqs.html">Políticas de cambio</a></li>
+              <li><a class="footer__quickLinks__a" href="../pages/faqs.html">Cómo comprar</a></li>
             </ul>
           </div>
           <div class="col-lg-3 text-center">
             <h5 class="pb-3" style="color: grey;">Ayuda</h5>
             <ul class="footer__quickLinks m-0 p-0">
-              <li>
-                <a class="footer__quickLinks__a" href="../pages/faqs.html">Devoluciones</a>
-              </li>
-              <li>
-                <a class="footer__quickLinks__a" href="../pages/faqs.html">Formas de pago</a>
-              </li>
-              <li>
-                <a class="footer__quickLinks__a" href="../pages/faqs.html">Costos de envío</a>
-              </li>
+              <li><a class="footer__quickLinks__a" href="../pages/faqs.html">Devoluciones</a></li>
+              <li><a class="footer__quickLinks__a" href="../pages/faqs.html">Formas de pago</a></li>
+              <li><a class="footer__quickLinks__a" href="../pages/faqs.html">Costos de envío</a></li>
             </ul>
           </div>
           <div class="col-lg-3 text-center">
             <h5 class="pb-3" style="color: grey;">_luk_c</h5>
             <ul class="footer__quickLinks m-0 p-0">
-              <li>
-                <a class="footer__quickLinks__a" href="../pages/luk_c.html">Quiénes somos</a>
-              </li>
-              <li>
-                <a class="footer__quickLinks__a" href="../pages/contact.html">Contacto</a>
-              </li>
-              <li>
-                <a class="footer__quickLinks__a" href="../pages/products.html">Visitanos</a>
-              </li>
+              <li><a class="footer__quickLinks__a" href="../pages/luk_c.html">Quiénes somos</a></li>
+              <li><a class="footer__quickLinks__a" href="../pages/contact.html">Contacto</a></li>
+              <li><a class="footer__quickLinks__a" href="../pages/products.html">Visitanos</a></li>
             </ul>
           </div>
           <div class="col-lg-3 text-center">
             <h5 class="pb-3" style="color: grey;">Contact</h5>
             <ul class="footer__quickLinks m-0 p-0">
-              <li>
-                <a class="footer__quickLinks__a" href="../pages/faqs.html"><i class="fas fa-phone-alt"></i>(+54) 9 11 0000-0000</a>
-                <div class="container footer_imgArg align-top px-3 py-3">
-                  <a class="navbar-brand" href="https://www.argentina.com/"><img src="../img/argentina.svg" alt="" width="30" height="30"></a>
-                </div>
-              </li>
-              <li>
-                <a class="footer__quickLinks__a" href="../pages/faqs.html"><i class="fas fa-envelope"></i> <a href="mailto:lc.luluroa@gmail.com?Subject=Hola!%20les%20hago%20una%20consulta.">lc.luluroa@gmail.com</a> </a>
-            </li>
+              <li><a class="footer__quickLinks__a" href="../pages/faqs.html"><i class="fas fa-phone-alt"></i>(+54) 9 11 0000-0000</a><div class="container footer_imgArg align-top px-3 py-3"><a class="navbar-brand" href="https://www.argentina.com/"><img src="../img/argentina.svg" alt="" width="30" height="30"></a></div></li>
+              <li><a class="footer__quickLinks__a" href="../pages/faqs.html"><i class="fas fa-envelope"></i> <a href="mailto:lc.luluroa@gmail.com?Subject=Hola!%20les%20hago%20una%20consulta.">lc.luluroa@gmail.com</a> </a></li>
             </ul>
           </div>
-
           <div class="row">
             <div class="col-lg-9 m-auto text-center">
               <br>
               <br>
-              <h3 class="fs-4" style="color:rgb(151, 148, 148); font-weight: bold;">"Recibí nuestras promociones"</h3>
+              <h3 class="fs-4" style="color: grey; font-weight: bold;">"Recibí nuestras promociones"</h3>
               <form action="#">
                 <input type="email" name="email" id="email" placeholder="Ingresá tu email" required/>
-                <button class="btn1 btn btn-dark btn-outline-danger">Suscribir!</button>
+                <button class="btn1 btn btn-dark btn-outline-danger">Submit</button>
               </form>
             </div>
           </div>
@@ -211,19 +177,18 @@
           <br>
           <ul class="footer__titulo2--modifier"> <!-- Links otros sitios webs de ayuda a los usuarios que visitan la página-->
             <li><a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario">Defensa del consumidor en la República Argentina. Para reclamos ingrese <i class="fas fa-hand-point-right"></i>"aquí"</a></li> 
-         </ul>
-         <br>
-         <br>
-         <br>
-         <div class="d-inline-flex justify-content-center p-2 bg-white text-danger bg-opacity-10 ">Developed Overflow-X by •Lucrecia Cecilia Roa•</div>
-         <span class="lead d-inline-flex justify-content-center p-2 text-center" style="color: grey; font-size: small;">© Copyright 2021 _luk_c Todos los derechos reservados. </span>
+          </ul>
+          <br>
+          <br>
+          <br>
+          <div class="d-inline-flex justify-content-center p-2 bg-white text-danger bg-opacity-10 ">Developed Overflow-X by •Lucrecia Cecilia Roa•</div>
+          <span class="lead d-inline-flex justify-content-center p-2 text-center" style="color: grey; font-size: small;">© Copyright 2022 _luk_c Todos los derechos reservados. </span>
          <!--Botón Arriba-->
-          <div class="go-top-container">
-            <div>
-              <button class="go-top-button btn btn-sm btn-dark btn-outline-danger"><i class="fas fa-chevron-up"></i></button>
-            </div>
+         <div class="go-top-container redondo">
+          <div>
+            <button class="go-top-button btn btn-sm btn-secondary btn-outline-danger border border-3"><i class="fas fa-chevron-up"></i></button>
           </div>
-
+        </div>
         </div>
       </div>
     </div>

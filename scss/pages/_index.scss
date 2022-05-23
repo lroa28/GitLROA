@@ -11,27 +11,26 @@
   flex-direction: column;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(7 auto);
+  grid-template-rows: repeat(6 auto);
   grid-template-areas:
   "header__grid"
   "sectionSI"
   "sale"
   "pilares"
   "sectionHPYSM"
-  "sectionOFF"
   "footer";
- }
+}
 
-//---------------------------------------------//
-//--------/*SECTION SEANSON ITEMS*/------------//
-// --------------------------------------------//
+//------------------------------------------//
+//--------/*SECTION SEANSON ITEMS*/---------//
+// -----------------------------------------//
 .sectionSI{
   grid-area: sectionSI;
   //background: rgba(0, 0, 0, 0.877); //*último background de la seccion*//
-  // padding: 6rem 0rem 9rem 0rem;
+  //padding: 6rem 0rem 9rem 0rem;
   margin: 0% ;
   padding: 5rem 0rem 5rem 0rem; //Agranda o achica la foto de la caja (perchero)
-  // margin:  4% 5% 5% 5%;
+  //margin:  4% 5% 5% 5%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -43,10 +42,10 @@
   &--h3{
     color:white;
     font-family: 'Poppins', sans-serif;
-    // font-size: 50px;
     font-weight: bold;
     text-shadow: 0 0 15px #171718, 0 0 15px #171718;
     font-size: calc(.5rem + 3vw);
+    // font-size: 50px;
     //font-weight: bold;
     //text-decoration: underline 5px solid red;
     //border-radius: 5px;
@@ -70,13 +69,13 @@
     font-weight: bold;
     text-shadow: 0 0 15px #c5c2c2, 0 0 15px #171718;
     //text-decoration: underline 5px solid gray;
-    // border-radius: 90px;
+    //border-radius: 90px;
     //background-color: rgba(245, 245, 245, 0.308);
-    // background-position: bottom;
-    // text-decoration: none;
-    // animation-duration: 4s;
-    // animation-name: aparecer;
-    // animation-iteration-count: infinite;
+    //background-position: bottom;
+    //text-decoration: none;
+    //animation-duration: 4s;
+    //animation-name: aparecer;
+    //animation-iteration-count: infinite;
   }
 
   &--boton1 {
@@ -149,9 +148,8 @@
     -webkit-box-shadow: 0px 6px 50px 13px rgba(0,0,0,0.46);
     -moz-box-shadow: 0px 6px 50px 13px rgba(0,0,0,0.46);
 
-
     &:hover{
-      content: "Sets" black;
+    content: "Sets" black;
     //background-color: rgba(245, 245, 245, 0.5);
     box-shadow: -1px -1px 13px 2px rgb(0, 0, 0);
     transition: all 1.5s;
@@ -192,21 +190,19 @@
   }
 }
 
-//Efecto Hover nombre de los botones//
+//–––––––––––––––Efecto hover nombre de los botones––––––––––––––––––//
 .centered {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-
 .h-button {
   //background: white;
   padding: 40px;
   width: 450px;
   text-align: center;
 }
-
 .h-button span {
   display: inline-block;
   min-width: 0.3em;
@@ -214,7 +210,6 @@
   opacity: 0;
   transform: translate(0, -20px);
 }
-
 .h-button:before {
   content: attr(data-text);
   position: absolute;
@@ -253,10 +248,10 @@
   transition-delay: 0.15s;
 }
 
-//Hero página principal//
+//–––––––––––––––––––––––Hero página principal––––––––––––––––––––––//
 .hero {
-  background: gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.285)), to(rgba(0, 0, 0, 0.285))), url(../../img/shop.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.271), rgba(0, 0, 0, 0.292)), url(../../img/shop.jpg);
+  background: gradient(linear, left top, left bottom, from(rgba(125, 123, 123, 0.285)), to(rgba(0, 0, 0, 0.285))), url(../../img/shop.jpg);
+  background: linear-gradient(rgba(149, 145, 145, 0.271), rgba(0, 0, 0, 0.292)), url(../../img/shop.jpg);
   background-size: cover;
   background-position: center top;
   background-attachment: fixed;
@@ -266,8 +261,7 @@
   height: 80vh;
 }
 
-/*RESPONSIVE SECTION SEANSON ITEMS*/
-
+//––––––––––––––––––––RESPONSIVE SECTION SEANSON ITEMS–––––––––––––//
 /* Cuando la pantalla sea más chica que 480px aplica estos estilos */
 @media (max-width: 480px) {
   .main__bag {
@@ -279,20 +273,17 @@
 @media (max-width: 768px) {
   .main__bag {
     padding-top: 3rem;
-
   }
 }
-//max-width: para Dispositivos móviles. Min-width: es para Desk
+/* max-width: para Dispositivos móviles. Min-width: es para Desk*/
 @media (max-width: 980px) {
   .main__bag {
     padding-top: 3.4rem;
   }
-
   .main__caja {
     background-image: 50%;
     min-width: 100px
   }
-
   .sectionSI__caja--boton1,
   .sectionSI__caja--boton2,
   .sectionSI__caja--boton3,
@@ -305,7 +296,6 @@
 //-------------------------------------------//
 // ----------------/*SALE*/------------------//
 // ------------------------------------------//
-
 .sale{
   grid-area: sale;
   padding-top: 12rem;
@@ -355,8 +345,10 @@
 &--h3{
   color:red;
   font-family: 'Poppins', sans-serif;
-  font-size: 50px;
+  //font-size: 50px;
   font-weight: bold;
+  text-shadow: 0 0 15px #171718, 0 0 15px #171718;
+  font-size: calc(.5rem + 3vw);
 }
 
 &--h3:hover{
@@ -376,7 +368,7 @@
   -moz-box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
   -webkit-transition: 1s;
   transition: 1s;
-}
+  }
 }
 
 .list-unstyled{
@@ -407,8 +399,10 @@
 .pilares--h3{
   color: black;
   font-family: 'Poppins', sans-serif;
-  font-size: 50px;
+  //font-size: 50px;
   font-weight: bold;
+  text-shadow: 0 0 15px #171718, 0 0 15px #171718;
+  font-size: calc(.5rem + 3vw);
 
   &:hover{
     font-style: italic;
@@ -474,8 +468,7 @@ transition: 1s;
 
 .iconos__container__span--pillars {
   color: rgb(53, 52, 52);
-  font-size: 1.1rem;
-  
+  font-size: 1.1rem;  
 }
 
 .hero-pillars {
@@ -486,7 +479,11 @@ transition: 1s;
   background-attachment: fixed;
 }
 
-// Grid-áreas de Pilares
+.card--pillars {
+  background: #fff;
+}
+
+/* –––––––––––––––––––––Grid-áreas de Pilares–––––––––––––––––––– */
 .h3--pillars{
  grid-area: h3--pillars;
 }
@@ -532,6 +529,13 @@ box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
  grid-area: card-4;
 }
 
+//––––––––––––––––––––RESPONSIVE PILARES–––––––––––––––––––//
+//max-width: para Dispositivos móviles. Min-width: es para Desk
+@media (max-width: 980px) {
+  .card-maniki{
+    background-image: hide;
+  }
+}
 //-------------------------------------------//
 // ----------------/*CONTACT*/---------------//
 // ------------------------------------------//
@@ -592,7 +596,9 @@ box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
 .contact--h3{
   color: black;
   font-family: 'Poppins', sans-serif;
-  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0 0 15px #171718, 0 0 15px #171718;
+  font-size: calc(.5rem + 3vw);
 
   &:hover{
     font-style: italic;
@@ -609,7 +615,6 @@ box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
 // ----------------/*OFFER*/-----------------//
 // ------------------------------------------//
 .sectionOFF{
-  grid-area: sectionOFF;
   background-image: url("../img/descuento - copia.jpg");
   background-repeat: repeat;
   background-position: center;
@@ -629,26 +634,12 @@ box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
   font-family: 'Poppins', sans-serif;
   text-align: center;
   overflow: hidden;
-
-//&__form {
-//  display: flex;
-//  flex-direction: column;
-//  flex-wrap: wrap;
-//  justify-content: start;
-//  align-items: center;
-//  align-content:center;
-//   padding-top: 3rem;
-//  height:  130%;
-//  width: 250%;
-//  background-image: url("../img/cart.png");
-//  background-repeat: no-repeat;
-//  background-size: 50%;
-//  background-position-x: center;
-//  background-position-y: center;
-//}
 }
 
-/*RESPONSIVE*/
+//-------------------------------------------//
+// ------------/*RESPONSIVE*/----------------//
+// ------------------------------------------//
+
 //max-width: para Dispositivos móviles. Min-width: es para Desk
 @media (max-width: 980px) {
   .sectionOFF__form{
@@ -671,10 +662,9 @@ box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
 }
 
 .go-top-button {
-  width: 0rem;
-  height: 0rem;
-  background: black;
-  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 70%;
   cursor: pointer;
   transition: 0.2s;
   position: absolute;
@@ -682,6 +672,7 @@ box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
   left: 95%;
   transform: translate(-50%, -50%);
   z-index: -1;
+  display: block;
 }
 
 .go-top-button i {
@@ -722,19 +713,6 @@ box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
       width: 6.6rem;
       height: 6.6rem;
   }
-}
-
-/*Flecha para hacer la pagina hacia arriba*/
-.ir-arriba{
-  display:none;
-  background-repeat:no-repeat;
-  font-size:20px;
-  color:black;
-  cursor: pointer;
-  position:fixed;
-  bottom:10px;
-  right:10px;
-  z-index:2;
 }
 
 //BOTON RECYCLE

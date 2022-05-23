@@ -1,8 +1,7 @@
-
-//-------------------------------------------//
-// ---------Métodos generales----------------//
-// ------------------------------------------//
-
+//-----------------------------------------------//
+//----------------Métodos generales-------------//
+//----------------Page Productos----------------//
+//----------------------------------------------//
 class Helper {
     static traerDeLocalStorage(key) {
         return localStorage.getItem(key) ? JSON.parse(localStorage.getItem(key)) : [];
@@ -17,7 +16,7 @@ class Helper {
     }
 }
 
-/* Datos del carrito */
+//–––––––––––––Datos del Carrito–––––––––––//
 class Carrito {
     constructor(productos = []) {
         this.productos = productos;
@@ -61,7 +60,7 @@ class Carrito {
     }
 }
 
-/* Valor total */
+//–––––––––––––/* Valor total */––––––––––––//
 class Contador {
     constructor(value) {
         this.valor = value;
@@ -76,7 +75,7 @@ class Contador {
     }
 }
 
-/* Visual */
+//–––––––––––––––/* Visual */–––––––––––––//
 class Interfaz {
     static modalHandler() {
         modal.classList.toggle('down');
@@ -88,7 +87,7 @@ class Interfaz {
         const div = document.createElement('div');
         div.setAttribute('class', 'cartel-agregado borde borde--violeta padding');
         const p = document.createElement('p');
-        p.textContent = '¡Agregado correctamente!';
+        p.textContent = '¡Producto agregado!';
         div.appendChild(p);
         main.appendChild(div);
         setTimeout(() => {
@@ -176,13 +175,13 @@ class Interfaz {
                                     <img class="carrito__imagen" src="${item.producto.imagen}" alt="">
                                     <div class="carrito__descripcion">
                                         <p>${item.producto.titulo}</p>
-                                        <p class="small">Subtotal: ${item.producto.precio * item.cantidad}$</p>
-                                        <button class="remove">Eliminar</button>
+                                        <p class="small">Subtotal: $ ${item.producto.precio * item.cantidad}</p>
+                                        <button class="remove btn btn-primary btn-outline-dark">Eliminar</button>
                                     </div>
                                     <div class="counter">
-                                        <button class="btn btn--small increment">+</button>
-                                        <span class="color-light">${item.cantidad}</span>
-                                        <button class="btn btn--small decrement">-</button>
+                                        <button class="btn btn--small increment fst-italic fw-bold">+</button>
+                                        <span class="color-dark">${item.cantidad}</span>
+                                        <button class="btn btn--small decrement fst-italic fw-bold">-</button>
                                     </div>
                                 </li>
                 `;
@@ -194,15 +193,15 @@ class Interfaz {
     }
 }
 
-//Funciones adicionales
+//–––––––––––––––/* Funciones adicionales */–––––––––––––//
+//let  acumuladorIndicadorCarrito = 0;
+//
+//let indicadorCarrito = () => {
+//    carritoEnLocalStorage = JSON.parse(localStorage.getItem('carrito'));
+//    acumuladorIndicadorCarrito = carritoEnLocalStorage.reduce( (acum , el) => acum += el.cantidad, 0);
+//    localStorage.setItem('acumuladorIndicadorCarrito', acumuladorIndicadorCarrito)
+//    document.getElementById("acumuladorCarrito").innerHTML = acumuladorIndicadorCarrito;  
+//  };
+//
+//  document.getElementById("acumuladorCarrito").innerHTML = acumuladorIndicadorCarrito;
 
-let  acumuladorIndicadorCarrito = 0;
-
-let indicadorCarrito = () => {
-    carritoEnLocalStorage = JSON.parse(localStorage.getItem('carrito'));
-    acumuladorIndicadorCarrito = carritoEnLocalStorage.reduce( (acum , el) => acum += el.cantidad, 0);
-    localStorage.setItem('acumuladorIndicadorCarrito', acumuladorIndicadorCarrito)
-    document.getElementById("acumuladorCarrito").innerHTML = acumuladorIndicadorCarrito;  
-  };
-
-  document.getElementById("acumuladorCarrito").innerHTML = acumuladorIndicadorCarrito;

@@ -1,4 +1,7 @@
-/*HEADER*/
+//-------------------------------------------//
+// ----------------/*HEADER*/----------------//
+// ------------------------------------------//
+
 .header {
   grid-area: header__grid;
   position: fixed;
@@ -34,7 +37,7 @@
     font-family: 'Poppins', sans-serif;
     color: black;
     font-size: 18px;
-    gap: 0.5rem;
+    gap: 0.3rem;
     text-transform: uppercase;
 
      & ul {
@@ -137,14 +140,13 @@
   }
  }
 
-
 .btn--search{
   width: 5rem;
   height: 2.2rem;
   border-radius: 2px;
 }
 
-//EFECTO DE ROTACIÓN DEL LOGO
+/* ––––––––––––––––EFECTO DE ROTACIÓN DEL LOGO––––––––––––––––––– */
 .rotate {
   -webkit-animation: rotate 5s normal linear infinite;
   animation: rotate 5s normal linear infinite;
@@ -173,6 +175,7 @@
   }
 }
 
+/* –––––––––––––--–––––––––––Responsive––––––––––––--–––––––––––––– */
 @media (max-width: 980px) { //para DM. min width es para Desk
 /* Header */
 .header__menu {
@@ -181,12 +184,11 @@
 .header__icons{
  display: none;
 }
-.footer__titulo1--modifier{
-font-size: 12px;
-:hover{
- transition: 0s;
- font-size: 1rem;
-
-}
-}
+  .footer__titulo1--modifier{
+  font-size: 12px;
+  :hover{
+   transition: 0s;
+   font-size: 1rem;
+  }
+ }
 }

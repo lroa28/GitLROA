@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en|es">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,24 +11,21 @@
     <link href="../scss/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <!-- CDN via jsDelivr -->
-    <!-- Link para estilos con Bootstrpas-->
+    <!-- Link para estilos con Bootstraps-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css"> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/> <!--Aos animate-->
     <!-- Script 3.6.0 JQuery clase11 JS-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <head>
+<head>
 
 <!-------------------------------------------//
 // ---------------- BODY --------------------//
 // ------------------------------------------->
-
 <body class="body">
-  <div class="overlay hidden"></div>
-
-<!--Body-->
-<body class="body" onLoad="alert('¡Bienvenid@ a la página de productos! (Welcome to products page!)')" onUnload="alert('¡Vuelva pronto! (Come back soon!)')">
+<div class="overlay hidden"></div>
+<!-- <body class="body" onLoad="alert('¡Welcome to products page!')" onUnload="alert('¡Come back soon!')"> -->
  <div class="row">
   <div class="col-xs-12">
     <div class="overlay"></div>
@@ -36,7 +33,6 @@
 <!-------------------------------------------//
 // ---------------- HEADER-------------------//
 // ------------------------------------------->
-
 <!--Header-->
 <div class="row-xs-12">
   <div class="col-xs-12">
@@ -83,31 +79,29 @@
           <li><a href="https://cnnespanol.cnn.com/2022/01/07/moda-sostenible-ropa-consciente-orix/">Moda Sostenible</a></li>
         </ul>
     </div> -->
-    <ul class="header__icons navbar-nav">
-      <form class="d-flex mx-2">
+     <ul class="header__icons navbar-nav">
+      <!--<form class="d-flex mx-2">
         <input class="form-control" type="search" placeholder="Search" aria-label="Search">
         <button class="btn--search btn-dark btn-outline-danger" type="submit">Search</button>
-      </form>
+      </form> -->
       <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fas fa-home"></i></a></li>
       <!-- <li class="nav-item"><a class="nav-link" href="./pages/search.html"><i class="fas fa-search"></i></a></li> -->
-      <li class="nav-item"><a class="nav-link" href="../pages/contact.html"><i class="fas fa-envelope"></i></a></li>
-      
-      <li class="nav-item d-flex flex-row align-items-center">
+      <!-- <li class="nav-item"><a class="nav-link" href="./pages/contact.html"><i class="fas fa-envelope"></i></a></li> -->
+      <!--<li class="nav-item d-flex flex-row align-items-center">
         <a class="nav-link d-flex align-items-center" id="changuito"  href="../pages/bag.html">
           <i class="fas fa-shopping-cart"></i>
           <p id="acumuladorCarrito" class="ml-2 d-flex justify-content-center align-items-center text-white" style="background-color:rgb(17, 17, 17); width: 22px; height: 22px; border-radius: 50%; padding: 10px;"></p>
         </a>
-      </li>
-
-      <!-- <li class="nav-item"><a class="nav-link" href="../pages/bag.html"><i class="fas fa-shopping-cart"></i></a></li> -->
+      </li> -->
+      <li class="nav-item"><a class="nav-link" href="../pages/bag.html"><i class="fas fa-shopping-cart"></i></a></li>
       <!-- <li class="nav-item"><a class="nav-link" href="./pages/login.html"><i class="fas fa-user"></i></a></li> -->
-      <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-recycle"></i></a></li>
+      <li class="nav-item"><a class="nav-link" href="https://twenergy.com/ecologia-y-reciclaje/moda-sostenible-la-ropa-mas-ecologica-saludable-y-sociablemente-responsable-1853/"><i class="fas fa-recycle"></i></a></li>
       <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/luk.caric.by.luluroa"><i class="fab fa-facebook"></i></a></li>
+      <!-- <li class="nav-item carrito"><span data-toggle="tooltip" data-placement="bottom" title="0" id="contador"></span></li> -->
       <!-- <button type="button" class="menu-nav btn btn--recycle btn-dark btn-outline-success" style="color: white;">
         <i class="fas fa-recycle"></i>
       </button> -->
     </ul>
-  
     </div>
   
   </div>
@@ -124,33 +118,34 @@
     Producto removido!
   </div> -->
 
+<!-------------------------------------------//
+// -----------------MAIN---------------------//
+// ------------------------------------------->
 <!--Main-->
-
 <section class="detail borde borde--violeta padding fondo">
 </section>
 
 <main class="main main__products">
-  <div class="pricing-header text-center">
-    <h1 class="display-4">Lista de Productos</h1>
-    <p class="lead">Seleccioná uno de nuestros productos</p>
-  </div>
 
-  <div class="container">
-        <!-- <h2 class="title padding">Compra todo lo que quieras</h2> -->
-        <div class="fondo">
-            <div class="productos padding">
-            </div>
-        </div>
-    </div>
-
-<!--Section Buscar-->
-<!-- <section class="container d-flex justify-content-center align-items-center flex-column">
-  <form class="form-inline col-md-12 buscador" onsubmit="return false">
-      <input class="form-control mr-sm-2" type="search" placeholder="Buscar por nombre" aria-label="Search">
-      <button class="btn btn-danger btn-block" type="submit">Search</button>
+<!--Buscador-->
+<!--<section class="container-fluid d-flex justify-content-center align-items-center flex-row">
+  <form class="form-inline col-md-12 buscador" onsubmit="false">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search for name" aria-label="Search">
+      <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
   </form>
   <div class="toastContainer"></div>
 </section> -->
+
+<div class="pricing-header text-center">
+  <h3 class="sectionSI--h3 text-center fs-1 d-inline">P r o d u c t s</h3>
+</div>
+
+<div class="container">
+  <!-- <h2 class="title padding">Compra todo lo que quieras</h2> -->
+  <div class="fondo">
+      <div class="productos padding"></div>
+  </div>
+</div>
 
 <!--Section Filtro-->
 <!-- <div class="container">
@@ -343,7 +338,7 @@
 </div>
 </div>
 <!--Section Carrusel Most Viewed-->
-<div class="sectionMV">
+<!--<div class="sectionMV">
   <h3 class="text-black text-center fs-2 subrayado-amarillo d-inline-flex justify-content-center"><b><i>M o s t - V i e w d</b></i></h3>
   <div class="sectionMV__caja">
     <div
@@ -457,14 +452,12 @@
    </section>
   </div>
 </div>
-</div>
+</div>-->
 
 <!--Section Críticas -->
 <section class="criticas pb-5">
-  <h2 class="criticas__titulo text-center p-5 h1">
-    Nuestras <span>Clientas</span>
-  </h2>
-  <h2 class="criticas__titulo text-center p-5 h1">"Nos cuentan sus experiencias"</h2>
+  <h2 class="criticas__titulo text-center p-4 h1">Nuestras <span>Clientas</span></h2>
+  <h2 class="criticas__titulo text-center p-4 h1">"Nos cuentan sus experiencias"</h2>
   <div class="criticas__contenedor">
     <div
       class="criticas__contenedor__ind"
@@ -550,71 +543,58 @@
   </div>
 </section>
 
+<!-- Section Servicios -->
+<section class="iconos__container">
+  <!-- Card Fast Delivery -->
+  <div class="iconos__container__ind">
+    <img class="iconos__container__img" src="/img/icon-1.png" alt="img de icono"/>
+    <div class="iconos__info">
+      <h3 class="iconos__container__titulo">Fast Delivery</h3>
+      <span class="iconos__container__span">En todas las órdenes</span>
+    </div>
+  </div>
+  <!-- Card Métodos de Pagos -->
+  <div class="iconos__container__ind">
+    <img class="iconos__container__img" src="/img/icon-2.png" alt="img de icono"/>
+    <div class="iconos__info">
+      <h3 class="iconos__container__titulo">Métodos de pagos seguros</h3>
+      <span class="iconos__container__span text-center">Protegido por MercadoPago</span>
+    </div>
+  </div>
+</section>
+
 <!--Section Offer-->
 <div class="row">
-<div class="col-xs-12">
-  <section class="sectionOFF container-fluid px-5 py-5 border border-secondary">
-
-  <div class="container-fluid d-flex-row justify-content-center align-items-center align-self-center bg-secondary bg-opacity-25">
-    <div class="container-fluid col-sm-6 col-lg-12 d-inline-flex justify-content-center">
-        <div class="col-sm-12 px-4 py-4">
-          <h3 class="fs-4 d-inline-flex justify-content-center bg-light text-dark bg-opacity-50">Subscribe to our newsletter and take advantage of a 10% discount on your next online purchase!</h3>
-        </div>
-    </div>
-
-    <div class="container-fluid col-sm-6 col-lg-12 d-inline-flex justify-content-center">
-      <div class="container-fluid col-sm-6 align-items-start">
-      <form action="#" class="border border-secondary bg-dark bg-opacity-50 d-inline-flex justify-content-center p-2">
-        <input type="email" name="email" id="email" placeholder="Ingresá tu email" required/>
-        <button class="btn btn-dark btn-outline-danger">Submit!</button>
-      </form>
-      <img src="./img/cart.png" style="height: 7rem; width: 6rem;" alt="Carrito offer">
-      </div>
-    </div>
-
-  </div>
-
-  </section>
-</div>
-</div>
-
-<!-- Fin Section Offer -->
-
-<!-- Section Servicios-->
-<div class="row">
   <div class="col-xs-12">
-       <!-- Card Envío gratis -->
-       <div class="iconos__container__ind col-xs-6" >
-         <div class="iconos__info">
-           <h3 class="iconos__container__titulo"><i class="fas fa-truck"></i>ENVÍO GRATIS</h3>
-           <div class="bg-secondary bg-gradient bg-opacity-10 rounded-3">
-           <p class="iconos__container__span text-center">Para compras superiores a $1.499</p>
-         </div>
-       </div>
- 
-       <!-- Card CAMBIOS Y DEVOLUCIONES -->
-       <div class="iconos__container__ind col-xs-6" >
-        <div class="iconos__info">
-          <h3 class="iconos__container__titulo"><i class="fas fa-exchange-alt"></i><i class="fas fa-file-invoice-dollar"></i>CAMBIOS Y DEVOLUCIONES</h3>
-          <div class="bg-secondary bg-gradient bg-opacity-10 rounded-3">
-          <p class="iconos__container__span text-center">¿Dudas sobre tu elección? Tenes tiempo ilimitado para cambiar tu compra y hasta 15 días de devolución.</p>
+    <section class="sectionOFF container-fluid px-5 py-5">
+    <div class="container-fluid d-flex-row justify-content-center align-items-center align-self-center bg-secondary bg-opacity-25">
+  
+      <div class="container-fluid col-sm-6 col-lg-12 d-inline-flex justify-content-center">
+          <div class="col-sm-12 px-4 py-4">
+            <h3 class="fs-4 d-inline-flex justify-content-center bg-light text-dark bg-opacity-50">Subscribe to our newsletter and take advantage of a 10% discount on your next online purchase!</h3>
+          </div>
+      </div>
+      <div class="container-fluid col-sm-6 col-lg-12 d-inline-flex justify-content-center">
+        <div class="container-fluid col-sm-6 align-items-start">
+        <form action="#" class="border border-secondary bg-dark bg-opacity-50 d-inline-flex justify-content-center p-2">
+          <input type="email" name="email" id="email" placeholder="Ingresá tu email" required/>
+          <button class="btn btn-dark btn-outline-danger">Submit!</button>
+        </form>
+        <img src="/img/cart.png" style="height: 4rem; width: 4rem;" class="px-1 "alt="Carrito offer">
         </div>
       </div>
- 
-        <!-- Card ENTREGAS EN TIENDAS -->
-        <div class="iconos__container__ind col-xs-6" >
-          <div class="iconos__info">
-            <h3 class="iconos__container__titulo"><i class="fas fa-cart-arrow-down"></i>ENTREGAS EN TIENDAS</h3>
-            <div class="bg-secondary bg-gradient bg-opacity-10 rounded-3">
-            <p class="iconos__container__span text-center">Retirá tu pedido en la tienda</p>
-          </div>
-        </div>
+  
+    </div>
+    </section>
   </div>
- </div>
+  </div>
 
 </main>
 <!--Fin Main-->
 
+<!-------------------------------------------//
+// ----------------FOOTER--------------------//
+// ------------------------------------------->
 <!--Footer-->
 <footer class="footer">
   <!-- <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Volver arriba</a> -->
@@ -625,70 +605,42 @@
           <div class="col-lg-3 text-center">
             <h5 class="pb-3" style="color: grey;">Quick Links</h5>
             <ul class="footer__quickLinks m-0 p-0">
-              <li>
-                <a class="footer__quickLinks__a" href="../pages/faqs.html">Preguntas frecuentes</a>
-              </li>
-              <li>
-                <a class="footer__quickLinks__a" href="../pages/faqs.html">Políticas de cambio</a>
-              </li>
-              <li>
-                <a class="footer__quickLinks__a" href="../pages/faqs.html"
-                  >Cómo comprar</a
-                >
-              </li>
+              <li><a class="footer__quickLinks__a" href="../pages/faqs.html">Preguntas frecuentes</a></li>
+              <li><a class="footer__quickLinks__a" href="../pages/faqs.html">Políticas de cambio</a></li>
+              <li><a class="footer__quickLinks__a" href="../pages/faqs.html">Cómo comprar</a></li>
             </ul>
           </div>
           <div class="col-lg-3 text-center">
             <h5 class="pb-3" style="color: grey;">Ayuda</h5>
             <ul class="footer__quickLinks m-0 p-0">
-              <li>
-                <a class="footer__quickLinks__a" href="../pages/faqs.html">Devoluciones</a>
-              </li>
-              <li>
-                <a class="footer__quickLinks__a" href="../pages/faqs.html">Formas de pago</a>
-              </li>
-              <li>
-                <a class="footer__quickLinks__a" href="../pages/faqs.html">Costos de envío</a>
-              </li>
+              <li><a class="footer__quickLinks__a" href="../pages/faqs.html">Devoluciones</a></li>
+              <li><a class="footer__quickLinks__a" href="../pages/faqs.html">Formas de pago</a></li>
+              <li><a class="footer__quickLinks__a" href="../pages/faqs.html">Costos de envío</a></li>
             </ul>
           </div>
           <div class="col-lg-3 text-center">
             <h5 class="pb-3" style="color: grey;">_luk_c</h5>
             <ul class="footer__quickLinks m-0 p-0">
-              <li>
-                <a class="footer__quickLinks__a" href="../pages/luk_c.html">Quiénes somos</a>
-              </li>
-              <li>
-                <a class="footer__quickLinks__a" href="../pages/contact.html">Contacto</a>
-              </li>
-              <li>
-                <a class="footer__quickLinks__a" href="../pages/products.html">Visitanos</a>
-              </li>
+              <li><a class="footer__quickLinks__a" href="../pages/luk_c.html">Quiénes somos</a></li>
+              <li><a class="footer__quickLinks__a" href="../pages/contact.html">Contacto</a></li>
+              <li><a class="footer__quickLinks__a" href="../pages/products.html">Visitanos</a></li>
             </ul>
           </div>
           <div class="col-lg-3 text-center">
             <h5 class="pb-3" style="color: grey;">Contact</h5>
             <ul class="footer__quickLinks m-0 p-0">
-              <li>
-                <a class="footer__quickLinks__a" href="../pages/faqs.html"><i class="fas fa-phone-alt"></i>(+54) 9 11 0000-0000</a>
-                <div class="container footer_imgArg align-top px-3 py-3">
-                  <a class="navbar-brand" href="https://www.argentina.com/"><img src="../img/argentina.svg" alt="" width="30" height="30"></a>
-                </div>
-              </li>
-              <li>
-                <a class="footer__quickLinks__a" href="./pages/faqs.html"><i class="fas fa-envelope"></i> <a href="mailto:lc.luluroa@gmail.com?Subject=Hola!%20les%20hago%20una%20consulta.">lc.luluroa@gmail.com</a> </a>
-            </li>
+              <li><a class="footer__quickLinks__a" href="../pages/faqs.html"><i class="fas fa-phone-alt"></i>(+54) 9 11 0000-0000</a><div class="container footer_imgArg align-top px-3 py-3"><a class="navbar-brand" href="https://www.argentina.com/"><img src="../img/argentina.svg" alt="" width="30" height="30"></a></div></li>
+              <li><a class="footer__quickLinks__a" href="../pages/faqs.html"><i class="fas fa-envelope"></i> <a href="mailto:lc.luluroa@gmail.com?Subject=Hola!%20les%20hago%20una%20consulta.">lc.luluroa@gmail.com</a> </a></li>
             </ul>
           </div>
-
           <div class="row">
             <div class="col-lg-9 m-auto text-center">
               <br>
               <br>
-              <h3 class="fs-4" style="color: grey; font-weight: bold;">Recibí nuestras promociones</h3>
+              <h3 class="fs-4" style="color: grey; font-weight: bold;">"Recibí nuestras promociones"</h3>
               <form action="#">
                 <input type="email" name="email" id="email" placeholder="Ingresá tu email" required/>
-                <button class="btn1 btn btn-secondary">Suscribir!</button>
+                <button class="btn1 btn btn-dark btn-outline-danger">Submit</button>
               </form>
             </div>
           </div>
@@ -696,19 +648,18 @@
           <br>
           <ul class="footer__titulo2--modifier"> <!-- Links otros sitios webs de ayuda a los usuarios que visitan la página-->
             <li><a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario">Defensa del consumidor en la República Argentina. Para reclamos ingrese <i class="fas fa-hand-point-right"></i>"aquí"</a></li> 
-         </ul>
-         <br>
-         <br>
-         <br>
-         <div class="d-inline-flex justify-content-center p-2 bg-white text-danger bg-opacity-10 ">Developed Overflow-X by •Lucrecia Cecilia Roa•</div>
-         <span class="lead d-inline-flex justify-content-center p-2 text-center" style="color: grey; font-size: small;">© Copyright 2021 _luk_c Todos los derechos reservados. </span>
+          </ul>
+          <br>
+          <br>
+          <br>
+          <div class="d-inline-flex justify-content-center p-2 bg-white text-danger bg-opacity-10 ">Developed Overflow-X by •Lucrecia Cecilia Roa•</div>
+          <span class="lead d-inline-flex justify-content-center p-2 text-center" style="color: grey; font-size: small;">© Copyright 2022 _luk_c Todos los derechos reservados. </span>
          <!--Botón Arriba-->
-          <div class="go-top-container">
-            <div>
-              <button class="go-top-button btn btn-sm btn-dark btn-outline-danger"><i class="fas fa-chevron-up"></i></button>
-            </div>
+         <div class="go-top-container redondo">
+          <div>
+            <button class="go-top-button btn btn-sm btn-secondary btn-outline-danger border border-3"><i class="fas fa-chevron-up"></i></button>
           </div>
-
+        </div>
         </div>
       </div>
     </div>
@@ -765,11 +716,17 @@ crossorigin="anonymous"
   AOS.init();
 </script>
 
-<!--Scripts JS curso CoderHouse-->
+
+<!--Scripts varios-->
+<!-- <script src="./js/menuHoriz.js"></script> -->
+<script src="../js/botonArriba.js"></script>
+<!--Scripts JS curso CoderHouse--
 <!-- <script src="../js/botonArriba.js"></script> -->
 <script src="../js/data.js"></script>
 <script src="../js/clases.js"></script>
 <script src="../js/productos.js"></script>
+<script src="../js/buscador.js"></script>
+<script src="../js/filtro.js"></script>
 <!-- <script src="../js/funcionesParaCards.js"></script> -->
 
   </div>

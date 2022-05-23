@@ -20,7 +20,7 @@ _Herramientas y tecnologías utilizadas._
 
 ## 🤓 ¡Muchas gracias por visitar mi espacio!
 
-* Comenta a otros sobre este proyecto 📢.
+* Comenta a otros sobre este proyecto.
 * Dejame tus opiniones.
 * O escribime: lucreciaroa@hotmail.com.
 

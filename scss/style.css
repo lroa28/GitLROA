@@ -115,7 +115,6 @@ h1, h2, h3, h4, h5 {
   color: #252323;
 }
 
-/*HEADER*/
 .header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -162,7 +161,7 @@ h1, h2, h3, h4, h5 {
   font-family: 'Poppins', sans-serif;
   color: black;
   font-size: 18px;
-  gap: 0.4rem;
+  gap: 0.3rem;
   text-transform: uppercase;
 }
 
@@ -287,6 +286,7 @@ h1, h2, h3, h4, h5 {
   border-radius: 2px;
 }
 
+/* ––––––––––––––––EFECTO DE ROTACIÓN DEL LOGO––––––––––––––––––– */
 .rotate {
   -webkit-animation: rotate 5s normal linear infinite;
   animation: rotate 5s normal linear infinite;
@@ -338,6 +338,7 @@ h1, h2, h3, h4, h5 {
   }
 }
 
+/* –––––––––––––--–––––––––––Responsive––––––––––––--–––––––––––––– */
 @media (max-width: 980px) {
   /* Header */
   .header__menu {
@@ -361,7 +362,7 @@ h1, h2, h3, h4, h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-grid-row: 7;
+  -ms-grid-row: 6;
   -ms-grid-column: 1;
   grid-area: footer;
   -webkit-box-orient: vertical;
@@ -548,9 +549,9 @@ h1, h2, h3, h4, h5 {
   display: grid;
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
-  -ms-grid-rows: (auto)[7];
-      grid-template-rows: repeat(7 auto);
-      grid-template-areas: "header__grid" "sectionSI" "sale" "pilares" "sectionHPYSM" "sectionOFF" "footer";
+  -ms-grid-rows: (auto)[6];
+      grid-template-rows: repeat(6 auto);
+      grid-template-areas: "header__grid" "sectionSI" "sale" "pilares" "sectionHPYSM" "footer";
 }
 
 .sectionSI {
@@ -790,9 +791,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .hero {
-  background: gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.285)), to(rgba(0, 0, 0, 0.285))), url(../../img/shop.jpg);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.271)), to(rgba(0, 0, 0, 0.292))), url(../../img/shop.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.271), rgba(0, 0, 0, 0.292)), url(../../img/shop.jpg);
+  background: gradient(linear, left top, left bottom, from(rgba(125, 123, 123, 0.285)), to(rgba(0, 0, 0, 0.285))), url(../../img/shop.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(149, 145, 145, 0.271)), to(rgba(0, 0, 0, 0.292))), url(../../img/shop.jpg);
+  background: linear-gradient(rgba(149, 145, 145, 0.271), rgba(0, 0, 0, 0.292)), url(../../img/shop.jpg);
   background-size: cover;
   background-position: center top;
   background-attachment: fixed;
@@ -802,7 +803,6 @@ h1, h2, h3, h4, h5 {
   height: 80vh;
 }
 
-/*RESPONSIVE SECTION SEANSON ITEMS*/
 /* Cuando la pantalla sea más chica que 480px aplica estos estilos */
 @media (max-width: 480px) {
   .main__bag {
@@ -817,6 +817,7 @@ h1, h2, h3, h4, h5 {
   }
 }
 
+/* max-width: para Dispositivos móviles. Min-width: es para Desk*/
 @media (max-width: 980px) {
   .main__bag {
     padding-top: 3.4rem;
@@ -884,8 +885,9 @@ h1, h2, h3, h4, h5 {
 .sale--h3 {
   color: red;
   font-family: 'Poppins', sans-serif;
-  font-size: 50px;
   font-weight: bold;
+  text-shadow: 0 0 15px #171718, 0 0 15px #171718;
+  font-size: calc(.5rem + 3vw);
 }
 
 .sale--h3:hover {
@@ -932,8 +934,9 @@ h1, h2, h3, h4, h5 {
 .pilares--h3 {
   color: black;
   font-family: 'Poppins', sans-serif;
-  font-size: 50px;
   font-weight: bold;
+  text-shadow: 0 0 15px #171718, 0 0 15px #171718;
+  font-size: calc(.5rem + 3vw);
 }
 
 .pilares--h3:hover {
@@ -1010,6 +1013,11 @@ h1, h2, h3, h4, h5 {
   background-attachment: fixed;
 }
 
+.card--pillars {
+  background: #fff;
+}
+
+/* –––––––––––––––––––––Grid-áreas de Pilares–––––––––––––––––––– */
 .h3--pillars {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -1069,6 +1077,12 @@ h1, h2, h3, h4, h5 {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: card-4;
+}
+
+@media (max-width: 980px) {
+  .card-maniki {
+    background-image: hide;
+  }
 }
 
 .sectionHPYSM {
@@ -1133,7 +1147,9 @@ h1, h2, h3, h4, h5 {
 .contact--h3 {
   color: black;
   font-family: 'Poppins', sans-serif;
-  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0 0 15px #171718, 0 0 15px #171718;
+  font-size: calc(.5rem + 3vw);
 }
 
 .contact--h3:hover {
@@ -1147,9 +1163,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .sectionOFF {
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
-  grid-area: sectionOFF;
   background-image: url("../img/descuento - copia.jpg");
   background-repeat: repeat;
   background-position: center;
@@ -1174,7 +1187,6 @@ h1, h2, h3, h4, h5 {
   overflow: hidden;
 }
 
-/*RESPONSIVE*/
 @media (max-width: 980px) {
   .sectionOFF__form {
     background-position-x: left;
@@ -1192,10 +1204,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .go-top-button {
-  width: 0rem;
-  height: 0rem;
-  background: black;
-  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 70%;
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -1205,6 +1216,7 @@ h1, h2, h3, h4, h5 {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: -1;
+  display: block;
 }
 
 .go-top-button i {
@@ -1266,19 +1278,6 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-/*Flecha para hacer la pagina hacia arriba*/
-.ir-arriba {
-  display: none;
-  background-repeat: no-repeat;
-  font-size: 20px;
-  color: black;
-  cursor: pointer;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  z-index: 2;
-}
-
 /*RESPONSIVE*/
 .footer__titulo1--modifier {
   font-size: 10px;
@@ -1290,7 +1289,6 @@ h1, h2, h3, h4, h5 {
   font-size: 1rem;
 }
 
-/*MAIN BAG*/
 .main__bag {
   width: 100vw;
   height: 130vh;
@@ -1312,7 +1310,6 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-/* Modificaciones para modo oscuro */
 body.dark {
   background-color: #14213d;
   color: #fff;
@@ -1322,23 +1319,6 @@ body.dark button {
   color: #f5f5f5;
 }
 
-/* CARRITO VACÍO */
-.carrito__empty p {
-  color: black;
-  text-shadow: 0 0 30px #FFC857;
-  font-size: calc(.5rem + 3vw);
-  font-family: 'Baloo Bhaijaan 2', cursive;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.carrito__empty i {
-  color: black;
-  text-shadow: 0 0 80px #FFC857;
-  font-size: calc(1rem + 5vw);
-}
-
-/* CARRITO */
 .carrito__listado {
   width: 100%;
   max-height: 400px;
@@ -1421,6 +1401,21 @@ body.dark button {
 
 .carrito__total span {
   font-size: calc(.8rem + 2vw);
+}
+
+.carrito__empty p {
+  color: white;
+  text-shadow: 0 0 30px black;
+  font-size: calc(.5rem + 3vw);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.carrito__empty i {
+  color: White;
+  text-shadow: 0 0 80px black;
+  font-size: calc(1rem + 5vw);
 }
 
 @media screen and (min-width: 768px) {
@@ -1878,7 +1873,6 @@ body.dark button {
   }
 }
 
-/*MAIN PRODUCTOS*/
 .main__products {
   padding: 6rem 0rem 6rem 0rem;
 }
@@ -2091,47 +2085,73 @@ body.dark button {
   opacity: 0;
 }
 
-#carrito {
-  position: relative;
+.toastContainer {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 1031;
 }
 
-#carrito.table.thead.tr.th {
-  position: absolute;
+.toastContainer .toast {
+  padding: .8rem;
+  opacity: 1;
+  min-width: 20rem;
+  min-width: 22rem;
+  max-height: 142.17px;
+  font-size: 1rem;
+  color: #21232a;
+  margin-bottom: 1rem;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
 }
 
-.carrito {
-  min-height: 80vh;
-  max-width: 1000px;
-  margin: 0 auto;
-  width: 100%;
+.toastContainer .toast.hide {
+  opacity: 0;
+  -webkit-transform: translateX(1000px);
+  transform: translateX(1000px);
 }
 
-.table__productos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.toastContainer .toast.agregado {
+  background-color: #92c800;
 }
 
-.table__productos > img {
-  width: 9rem;
-  -o-object-fit: contain;
-     object-fit: contain;
-  border-radius: 6px;
-  margin-right: 20px;
+.toastContainer .toast.removido {
+  background-color: #dc3545;
 }
 
-.table__cantidad > input {
-  width: 40px;
-  border: none;
-  outline: 0;
-  font-size: 16px;
-  font-weight: 700;
-  margin-right: 30px;
-  margin-bottom: 20px;
+.toastContainer .toast .toastInner p {
+  margin: 0;
 }
 
-.hide, .remove {
-  display: none;
+.toastContainer .toast .toastInner p:first-child {
+  margin-bottom: .8rem;
+  border-bottom: 1px #21232a solid;
+}
+
+.toastContainer .toast .toastInner p:nth-child(2) {
+  font-size: .9rem;
+}
+
+.toastContainer .toast .toastInner p:last-child {
+  font-size: .8rem;
+}
+
+.toastContainer .toast .toastInner p:last-child:before {
+  content: '$ ';
+}
+
+.toastContainer .toast .close {
+  font-size: 1rem;
+  text-align: right;
+  cursor: pointer;
+  text-shadow: none;
+  font-weight: 500;
+}
+
+.toastContainer .toast .close:hover {
+  color: #21232a;
 }
 
 .criticas span {
@@ -2156,6 +2176,7 @@ body.dark button {
   border-radius: 0.5rem;
   padding: 3rem 2rem;
   position: relative;
+  background: #fff;
 }
 
 .criticas__contenedor__ind:hover {
@@ -2233,7 +2254,52 @@ body.dark button {
   padding: 50px;
 }
 
-/*MAIN_ SECTION MOST VIEWED*/
+/*Cards Fast y Metodos*/
+.iconos__container {
+  background: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.iconos__container__ind {
+  background: #fff;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 25rem;
+  flex: 1 1 25rem;
+  margin: 1rem;
+}
+
+.iconos__container__img {
+  height: 6rem;
+  margin-right: 2rem;
+}
+
+.iconos__container__titulo {
+  color: black;
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.iconos__container__span {
+  color: #353434;
+  font-size: 1.1rem;
+}
+
 .sectionMV {
   grid-area: sectionMV;
   background-color: #EAEAEA;
@@ -2274,7 +2340,6 @@ body.dark button {
   height: 60vh;
 }
 
-/*RESPONSIVE*/
 @media only screen and (max-width: 768px) {
   .carousel-item {
     height: 40vh;
@@ -2598,8 +2663,8 @@ body.dark button {
 
 /* CARRITO VACÍO */
 .carrito__empty p {
-  color: #FFC857;
-  text-shadow: 0 0 30px #FFC857;
+  color: black;
+  text-shadow: 0 0 30px black;
   font-size: calc(.5rem + 3vw);
   font-family: 'Baloo Bhaijaan 2', cursive;
   text-align: center;
@@ -2607,8 +2672,8 @@ body.dark button {
 }
 
 .carrito__empty i {
-  color: #FFC857;
-  text-shadow: 0 0 80px #FFC857;
+  color: black;
+  text-shadow: 0 0 80px black;
   font-size: calc(1rem + 5vw);
 }
 

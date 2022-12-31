@@ -45,7 +45,7 @@
     font-weight: bold;
     text-shadow: 0 0 15px #171718, 0 0 15px #171718;
     font-size: calc(.5rem + 3vw);
-    // font-size: 50px;
+    //font-size: 50px;
     //font-weight: bold;
     //text-decoration: underline 5px solid red;
     //border-radius: 5px;
@@ -251,7 +251,7 @@
 //–––––––––––––––––––––––Hero página principal––––––––––––––––––––––//
 .hero {
   background: gradient(linear, left top, left bottom, from(rgba(125, 123, 123, 0.285)), to(rgba(0, 0, 0, 0.285))), url(../../img/shop.jpg);
-  background: linear-gradient(rgba(149, 145, 145, 0.271), rgba(0, 0, 0, 0.292)), url(../../img/shop.jpg);
+  background: linear-gradient(rgba(149, 145, 145, 0.271), rgba(0, 0, 0, 0.292)), url(./img/shop.jpg);
   background-size: cover;
   background-position: center top;
   background-attachment: fixed;

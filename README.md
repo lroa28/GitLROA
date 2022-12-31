@@ -1,4 +1,4 @@
-# Lic. en sistemas de información, estudiante full stack en "CoderHouse" y emprendedora de textil.
+# Lic. en sistemas de información, Dev Full Stack y emprendedora de textil.
 ## Esta es mi primer página del curso Desarrollo Web, año 2021-2022.
 
  📢Sitio web que busca mostrar mi Emprendimiento de Diseño textil y de modas, próximamente podrás realizar compras de prendas en "_luk_c"
@@ -22,7 +22,7 @@ _Herramientas y tecnologías utilizadas._
 
 * Comenta a otros sobre este proyecto.
 * Dejame tus opiniones.
-* O escribime: lucreciaroa@hotmail.com.
+* O escribime: lucreciaroa@hotmail.com
 
 ---
 📌 [Sitio Web _luk_c ](https://lroa28.github.io/GitLROA/) 😊

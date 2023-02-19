@@ -1,7 +1,7 @@
 # Lic. en sistemas de información, Dev Full Stack y emprendedora de textil.
 ## Esta es mi primer página del curso Desarrollo Web, año 2021-2022.
 
- 📢Sitio web que busca mostrar mi Emprendimiento de Diseño textil y de modas, próximamente podrás realizar compras de prendas en "https://www.instagram.com/lukrecia1885/"
+ 📢Sitio web que busca mostrar mi Emprendimiento de Diseño textil y de modas "https://www.instagram.com/lukrecia1885/"
 
 ### Tecnologías utilizadas 🛠️
 
@@ -17,7 +17,7 @@ _Herramientas y tecnologías utilizadas._
 
 * Visual Studio Code
 
-## 🤓 ¡Muchas gracias por visitar mi espacio!
+## ¡Muchas gracias por visitar mi espacio!
 
 * Comenta a otros sobre este proyecto.
 * Dejame tus opiniones.

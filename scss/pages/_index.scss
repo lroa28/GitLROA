@@ -6,6 +6,7 @@
   margin: 0% 0% 0% 0%;
   padding-top: 5.4rem; //*este es el padding para que quede OK el Header
   width: 100vw;
+  overflow-x: hidden;
   gap: 0%;
   display: flex;
   flex-direction: column;
@@ -29,7 +30,7 @@
   //background: rgba(0, 0, 0, 0.877); //*último background de la seccion*//
   //padding: 6rem 0rem 9rem 0rem;
   margin: 0% ;
-  padding: 5rem 0rem 5rem 0rem; //Agranda o achica la foto de la caja (perchero)
+  padding: 10rem 0rem 0rem 0rem; //Agranda o achica la foto de la caja (perchero)
   //margin:  4% 5% 5% 5%;
   display: flex;
   flex-direction: row;
@@ -79,8 +80,8 @@
   }
 
   &--boton1 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     background-repeat: no-repeat;
     background-size: 90%;
     background-position-x: center;
@@ -106,8 +107,8 @@
   }
 
   &--boton2 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     background-repeat: no-repeat;
     background-size: 90%;
     background-position-x: center;
@@ -133,8 +134,8 @@
   }
 
   &--boton3 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     background-repeat: no-repeat;
     background-size: 90%;
     background-position-x: center;
@@ -161,8 +162,8 @@
   }
 
   &--boton4 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     background-repeat: no-repeat;
     background-size: 90%;
     background-position-x: center;
@@ -259,7 +260,8 @@
 }
 
 .hero .container {
-  height: 80vh;
+  height: 65vh; //tamaño de la foto del Hero en la vista de la pagina(perchero de ropa)
+  padding: 4rem 0rem 4rem 0rem; //padding en Y y x
 }
 
 //–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//
@@ -268,35 +270,52 @@
 
 /* Cuando la pantalla sea más chica que 480px aplica estos estilos */
 @media (max-width: 480px) {
-  .main__bag {
+  .main__grid {
     padding-top: 2rem;
     
   }
+
+  .hero .container {
+    height: 20vh;
+    width: 40vh;
+  }
+
 }
 
-/* Pero si mi pantalla es mayor a 480 px aplica estos estilos siempre y cuando el tamaño sea menor a 768 px */
+@media screen and (min-width:768px) {
+  .container {
+      width: 80%;
+  }
+}
+
+/* Pero si mi pantalla es mayor a 480px aplica estos estilos siempre y cuando el tamaño sea menor a 768 px */
 @media (max-width: 768px) {
-  .main__bag {
+  .main__grid {
     padding-top: 3rem;
+  }
+
+  .hero .container {
+    height: 40vh;
+    width: 40vh;
   }
 }
 
 /* max-width: para Dispositivos móviles. Min-width: es para Desk*/
 @media (max-width: 980px) {
-  .main__bag {
+  .main__grid {
     padding-top: 3.4rem;
   }
-  .main__caja {
+  .hero {
     background-image: 50%;
     min-width: 100px
   }
-  .sectionSI__caja--boton1,
-  .sectionSI__caja--boton2,
-  .sectionSI__caja--boton3,
-  .sectionSI__caja--boton4{
+  .sectionSI--boton1 .sectionSI--boton2
+  .sectionSI--boton3 .sectionSI--boton4{
     max-width: 30%;
     // min-width: 1300px
   }
+
+  
 }
 
 //-------------------------------------------//
@@ -544,6 +563,7 @@ box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
 @media (max-width: 980px) {
   .card-maniki{
     background-image: hide;
+    grid-area: hide
   }
 }
 //-------------------------------------------//
@@ -657,6 +677,12 @@ box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
   }
 }
 
+@media screen and (min-width:768px) {
+  .container {
+      width: 80%;
+  }
+}
+
 //-----------------------------------------//
 //---------------/*BOTON ARRIBA*/----------//
 //-----------------------------------------//
@@ -724,6 +750,8 @@ box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
       height: 6.6rem;
   }
 }
+
+
 
 //BOTON RECYCLE
 

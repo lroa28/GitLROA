@@ -9,7 +9,7 @@
   display: flex;
   // justify-content: space-between;
   // align-items: center;
-  background: $fondogrisdegradado;
+  background-image: url("../img/fondo_gris.jpeg");
   padding: 0%;
   margin: 0%;
 }
@@ -22,10 +22,10 @@
 
  .header__logo {
    width: 60px;
-   height: 60px;
+   height: 70px;
   //  top: 50%;
   //  left: 50%;
-   border-style: groove rgb(10, 10, 10);
+  //border-style: groove rgb(10, 10, 10);
    }
 
   .header__menu {
@@ -96,7 +96,44 @@
     transition: all .5s;
   }
 
+  .header__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: right;
+    gap: 0.2rem;
+    color: black;
+    margin: 0 1% 0 0 ;
+    background: rgba(146, 140, 140, 0.432);
+    border-style: groove rgb(10, 10, 10);
+    border-radius: 5px;
+ 
+   & li a{
+     list-style: none;
+     padding: 1px 2px;
+     display:block;
+     position: relative;
+     font-size: 22px;
+     color: black;
+     border-style: groove rgb(10, 10, 10);
+     border-radius: 1px;
+   }
+ 
+   & :hover {
+   color: red;
+   transition: all .5s;
+   }
+  }
+ 
+ .btn--search{
+   width: 5rem;
+   height: 2.2rem;
+   border-radius: 2px;
+ }   
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* ––––––––––––––––––––––––ANIMATIONS–––––––––––––––––––––––––– */
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 //De forma similar al ejemplo anterior, tenemos la opción de cambiar la dirección de la animación del deslizamiento. La línea aparecerá de izquierda a derecha de forma predeterminada, pero para cambiar ese comportamiento, tenemos que pasar el atributo data-animation a la lista de destino. Los valores posibles son to-left y center.
 //Los estilos correspondientes son los siguientes:
@@ -111,42 +148,10 @@
   transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
 }
 
-   .header__icons {
-   display: flex;
-   flex-direction: row;
-  //  justify-content: space-evenly;
-  //  align-items: center;
-   gap: 0.2rem;
-   color: black;
-  //  margin: 0 1% 0 0 ;
-   background: rgba(146, 140, 140, 0.432);
-   //border-style: groove rgb(10, 10, 10);
-   border-radius: 5px;
 
-  & li a{
-    list-style: none;
-    padding: 1px 2px;
-    display:block;
-    position: relative;
-    font-size: 22px;
-    color: black;
-    border-style: groove rgb(10, 10, 10);
-    border-radius: 1px;
-  }
-
-  & :hover {
-  color: red;
-  transition: all .5s;
-  }
- }
-
-.btn--search{
-  width: 5rem;
-  height: 2.2rem;
-  border-radius: 2px;
-}
-
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* ––––––––––––––––EFECTO DE ROTACIÓN DEL LOGO––––––––––––––––––– */
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .rotate {
   -webkit-animation: rotate 5s normal linear infinite;
   animation: rotate 5s normal linear infinite;
@@ -175,7 +180,10 @@
   }
 }
 
-/* –––––––––––––--–––––––––––Responsive––––––––––––--–––––––––––––– */
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* –––––––––––––--–––––––––––Responsive–––––––––––––––––––––––––– */
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 @media (max-width: 980px) { //para DM. min width es para Desk
 /* Header */
 .header__menu {
@@ -183,6 +191,7 @@
 }
 .header__icons{
  display: none;
+ align-items: center;
 }
   .footer__titulo1--modifier{
   font-size: 12px;

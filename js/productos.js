@@ -12,8 +12,8 @@ const overlay = document.querySelector('.overlay');
 const productos = document.querySelector('.productos');
 
 //-------------------------------------------//
-// ----------LÓGICA Y EVENTOS----------------//
-// ------------------------------------------//
+//----------LÓGICA Y EVENTOS----------------//
+//------------------------------------------//
 
 //––––––Escuchamos los clicks sobre el contenedor de los productos–––––//
 productos.addEventListener('click', e => {
@@ -43,39 +43,40 @@ modal.addEventListener('click', e => {
 //–––––Mostramos los productos al ingresar a la página productos.html–––––//
 Interfaz.mostrarProductos();
 
-                // --------------------------------------------//
-                // --------------- Filtro estatico ------------//
-                // --------------------------------------------//
-                let categoriasCheckbox = $(`
-                <hr>
-                <div class="categorias">
-                    <p>Categorias:</p>
-                    <form onsubmit="return false" class="categoriasCheckbox">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <input name="identificador" value="AMD_CPU" id="AMD_CPU" type="radio">
-                            <label for="AMD_CPU">CPU AMD</label>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <input name="identificador" value="AMD_MOBO" id="AMD_MOBO" type="radio">
-                            <label for="AMD_MOBO">Mother AMD</label>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <input name="identificador" value="Intel_CPU" id="Intel_CPU" type="radio">
-                            <label for="Intel_CPU">CPU Intel</label>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <input name="identificador" value="Intel_MOBO" id="Intel_MOBO" type="radio">
-                            <label for="Intel_MOBO">Mother Intel</label>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <input name="identificador" value="GPU" id="GPU" type="radio">
-                            <label for="GPU">Tarjeta Gráfica</label>
-                        </div>
-                        <input class="btn btn-primary" type="submit" value="Aplicar">
-                    </form>
-                </div>
-            `
-        );
+// --------------------------------------------//
+// --------------- Filtro estatico ------------//
+// --------------------------------------------//
+let categoriasCheckbox = $(`
+<hr>
+<div class="categorias">
+    <p>Categorias:</p>
+    <form onsubmit="return false" class="categoriasCheckbox">
+        <div class="d-flex justify-content-between align-items-center">
+            <input name="identificador" value="AMD_CPU" id="AMD_CPU" type="radio">
+            <label for="AMD_CPU">CPU AMD</label>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+            <input name="identificador" value="AMD_MOBO" id="AMD_MOBO" type="radio">
+            <label for="AMD_MOBO">Mother AMD</label>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+            <input name="identificador" value="Intel_CPU" id="Intel_CPU" type="radio">
+            <label for="Intel_CPU">CPU Intel</label>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+            <input name="identificador" value="Intel_MOBO" id="Intel_MOBO" type="radio">
+            <label for="Intel_MOBO">Mother Intel</label>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+            <input name="identificador" value="GPU" id="GPU" type="radio">
+            <label for="GPU">Tarjeta Gráfica</label>
+        </div>
+        <input class="btn btn-primary" type="submit" value="Aplicar">
+    </form>
+</div>
+    `
+);
+
         let precioRango = $(`
             <hr>
             <p>Rango de precio</p>

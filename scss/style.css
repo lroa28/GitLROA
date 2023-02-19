@@ -23,6 +23,12 @@ h1, h2, h3, h4, h5 {
   scroll-padding-top: 6rem;
 }
 
+/*MAIN*/
+.main {
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
 /*BODY*/
 .body {
   background-color: #eee;
@@ -45,6 +51,7 @@ h1, h2, h3, h4, h5 {
   list-style: none;
 }
 
+/*EFECTO APARECER*/
 .aparecer {
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
@@ -87,6 +94,7 @@ h1, h2, h3, h4, h5 {
           text-decoration: underline 5px solid #cece45;
 }
 
+/*RESPONSIVE PARA FOTOS*/
 /* 1 columna para smartphones */
 .breakpoint_imgs  {
   max-width: 100%;
@@ -107,6 +115,7 @@ h1, h2, h3, h4, h5 {
   }
 }
 
+/*Colores*/
 .poperaciones {
   font-size: 25pt;
 }
@@ -123,8 +132,7 @@ h1, h2, h3, h4, h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.733)));
-  background: linear-gradient(rgba(255, 255, 255, 0.733));
+  background-image: url("../img/fondo_gris.jpeg");
   padding: 0%;
   margin: 0%;
 }
@@ -141,8 +149,7 @@ h1, h2, h3, h4, h5 {
 
 .header__logo {
   width: 60px;
-  height: 60px;
-  border-style: groove #0a0a0a;
+  height: 70px;
 }
 
 .header__menu {
@@ -230,25 +237,6 @@ h1, h2, h3, h4, h5 {
   transition: all .5s;
 }
 
-/* ––––––––––––––––––––––––ANIMATIONS–––––––––––––––––––––––––– */
-.menu[data-animation="bonus"] a::before {
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-}
-
-.menu[data-animation="bonus"] a:hover::before {
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
-          transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
-}
-
 .header__icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -257,9 +245,17 @@ h1, h2, h3, h4, h5 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
   gap: 0.2rem;
   color: black;
+  margin: 0 1% 0 0;
   background: rgba(146, 140, 140, 0.432);
+  border-style: groove #0a0a0a;
   border-radius: 5px;
 }
 
@@ -286,7 +282,30 @@ h1, h2, h3, h4, h5 {
   border-radius: 2px;
 }
 
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ––––––––––––––––––––––––ANIMATIONS–––––––––––––––––––––––––– */
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.menu[data-animation="bonus"] a::before {
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.menu[data-animation="bonus"] a:hover::before {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+          transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* ––––––––––––––––EFECTO DE ROTACIÓN DEL LOGO––––––––––––––––––– */
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .rotate {
   -webkit-animation: rotate 5s normal linear infinite;
   animation: rotate 5s normal linear infinite;
@@ -338,7 +357,9 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-/* –––––––––––––--–––––––––––Responsive––––––––––––--–––––––––––––– */
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* –––––––––––––--–––––––––––Responsive–––––––––––––––––––––––––– */
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media (max-width: 980px) {
   /* Header */
   .header__menu {
@@ -346,6 +367,9 @@ h1, h2, h3, h4, h5 {
   }
   .header__icons {
     display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .footer__titulo1--modifier {
     font-size: 12px;
@@ -535,6 +559,7 @@ h1, h2, h3, h4, h5 {
   margin: 0% 0% 0% 0%;
   padding-top: 5.4rem;
   width: 100vw;
+  overflow-x: hidden;
   gap: 0%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -557,7 +582,7 @@ h1, h2, h3, h4, h5 {
   -ms-grid-column: 1;
   grid-area: sectionSI;
   margin: 0%;
-  padding: 5rem 0rem 5rem 0rem;
+  padding: 10rem 0rem 0rem 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -599,8 +624,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .sectionSI--boton1 {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   background-repeat: no-repeat;
   background-size: 90%;
   background-position-x: center;
@@ -625,8 +650,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .sectionSI--boton2 {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   background-repeat: no-repeat;
   background-size: 90%;
   background-position-x: center;
@@ -651,8 +676,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .sectionSI--boton3 {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   background-repeat: no-repeat;
   background-size: 90%;
   background-position-x: center;
@@ -680,8 +705,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .sectionSI--boton4 {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   background-repeat: no-repeat;
   background-size: 90%;
   background-position-x: center;
@@ -796,36 +821,49 @@ h1, h2, h3, h4, h5 {
 }
 
 .hero .container {
-  height: 80vh;
+  height: 65vh;
+  padding: 4rem 0rem 4rem 0rem;
 }
 
 /* Cuando la pantalla sea más chica que 480px aplica estos estilos */
 @media (max-width: 480px) {
-  .main__bag {
+  .main__grid {
     padding-top: 2rem;
+  }
+  .hero .container {
+    height: 20vh;
+    width: 40vh;
   }
 }
 
-/* Pero si mi pantalla es mayor a 480 px aplica estos estilos siempre y cuando el tamaño sea menor a 768 px */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+/* Pero si mi pantalla es mayor a 480px aplica estos estilos siempre y cuando el tamaño sea menor a 768 px */
 @media (max-width: 768px) {
-  .main__bag {
+  .main__grid {
     padding-top: 3rem;
+  }
+  .hero .container {
+    height: 40vh;
+    width: 40vh;
   }
 }
 
 /* max-width: para Dispositivos móviles. Min-width: es para Desk*/
 @media (max-width: 980px) {
-  .main__bag {
+  .main__grid {
     padding-top: 3.4rem;
   }
-  .main__caja {
+  .hero {
     background-image: 50%;
     min-width: 100px;
   }
-  .sectionSI__caja--boton1,
-  .sectionSI__caja--boton2,
-  .sectionSI__caja--boton3,
-  .sectionSI__caja--boton4 {
+  .sectionSI--boton1 .sectionSI--boton2
+.sectionSI--boton3 .sectionSI--boton4 {
     max-width: 30%;
   }
 }
@@ -1078,6 +1116,7 @@ h1, h2, h3, h4, h5 {
 @media (max-width: 980px) {
   .card-maniki {
     background-image: hide;
+    grid-area: hide;
   }
 }
 
@@ -1186,6 +1225,12 @@ h1, h2, h3, h4, h5 {
 @media (max-width: 980px) {
   .sectionOFF__form {
     background-position-x: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 80%;
   }
 }
 
@@ -1645,7 +1690,6 @@ body.dark button {
   }
 }
 
-/*MAIN*/
 .maincourses__grid {
   margin-top: 5.4rem;
   padding-top: 5rem;
@@ -1870,7 +1914,7 @@ body.dark button {
 }
 
 .main__products {
-  padding: 6rem 0rem 6rem 0rem;
+  padding: 8rem 0rem 6rem 0rem;
 }
 
 .main__products--formbusq {
@@ -1895,7 +1939,7 @@ body.dark button {
 }
 
 .section1 {
-  padding-top: 1rem;
+  padding-top: 3rem;
 }
 
 .contenedor__tarjeta {
@@ -2250,7 +2294,6 @@ body.dark button {
   padding: 50px;
 }
 
-/*Cards Fast y Metodos*/
 .iconos__container {
   background: #eee;
   display: -webkit-box;
@@ -2334,18 +2377,6 @@ body.dark button {
 
 .carousel-item {
   height: 60vh;
-}
-
-@media only screen and (max-width: 768px) {
-  .carousel-item {
-    height: 40vh;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .carousel-item {
-    height: 30vh;
-  }
 }
 
 .carousel-item div h5 {
@@ -2432,12 +2463,6 @@ body.dark button {
   margin: auto;
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    width: 80%;
-  }
-}
-
 .fondo {
   background-color: linear-gradient(rgba(255, 255, 255, 0.733));
   border-radius: calc(1rem + 1vw);
@@ -2519,27 +2544,6 @@ body.dark button {
 .detail__button-container {
   padding: 1rem 0;
   text-align: left;
-}
-
-@media screen and (min-width: 560px) {
-  .detail .detalle {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .detail .detalle img {
-    display: block;
-    height: 200px;
-    margin: 0;
-  }
-  .detail .detalle ul {
-    margin-left: 1rem;
-  }
-  .detail__button-container {
-    padding: 1rem 0;
-    text-align: right;
-  }
 }
 
 .show {
@@ -2756,6 +2760,45 @@ body.dark button {
 
 .carrito__total span {
   font-size: calc(.8rem + 2vw);
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel-item {
+    height: 40vh;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .carousel-item {
+    height: 30vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .detail .detalle {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .detail .detalle img {
+    display: block;
+    height: 200px;
+    margin: 0;
+  }
+  .detail .detalle ul {
+    margin-left: 1rem;
+  }
+  .detail__button-container {
+    padding: 1rem 0;
+    text-align: right;
+  }
 }
 
 @media screen and (min-width: 768px) {

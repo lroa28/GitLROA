@@ -82,19 +82,22 @@ h1, h2, h3, h4, h5{
 .subrayado-amarillo{
   text-decoration: underline 5px solid rgb(206, 206, 69);
   //padding-bottom: 2px;
- // height: 13px;
+  //height: 13px;
   //display: block;
-  // border-radius: 50px;
-  // margin-top: -8px;
-  // border-bottom: 10px solid black;
+  //border-radius: 50px;
+  //margin-top: -8px;
+  //border-bottom: 10px solid black;
 }
 
-/*RESPONSIVE PARA FOTOS*/
+//–––––––––––––––––––RESPONSIVE PARA FOTOS––––––––––––––––––//
+
 /* 1 columna para smartphones */
+@media (max-width: 420px) {
 .breakpoint_imgs  {
   max-width: 100%;
   display: inline-block;
   }
+}
 /* 2 columnas para tablets */
   @media (min-width: 420px) {
   .breakpoint_imgs  {

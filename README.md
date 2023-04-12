@@ -1,5 +1,5 @@
 # Lic. en sistemas de información, Dev Full Stack y emprendedora de textil.
-## Esta es mi primer página del curso Desarrollo Web, año 2021-2022.
+## Esta es mi primer página del curso Desarrollo Web, año 2022-2023.
 
  📢Sitio web que busca mostrar mi Emprendimiento de Diseño textil y de modas "https://www.instagram.com/lukrecia1885/"
 
@@ -17,11 +17,11 @@ _Herramientas y tecnologías utilizadas._
 
 * Visual Studio Code
 
-## ¡Muchas gracias por visitar mi espacio!
+## Contacto
 
-* Comenta a otros sobre este proyecto.
-* Dejame tus opiniones.
-* O escribime: lucreciaroa@hotmail.com
+* [![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/lucrecia-cecilia-roa-242b7514)
+
+* E-mail: Marca lukrecia1885 lc.luluroa@gmail.com
 
 ---
 📌 [Sitio Web lukrecia1885 ](https://lroa28.github.io/GitLROA/) 

@@ -5,6 +5,7 @@
   margin-top:  5.4rem;
   padding-top: 5rem; //*este es el padding para que quede OK el Header
   padding-bottom: 5rem;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   display: grid;
@@ -21,6 +22,10 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
+
+.cardcurso {
+	background: #ffffff75!important;
+  }
 
 // .contenedor1 {
 // 	max-width: 1000px;

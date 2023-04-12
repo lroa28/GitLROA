@@ -4,18 +4,19 @@
 .main__grid {
   padding: 0% 0% 0% 0%;
   margin: 0% 0% 0% 0%;
-  padding-top: 5.4rem; //*este es el padding para que quede OK el Header
+  padding-top: 4.7rem; //*este es el padding para que quede OK el Header
   width: 100vw;
   overflow-x: hidden;
+  box-sizing: border-box; //autoajusta el padding segun el width que colocamos
   gap: 0%;
   display: flex;
-  flex-direction: column;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(6 auto);
+  grid-template-rows: repeat(7 auto);
   grid-template-areas:
   "header__grid"
-  "sectionSI"
+  "sectionSeasonItems"
+  "sectionMV"
   "sale"
   "pilares"
   "sectionHPYSM"
@@ -23,28 +24,49 @@
 }
 
 //------------------------------------------//
-//--------/*SECTION SEANSON ITEMS*/--------//
+//------------/*SEANSON ITEMS*/------------//
 //-----------------------------------------//
-.sectionSI{
-  grid-area: sectionSI;
+
+.contenedor {
+  width: 100%;
+  height: 100vh;
+  //max-width: 1000px; deja estatico 1000px
+  box-sizing: border-box; //autoajusta el padding segun el width que colocamos
+}
+
+.hero {
+  //background: gradient(linear, left top, left bottom, from(rgba(125, 123, 123, 0.285)), to(rgba(0, 0, 0, 0.285))), url(../img/shop.jpg);
+  //background: linear-gradient(rgba(149, 145, 145, 0.271), rgba(0, 0, 0, 0.292)), url(../img/shop.jpg);
+  background-image: url("../img/shop.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+.hero .container {
+  height: 65vh; //tamaño de la foto del Hero en la vista de la pagina(perchero de ropa)
+  padding: 4rem 0rem 4rem 0rem; //padding en Y y x
+}
+
+.sectionSeasonItems {
+  grid-area: sectionSeasonItems;
   //background: rgba(0, 0, 0, 0.877); //*último background de la seccion*//
   //padding: 6rem 0rem 9rem 0rem;
-  margin: 0% ;
-  padding: 10rem 0rem 0rem 0rem; //Agranda o achica la foto de la caja (perchero)
+  //margin: 0% ;
+  padding: 7rem 0rem 0rem 0rem; //Agranda o achica la foto de la caja (perchero)
   //margin:  4% 5% 5% 5%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  font-family: 'Poppins', sans-serif;
-  text-align: center ;
+  //display: flex;
+  //justify-content: center;
+  //align-content: center;
+  //align-items: center;
+  //font-family: 'Poppins', sans-serif;
+  //text-align: center ;
   
   &--h3{
-    color:white;
+    color:black;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    text-shadow: 0 0 15px #171718, 0 0 15px #171718;
+    text-shadow: 0 0 15px whitesmoke, 0 0 15px #171718;
     font-size: calc(.5rem + 3vw);
     //font-size: 50px;
     //font-weight: bold;
@@ -63,15 +85,15 @@
   }
 
   &--h2{
-    color: black;
+    color: rgb(32, 29, 29);
     font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     font-style: italic;
-    font-weight: bold;
-    text-shadow: 0 0 15px #c5c2c2, 0 0 15px #171718;
+    //font-weight: bold;
+    //text-shadow: 0 0 15px #2f2a2a, 0 0 15px #171718;
     //text-decoration: underline 5px solid gray;
-    //border-radius: 90px;
-    //background-color: rgba(245, 245, 245, 0.308);
+    border-radius: 10px;
+    background-color: rgb(247, 3, 3);
     //background-position: bottom;
     //text-decoration: none;
     //animation-duration: 4s;
@@ -80,8 +102,8 @@
   }
 
   &--boton1 {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     background-repeat: no-repeat;
     background-size: 90%;
     background-position-x: center;
@@ -89,7 +111,7 @@
     cursor: pointer;
     background-image: url("../img/summer.jpg");
     position: relative;
-    display: block;
+    display: flex;
     border-radius: 20px;
     box-shadow: 0px 6px 50px 13px rgba(0,0,0,0.46);
     -webkit-box-shadow: 0px 6px 50px 13px rgba(0,0,0,0.46);
@@ -107,8 +129,8 @@
   }
 
   &--boton2 {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     background-repeat: no-repeat;
     background-size: 90%;
     background-position-x: center;
@@ -116,7 +138,7 @@
     cursor: pointer;
     background-image: url("../img/winter.jpg");
     position: relative;
-    display: block;
+    display: flex;
     border-radius: 20px;
     box-shadow: 0px 6px 50px 13px rgba(0,0,0,0.46);
     -webkit-box-shadow: 0px 6px 50px 13px rgba(0,0,0,0.46);
@@ -134,8 +156,8 @@
   }
 
   &--boton3 {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     background-repeat: no-repeat;
     background-size: 90%;
     background-position-x: center;
@@ -143,7 +165,7 @@
     cursor: pointer;
     background-image: url("../img/sets.jpg");
     position: relative;
-    display: block;
+    display: flex;
     border-radius: 20px;
     box-shadow: 0px 6px 50px 13px rgba(0,0,0,0.46);
     -webkit-box-shadow: 0px 6px 50px 13px rgba(0,0,0,0.46);
@@ -162,8 +184,8 @@
   }
 
   &--boton4 {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     background-repeat: no-repeat;
     background-size: 90%;
     background-position-x: center;
@@ -171,7 +193,7 @@
     cursor: pointer;
     background-image: url("../img/moldes5.jpg");
     position: relative;
-    display: block;
+    display: flex;
     border-radius: 20px;
     box-shadow: 0px 6px 50px 13px rgba(0,0,0,0.46);
     -webkit-box-shadow: 0px 6px 50px 13px rgba(0,0,0,0.46);
@@ -249,83 +271,178 @@
   transition-delay: 0.15s;
 }
 
-//–––––––––––––––––––––––––––Hero página principal––––––––––––––––––––––––//
-.hero {
-  //background: gradient(linear, left top, left bottom, from(rgba(125, 123, 123, 0.285)), to(rgba(0, 0, 0, 0.285))), url(../img/shop.jpg);
-  //background: linear-gradient(rgba(149, 145, 145, 0.271), rgba(0, 0, 0, 0.292)), url(../img/shop.jpg);
-  background-image: url("../img/shop.jpg");
-  background-size: cover;
-  background-position: center top;
-  background-attachment: fixed;
-}
+//-----------------------------------------------//
+//------------/*SECTION MOST VIEWED*/-----------//
+//----------------/*CARRUSEL*/------------------//
+//----------------------------------------------//
 
-.hero .container {
-  height: 65vh; //tamaño de la foto del Hero en la vista de la pagina(perchero de ropa)
-  padding: 4rem 0rem 4rem 0rem; //padding en Y y x
-}
+.sectionMV {
+  grid-area: sectionMV;
+  background-color: #EAEAEA;
+  //background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100%25 100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='100%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23eaeaea'/%3E%3Cstop offset='0.02' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.02' stop-color='%23d3d3d3'/%3E%3Cstop offset='0.032' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.032' stop-color='%23e3e3e3'/%3E%3Cstop offset='0.056' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.056' stop-color='%23bebebe'/%3E%3Cstop offset='0.07' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.07' stop-color='%23dedede'/%3E%3Cstop offset='0.1' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.1' stop-color='%23cccccc'/%3E%3Cstop offset='0.126' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.126' stop-color='%23c1c1c1'/%3E%3Cstop offset='0.142' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.142' stop-color='%23f1f1f1'/%3E%3Cstop offset='0.159' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.159' stop-color='%23eaeaea'/%3E%3Cstop offset='0.17' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.17' stop-color='%23949494'/%3E%3Cstop offset='0.197' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.197' stop-color='%23d2d2d2'/%3E%3Cstop offset='0.218' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.218' stop-color='%23e9e9e9'/%3E%3Cstop offset='0.239' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.239' stop-color='%23d4d4d4'/%3E%3Cstop offset='0.254' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.254' stop-color='%23d9d9d9'/%3E%3Cstop offset='0.283' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.283' stop-color='%23f2f2f2'/%3E%3Cstop offset='0.294' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.294' stop-color='%237d7d7d'/%3E%3Cstop offset='0.305' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.305' stop-color='%23ebebeb'/%3E%3Cstop offset='0.332' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.332' stop-color='%23d1d1d1'/%3E%3Cstop offset='0.346' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.346' stop-color='%23dedede'/%3E%3Cstop offset='0.362' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.362' stop-color='%23f4f4f4'/%3E%3Cstop offset='0.381' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.381' stop-color='%23d0d0d0'/%3E%3Cstop offset='0.415' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.415' stop-color='%23b6b6b6'/%3E%3Cstop offset='0.428' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.428' stop-color='%23bdbdbd'/%3E%3Cstop offset='0.442' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.442' stop-color='%23e3e3e3'/%3E%3Cstop offset='0.456' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.456' stop-color='%23aaaaaa'/%3E%3Cstop offset='0.498' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.498' stop-color='%23e7e7e7'/%3E%3Cstop offset='0.511' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.511' stop-color='%23aeaeae'/%3E%3Cstop offset='0.532' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.532' stop-color='%23e9e9e9'/%3E%3Cstop offset='0.541' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.541' stop-color='%23b4b4b4'/%3E%3Cstop offset='0.56' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.56' stop-color='%23f1f1f1'/%3E%3Cstop offset='0.581' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.581' stop-color='%23d2d2d2'/%3E%3Cstop offset='0.6' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.6' stop-color='%23e0e0e0'/%3E%3Cstop offset='0.618' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.618' stop-color='%23e4e4e4'/%3E%3Cstop offset='0.656' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.656' stop-color='%23a0a0a0'/%3E%3Cstop offset='0.679' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.679' stop-color='%23ebebeb'/%3E%3Cstop offset='0.689' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.689' stop-color='%23e2e2e2'/%3E%3Cstop offset='0.720' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.720' stop-color='%23a2a2a2'/%3E%3Cstop offset='0.734' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.734' stop-color='%23d6d6d6'/%3E%3Cstop offset='0.748' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.748' stop-color='%23e6e6e6'/%3E%3Cstop offset='0.764' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.764' stop-color='%23f0f0f0'/%3E%3Cstop offset='0.788' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.788' stop-color='%23e9e9e9'/%3E%3Cstop offset='0.808' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.808' stop-color='%23cecece'/%3E%3Cstop offset='0.831' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.831' stop-color='%23e9e9e9'/%3E%3Cstop offset='0.856' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.856' stop-color='%23dbdbdb'/%3E%3Cstop offset='0.872' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.872' stop-color='%23eaeaea'/%3E%3Cstop offset='0.894' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.894' stop-color='%23e0e0e0'/%3E%3Cstop offset='0.914' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.914' stop-color='%23cdcdcd'/%3E%3Cstop offset='0.942' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.942' stop-color='%23d5d5d5'/%3E%3Cstop offset='0.957' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.957' stop-color='%23cccccc'/%3E%3Cstop offset='0.973' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.973' stop-color='%23555555'/%3E%3Cstop offset='1' stop-color='%23EAEAEA'/%3E%3Cstop offset='1' stop-color='%23e4e4e4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' x='0' y='0' width='100%25' height='100%25'/%3E%3C/svg%3E");
+  //background-attachment: fixed;
+  //background-size: cover;
+  padding-top: 12rem;
+  //padding-bottom: 12rem;
 
-//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//
-//––––––––––––––––––––RESPONSIVE SECTION SEANSON ITEMS–––––––––––––//
-//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//
+  & h3 {
+    text-shadow: 0 0 15px whitesmoke, 0 0 15px #171718;
+    font-size: calc(.5rem + 3vw);
 
-/* Cuando la pantalla sea más chica que 480px aplica estos estilos */
-@media (max-width: 480px) {
-  .main__grid {
-    padding-top: 2rem;
-    
+
+    &:hover{
+      font-style: italic;
+      //font-size: 30px;
+      }
+
   }
-
-  .hero .container {
-    height: 20vh;
-    width: 40vh;
-  }
-
-}
-
-@media screen and (min-width:768px) {
-  .container {
-      width: 80%;
-  }
-}
-
-/* Pero si mi pantalla es mayor a 480px aplica estos estilos siempre y cuando el tamaño sea menor a 768 px */
-@media (max-width: 768px) {
-  .main__grid {
-    padding-top: 3rem;
-  }
-
-  .hero .container {
-    height: 40vh;
-    width: 40vh;
-  }
-}
-
-/* max-width: para Dispositivos móviles. Min-width: es para Desk*/
-@media (max-width: 980px) {
-  .main__grid {
-    padding-top: 3.4rem;
-  }
-  .hero {
-    background-image: 50%;
-    min-width: 100px
-  }
-  .sectionSI--boton1 .sectionSI--boton2
-  .sectionSI--boton3 .sectionSI--boton4{
-    max-width: 30%;
-    // min-width: 1300px
-  }
-
   
+   &__caja {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   align-content: center;
+   color: black;
+   font-family: 'Poppins', sans-serif;
+   font-size: 12px;
+   font-weight: bold;
+   text-align: center;
+   padding-top: 5rem;
+   //padding-bottom: 5rem;
+   margin: 0%;
+   }
+}
+
+.carousel-item {
+  height: 100vh;
+}
+
+/*PARA JS*/
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.remove {
+  font-size: calc(.8rem + .5vw);
+  background-color: transparent;
+  border: none;
+  color: #B153F0;
+  cursor: pointer;
+}
+
+.title {
+  color: #FFC857;
+  text-shadow: 0 0 5px #FFC857, 0 0 10px #B153F0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: calc(1.2rem + 1.8vw);
+  font-family: 'Exo', sans-serif;
+}
+
+.title--big {
+  font-size: calc(1.2rem + 3vw);
+}
+
+.title--small {
+  font-size: calc(1.2rem + .5vw);
+}
+
+.color-primary {
+  color: #B153F0;
+}
+
+.color-light {
+  color: #ebeeee;
+}
+
+.color-complementary {
+  color: #FFC857;
+}
+
+.small {
+  font-size: calc(.5rem + .5vw);
+  text-transform: uppercase;
+}
+
+.padding-y {
+  padding: 10rem 0 6rem;
+}
+
+.padding {
+  padding: calc(.3rem + 3vw);
+}
+
+.padding-small {
+  padding: calc(.3rem + 1vw);
+}
+
+.padding-bottom {
+  padding-bottom: 2rem;
+}
+
+//.container {
+//  width: 95%;
+//  margin: auto;
+//}
+
+.fondo {
+  background-color: $fondogrisdegradado;
+  border-radius: calc(1rem + 1vw);
+}
+
+.borde {
+  border-radius: calc(1rem + 1vw);
+  border: 4px solid grey;
+  transition: all .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.borde:hover {
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.781), 0 0 20px rgba(255, 0, 0, 0.747), 0 0 40px rgba(255, 0, 0, 0.781);
+}
+
+.borde--violeta {
+  border: 4px solid black;
+  box-shadow: 0 0 5px #eee, 0 0 10px #eee, 0 0 30px #eee, inset 0 0 20px #eee;
 }
 
 //-------------------------------------------//
 // ----------------/*SALE*/------------------//
 // ------------------------------------------//
+.card {
+  padding: 2rem 1rem 2rem 1rem;
+  height: 8rem;
+
+&:hover {
+  box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
+  -webkit-transition: 1s;
+  transition: 1s;
+  }
+}
+
+.list-unstyled{
+  color: black;
+  font-size: 1.3rem;
+}
+
 .sale{
   grid-area: sale;
   padding-top: 12rem;
   padding-bottom: 12rem;
   //background-color: rgb(236, 57, 57);
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap ;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 
 &__precio {
   color: red;
@@ -370,9 +487,9 @@
 &--h3{
   color:red;
   font-family: 'Poppins', sans-serif;
-  //font-size: 50px;
+  font-size: 50px;
   font-weight: bold;
-  text-shadow: 0 0 15px #171718, 0 0 15px #171718;
+  text-shadow: 0 0 15px whitesmoke, 0 0 15px #171718;
   font-size: calc(.5rem + 3vw);
 }
 
@@ -382,228 +499,75 @@
   }
 }
 
-.card {
-  border: none;
-  padding: 10rem 1rem 10rem 1rem;
-  height: 35rem;
-
-&:hover {
-  box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
-  -webkit-transition: 1s;
-  transition: 1s;
-  }
-}
-
-.list-unstyled{
-  color: black;
-  font-size: 1.3rem;
-}
-
 //-------------------------------------------//
 // ----------------/*PILARES*/---------------//
 // ------------------------------------------//
-.pilares{
+.pilares {
   grid-area: pilares;
-  padding-top: 10rem;
-  padding-bottom: 25rem;
-  background: rgba(128, 128, 128, 0.335);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4 auto);
-  grid-template-areas:
-  "h3--pillars h3--pillars"
-  "card-1 card-maniki"
-  "card-2 card-maniki"
-  "card-3 card-maniki"
-  "card-4 card-maniki";
-  gap: 5%;
+  background-image: url("../img/maniqui1.jpg");
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: contain;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .pilares--h3{
   color: black;
   font-family: 'Poppins', sans-serif;
-  //font-size: 50px;
   font-weight: bold;
-  text-shadow: 0 0 15px #171718, 0 0 15px #171718;
+  text-shadow: 0 0 15px whitesmoke, 0 0 15px #171718;
   font-size: calc(.5rem + 3vw);
+  align-items: center;
+  text-align: center;
 
   &:hover{
     font-style: italic;
-    font-size: 70px;
+    //font-size: 30px;
     }
 }
 
-.iconos__container--pillars {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 1rem;
-  padding-top: 3rem;
-  padding-bottom: 4rem;
+
+.cardpilar {
+  background: #ffffff75!important;
+  border-radius: 0px 400px 400px 0px!important;
+  height: 10rem;
 }
 
-.iconos__container__ind--pillars {
-  background: rgba(245, 245, 245, 0.616);
-  border: 0.1rem solid rgba(0, 0, 0, 0.1);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 1rem;
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 1rem;
-      flex: 1 1 1rem;
-  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
-      box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem ;
-  padding: 3rem 2rem;
-  position: relative;
-  box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
-  -webkit-transition: 1s;
-  transition: 1s;
+.cardpilarimg {
+      width: 15rem !important;
+      height:9rem!important;
 }
 
-.iconos__container__ind--pillars:hover {
-  box-shadow: -1px -1px 13px 2px rgb(0, 0, 0);
-  -webkit-box-shadow: -1px -10px 53px 2px rgb(0, 0, 0);
-  -moz-box-shadow: -1px -10px 53px 2px rgb(0, 0, 0);
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.iconos__container__img--pillars {
-  width: 10rem;
-  height: 8rem;
-  margin-right: 2rem;
-  margin-left: 2rem;
-}
-
-.iconos__container__titulo--pillars {
-  color: black;
-  padding-bottom: 0.5rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.iconos__container__span--pillars {
-  color: rgb(53, 52, 52);
-  font-size: 1.1rem;  
-}
-
-.hero-pillars {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../img/shop.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.151), rgba(0, 0, 0, 0.158)), url(../../img/fondoEstrellas.png);
-  background-size: cover;
-  background-position: center top;
-  background-attachment: fixed;
-}
-
-.card--pillars {
-  background: #fff;
-}
-
-/* –––––––––––––––––––––Grid-áreas de Pilares–––––––––––––––––––– */
-.h3--pillars{
- grid-area: h3--pillars;
-}
-
-.card-maniki{
- grid-area: card-maniki;
- //border-radius: 0.5rem ;
- background-image: url("../img/maniqui2.jpg");
- //background-attachment: fixed;
- background-repeat: no-repeat;
- background-position: center;
- background-size: cover;
- border: 0.1rem solid rgba(0, 0, 0, 0.1);
- display: -webkit-box;
- display: -ms-flexbox;
- display: flex;
- border-radius: 0.5rem ;
- -webkit-box-flex: 1;
- -ms-flex: 1 1 1rem;
-     flex: 1 1 1rem;
-padding: 3rem 2rem;
-box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
-}
-
-.card-maniki:hover {
-  box-shadow: -1px -1px 13px 2px rgb(0, 0, 0);
-  -webkit-box-shadow: -1px -10px 53px 2px rgb(0, 0, 0);
-  -moz-box-shadow: -1px -10px 53px 2px rgb(0, 0, 0);
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.card-1{
- grid-area: card-1;
-}
-.card-2{
- grid-area: card-2;
-}
-.card-3{
- grid-area: card-3;
-}
-.card-4{
- grid-area: card-4;
-}
-
-
-//––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//
-//–––––––––––––––––––––––––RESPONSIVE PILARES–––––––––––––––––––––––––––//
-//––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//
-
-//max-width: para Dispositivos móviles. Min-width: es para Desk
-@media (max-width: 980px) {
-  .card-maniki{
-    background-image: hide;
-    grid-area: hide
-  }
-}
 //-------------------------------------------//
 //-----------------/*CONTACT*/---------------//
 //-------------------------------------------//
 .sectionHPYSM {
   grid-area: sectionHPYSM;
-  display: flex;
-  justify-content: center;
-  padding: 5rem 0rem 5rem 0rem;
-  background: #eee;
-  // border-radius: 20px;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  background-color: rgba(128, 128, 128, 0.488);
 }
 
-.iconos__container {
-  background: #eee;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 1rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.contact--h3{
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-shadow: 0 0 15px whitesmoke, 0 0 15px #171718;
+  font-size: calc(.5rem + 3vw);
+
+  &:hover{
+    font-style: italic;
+    font-size: 60px;
+    }
 }
 
 .iconos__container__ind {
   background: #fff;
-  border: 0.1rem solid rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 25rem;
-          flex: 1 1 25rem;
-  margin: 1rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1)!important;
+  height: 15rem ;
+  justify-content: center ;
+  border-radius:10px;
 }
 
 .iconos__container__img {
@@ -623,19 +587,6 @@ box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
   font-size: 1.1rem;
 }
 
-.contact--h3{
-  color: black;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  text-shadow: 0 0 15px #171718, 0 0 15px #171718;
-  font-size: calc(.5rem + 3vw);
-
-  &:hover{
-    font-style: italic;
-    font-size: 60px;
-    }
-}
-
 .img__redsocial {
   width: 30px;
   height: 30px;
@@ -644,7 +595,7 @@ box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
 //-------------------------------------------//
 // ----------------/*OFFER*/-----------------//
 // ------------------------------------------//
-.sectionOFF{
+/*.sectionOFF{
   background-image: url("../img/descuento - copia.jpg");
   background-repeat: repeat;
   background-position: center;
@@ -664,24 +615,7 @@ box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
   font-family: 'Poppins', sans-serif;
   text-align: center;
   overflow: hidden;
-}
-
-//––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//
-//–––––––––––––––––––––––––RESPONSIVE–––––––––––––––––––––––––––––––//
-//––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//
-
-//max-width: para Dispositivos móviles. Min-width: es para Desk
-@media (max-width: 980px) {
-  .sectionOFF__form{
-    background-position-x: left;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .container {
-      width: 80%;
-  }
-}
+}*/
 
 //-----------------------------------------//
 //---------------/*BOTON ARRIBA*/----------//
@@ -750,8 +684,6 @@ box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
       height: 6.6rem;
   }
 }
-
-
 
 //BOTON RECYCLE
 
@@ -836,14 +768,211 @@ box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
 //   left: 0;
 // }
 
+/*=======================================================================================================
+=                                        Media queries                                                  =
+========================================================================================================*/
+/* col-xs */
+@media (max-width: 767px) {
+
+  .contenedor {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box; //autoajusta el padding segun el width que colocamos
+  }
+  
+  .hero {
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+  }
+  
+  .hero .container {
+    height: 10vh; //tamaño de la foto del Hero en la vista de la pagina(perchero de ropa)
+    padding: 1rem 0rem 2rem 0rem; //padding en Y y x
+  }
+  
+  .sectionSeasonItems {
+    grid-area: sectionSeasonItems;
+    //background: rgba(0, 0, 0, 0.877); //*último background de la seccion*//
+    //padding: 6rem 0rem 9rem 0rem;
+    //margin: 0% ;
+    padding: 4rem 0rem 0rem 0rem; //Agranda o achica la foto de la caja (perchero)
+    //margin:  4% 5% 5% 5%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    text-align: center ;
+    gap: 2px;
+} 
+
+  .sectionSeasonItems--boton1
+  { width: 150px; height: 150px;}
+
+  .sectionSeasonItems--boton2
+  { width: 150px; height: 150px;}
+
+  .sectionSeasonItems--boton3
+  { width: 150px; height: 150px;}
+
+  .sectionSeasonItems--boton4
+  { width: 150px; height: 150px;}
+
+  .iconos__container__ind {
+    background: #fff;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    height: 10rem ;
+    width: auto;
+    justify-content: center ;
+  }
+  
+  .iconos__container__img {
+    height: 5rem;
+  }
+} 
+    
+  /* col-sm */
+  @media (min-width: 768px) and (max-width: 991px) {
+  
+  .sectionSeasonItems--boton1
+  .sectionSeasonItems--boton2
+  .sectionSeasonItems--boton3
+  .sectionSeasonItems--boton4
+  {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+  @media screen and (max-width: 800px) {
+
+    .sectionSeasonItems--boton1
+    .sectionSeasonItems--boton2
+    .sectionSeasonItems--boton3
+    .sectionSeasonItems--boton4
+    {
+      width: 100px;
+      height: 100px;
+    }
+
+  }
+  
+  /* col-md */
+  @media (min-width: 992px) and (max-width: 1199px) {
+
+  }
+  
+  /* col-lg */
+  @media (min-width: 1200px) {
+      
+  }
+  
+  /*col-sm col-md col-lg*/
+  @media (min-width: 768px) {
+  
+    }
+
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//
+//––––––––––––––––––––RESPONSIVE SECTION SEANSON ITEMS–––––––––––––//
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//
+
+/* max-width: para Dispositivos móviles. Min-width 768px: es para Desk*/
+@media (max-width: 480px) {
+  .main__grid {
+    padding-top: 3.4rem;
+  }
+
+  .sectionSI--boton1 .sectionSI--boton2
+  .sectionSI--boton3 .sectionSI--boton4{
+    width: auto;
+    // min-width: 1300px
+    height: auto;
+    
+  }  
+
+  .hero .container {
+    height: 20vh;
+    width: 40vh;
+  }
+
+}
+
+@media screen and (min-width:768px) { //para Desk
+  .container {
+      width: 80%;
+  }
+}
+
+/* Pero si mi pantalla es mayor a 480px aplica estos estilos siempre y cuando el tamaño sea menor a 768 px */
+@media (max-width: 768px) {
+  .main__grid {
+    padding-top: 3rem;
+  }
+
+  .hero .container {
+    height: 40vh;
+    width: 40vh;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .hero {
+    background-size: auto;
+  }
+}
+
+//––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//
+//–––––––––––––––––––––––––RESPONSIVE PILARES–––––––––––––––––––––––––––//
+//––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//
+
+//max-width: para Dispositivos móviles. Min-width: es para Desk
+@media (max-width: 480px) {
+  .card-maniki{
+    display: none;
+  }
+}
+
+//––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//
+//–––––––––––––––––––––––––RESPONSIVE CONTACT–––––––––––––––––––––––––––//
+//––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//
+
+//max-width: para Dispositivos móviles. Min-width: es para Desk
+@media (max-width: 480px) {
+
+  .iconos__container__ind {
+   width: auto;
+  }
+}
+
+//––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//
+//–––––––––––––––––––––––––RESPONSIVE–––––––––––––––––––––––––––––––//
+//––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//
+
+//max-width: para Dispositivos móviles. Min-width: es para Desk
+@media (max-width: 980px) {
+  .sectionOFF__form{
+    background-position-x: left;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .container {
+      width: 80%;
+  }
+}
+
+
 /*RESPONSIVE*/
 //max-width: para Dispositivos móviles. Min-width: es para Desk
 
-  .footer__titulo1--modifier{
-    font-size: 10px;
-    
-    &:hover{
-      transition: 0s;
-      font-size: 1rem;
-     }
-  }
+.footer__titulo1--modifier{
+  font-size: 10px;
+  
+  &:hover{
+    transition: 0s;
+    font-size: 1rem;
+   }
+}

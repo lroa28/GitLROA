@@ -1,7 +1,6 @@
 //-------------------------------------------//
 //----------------/*HEADER*/----------------//
 //------------------------------------------//
-
 .header {
   grid-area: header__grid;
   position: fixed;
@@ -9,38 +8,39 @@
   display: flex;
   // justify-content: space-between;
   // align-items: center;
-  background-image: url("../img/fondo_gris.jpeg");
-  padding: 0%;
+  background-image: url("../img/fondonegro.jpg"); 
+  //background-color:black ;
+  padding: 10px 0 10px 0;
   margin: 0%;
 }
 
-  .divlogo{
-   display: flex;
-   flex-direction: row;
-   //padding:  0% 10% 0% 10%;
-  }
+.divlogo{
+  display: flex;
+  flex-direction: row;
+  //padding:  0% 10% 0% 10%;
+}
 
- .header__logo {
-   width: 60px;
-   height: 70px;
-  //  top: 50%;
-  //  left: 50%;
+.header__logo {
+  width: 50px;
+  height: 60px;
+  //top: 50%;
+  //left: 50%;
   //border-style: groove rgb(10, 10, 10);
-   }
+}
 
-  .header__menu {
+.header__menu {
     padding: 0%;
     margin: 0%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
-    color: black;
+    color: whitesmoke;
     font-size: 18px;
     gap: 0.3rem;
     text-transform: uppercase;
 
-     & ul {
+      & ul {
       list-style: none;
     }
 
@@ -50,53 +50,54 @@
       position: relative;
       text-decoration: none;
     }
-  }
+}
 
-  .menu {
+.menu {
     display: flex;
     justify-content: center;
-  }
+}
   
-  .menu li {
+.menu li {
     margin-right: 10px;
     list-style: none;
     display: block;
     position: relative;
     text-decoration: none;
-  }
+}
   
-  .menu a {
+.menu a {
     position: relative;
     display: block;
     padding: 5px;
-  }
+}
   
-  .menu a:hover {
+.menu a:hover {
     font-style: italic;
     //background-color: rgba(128, 128, 128, 0.144);
     //border-radius: 3px;
-  }
+}
 
-  .menu a::before {
+.menu a::before {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 2px;
-    background: linear-gradient(to right, #e878a2, red, blue);
+    height: 3px;
+    background: linear-gradient(to right, #01d6f7, rgb(78, 74, 74), rgb(248, 3, 244));
     z-index: 1;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.5s ease-in-out;
-  }
-  
-  .menu a:hover::before {
+    border-radius: 2px;
+}
+
+.menu a:hover::before {
     transform: scaleX(1);
     transition: all .5s;
-  }
+}
 
-  .header__icons {
+.header__icons {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -104,7 +105,7 @@
     gap: 0.2rem;
     color: black;
     margin: 0 1% 0 0 ;
-    background: rgba(146, 140, 140, 0.432);
+    background: whitesmoke;
     border-style: groove rgb(10, 10, 10);
     border-radius: 5px;
  
@@ -123,19 +124,22 @@
    color: red;
    transition: all .5s;
    }
-  }
- 
- .btn--search{
+}
+
+.btn--search{
    width: 5rem;
    height: 2.2rem;
    border-radius: 2px;
- }   
+}   
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* ––––––––––––––––––––––––ANIMATIONS–––––––––––––––––––––––––– */
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-//De forma similar al ejemplo anterior, tenemos la opción de cambiar la dirección de la animación del deslizamiento. La línea aparecerá de izquierda a derecha de forma predeterminada, pero para cambiar ese comportamiento, tenemos que pasar el atributo data-animation a la lista de destino. Los valores posibles son to-left y center.
+//De forma similar al ejemplo anterior, tenemos la opción de cambiar la dirección de la animación del 
+//deslizamiento. La línea aparecerá de izquierda a derecha de forma predeterminada, pero para cambiar ese 
+//comportamiento, tenemos que pasar el atributo data-animation a la lista de destino. 
+//Los valores posibles son to-left y center.
 //Los estilos correspondientes son los siguientes:
 .menu[data-animation="bonus"] a::before {
   transform-origin: right;
@@ -147,7 +151,6 @@
   transform: scaleX(1);
   transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
 }
-
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* ––––––––––––––––EFECTO DE ROTACIÓN DEL LOGO––––––––––––––––––– */
@@ -187,17 +190,19 @@
 @media (max-width: 980px) { //para DM. min width es para Desk
 /* Header */
 .header__menu {
- display: none;
+  display: none;
 }
 .header__icons{
- display: none;
- align-items: center;
+  display: none;
+  align-items: center;
 }
-  .footer__titulo1--modifier{
+
+/* Footer */
+.footer__titulo1--modifier{
   font-size: 12px;
   :hover{
-   transition: 0s;
-   font-size: 1rem;
+    transition: 0s;
+    font-size: 1rem;
   }
- }
+  }
 }

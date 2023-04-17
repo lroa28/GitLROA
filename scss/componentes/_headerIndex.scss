@@ -8,8 +8,8 @@
   display: flex;
   // justify-content: space-between;
   // align-items: center;
-  background-image: url("../img/fondonegro.jpg"); 
-  //background-color:black ;
+  //background-image: url("../img/fondonegro.jpg"); 
+  background-color: rgba(245, 245, 245, 0.802) ;
   padding: 10px 0 10px 0;
   margin: 0%;
 }
@@ -21,8 +21,8 @@
 }
 
 .header__logo {
-  width: 50px;
-  height: 60px;
+  width: 60px;
+  height: 65px;
   //top: 50%;
   //left: 50%;
   //border-style: groove rgb(10, 10, 10);
@@ -126,11 +126,33 @@
    }
 }
 
-.btn--search{
-   width: 5rem;
-   height: 2.2rem;
-   border-radius: 2px;
-}   
+//.btn--search{
+//   width: 5rem;
+//   height: 2.2rem;
+//   border-radius: 2px;
+//}   
+
+/*================== Login =================*/
+.Login{
+	right: 0;
+	z-index: 77;
+	background: #fff;
+	color: #141414;
+	text-transform: none;
+	line-height: normal;
+	padding: 7px;
+	text-align: left;
+	font-size: 14px;
+	transition: all .3s ease-in-out;
+	opacity: 0;
+	pointer-events: none;
+}
+.Login a{
+	text-decoration: none;
+	line-height: auto;
+	text-align: center;
+	display: block;
+}
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* ––––––––––––––––––––––––ANIMATIONS–––––––––––––––––––––––––– */
@@ -183,9 +205,59 @@
   }
 }
 
-/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* –––––––––––––--–––––––––––Responsive–––––––––––––––––––––––––– */
-/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*=======================================================================================================
+=                                        Media queries                                                  =
+========================================================================================================*/
+/* col-xs */
+
+/* max-width: para Dispositivos móviles. Min-width 768px: es para Desk*/
+@media (max-width: 480px) {
+
+//––––––––––––––––––––RESPONSIVE HEADER–––––––––––––//  
+  
+  .header__logo {
+    width: 40px;
+    height: 35px;
+    //top: 50%;
+    //left: 50%;
+    //border-style: groove rgb(10, 10, 10);
+  }
+  
+  .header__menu {
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 10px;
+  }
+
+  .header__icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    gap: 0.1rem;
+    color: black;
+    margin: 0 1% 0 0 ;
+    background: whitesmoke;
+    border-style: groove rgb(10, 10, 10);
+    border-radius: 5px;
+ 
+   & li a{
+     list-style: none;
+     padding: 1px 2px;
+     display:block;
+     position: relative;
+     font-size: 12px;
+     color: black;
+     border-style: groove rgb(10, 10, 10);
+     border-radius: 1px;
+   }
+
+  }
+}
 
 @media (max-width: 980px) { //para DM. min width es para Desk
 /* Header */

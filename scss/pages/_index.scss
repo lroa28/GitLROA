@@ -799,7 +799,7 @@
   }
     
   .hero .container {
-    height: 60vh; //tamaño de la foto del Hero en la vista de la pagina(perchero de ropa)
+    height: 70vh; //tamaño de la foto del Hero en la vista de la pagina(perchero de ropa)
     padding: 1rem 0rem 1rem 0rem; //padding en Y y x
     width: 40vh;
   }
@@ -812,6 +812,12 @@
     align-items: center;
     font-family: 'Poppins', sans-serif;
     text-align: center ;
+
+    &--h2{
+      font-size: 15px;
+      font-style: italic;
+      border-radius: 5px;
+    }
 } 
 
   .sectionSeasonItems--boton1,
@@ -940,8 +946,8 @@
 }
 
 .cardpilarimg {
-      width: 5rem !important;
-      height:4rem!important;
+      width: 6rem !important;
+      height:5rem!important;
 }
 
 //––––––––––––––––––––RESPONSIVE CONTACT–––––––––––––––––//
@@ -972,7 +978,7 @@
 
 .iconos__container__span {
   color: rgb(53, 52, 52);
-  font-size: 0.2rem;
+  font-size: 0.1rem;
 }
 
 .img__redsocial {

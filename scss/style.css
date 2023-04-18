@@ -1355,7 +1355,7 @@ h1, h2, h3, h4, h5 {
             box-sizing: border-box;
   }
   .hero .container {
-    height: 60vh;
+    height: 70vh;
     padding: 1rem 0rem 1rem 0rem;
     width: 40vh;
   }
@@ -1374,6 +1374,11 @@ h1, h2, h3, h4, h5 {
             align-items: center;
     font-family: 'Poppins', sans-serif;
     text-align: center;
+  }
+  .sectionSeasonItems--h2 {
+    font-size: 15px;
+    font-style: italic;
+    border-radius: 5px;
   }
   .sectionSeasonItems--boton1,
   .sectionSeasonItems--boton2,
@@ -1483,8 +1488,8 @@ h1, h2, h3, h4, h5 {
     height: 20rem;
   }
   .cardpilarimg {
-    width: 5rem !important;
-    height: 4rem !important;
+    width: 6rem !important;
+    height: 5rem !important;
   }
   .sectionHPYSM {
     padding-top: 6rem;
@@ -1511,7 +1516,7 @@ h1, h2, h3, h4, h5 {
   }
   .iconos__container__span {
     color: #353434;
-    font-size: 0.2rem;
+    font-size: 0.1rem;
   }
   .img__redsocial {
     width: 20px;

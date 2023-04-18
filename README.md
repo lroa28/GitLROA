@@ -21,7 +21,7 @@ _Herramientas y tecnologías utilizadas._
 
 * [![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/lucrecia-cecilia-roa-242b7514)
 
-* E-mail: Marca lukrecia1885 lc.luluroa@gmail.com
+* E-mail: Marca lukrecia1885 lukrecia1885@gmail.com
 
 ---
 📌 [Sitio Web lukrecia1885 ](https://lroa28.github.io/GitLROA/) 

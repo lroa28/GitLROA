@@ -6,12 +6,13 @@
   position: fixed;
   // overflow: hidden;
   display: flex;
-  // justify-content: space-between;
-  // align-items: center;
+  //justify-content: space-between;
+  //align-items: center;
   //background-image: url("../img/fondonegro.jpg"); 
-  background-color: rgba(245, 245, 245, 0.802) ;
+  background-color: rgba(245, 245, 245, 0.502) ;
   padding: 10px 0 10px 0;
   margin: 0%;
+  border-bottom: solid 10px rgba(175, 172, 172, 0.423);
 }
 
 .divlogo{
@@ -21,11 +22,12 @@
 }
 
 .header__logo {
-  width: 60px;
-  height: 65px;
+  width: 50px;
+  height: 55px;
   //top: 50%;
   //left: 50%;
-  //border-style: groove rgb(10, 10, 10);
+  border:rgba(245, 245, 245, 0.502);
+  border-style: solid double rgb(10, 10, 10);
 }
 
 .header__menu {
@@ -35,7 +37,7 @@
     flex-direction: row;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
-    color: whitesmoke;
+    color: wheat;
     font-size: 18px;
     gap: 0.3rem;
     text-transform: uppercase;
@@ -132,28 +134,6 @@
 //   border-radius: 2px;
 //}   
 
-/*================== Login =================*/
-.Login{
-	right: 0;
-	z-index: 77;
-	background: #fff;
-	color: #141414;
-	text-transform: none;
-	line-height: normal;
-	padding: 7px;
-	text-align: left;
-	font-size: 14px;
-	transition: all .3s ease-in-out;
-	opacity: 0;
-	pointer-events: none;
-}
-.Login a{
-	text-decoration: none;
-	line-height: auto;
-	text-align: center;
-	display: block;
-}
-
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* ––––––––––––––––––––––––ANIMATIONS–––––––––––––––––––––––––– */
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -209,18 +189,12 @@
 =                                        Media queries                                                  =
 ========================================================================================================*/
 /* col-xs */
-
-/* max-width: para Dispositivos móviles. Min-width 768px: es para Desk*/
 @media (max-width: 480px) {
 
-//––––––––––––––––––––RESPONSIVE HEADER–––––––––––––//  
-  
+//––––––––––––––––––––MENU–––––––––––––//  
   .header__logo {
     width: 40px;
     height: 35px;
-    //top: 50%;
-    //left: 50%;
-    //border-style: groove rgb(10, 10, 10);
   }
   
   .header__menu {
@@ -230,20 +204,21 @@
     flex-direction: row;
     justify-content: center;
     color: whitesmoke;
-    font-size: 10px;
+    font-size: 18px;
   }
 
+//––––––––––––––––––––ICONS–––––––––––––// 
   .header__icons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
-    align-items: left;
-    gap: 0.1rem;
+    align-items: start;
+    gap: 0.2rem;
     color: black;
-    margin: 0 1% 0 0 ;
-    background: whitesmoke;
+    margin: 3% ;
     border-style: groove rgb(10, 10, 10);
     border-radius: 5px;
+    background: none;
  
    & li a{
      list-style: none;
@@ -256,25 +231,83 @@
      border-radius: 1px;
    }
 
+   & :hover {
+    color: red;
+    transition: all .5s;
+    }
   }
+
+.dropdown-menu {
+  font-size: 10px;
 }
 
-@media (max-width: 980px) { //para DM. min width es para Desk
-/* Header */
+}
+
+/* col-md */
+  @media (min-width: 992px) and (max-width: 1199px) {
+//––––––––––––––––––––MENU–––––––––––––//  
+.header__logo {
+  width: 40px;
+  height: 35px;
+}
+
 .header__menu {
-  display: none;
-}
-.header__icons{
-  display: none;
-  align-items: center;
+  padding: 0%;
+  margin: 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: whitesmoke;
+  font-size: 18px;
 }
 
-/* Footer */
-.footer__titulo1--modifier{
-  font-size: 12px;
-  :hover{
-    transition: 0s;
-    font-size: 1rem;
-  }
+//––––––––––––––––––––ICONS–––––––––––––// 
+.header__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: start;
+  gap: 0.2rem;
+  color: black;
+  margin: 3% ;
+  border-style: groove rgb(10, 10, 10);
+  border-radius: 5px;
+  background: none;
+
+ & li a{
+   list-style: none;
+   padding: 1px 2px;
+   display:block;
+   position: relative;
+   font-size: 12px;
+   color: black;
+   border-style: groove rgb(10, 10, 10);
+   border-radius: 1px;
+ }
+
+ & :hover {
+  color: red;
+  transition: all .5s;
   }
 }
+
+.dropdown-menu {
+font-size: 10px;
+}
+}
+
+@media (max-width: 980px) {
+
+}
+  
+/* col-lg */
+  @media (min-width: 1200px) {
+      
+  }
+  
+/*col-sm col-md col-lg*/
+  @media (min-width: 768px) {
+  
+    }
+
+

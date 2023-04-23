@@ -7,15 +7,26 @@
     <meta name="description" content="lukrecia1885 Lulu Roa. Page of Products"/>
     <meta name="keywords" content="Ecommerce, clothing, fashion, women, men, children, t-shirts, pants, jumpsuits, scarves, shirts, bracelets and jackets, Boca, River"/>
     <title>Products lukrecia1885</title>
+    <!-- Link a CSS -->    
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
     <link href="../css/all.min.css" rel="stylesheet">
     <link href="../scss/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <!-- Link a Bootstraps v5.3 -->    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <!-- Fontawesome Iconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/sweetalert2.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <!-- CDN via jsDelivr -->
-    <!-- Link para estilos con Bootstraps-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css"> -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/> <!--Aos animate-->
+    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+    <!--Aos animate-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
     <!-- Script 3.6.0 JQuery clase11 JS-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <head>
@@ -33,14 +44,13 @@
 <!-------------------------------------------//
 // ---------------- HEADER-------------------//
 // ------------------------------------------->
-
-<div class="row-xs-12">
+<div class="row">
   <div class="col-xs-12">
   <header>
-  <nav class="navbar navbar-expand-lg fixed-top header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+  <nav class="header navbar navbar-expand-lg fixed-top" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
     <div class="container-fluid d-flex-row">
       
-     <div class="divlogo"><a class="navbar-brand rotate d-inline-block align-top" href="../index.html"><img class="header__logo img-fluid rounded-circle" src="../img/logoOriginal.jpg" alt="Logo"></a></div>
+     <div class="divlogo"><a class="navbar-brand d-inline-block align-top" href="../index.html"><img class="header__logo img-fluid rounded-circle" src="../img/logo.jpg" alt="Logo"></a></div>
       <button
         class="navbar-toggler"
         type="button"
@@ -49,19 +59,20 @@
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"><i class="fas fa-hamburger"></i></span>
+        <span class="navbar-toggler-icon" style="color:black"></span>
+        <!-- <span class="navbar-toggler-icon" style="color:black"><i class="fas fa-hamburger"></i></span> Icono Hamburguesa-->
       </button>
   
      <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <div class="navbar-nav me-auto mb-lg-0 d-flex flex-wrap justify-content-center">
       <ul class="header__menu menu d-flex flex-wrap justify-content-center" data-animation="bonus">
-        <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: lowercase;" href="../pages/luk_c.html" data-animation="bonus"><i>lukrecia1885</i></a></li>
-        <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="../index.html#sectionHPYSM">Contact</a></li>
+        <!-- <li><a class="nav-item nav-link align-baseline"  style="color:black ; text-transform: lowercase;" href="pages/luk_c.html" data-animation="bonus"><i>lukrecia1885</i></a></li>-->
+        <li><a class="nav-item nav-link align-baseline"  style="color:black ; text-transform: upcase;" href="../index.html#sectionHPYSM">Contact</a></li>
         <!-- <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="./pages/courses.html">Courses</a></li> -->
         <li><a class="nav-item nav-link align-baseline aparecer"  style="color:rgb(255, 4, 4);" href="../index.html#sale">Sale</a></li>
-        <li><a class="nav-item nav-link align-baseline"  style="color:black; text-transform: upcase;" href="../pages/products.html">Products</a></li>
+        <li><a class="nav-item nav-link align-baseline"  style="color:black ; text-transform: upcase;" href="../pages/products.html">Products</a></li>
         <li class="nav-item dropdown header__menu m-auto mb-lg-0">
-          <a class="nav-link nav-link dropdown-toggle align-baseline" style="color:black;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+          <a class="nav-link nav-link dropdown-toggle align-baseline" style="color: black;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
           <ul class="dropdown-menu menu text-center" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item zindex-dropdown:1000" href="../pages/courses.html">Tejido</a></li>
             <li><hr class="dropdown-divider"></li>
@@ -87,29 +98,50 @@
       <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fas fa-home"></i></a></li>
       <!-- <li class="nav-item"><a class="nav-link" href="./pages/search.html"><i class="fas fa-search"></i></a></li> -->
       <!-- <li class="nav-item"><a class="nav-link" href="./pages/contact.html"><i class="fas fa-envelope"></i></a></li> -->
-      <!--<li class="nav-item d-flex flex-row align-items-center">
-        <a class="nav-link d-flex align-items-center" id="changuito"  href="../pages/bag.html">
-          <i class="fas fa-shopping-cart"></i>
-          <p id="acumuladorCarrito" class="ml-2 d-flex justify-content-center align-items-center text-white" style="background-color:rgb(17, 17, 17); width: 22px; height: 22px; border-radius: 50%; padding: 10px;"></p>
-        </a>
-      </li> -->
       <li class="nav-item"><a class="nav-link" href="../pages/bag.html"><i class="fas fa-shopping-cart"></i></a></li>
       <!-- <li class="nav-item"><a class="nav-link" href="./pages/login.html"><i class="fas fa-user"></i></a></li> -->
       <li class="nav-item"><a class="nav-link" href="https://twenergy.com/ecologia-y-reciclaje/moda-sostenible-la-ropa-mas-ecologica-saludable-y-sociablemente-responsable-1853/"><i class="fas fa-recycle"></i></a></li>
-      <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/luk.caric.by.luluroa"><i class="fab fa-facebook"></i></a></li>
+      <!-- <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/luk.caric.by.luluroa"><i class="fab fa-facebook"></i></a></li> -->
+      <!-- <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/lukrecia1885/"><i class="fa-brands fa-square-instagram"></i></a></li> -->     
       <!-- <li class="nav-item carrito"><span data-toggle="tooltip" data-placement="bottom" title="0" id="contador"></span></li> -->
       <!-- <button type="button" class="menu-nav btn btn--recycle btn-dark btn-outline-success" style="color: white;">
         <i class="fas fa-recycle"></i>
       </button> -->
+      <!--  <li>
+        <a href="#!" class="btn-login"><i class="fa fa-user" aria-hidden="true"></i> Log In</a>
+        <div class="full-width Login">
+          <p class="text-center">
+            <form action="">
+              <div class="form-group">
+                <label for="email"><i class="fa fa-envelope" aria-hidden="true"></i> E-mail</label>
+                <input type="text" class="form-control" name="email" id="email">
+              </div>
+              <div class="form-group">
+                <label for="password"><i class="fa fa-lock" aria-hidden="true"></i> Contraseña</label>
+                <input type="text" class="form-control" name="password" id="password">
+              </div>
+              <a href="#!">No recuerdo mi contraseña</a>
+              <br>
+              <p class="text-center">
+                <a href="#!" class="btn btn-danger btn-login" style="display:inline-block !important;">CANCELAR</a>
+                <button type="submit" class="btn btn-primary">INICIAR SESIÓN</button>
+              </p>
+            </form>
+            <hr>
+            <p class="text-center">¿Aún no tienes cuenta?</p>
+            <a href="#!">CRÉATE UNA GRATIS</a>
+          </p>
+        </div>
+      </li> -->
     </ul>
     </div>
   
   </div>
   </nav>
   </header>
-  </div>
-  </div>
-  <!--Fin Header-->
+ </div>
+</div>
+<!--Fin Header-->
 
   <!-- <div class="alert container-fluid position-sticky top-0 alert-primary hide" role="alert">
     Producto Añadido al carrito!
@@ -122,33 +154,18 @@
 // -----------------MAIN---------------------//
 // ------------------------------------------->
 
-<section class="detail borde borde--violeta padding fondo">
-</section>
+<section class="detail borde borde--violeta padding fondo"></section>
 
 <main class="main main__products">
 
 <!--Buscador-->
-<!--<section class="container-fluid d-flex justify-content-center align-items-center flex-row">
+<section class="container-fluid d-flex justify-content-center align-items-center flex-row">
   <form class="form-inline col-md-12 buscador" onsubmit="false">
       <input class="form-control mr-sm-2" type="search" placeholder="Search for name" aria-label="Search">
       <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
   </form>
   <div class="toastContainer"></div>
-</section> -->
-
-<!-------------------------------------------//
-// ----------------PRODUCTOS-----------------//
-// ------------------------------------------->
-<div class="pricing-header text-center">
-  <h3 class="sectionSI--h3 text-center fs-1 d-inline">P r o d u c t s</h3>
-</div>
-
-<div class="container">
-  <!-- <h2 class="title padding">Compra todo lo que quieras</h2> -->
-  <div class="fondo">
-      <div class="productos padding"></div>
-  </div>
-</div>
+</section>
 
 <!--Section Filtro-->
 <!-- <div class="container">
@@ -170,6 +187,19 @@
       </div>
     </div>
   </div> -->
+
+<!-------------------------------------------//
+// ----------------PRODUCTOS-----------------//
+// ------------------------------------------->
+<div class="pricing-header text-center">
+  <h3 class="main__products--h3 text-center d-inline">P r o d u c t s</h3>
+</div>
+
+<div class="container">
+  <div class="fondo">
+      <div class="productos padding"></div>
+  </div>
+</div>
 
 <!-- Modal carrito -->
 <!-- <div class="modal-container" id="modalCarrito">
@@ -333,7 +363,7 @@
   <div class="container d-flex justify-content-center">
     <div class="row">
       <div class="col-12">
-        <a class="btn btn-lg btn-dark btn-outline-success" href="../pages/bag.html" role="button">Ir al "Carrito" <i class="fas fa-shopping-cart"></i></a>
+        <a class="btn btn-light btn__products p-3" href="../pages/bag.html" role="button"> <h3>Carrito</h3> <i class="fas fa-shopping-cart fs-3"></i></a>
       </div>
   </div>
   </div>
@@ -345,8 +375,8 @@
 // ----------------CRITICAS------------------//
 // ------------------------------------------->
 <section class="criticas pb-5">
-  <h2 class="criticas__titulo text-center p-4 h1">Nuestras <span>Clientas</span></h2>
-  <h2 class="criticas__titulo text-center p-4 h1">"Nos cuentan sus experiencias"</h2>
+  <h2 class="criticas__titulo--h2 text-center p-4">Nuestras <span>Clientas</span></h2>
+  <h3 class="criticas__titulo--h3 text-center p-4">"Nos cuentan sus experiencias"</h2>
   <div class="criticas__contenedor">
     <div
       class="criticas__contenedor__ind"
@@ -370,7 +400,7 @@
         <img src="../img/pic-1.jpg" alt="img de una persona" />
         <div>
           <h3>Anto</h3>
-          <span>Viví _luk_c</span>
+          <span>Viví lukrecia1885</span>
         </div>
       </div>
       <span class="criticas__contenedor__icono fas fa-quote-right"></span>
@@ -397,7 +427,7 @@
         <img src="../img/pic-2.jpg" alt="img de una persona" />
         <div>
           <h3>Ceci</h3>
-          <span>Viví _luk_c</span>
+          <span>Viví lukrecia1885</span>
         </div>
       </div>
       <span class="criticas__contenedor__icono fas fa-quote-right"></span>
@@ -424,7 +454,7 @@
         <img src="../img/pic-3.jpg" alt="img de una persona" />
         <div>
           <h3>Ivy</h3>
-          <span>Viví _luk_c</span>
+          <span>Viví lukrecia1885</span>
         </div>
       </div>
       <span class="criticas__contenedor__icono fas fa-quote-right"></span>

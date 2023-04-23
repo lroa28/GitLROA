@@ -22,6 +22,27 @@
   padding-bottom: 1%;
   padding-top: 1%;
   }
+  
+  &--h3{
+    color:black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-shadow: 0 0 15px whitesmoke, 0 0 15px #e1e1eb;
+    font-size: calc(.5rem + 3vw);
+    //text-decoration: underline 5px solid red;
+    //border-radius: 5px;
+    //background-color: rgba(245, 245, 245, 0.308);
+    //background-position: 50%;
+    //animation-duration: 4s;
+    //animation-name: aparecer;
+    //animation-iteration-count: infinite;
+    
+    &:hover{
+      font-style: italic;
+      font-size: 25px;
+      }
+  }
+
 }
 
 .section1 {
@@ -156,7 +177,7 @@
 
 .card:hover {
   -webkit-transform: translateY(-7px);
-          transform: translateY(-7px);
+          transform: translateY(-7px);  
 }
 
 .main__img1 {
@@ -258,11 +279,21 @@
   color: #21232a;
 }
 
-// .btn:hover {
-//   background-color: blue;
-//   -webkit-transition: 0.5s;
-//   transition: 0.5s;
-// }
+.btn__products {
+  background: linear-gradient(to right, #01d6f7, rgb(78, 74, 74), rgb(248, 3, 244)); 
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 10rem;
+  height: 7rem;
+  align-items: center;
+  font-size: calc(.5rem + 3vw);
+
+  &:hover {
+  background-color: whitesmoke;     
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+}
 
 //----------------------------------------------//
 //--------------/*SECTION CRITICAS*/-----------//
@@ -270,6 +301,23 @@
 
 .criticas span {
   color: red;
+}
+
+.criticas__titulo--h2 {
+  color:black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-shadow: 0 0 15px whitesmoke, 0 0 15px #e1e1eb;
+    font-size: calc(.5rem + 3vw);
+}
+
+
+.criticas__titulo--h3{
+  color:black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-shadow: 0 0 15px whitesmoke, 0 0 15px #e1e1eb;
+    font-size: calc(.3rem + 3vw);
 }
 
 .criticas__contenedor {
@@ -401,7 +449,8 @@
 }
 
 .iconos__container__img {
-  height: 6rem;
+  height: 8rem;
+  width: 10rem;
   margin-right: 2rem;
 }
 
@@ -550,6 +599,7 @@
 
 .mostrar {
   transform: translateY(0%);
+  color: #01d6f7;
 }
 
 //-–––––––––––––––CARRITO–––––––––––––//
@@ -646,15 +696,11 @@
 //–––––––––––––––––––––––//RESPONSIVE//–––––––––––––––––––––––––––––//
 //––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//
 @media only screen and (max-width: 768px) {
-  .carousel-item {
-    height: 40vh;
-  }
+
 }
 
 @media only screen and (max-width: 375px) {
-  .carousel-item {
-    height: 30vh;
-  }
+
 }
 
 @media screen and (min-width:768px) {

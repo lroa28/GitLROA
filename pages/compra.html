@@ -31,20 +31,15 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
  </head>
 <!-------------------------------------------//
-// ---------------- BODY --------------------//
-// ------------------------------------------->
+//---------------- BODY --------------------//
+//------------------------------------------->
 
 <body class="body" onLoad="alert('¡Bienvenido al procesamiento de su compra! (Welcome to ours sale!)')" onUnload="alert('¡Vuelva pronto! (Come back soon!)')">
 
 <!-------------------------------------------//
-// ---------------- HEADER-------------------//
-// ------------------------------------------->
-<!-------------------------------------------//
-// ---------------- HEADER-------------------//
-// ------------------------------------------->
-<div class="row">
-  <div class="col-xs-12">
-  <header>
+//---------------- HEADER-------------------//
+//------------------------------------------->
+  <header class="header">
   <nav class="header navbar navbar-expand-lg fixed-top" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
     <div class="container-fluid d-flex-row">
       
@@ -137,11 +132,12 @@
   </div>
   </nav>
   </header>
- </div>
-</div>
 <!--Fin Header-->
 
-    <main>
+<!-------------------------------------------//
+//---------------- MAIN --------------------//
+//------------------------------------------->
+    <main class="main__compra">
       <div class="row">
       <div class="col-xs-12">
       <div class="d-flex justify-content-between finalizarCompra row">
@@ -185,8 +181,8 @@
                             <label for="creditCardNumber">Número de tarjeta</label>
                             <input class="numeroDeTarjeta" type="text" name="" id="creditCardNumber" value="1213-91011-5678-1234">
                             <label for="creditCardName">Nombre</label>
-                            <input type="text" name="" id="creditCardName" value="Nombre Apellido">
-                            <label for="creditCardCVC">cvc</label>
+                            <input type="text" name="" id="creditCardN     ame" value="Nombre Apellido">
+                            <label for="creditCardCVC">CVV</label>
                             <input type="text" name="" id="creditCardCVC" value="000">
                         </div>
                         <div class="col-md-4 derecha_tarjeta">
@@ -303,8 +299,6 @@
 // ---------------- DIFERENTES --------------//
 // --------------- SCRIPTS ------------------//
 // ------------------------------------------->
-
-
 <!--Scripts JS curso CoderHouse-->
 <!-- <script src="./js/jquery-3.4.1.min.js"></script> -->
 <!-- <script src="./js/bootstrap.min.js"></script> -->

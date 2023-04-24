@@ -1,3 +1,33 @@
+//-----------------------------------------------//
+//------------------/*MAIN COMPRA*/----------------//
+//----------------------------------------------//
+.main__compra {
+  padding: 0% 0% 0% 0%;
+  margin: 0% 0% 0% 0%;
+  padding-top: 5.35rem; //este es el padding para que quede OK el Header y el Hero
+  width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box; //autoajusta el padding segun el width que colocamos
+  gap: 0%;
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3 auto);
+  grid-template-areas:
+  "header"
+  "finalizarCompra"
+  "footer";
+
+  &--h1{
+    color:black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-shadow: 0 0 15px whitesmoke, 0 0 15px #e1e1eb;
+    font-size: calc(.5rem + 3vw);
+  }
+} 
+
+
 .productoEnFinalizar img {
     width: 100px;
   }

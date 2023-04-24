@@ -17,11 +17,14 @@ _Herramientas y tecnologías utilizadas._
 
 * Visual Studio Code
 
-## Contacto
+<!-- CONTACT -->
+## Contact
+
+* Instagram - [@IG](https://www.instagram.com/lukrecia1885/) 
+
+* E-mail - lukrecia1885@gmail.com
 
 * [![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/lucrecia-cecilia-roa-242b7514)
-
-* E-mail: Marca lukrecia1885 lukrecia1885@gmail.com
 
 ---
 📌 [Sitio Web lukrecia1885 ](https://lroa28.github.io/GitLROA/) 

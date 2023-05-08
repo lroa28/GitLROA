@@ -368,6 +368,7 @@ Los estilos correspondientes son los siguientes:*/
 @media (max-width: 480px) {
   .header {
     padding: 5px 0 5px 0;
+    background-color: rgba(245, 245, 245, 0.833);
     border-bottom: solid 5px rgba(175, 172, 172, 0.423);
   }
   .header__logo {
@@ -388,7 +389,7 @@ Los estilos correspondientes son los siguientes:*/
         -ms-flex-pack: center;
             justify-content: center;
     color: whitesmoke;
-    font-size: 17px;
+    font-size: 15px;
   }
   .header__icons {
     display: -webkit-box;
@@ -1472,7 +1473,7 @@ Los estilos correspondientes son los siguientes:*/
     height: 120px;
   }
   .sectionMV {
-    padding: 5rem 0 5rem 0;
+    display: none;
   }
   .sale {
     padding-top: 4rem;
@@ -1525,8 +1526,8 @@ Los estilos correspondientes son los siguientes:*/
     border-radius: 10px;
   }
   .iconos__container__img {
-    height: 8rem;
-    width: 4rem;
+    height: 6rem;
+    width: 3rem;
     margin: 0;
     -o-object-fit: cover;
        object-fit: cover;

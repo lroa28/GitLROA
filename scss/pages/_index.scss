@@ -829,7 +829,7 @@
 
 //–––––––––––––––/* RESPONSIVE Section MV */–––––––––––––//
 .sectionMV {
-  padding: 5rem 0 5rem 0;
+  display: none;
 }  
 
 //–––––––––––––––/* RESPONSIVE Sale */–––––––––––––//
@@ -896,8 +896,8 @@
 }
 
 .iconos__container__img {
-  height: 8rem;
-  width: 4rem;
+  height: 6rem;
+  width: 3rem;
   margin: 0;
   object-fit: cover;
   object-position: top;

@@ -26,37 +26,13 @@
 //------------------------------------------//
 //------------/*SEANSON ITEMS*/------------//
 //-----------------------------------------//
-.contenedor {
-  width: 100%;
-  height: 100vh;
-  //max-width: 1000px; deja estatico 1000px
-  box-sizing: border-box; //autoajusta el padding segun el width que colocamos
-}
-
-.hero {
-  //background: gradient(linear, left top, left bottom, from(rgba(125, 123, 123, 0.285)), to(rgba(0, 0, 0, 0.285))), url(../img/shop.jpg);
-  //background: linear-gradient(rgba(149, 145, 145, 0.271), rgba(0, 0, 0, 0.292)), url(../img/shop.jpg);
-  background-image: url("../img/shop.jpg");
-  background-size: cover;
-  background-position: center top;
-  background-attachment: fixed;
-}
-
-.hero .container {
-  //height: 5vh; //tamaño de la foto del Hero en la vista de la pagina(perchero de ropa)
-  padding: 7rem 0rem 4rem 0rem; //padding en Y y x dentro de la foto, abajo del h3
-}
-
-.container .row {
-  row-gap: 2rem;
-  //column-gap: 1rem;
-}
-
 .sectionSeasonItems {
   grid-area: sectionSeasonItems;
+  //width: 100vw;
+  //height: 100vh;
   //background: rgba(0, 0, 0, 0.877); //*último background de la seccion*//
   //margin: 0% ;
-  padding: 7rem 0rem 0rem 0rem; //Agranda o achica la foto de la caja (perchero)
+  padding: 10rem 0rem 2rem 0rem; //Agranda o achica la foto de la caja (perchero)
   //margin:  4% 5% 5% 5%;
   display: flex;
   justify-content: center;
@@ -65,7 +41,7 @@
   //font-family: 'Poppins', sans-serif;
   //text-align: center ;
   
-  &__h3{//Season
+  &__h3{//Titulo Season
     color:black;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
@@ -94,7 +70,7 @@
     //text-shadow: 0 0 15px #2f2a2a, 0 0 15px #171718;
     //text-decoration: underline 5px solid gray;
     border-radius: 10px;
-    background-color: rgb(247, 3, 3);
+    background-color: rgba(247, 3, 3, 0.522);
     //background-position: bottom;
     //text-decoration: none;
     //animation-duration: 4s;
@@ -214,6 +190,32 @@
   }
 }
 
+.contenedor {
+  width: 100vw;
+  height: 100vh;
+  //max-width: 1000px; deja estatico 1000px
+  box-sizing: border-box; //autoajusta el padding segun el width que colocamos
+}
+
+.hero {
+  //background: gradient(linear, left top, left bottom, from(rgba(125, 123, 123, 0.285)), to(rgba(0, 0, 0, 0.285))), url(../img/shop.jpg);
+  //background: linear-gradient(rgba(149, 145, 145, 0.271), rgba(0, 0, 0, 0.292)), url(../img/shop.jpg);
+  background-image: url("../img/shop.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+.hero .container {
+  //height: 5vh; //tamaño de la foto del Hero en la vista de la pagina(perchero de ropa)
+  padding: 3rem 0rem 6rem 0rem; //padding en Y y x dentro de la foto, abajo del h3
+}
+
+.container .row {
+  row-gap: 2rem;
+  //column-gap: 1rem;
+}
+
 //––––––––––––Efecto hover nombre de los botones––––––––––//
 .centered {
   position: absolute;
@@ -279,25 +281,25 @@
 .sectionMV {
   grid-area: sectionMV;
   background-color: whitesmoke;
+  padding: 12rem 0 20rem 0;
   //background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100%25 100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='100%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23eaeaea'/%3E%3Cstop offset='0.02' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.02' stop-color='%23d3d3d3'/%3E%3Cstop offset='0.032' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.032' stop-color='%23e3e3e3'/%3E%3Cstop offset='0.056' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.056' stop-color='%23bebebe'/%3E%3Cstop offset='0.07' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.07' stop-color='%23dedede'/%3E%3Cstop offset='0.1' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.1' stop-color='%23cccccc'/%3E%3Cstop offset='0.126' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.126' stop-color='%23c1c1c1'/%3E%3Cstop offset='0.142' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.142' stop-color='%23f1f1f1'/%3E%3Cstop offset='0.159' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.159' stop-color='%23eaeaea'/%3E%3Cstop offset='0.17' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.17' stop-color='%23949494'/%3E%3Cstop offset='0.197' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.197' stop-color='%23d2d2d2'/%3E%3Cstop offset='0.218' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.218' stop-color='%23e9e9e9'/%3E%3Cstop offset='0.239' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.239' stop-color='%23d4d4d4'/%3E%3Cstop offset='0.254' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.254' stop-color='%23d9d9d9'/%3E%3Cstop offset='0.283' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.283' stop-color='%23f2f2f2'/%3E%3Cstop offset='0.294' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.294' stop-color='%237d7d7d'/%3E%3Cstop offset='0.305' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.305' stop-color='%23ebebeb'/%3E%3Cstop offset='0.332' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.332' stop-color='%23d1d1d1'/%3E%3Cstop offset='0.346' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.346' stop-color='%23dedede'/%3E%3Cstop offset='0.362' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.362' stop-color='%23f4f4f4'/%3E%3Cstop offset='0.381' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.381' stop-color='%23d0d0d0'/%3E%3Cstop offset='0.415' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.415' stop-color='%23b6b6b6'/%3E%3Cstop offset='0.428' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.428' stop-color='%23bdbdbd'/%3E%3Cstop offset='0.442' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.442' stop-color='%23e3e3e3'/%3E%3Cstop offset='0.456' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.456' stop-color='%23aaaaaa'/%3E%3Cstop offset='0.498' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.498' stop-color='%23e7e7e7'/%3E%3Cstop offset='0.511' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.511' stop-color='%23aeaeae'/%3E%3Cstop offset='0.532' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.532' stop-color='%23e9e9e9'/%3E%3Cstop offset='0.541' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.541' stop-color='%23b4b4b4'/%3E%3Cstop offset='0.56' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.56' stop-color='%23f1f1f1'/%3E%3Cstop offset='0.581' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.581' stop-color='%23d2d2d2'/%3E%3Cstop offset='0.6' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.6' stop-color='%23e0e0e0'/%3E%3Cstop offset='0.618' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.618' stop-color='%23e4e4e4'/%3E%3Cstop offset='0.656' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.656' stop-color='%23a0a0a0'/%3E%3Cstop offset='0.679' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.679' stop-color='%23ebebeb'/%3E%3Cstop offset='0.689' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.689' stop-color='%23e2e2e2'/%3E%3Cstop offset='0.720' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.720' stop-color='%23a2a2a2'/%3E%3Cstop offset='0.734' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.734' stop-color='%23d6d6d6'/%3E%3Cstop offset='0.748' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.748' stop-color='%23e6e6e6'/%3E%3Cstop offset='0.764' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.764' stop-color='%23f0f0f0'/%3E%3Cstop offset='0.788' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.788' stop-color='%23e9e9e9'/%3E%3Cstop offset='0.808' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.808' stop-color='%23cecece'/%3E%3Cstop offset='0.831' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.831' stop-color='%23e9e9e9'/%3E%3Cstop offset='0.856' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.856' stop-color='%23dbdbdb'/%3E%3Cstop offset='0.872' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.872' stop-color='%23eaeaea'/%3E%3Cstop offset='0.894' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.894' stop-color='%23e0e0e0'/%3E%3Cstop offset='0.914' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.914' stop-color='%23cdcdcd'/%3E%3Cstop offset='0.942' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.942' stop-color='%23d5d5d5'/%3E%3Cstop offset='0.957' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.957' stop-color='%23cccccc'/%3E%3Cstop offset='0.973' stop-color='%23EAEAEA'/%3E%3Cstop offset='0.973' stop-color='%23555555'/%3E%3Cstop offset='1' stop-color='%23EAEAEA'/%3E%3Cstop offset='1' stop-color='%23e4e4e4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' x='0' y='0' width='100%25' height='100%25'/%3E%3C/svg%3E");
-  //background-attachment: fixed;
-  //background-size: cover;
-  padding-top: 10rem;
-  padding-bottom: 15rem; 
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 
-
-&__h3 {
-  color:black;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  text-shadow: 0 0 15px whitesmoke, 0 0 15px #e1e1eb;
-  font-size: calc(0.3rem + 3vw);
-
-  &:hover{
-    font-style: italic;
+  &__h3 {//TITULO
+    color:black;
+    padding-bottom: 5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(59, 54, 54, 0.521), 0 0 15px #84848d;
+    font-size: calc(0.3rem + 3vw);
+  
+    &:hover{
+      font-style: italic;
+    }
   }
-}
-
 }  
 
 /*PARA JS*/
@@ -391,8 +393,7 @@
 // ------------------------------------------//
 .sale{
   grid-area: sale;
-  padding-top: 7rem;
-  padding-bottom: 10rem;
+  padding: 12rem 1rem 20rem 1rem;
   //background-color: rgb(236, 57, 57);
   display: flex;
   //flex-direction: row;
@@ -402,10 +403,7 @@
   justify-items: center;
   align-items: center;
   align-content: center;
-
-& .container .row{
-    column-gap: .05rem;
-  }
+  gap: 0.5rem;
 }
 
 .card__sale {
@@ -417,7 +415,6 @@
   align-content: center;
   align-items: center;
   font-family: 'Poppins', sans-serif;
-  gap: 0.5rem;
 
 &:hover {
   box-shadow: -1px -1px 13px 2px rgba(0, 0, 0, 0.75);
@@ -467,13 +464,17 @@
     height: 7rem;
   }
 
-  &--h4{
+  &--h4{ //TITULO
     color:red;
     font-family: 'Poppins', sans-serif;
     font-size: 50px;
     font-weight: bold;
-    text-shadow: 0 0 15px whitesmoke, 0 0 15px #e1e1eb;
+    text-shadow: 0 0 15px rgba(59, 54, 54, 0.521), 0 0 15px #84848d;
     font-size: calc(.5rem + 3vw);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
   }
   
   &--h4:hover{
@@ -497,8 +498,15 @@
   background-position: center top;
   background-attachment: fixed;
   background-size: contain;
-  padding-top: 8rem;
-  padding-bottom: 10rem;
+  padding-top: 5rem!important;
+  padding-bottom: 5rem!important;
+  width: 100vw;
+  height: 130vh;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
 }
 
 .pilares--h3{
@@ -506,7 +514,7 @@
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   text-shadow: 0 0 15px whitesmoke, 0 0 15px #171718;
-  font-size: calc(.5rem + 3vw);
+  font-size: calc(1rem + 3vw);
   //align-items: center;
   justify-content: center;
 
@@ -517,9 +525,16 @@
 }
 
 .cardpilar {
-  background: #ffffff75!important;
-  border-radius: 200px 0px 0px 300px!important;
+  //background: #ffffff85!important;
+  background-color: rgba(245, 245, 245, 0.502) ;
+  border-radius: 200px 200px 200px 300px!important;
   height: 10rem;
+  border-style: dashed;
+}
+
+.card-title{
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .cardpilarimg {
@@ -532,9 +547,14 @@
 //-------------------------------------------//
 .sectionHPYSM {
   grid-area: sectionHPYSM;
-  padding-top: 12rem;
-  padding-bottom: 12rem;
+  padding: 10rem 2rem 10rem 0;
   background-color: rgba(128, 128, 128, 0.488);
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  gap: 22rem;
 }
 
 .contact--h3{
@@ -542,7 +562,7 @@
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   text-shadow: 0 0 15px whitesmoke, 0 0 15px #e1e1eb;
-  font-size: calc(.5rem + 3vw);
+  font-size: calc(1rem + 3vw);
 
   &:hover{
     font-style: italic;
@@ -553,7 +573,8 @@
 .iconos__container__ind {
   background: #fff;
   border: 0.1rem solid rgba(0, 0, 0, 0.1)!important;
-  height: 15rem ;
+  height: 100%;
+  width: 100%;
   justify-content: center ;
   border-radius:10px;
 }
@@ -762,20 +783,17 @@
 /*=======================================================================================================
 =                                        Media queries                                                  =
 ========================================================================================================*/
-
 /* col-xs */
 
 @media (max-width: 480px) { 
+.main__grid {
+  padding-top: 4.59rem; //*este es el padding para que quede OK el Header
+}
 
-  .main__grid {
-    padding-top: 4.18rem; //*este es el padding para que quede OK el Header
-  }
-
-//––––––––––––––––––––RESPONSIVE SECTION SEANSON ITEMS–––––––––––––//
-
+//–––––––––––––––/* RESPONSIVE SECTION SEANSON ITEMS */–––––––––––––//
   .contenedor {
     width: 100%;
-    height: 80vh;
+    height: 75vh;
     box-sizing: border-box; //autoajusta el padding segun el width que colocamos
   }
     
@@ -809,71 +827,33 @@
     height: 120px;
   }
 
-//––––––––––––––––––––RESPONSIVE Section MV–––––––––––––//
-
+//–––––––––––––––/* RESPONSIVE Section MV */–––––––––––––//
 .sectionMV {
-  padding-top: 5rem;
-  padding-bottom: 1rem; 
+  padding: 5rem 0 5rem 0;
 }  
 
-//––––––––––––––––––––RESPONSIVE Sale–––––––––––––––––––//
+//–––––––––––––––/* RESPONSIVE Sale */–––––––––––––//
 .sale{
   padding-top: 4rem;
   padding-bottom: 6rem;
-  display:flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
+  padding-left: 1rem;
 
-& .container .row{
-    gap: 1rem;
+& .row{
+    gap: 0.3rem;
   }
 }
 
 .card__sale {
   height: 22rem!important;
-
-  &--precio {
-    color: red;
-    font-size: 15px;
-    font-weight: 400;
-    padding-left: 2.5px;
-  }
+  width: 20rem!important;
   
-  &--btn {
-    height: 50px;
-    width: 110px;
-  }
-  
-  
-  &--img-fluid{
-    width: 10rem;
-    height: 7rem;
-  }
-  
-  &--h4{
-    color:red;
-    font-family: 'Poppins', sans-serif;
-    font-size: 50px;
-    font-weight: bold;
-    text-shadow: 0 0 15px whitesmoke, 0 0 15px #171718;
-    font-size: calc(.5rem + 3vw);
-  }
-  
-  &--h4:hover{
-    font-style: italic;
-    font-size: 60px;
-    }
-
   &--list-unstyled{ //son las estrellas negras del card
     color: black;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
-
 }
 
-//––––––––––––––––––––RESPONSIVE PILLARS–––––––––––––––––//
+//–––––––––––––––/* RESPONSIVE PILLARS */–––––––––––––//
 .pilares {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -901,47 +881,47 @@
       height:5rem!important;
 }
 
-//––––––––––––––––––––RESPONSIVE CONTACT–––––––––––––––––//
+//–––––––––––––––/* RESPONSIVE CONTACT */–––––––––––––//
 .sectionHPYSM {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding: 2rem 0 2rem 0;
 }
 
 .iconos__container__ind {
   background: #fff;
   border: 0.1rem solid rgba(0, 0, 0, 0.1)!important;
   height: 15rem ;
+  width: 19rem;
   justify-content: center ;
   border-radius:10px;
 }
 
 .iconos__container__img {
-  height: 5rem;
+  height: 8rem;
+  width: 4rem;
+  margin: 0;
+  object-fit: cover;
+  object-position: top;
+  //margin-right: 2rem;
 }
 
 .iconos__container__titulo {
   color: black;
-  padding-bottom: 0.5rem;
-  font-size: 8px;
+  font-size: calc(.5rem + 3vw);
   font-weight: bold;
+  text-shadow: 0 0 15px whitesmoke, 0 0 15px #e1e1eb;
 }
 
-.iconos__container__span .p{
+.iconos__container__span {
   color: rgb(53, 52, 52);
-  font-size: 3px;
-}
-
-.iconos__container__span .li{
-  color: rgb(53, 52, 52);
-  font-size: 3px;
+  font-size: calc(.5rem + 3vw);
 }
 
 .img__redsocial {
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 12px;
 }
 
-//––––––––––––––––––––RESPONSIVE BOTON ARRIBA–––––––––––––––––//
+//–––––––––––––––/* RESPONSIVE Boton Arriba */–––––––––––––//
 /* GOTOP */
 .go-top-container {
   position: fixed;
@@ -992,8 +972,7 @@
   transform: translate(-50%, -50%) scale(1);
 }
 
-//––––––––––––––––––––RESPONSIVE FOOTER–––––––––––––––––//
-
+//–––––––––––––––/* RESPONSIVE FOOTER */–––––––––––––//
   .footer__titulo1--modifier{
     font-size: 10px;
     
@@ -1006,7 +985,6 @@
 }     
 /* col-sm */
 @media (min-width: 768px) and (max-width: 991px) {
-  
   .sectionSeasonItems--boton1,
   .sectionSeasonItems--boton2,
   .sectionSeasonItems--boton3,
@@ -1018,7 +996,6 @@
 }
 
 @media screen and (max-width: 800px) {
-
     .sectionSeasonItems--boton1,
     .sectionSeasonItems--boton2,
     .sectionSeasonItems--boton3,

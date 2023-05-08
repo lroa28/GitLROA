@@ -59,6 +59,75 @@
   object-position: top;
 }
 
+//-----------------------------------------//
+//---------------/*BOTON ARRIBA*/----------//
+//-----------------------------------------//
+
+/* GOTOP */
+.go-top-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 5rem;
+  height: 5rem;
+  z-index: -1;
+}
+
+.go-top-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 200%;
+  cursor: pointer;
+  transition: 0.2s;
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  display: block;
+  background-color: whitesmoke;
+}
+
+.go-top-button i {
+  position: absolute;
+  font-size: 3rem;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: red;
+  transition: 0.2s;
+}
+
+.show {
+  z-index: 10;
+}
+
+.show .go-top-button {
+  animation: popup 0.3s ease-in-out;
+  width: 6.6rem;
+  height: 6.6rem;
+  z-index: 11;
+}
+
+.show i {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup {
+  0% {
+      width: 0;
+      height: 0;
+  }
+  50% {
+      width: 8rem;
+      height: 8rem;
+  }
+  100% {
+      width: 6.6rem;
+      height: 6.6rem;
+  }
+}
+
 // .contenedor1 {
 // 	max-width: 1000px;
 // 	width: 60%;
@@ -150,7 +219,7 @@
 
 /* col-xs */
 @media (max-width: 480px) { 
-  /* CARDS */
+  /* MAIN */
   .maincourses__grid {
     margin-top:  4.58rem;
     //padding-top: 3rem; //*este es el padding para que quede OK el Header
@@ -167,6 +236,57 @@
 		object-fit: cover;
 		object-position: top;
 	}
+
+//––––––––––––––––––––RESPONSIVE BOTON ARRIBA–––––––––––––––––//
+/* GOTOP */
+.go-top-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 5rem;
+  height: 5rem;
+  z-index: -1;
+}
+
+.go-top-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 200%;
+  cursor: pointer;
+  transition: 0.2s;
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  display: block;
+  background-color: whitesmoke;
+}
+
+.go-top-button i {
+  position: absolute;
+  font-size: 3rem;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: red;
+  transition: 0.2s;
+}
+
+.show {
+  z-index: 10;
+}
+
+.show .go-top-button {
+  animation: popup 0.3s ease-in-out;
+  width: 4.6rem;
+  height: 4.6rem;
+  z-index: 11;
+}
+
+.show i {
+  transform: translate(-50%, -50%) scale(1);
+}
 }     
 
 /* col-sm */

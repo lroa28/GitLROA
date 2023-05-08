@@ -126,7 +126,7 @@ class Interfaz {
                         </ul>
                     </div>
                     <div class="detail__button-container">
-                        <button id=${producto.id} class="btn btn-light agregar">Agregar al Carrito</button>
+                        <button id=${producto.id} class="btn btn-light agregar">Agregar al <i class="fas fa-shopping-cart fs-3"></i></button>
                     </div>
         `;
     }
@@ -143,7 +143,7 @@ class Interfaz {
                         <div class="producto__cuerpo">
                             <h3>${producto.titulo}</h3>
                             <p>${producto.precio}$</p>
-                            <a class="btn btn--center btn-dark text-center ver-mas" role="button">Ver más</a>
+                            <a class="btn btn--center btn-dark text-center text-white ver-mas" role="button">Ver más</a>
                             </div>
                         </div>
                     </div>

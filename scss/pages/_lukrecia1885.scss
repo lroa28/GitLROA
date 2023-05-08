@@ -1,0 +1,161 @@
+/*MAIN_ SECTION PRESENTATION*/
+.sectionPT{
+  grid-area: sectionPT;
+  text-align: justify;
+  padding-top: 5.4rem;
+  
+
+  &__caja{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #080808;
+  background-image: url("../img/maniqui2.jpg");
+  background-position-x: top;
+  background-position-y: top;
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+  "grid-hello grid-h3"
+  "grid-p1 grid-p1"
+  "grid-1 grid-2";
+  
+  &--pmod5 {
+    border-style: dashed;
+  }
+}
+
+&--videomod {
+    position: relative;
+    width: 40%;
+    height: 40%;
+    overflow: hidden;
+    z-index: 0;
+    outline: 0;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -ms-high-contrast-adjust: none;
+    border-radius: 1px;
+    box-shadow: 1px 5px black;
+    }
+  }
+
+  .grid-h3{
+    grid-area: grid-h3;
+  }
+  .grid-p1{
+  grid-area: grid-p1;
+  }
+  .grid-hello{
+    grid-area: grid-hello;
+    }
+  .grid-1{
+    grid-area: grid-1;
+  }
+  .grid-2{
+    grid-area: grid-2;
+  }
+
+/*=======================================================================================================
+=                                        Media queries                                                  =
+========================================================================================================*/
+
+/* col-xs */
+@media (max-width: 480px) { 
+
+  .sectionPT{
+    padding-top: 4.4rem;
+  }
+
+  .sectionPT__caja--pmod{
+    font-weight: 30px!important;
+  }
+
+  .span {
+    font-weight: 30px!important;
+  }
+
+//––––––––––––––––––––RESPONSIVE BOTON ARRIBA–––––––––––––––––//
+/* GOTOP */
+.go-top-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 5rem;
+  height: 5rem;
+  z-index: -1;
+}
+
+.go-top-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 200%;
+  cursor: pointer;
+  transition: 0.2s;
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  display: block;
+  background-color: whitesmoke;
+}
+
+.go-top-button i {
+  position: absolute;
+  font-size: 3rem;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: red;
+  transition: 0.2s;
+}
+
+.show {
+  z-index: 10;
+}
+
+.show .go-top-button {
+  animation: popup 0.3s ease-in-out;
+  width: 4.6rem;
+  height: 4.6rem;
+  z-index: 11;
+}
+
+.show i {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+}     
+/* col-sm */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+}
+
+@media screen and (max-width: 800px) {
+
+
+  }
+  
+  /* col-md */
+  @media (min-width: 992px) and (max-width: 1199px) {
+
+  }
+  
+  /* col-lg */
+  @media (min-width: 1200px) {
+      
+  }
+  
+  /*col-sm col-md col-lg*/
+  @media (min-width: 768px) {
+  
+    }

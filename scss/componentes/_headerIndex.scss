@@ -36,12 +36,12 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-family: 'Poppins', sans-serif;
-    color: wheat;
+    //font-family: 'Poppins', sans-serif;
+    //color: wheat;
     font-size: 18px;
     gap: 0.3rem;
     text-transform: uppercase;
-
+    
       & ul {
       list-style: none;
     }
@@ -71,12 +71,13 @@
     position: relative;
     display: block;
     padding: 5px;
+    border-radius: 10px;
 }
   
 .menu a:hover {
     font-style: italic;
-    //background-color: rgba(128, 128, 128, 0.144);
-    //border-radius: 3px;
+    background-color: rgba(128, 128, 128, 0.144);
+    border-radius: 3px;
 }
 
 .menu a::before {
@@ -138,11 +139,11 @@
 /* ––––––––––––––––––––––––ANIMATIONS–––––––––––––––––––––––––– */
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-//De forma similar al ejemplo anterior, tenemos la opción de cambiar la dirección de la animación del 
-//deslizamiento. La línea aparecerá de izquierda a derecha de forma predeterminada, pero para cambiar ese 
-//comportamiento, tenemos que pasar el atributo data-animation a la lista de destino. 
-//Los valores posibles son to-left y center.
-//Los estilos correspondientes son los siguientes:
+/*De forma similar al ejemplo anterior, tenemos la opción de cambiar la dirección de la animación del 
+deslizamiento. La línea aparecerá de izquierda a derecha de forma predeterminada, pero para cambiar ese 
+comportamiento, tenemos que pasar el atributo data-animation a la lista de destino. 
+Los valores posibles son to-left y center.
+Los estilos correspondientes son los siguientes:*/
 .menu[data-animation="bonus"] a::before {
   transform-origin: right;
   transition: transform 0.5s ease-in-out;
@@ -191,10 +192,15 @@
 /* col-xs */
 @media (max-width: 480px) {
 
-//––––––––––––––––––––MENU–––––––––––––//  
+.header {
+  padding: 5px 0 5px 0;
+  border-bottom: solid 5px rgba(175, 172, 172, 0.423);
+}
+
+//–––––––––––––––/* MENU */–––––––––––––//  
 .header__logo {
-  width: 40px;
-  height: 35px;
+  width: 45px;
+  height: 40px;
 }
 
 .header__menu {

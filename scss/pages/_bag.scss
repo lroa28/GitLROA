@@ -18,13 +18,14 @@
     font-weight: bold;
     text-shadow: 0 0 15px whitesmoke, 0 0 15px #e1e1eb;
     font-size: calc(.5rem + 3vw);
+    font-style: italic;
   }
 } 
 
 .boton-vaciar,
 .boton-comprar {
-  width: 10rem;
-  height: 5rem;
+  //width: 5rem;
+  //height: 5rem;
   font-size:1rem ;
   border: solid 5px;
 }

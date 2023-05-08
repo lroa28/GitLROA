@@ -1,7 +1,38 @@
 /*FAQS*/
+.main__faqs {
+  //width: 100vw;
+  //*margin-top: 85px; este es el margin para que quede OK el Header*//
+  //padding: 8rem 0rem 4rem 0rem; //* con este padding la pag queda sin scroll horizontal*//
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  background-image: url("../img/3.png");
+  background-repeat: no-repeat;
+  background-position-x: x-end;
+  background-position-y: center;
+  background-size: 200px;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+
+.FAQS__h1 {
+  color:black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-shadow: 0 0 15px whitesmoke, 0 0 15px #e1e1eb;
+  font-size: calc(0.3rem + 3vw);
+  padding-bottom: 2rem;
+
+  &:hover{
+    font-style: italic;
+  }
+}
+
 .nosotros {
-    margin-bottom: 60px;
-    padding-top: 6rem;
+  margin-bottom: 60px;
+  padding-top: 6rem;
   }
   
   .nosotros .titulo {

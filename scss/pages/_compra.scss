@@ -12,7 +12,7 @@
   display: flex;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(3 auto);
+  grid-template-rows: repeat(3, auto);
   grid-template-areas:
   "header"
   "finalizarCompra"
@@ -27,6 +27,9 @@
   }
 } 
 
+.header {
+  grid-area: header;
+}
 
 .productoEnFinalizar img {
     width: 100px;
@@ -35,6 +38,7 @@
   .finalizarCompra {
     background-color: white;
     padding: 2.5rem;
+    grid-area: finalizarCompra; 
   }
   
   .finalizarCompra .productos_finalizarCompra {
@@ -175,4 +179,8 @@
   
   .compraFinalizada p:last-child {
     margin-bottom: 0;
+  }
+
+  .footer{
+    grid-area: footer;
   }

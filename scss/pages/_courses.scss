@@ -4,9 +4,9 @@
 .maincourses__grid {
   margin-top:  5.4rem;
   padding-top: 5rem; //*este es el padding para que quede OK el Header
-  //padding-bottom: 5rem;
+  padding-bottom: 5rem;
   width: 100%;
-  height: 95vh;
+  height: 100vh;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -219,13 +219,14 @@
 
 /* col-xs */
 @media (max-width: 480px) { 
-  /* MAIN */
+//––––––––––/* MAIN */––––––––––––//
   .maincourses__grid {
     margin-top:  4.58rem;
     //padding-top: 3rem; //*este es el padding para que quede OK el Header
   }
 
-  /* CARDS */
+
+//––––––––––/* CARDS */––––––––––––//  
   .cardcurso {
     height: 350px !important;
   }
@@ -237,7 +238,8 @@
 		object-position: top;
 	}
 
-//––––––––––––––––––––RESPONSIVE BOTON ARRIBA–––––––––––––––––//
+//–––––––––/*BOTON ARRIBA */––––––––//
+
 /* GOTOP */
 .go-top-container {
   position: fixed;

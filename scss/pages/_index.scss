@@ -494,14 +494,15 @@
 // ------------------------------------------//
 .pilares {
   grid-area: pilares;
-  background-image: url("../img/maniqui1.jpg");
+  //background-image: url("../img/maniqui1.jpg");
+  background-color: white;
   background-position: center top;
   background-attachment: fixed;
   background-size: contain;
-  padding-top: 5rem!important;
-  padding-bottom: 5rem!important;
+  padding-top: 7rem!important;
+  padding-bottom: 7rem!important;
   width: 100vw;
-  height: 130vh;
+  //height: 130vh;
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -838,8 +839,8 @@
   .sectionSeasonItems__boton2,
   .sectionSeasonItems__boton3,
   .sectionSeasonItems__boton4{ 
-    width: 120px; 
-    height: 120px;
+    width: 90px; 
+    height: 90px;
   }
 
 //–––––––––––––––/* RESPONSIVE Section MV */–––––––––––––//
